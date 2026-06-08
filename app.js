@@ -79,7 +79,7 @@ async function loadDecks() {
       const response = await fetch(path);
       if (!response.ok) throw new Error(`Could not load ${path}`);
       const deck = normalizeDeck(await response.json());
-      builtin.push(storedById.get(deck.id) || deck);
+      builtin.push(deck);
       storedById.delete(deck.id);
     } catch (error) {
       console.warn(error);
