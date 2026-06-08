@@ -26,3 +26,18 @@ Then open `http://localhost:4173`.
 - Installable/offline PWA
 
 All progress is stored in browser `localStorage`; no account or server is required.
+
+## Publish a new deck
+
+1. Add the exported JSON file to `decks/`.
+2. Commit it and push it to the `main` branch.
+
+GitHub Actions validates all deck files, rebuilds `decks/index.json`, and deploys
+the updated site to Cloudflare Pages automatically. No application code needs
+to be changed when adding a deck.
+
+To regenerate the manifest locally:
+
+```bash
+node scripts/generate-deck-manifest.mjs
+```

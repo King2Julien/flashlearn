@@ -4,12 +4,7 @@ const STORAGE = {
   settings: "flashlearn.settings.v1",
 };
 
-const BUILTIN_DECKS = [
-  "./decks/unit1-hands-on-ai-1-recap.json",
-  "./decks/unit2-model-optimization.json",
-  "./decks/unit3-rnns.json",
-  "./decks/unit4-language-modeling.json",
-];
+const DECK_MANIFEST = "./decks/index.json";
 
 const CARD_COLORS = ["#c8f25d", "#9adcf5", "#f5b766", "#f09b91", "#b8a7ed"];
 const DAY = 24 * 60 * 60 * 1000;
@@ -68,8 +63,18 @@ async function loadDecks() {
   const stored = load(STORAGE.decks, []);
   const storedById = new Map(stored.map((deck) => [deck.id, deck]));
   const builtin = [];
+  let builtinDecks = [];
 
-  for (const path of BUILTIN_DECKS) {
+  try {
+    const response = await fetch(DECK_MANIFEST);
+    if (!response.ok) throw new Error("Could not load the deck manifest.");
+    builtinDecks = await response.json();
+    if (!Array.isArray(builtinDecks)) throw new Error("The deck manifest is invalid.");
+  } catch (error) {
+    console.warn(error);
+  }
+
+  for (const path of builtinDecks) {
     try {
       const response = await fetch(path);
       if (!response.ok) throw new Error(`Could not load ${path}`);

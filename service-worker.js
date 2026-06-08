@@ -1,4 +1,4 @@
-const CACHE = "flashlearn-v2";
+const CACHE = "flashlearn-v3";
 const ASSETS = [
   "./",
   "./index.html",
@@ -6,10 +6,7 @@ const ASSETS = [
   "./app.js",
   "./manifest.webmanifest",
   "./icon.svg",
-  "./decks/unit1-hands-on-ai-1-recap.json",
-  "./decks/unit2-model-optimization.json",
-  "./decks/unit3-rnns.json",
-  "./decks/unit4-language-modeling.json"
+  "./decks/index.json"
 ];
 
 self.addEventListener("install", (event) => {
