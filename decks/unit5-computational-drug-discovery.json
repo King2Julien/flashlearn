@@ -1,0 +1,711 @@
+{
+  "schemaVersion": 1,
+  "id": "e4f13e20-4a7c-492e-b9e9-645a5a3feef2",
+  "title": "unit5-computational-drug-discovery",
+  "subject": "Hands on AI 2",
+  "description": "",
+  "createdAt": "2026-06-06T10:52:07.986Z",
+  "updatedAt": "2026-06-08T08:44:12.896Z",
+  "questions": [
+    {
+      "id": "fce8e791-2451-414a-ae4d-e74e08d0f604",
+      "type": "single",
+      "question": "What is a drug in pharmacology?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A nutrient required for growth"
+        },
+        {
+          "id": "B",
+          "text": "A chemical substance with biological effect"
+        },
+        {
+          "id": "C",
+          "text": "Any molecule inside a cell"
+        },
+        {
+          "id": "D",
+          "text": "Only a synthetic compound"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:28:25.099Z",
+      "updatedAt": "2026-06-08T08:28:25.099Z"
+    },
+    {
+      "id": "2ca22c50-a36e-4825-80da-195b6defd895",
+      "type": "single",
+      "question": "Why is molecular structure central in modern pharmacology?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It determines drug color"
+        },
+        {
+          "id": "B",
+          "text": "It determines drug cost"
+        },
+        {
+          "id": "C",
+          "text": "It shapes biological effect"
+        },
+        {
+          "id": "D",
+          "text": "It replaces experiments"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:29:15.073Z",
+      "updatedAt": "2026-06-08T08:29:15.073Z"
+    },
+    {
+      "id": "20c8ae9e-cf78-4884-b99c-d8baedc5f0b1",
+      "type": "single",
+      "question": "What are frequent drug targets in disease pathways?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Proteins"
+        },
+        {
+          "id": "B",
+          "text": "Lipids only"
+        },
+        {
+          "id": "C",
+          "text": "Water molecules"
+        },
+        {
+          "id": "D",
+          "text": "Carbohydrates only"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:29:56.272Z",
+      "updatedAt": "2026-06-08T08:29:56.272Z"
+    },
+    {
+      "id": "9263b501-4f45-4081-bb50-33779d177fc1",
+      "type": "single",
+      "question": "What is the main task of drug discovery after choosing a target?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Sequence the genes that make up the target"
+        },
+        {
+          "id": "B",
+          "text": "Find a molecule acting on the target"
+        },
+        {
+          "id": "C",
+          "text": "Synthesizing a compound"
+        },
+        {
+          "id": "D",
+          "text": "Detect a protein to unfold"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:30:48.455Z",
+      "updatedAt": "2026-06-08T08:30:48.455Z"
+    },
+    {
+      "id": "84e0f53b-7a90-48bf-9780-c666037acf1b",
+      "type": "single",
+      "question": "Why is drug discovery described as a needle in a haystack=",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Targets are always unknown"
+        },
+        {
+          "id": "B",
+          "text": "Chemical space is enormous"
+        },
+        {
+          "id": "C",
+          "text": "All molecules are toxic"
+        },
+        {
+          "id": "D",
+          "text": "Assays are deterministic"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:31:44.054Z",
+      "updatedAt": "2026-06-08T08:31:44.054Z"
+    },
+    {
+      "id": "846112f5-d694-42eb-ba93-7ce3567373cc",
+      "type": "single",
+      "question": "What does High Throughput Screening mainly do?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Tests many candidates in assays"
+        },
+        {
+          "id": "B",
+          "text": "Folds proteins directly"
+        },
+        {
+          "id": "C",
+          "text": "Creates SMILES strings"
+        },
+        {
+          "id": "D",
+          "text": "Deletes inactive targets"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:32:35.570Z",
+      "updatedAt": "2026-06-08T08:32:35.570Z"
+    },
+    {
+      "id": "b0e0c9a5-ae2a-4ce2-adfa-a4ac565d2552",
+      "type": "single",
+      "question": "Why can machine learning help before biological assays?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It proves clinical safety"
+        },
+        {
+          "id": "B",
+          "text": "It makes educated candidate guesses"
+        },
+        {
+          "id": "C",
+          "text": "It removes all false positives"
+        },
+        {
+          "id": "D",
+          "text": "It removes the need to do chemical analysis"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:33:36.503Z",
+      "updatedAt": "2026-06-08T08:33:36.503Z"
+    },
+    {
+      "id": "249e914b-9c17-49aa-ab82-08e3ea936328",
+      "type": "single",
+      "question": "What does QSAR stand for?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Quantitative Structure-Activity Relationship"
+        },
+        {
+          "id": "B",
+          "text": "Quality Score for Active Receptors"
+        },
+        {
+          "id": "C",
+          "text": "Quantum Simulation of Active Rings"
+        },
+        {
+          "id": "D",
+          "text": "Quick Screening and Ranking"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:34:35.109Z",
+      "updatedAt": "2026-06-08T08:34:35.109Z"
+    },
+    {
+      "id": "6829fa7b-8271-412c-8ef7-4104f3c88f69",
+      "type": "single",
+      "question": "What assumption is central in QSAR?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Similar structures often have similar activity"
+        },
+        {
+          "id": "B",
+          "text": "Large molecules are always better"
+        },
+        {
+          "id": "C",
+          "text": "All drugs bind the same target"
+        },
+        {
+          "id": "D",
+          "text": "Activity ignores structure"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:35:25.612Z",
+      "updatedAt": "2026-06-08T08:35:25.612Z"
+    },
+    {
+      "id": "c92dbc24-492f-457f-8e82-c6e0bfaf1c29",
+      "type": "single",
+      "question": "How can target prediction become supervised machine learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Represent molecules numerically and use activity labels"
+        },
+        {
+          "id": "B",
+          "text": "Use only molecule names"
+        },
+        {
+          "id": "C",
+          "text": "Ignore target labels"
+        },
+        {
+          "id": "D",
+          "text": "Train without examples"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:36:20.464Z",
+      "updatedAt": "2026-06-08T08:36:20.464Z"
+    },
+    {
+      "id": "fee249e1-d1c2-4533-8647-7aa68c916a41",
+      "type": "single",
+      "question": "In a molecular graph, what do vertices typically represent?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Atoms"
+        },
+        {
+          "id": "B",
+          "text": "Assay results"
+        },
+        {
+          "id": "C",
+          "text": "Clinical phases"
+        },
+        {
+          "id": "D",
+          "text": "Drug prices"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:36:56.468Z",
+      "updatedAt": "2026-06-08T08:36:56.468Z"
+    },
+    {
+      "id": "cca95088-c1d4-408d-9465-28581e7479be",
+      "type": "single",
+      "question": "In a molecular graph, what do edges typically represent?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Bonds"
+        },
+        {
+          "id": "B",
+          "text": "Targets"
+        },
+        {
+          "id": "C",
+          "text": "Patients"
+        },
+        {
+          "id": "D",
+          "text": "Rewards"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:37:31.051Z",
+      "updatedAt": "2026-06-08T08:37:31.051Z"
+    },
+    {
+      "id": "414d5d98-09fe-4b57-9ff8-26b49f0f6fbe",
+      "type": "single",
+      "question": "What information is stored in the atom block of a MOL/SDF file?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Atom coordinates and atom types"
+        },
+        {
+          "id": "B",
+          "text": "Only clinical trial results"
+        },
+        {
+          "id": "C",
+          "text": "Only target names"
+        },
+        {
+          "id": "D",
+          "text": "Only SMILES strings"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:38:21.483Z",
+      "updatedAt": "2026-06-08T08:38:21.483Z"
+    },
+    {
+      "id": "2ef0f228-3386-4463-9c1a-3f61e334c496",
+      "type": "single",
+      "question": "In the MOL/SDF bond block, what do the first two fields specify?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Indices of bonded atoms"
+        },
+        {
+          "id": "B",
+          "text": "3D coordinates"
+        },
+        {
+          "id": "C",
+          "text": "Bioactivity labels"
+        },
+        {
+          "id": "D",
+          "text": "Molecule names"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:39:08.283Z",
+      "updatedAt": "2026-06-08T08:39:08.283Z"
+    },
+    {
+      "id": "ea8a9e98-4859-43a9-9900-a8e566411662",
+      "type": "single",
+      "question": "What is SMILES?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A sequence representation of a molecule"
+        },
+        {
+          "id": "B",
+          "text": "A protein folding score"
+        },
+        {
+          "id": "C",
+          "text": "A clinical trial phase"
+        },
+        {
+          "id": "D",
+          "text": "A type of assay"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:39:49.083Z",
+      "updatedAt": "2026-06-08T08:39:49.083Z"
+    },
+    {
+      "id": "4571d8f6-5a8d-4997-876c-8bb452eef974",
+      "type": "single",
+      "question": "Why is SMILES non-unique?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "One molecule can have multiple SMILES strings"
+        },
+        {
+          "id": "B",
+          "text": "It cannot encode rings"
+        },
+        {
+          "id": "C",
+          "text": "It stores only atoms"
+        },
+        {
+          "id": "D",
+          "text": "It requires 3D coordinates"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:40:36.273Z",
+      "updatedAt": "2026-06-08T08:40:36.273Z"
+    },
+    {
+      "id": "8e3a1de1-02be-40a6-aa81-813e263ba687",
+      "type": "single",
+      "question": "What is virtual screening?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Using a trained model to rank candidate molecules"
+        },
+        {
+          "id": "B",
+          "text": "Testing all drugs in humans"
+        },
+        {
+          "id": "C",
+          "text": "Heating proteins"
+        },
+        {
+          "id": "D",
+          "text": "Changing clinical endpoints"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:41:27.332Z",
+      "updatedAt": "2026-06-08T08:41:27.332Z"
+    },
+    {
+      "id": "adc07378-d777-48cb-ba04-e5da3c366387",
+      "type": "single",
+      "question": "Why are generative models useful in molecular design?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They can propose molecules beyond existing databases"
+        },
+        {
+          "id": "B",
+          "text": "They remove all assays"
+        },
+        {
+          "id": "C",
+          "text": "They guarantee approval"
+        },
+        {
+          "id": "D",
+          "text": "They make proteins smaller"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:42:14.672Z",
+      "updatedAt": "2026-06-08T08:42:14.672Z"
+    },
+    {
+      "id": "4973537e-b416-4ea2-8fcc-9e92dfd3148b",
+      "type": "single",
+      "question": "Why is a molecular graph alone not enough for full structure?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It may not fix the 3D conformation"
+        },
+        {
+          "id": "B",
+          "text": "It cannot store atom labels"
+        },
+        {
+          "id": "C",
+          "text": "It always loses bonds"
+        },
+        {
+          "id": "D",
+          "text": "It is never numerical"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:43:13.664Z",
+      "updatedAt": "2026-06-08T08:43:13.664Z"
+    },
+    {
+      "id": "4f77a17c-c1ca-4163-b6ae-43f5e1412d64",
+      "type": "single",
+      "question": "What is the protein folding problem?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Predict 3D structure from amino acid sequence"
+        },
+        {
+          "id": "B",
+          "text": "Predict drug price from mass"
+        },
+        {
+          "id": "C",
+          "text": "Find all atoms in carbon"
+        },
+        {
+          "id": "D",
+          "text": "Convert SMILES to English"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-08T08:44:08.930Z",
+      "updatedAt": "2026-06-08T08:44:08.930Z"
+    }
+  ]
+}
