@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f3ed" />
+    <meta
+      name="description"
+      content="A focused, local-first study app for JSON Deck Builder decks."
+    />
+    <title>Flashlearn</title>
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <header class="topbar">
+        <button class="brand" data-action="home" aria-label="Go to library">
+          <span class="brand-mark">F</span>
+          <span>Flashlearn</span>
+        </button>
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-item active" data-view="library">Library</button>
+          <button class="nav-item" data-view="progress">Progress</button>
+        </nav>
+        <div class="topbar-actions">
+          <button class="icon-button theme-toggle" data-action="theme" title="Toggle theme">
+            <span aria-hidden="true">◐</span>
+            <span class="sr-only">Toggle theme</span>
+          </button>
+          <label class="button button-dark import-button">
+            <span>Import deck</span>
+            <input id="deckImport" type="file" accept=".json,application/json" multiple />
+          </label>
+        </div>
+      </header>
+
+      <main id="app" tabindex="-1"></main>
+    </div>
+
+    <div id="toastRegion" class="toast-region" aria-live="polite"></div>
+
+    <dialog id="confirmDialog" class="dialog">
+      <form method="dialog">
+        <h2 id="confirmTitle">Are you sure?</h2>
+        <p id="confirmMessage"></p>
+        <div class="dialog-actions">
+          <button class="button button-ghost" value="cancel">Cancel</button>
+          <button id="confirmButton" class="button button-danger" value="confirm">Confirm</button>
+        </div>
+      </form>
+    </dialog>
+
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>

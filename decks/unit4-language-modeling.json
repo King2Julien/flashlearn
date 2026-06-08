@@ -1,0 +1,746 @@
+{
+  "schemaVersion": 1,
+  "id": "63b3ac28-961c-4d23-9b7c-c3b29dff7611",
+  "title": "Unit 4 - Language Modeling",
+  "subject": "Hands-on AI 2",
+  "description": "RNN, LSTM, Transformer",
+  "createdAt": "2026-06-04T13:53:25.070Z",
+  "updatedAt": "2026-06-04T14:36:23.085Z",
+  "questions": [
+    {
+      "id": "3537f6fd-a1de-4c8b-9e88-f929ef10c2ab",
+      "type": "single",
+      "question": "What is the main goal of a language model?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Classify documents by topic"
+        },
+        {
+          "id": "B",
+          "text": "Predict the next token from context"
+        },
+        {
+          "id": "C",
+          "text": "Transcribe and translate at the same time"
+        },
+        {
+          "id": "D",
+          "text": "Compress text into fixed vectors"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T13:56:17.927Z",
+      "updatedAt": "2026-06-04T13:56:17.927Z"
+    },
+    {
+      "id": "98c2896a-c6cd-4814-96c1-3780005a6365",
+      "type": "single",
+      "question": "What does P(x_(t+1)|x_(t),...,x_(1)) represent?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Embeddings for every word in the corpus"
+        },
+        {
+          "id": "B",
+          "text": "Probability of the previous token"
+        },
+        {
+          "id": "C",
+          "text": "Probability distribution over the next token"
+        },
+        {
+          "id": "D",
+          "text": "Similarity between embeddings"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T13:58:12.224Z",
+      "updatedAt": "2026-06-04T13:58:12.224Z"
+    },
+    {
+      "id": "93adf9a3-1bd7-4f44-a444-bb1242fb51ae",
+      "type": "single",
+      "question": "What is cosine similarity commonly used for with embeddings?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Measuring sentence depth"
+        },
+        {
+          "id": "B",
+          "text": "Normalizing token frequencies"
+        },
+        {
+          "id": "C",
+          "text": "Normalizing token frequencies"
+        },
+        {
+          "id": "D",
+          "text": "Computing the RNN state"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T13:59:19.590Z",
+      "updatedAt": "2026-06-04T13:59:19.590Z"
+    },
+    {
+      "id": "49ada983-ed0a-4f8c-a192-38bcdcc672d1",
+      "type": "single",
+      "question": "Why do modern LMs often use subword tokenization?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It removes embeddings"
+        },
+        {
+          "id": "B",
+          "text": "It avoids all ambiguity"
+        },
+        {
+          "id": "C",
+          "text": "It handles rare or unseen words"
+        },
+        {
+          "id": "D",
+          "text": "It guarantees shortest sequences"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:00:20.055Z",
+      "updatedAt": "2026-06-04T14:00:20.055Z"
+    },
+    {
+      "id": "4f6c9095-523f-4d24-ae07-fc80bfc78c0d",
+      "type": "single",
+      "question": "What trade-off does subword tokenization mainly introduce?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Accuracy vs. optimizer choice"
+        },
+        {
+          "id": "B",
+          "text": "Vocabulary size vs. sequence length"
+        },
+        {
+          "id": "C",
+          "text": "Embedding size vs. hidden size"
+        },
+        {
+          "id": "D",
+          "text": "Heads vs. batch size"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:01:36.458Z",
+      "updatedAt": "2026-06-04T14:01:36.458Z"
+    },
+    {
+      "id": "e4d90c4a-815b-417b-aeb4-e4ab9c810647",
+      "type": "single",
+      "question": "Which of the following is a common subword tokenization approach?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "TF-IDF tokenization"
+        },
+        {
+          "id": "B",
+          "text": "BPE"
+        },
+        {
+          "id": "C",
+          "text": "Lemmatization only"
+        },
+        {
+          "id": "D",
+          "text": "POS-tag tokenization"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:02:33.250Z",
+      "updatedAt": "2026-06-04T14:02:33.250Z"
+    },
+    {
+      "id": "51aa067a-330d-406c-8a62-815301595a4a",
+      "type": "single",
+      "question": "What is the role of the embedding matrix E in a language model?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Map hidden states to probabilities"
+        },
+        {
+          "id": "B",
+          "text": "Map token IDs to dense vectors"
+        },
+        {
+          "id": "C",
+          "text": "Store recurrence weights"
+        },
+        {
+          "id": "D",
+          "text": "Compute the softmax"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:03:30.762Z",
+      "updatedAt": "2026-06-04T14:03:30.762Z"
+    },
+    {
+      "id": "ca766397-b48f-4b12-8c5e-e6e96f3c018f",
+      "type": "single",
+      "question": "In h_(t) = RNN(h_(t-1),e_(1)), what does h_(t) represent?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The current hidden state"
+        },
+        {
+          "id": "B",
+          "text": "The vocabulary distribution"
+        },
+        {
+          "id": "C",
+          "text": "The one-hot input vector"
+        },
+        {
+          "id": "D",
+          "text": "The loss at timestep t"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:04:49.345Z",
+      "updatedAt": "2026-06-04T14:04:49.345Z"
+    },
+    {
+      "id": "11b2f5e1-5c68-4e4f-91ea-5284ce498dc4",
+      "type": "single",
+      "question": "What does the decoder's linear layer map in an RNN LM?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Vocabulary size to sequence length"
+        },
+        {
+          "id": "B",
+          "text": "Hidden state to vocabulary-size logits"
+        },
+        {
+          "id": "C",
+          "text": "Tokens to hidden states"
+        },
+        {
+          "id": "D",
+          "text": "Loss values to probabilities"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:06:05.664Z",
+      "updatedAt": "2026-06-04T14:06:05.664Z"
+    },
+    {
+      "id": "b015a1b8-468b-4b1a-8e89-af604676ae29",
+      "type": "single",
+      "question": "What does the softmax output ^y_(t) represent?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A single generated sentence"
+        },
+        {
+          "id": "B",
+          "text": "Distribution over vocabulary items"
+        },
+        {
+          "id": "C",
+          "text": "The hidden state"
+        },
+        {
+          "id": "D",
+          "text": "The current token embedding"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:08:16.376Z",
+      "updatedAt": "2026-06-04T14:08:16.376Z"
+    },
+    {
+      "id": "c2efafe2-5bf3-4106-9038-d283be12bb4a",
+      "type": "single",
+      "question": "What does weight tying mean in a language model?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Sharing weights across mini-batches"
+        },
+        {
+          "id": "B",
+          "text": "Sharing decoder and embedding weights"
+        },
+        {
+          "id": "C",
+          "text": "Using one hidden state for all steps"
+        },
+        {
+          "id": "D",
+          "text": "Freezing all parameters"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:09:14.319Z",
+      "updatedAt": "2026-06-04T14:09:14.319Z"
+    },
+    {
+      "id": "5c823129-98c2-4ab4-9b86-3b48b84d6640",
+      "type": "single",
+      "question": "Which condition is typically required for weight tying?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Only full-word vocabulary"
+        },
+        {
+          "id": "B",
+          "text": "Embedding and hidden sizes match"
+        },
+        {
+          "id": "C",
+          "text": "No softmax is used"
+        },
+        {
+          "id": "D",
+          "text": "Corpus sorted alphabetically"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:10:16.280Z",
+      "updatedAt": "2026-06-04T14:10:16.280Z"
+    },
+    {
+      "id": "920bbb43-41bc-46f0-b228-0622bb9646f7",
+      "type": "single",
+      "question": "What is the training target at timestep t in next-token prediction?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The current token x_(t)"
+        },
+        {
+          "id": "B",
+          "text": "The previous token x_(t-1)"
+        },
+        {
+          "id": "C",
+          "text": "The next token x_(t+1)"
+        },
+        {
+          "id": "D",
+          "text": "The full sentence label"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:12:34.914Z",
+      "updatedAt": "2026-06-04T14:12:34.914Z"
+    },
+    {
+      "id": "1fe50f00-a7e3-446d-9f00-3825807a4743",
+      "type": "single",
+      "question": "What does negative log-likelihood penalize during LM training?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Low probability for the correct next token"
+        },
+        {
+          "id": "B",
+          "text": "Too many vocabulary items"
+        },
+        {
+          "id": "C",
+          "text": "Long contexts"
+        },
+        {
+          "id": "D",
+          "text": "Repeated generated words"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:27:15.628Z",
+      "updatedAt": "2026-06-04T14:27:15.628Z"
+    },
+    {
+      "id": "2a36451c-86a1-4a47-88fa-b01f0f3c01e4",
+      "type": "single",
+      "question": "If correct next tokens get higher probability, what happens to NLL?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It increases"
+        },
+        {
+          "id": "B",
+          "text": "It stays constant"
+        },
+        {
+          "id": "C",
+          "text": "It decreases"
+        },
+        {
+          "id": "D",
+          "text": "It becomes undefined"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:28:36.662Z",
+      "updatedAt": "2026-06-04T14:28:36.662Z"
+    },
+    {
+      "id": "16a64f77-6581-4bb6-a4c8-bb2f0581dd84",
+      "type": "single",
+      "question": "How is perplexity related to average negative log-likelihood L?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "PPL = log(L)"
+        },
+        {
+          "id": "B",
+          "text": "PPL = exp(L)"
+        },
+        {
+          "id": "C",
+          "text": "PPL = L**2"
+        },
+        {
+          "id": "D",
+          "text": "PPL = 1 - L"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:29:50.381Z",
+      "updatedAt": "2026-06-04T14:29:50.381Z"
+    },
+    {
+      "id": "6ee977da-a76c-4ff3-b1fc-8a473b69b6a3",
+      "type": "single",
+      "question": "Why is text generation with an LM called autoregressive?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Generated tokens become later inputs"
+        },
+        {
+          "id": "B",
+          "text": "All positions update at once"
+        },
+        {
+          "id": "C",
+          "text": "The vocabulary changes every token"
+        },
+        {
+          "id": "D",
+          "text": "The model has no hidden states"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:31:02.016Z",
+      "updatedAt": "2026-06-04T14:31:02.016Z"
+    },
+    {
+      "id": "e275b9ee-b016-4c01-b8b0-97745be4971b",
+      "type": "single",
+      "question": "What is a major limitation of RNNs compared to transformers?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "RNNs cannot use embeddings"
+        },
+        {
+          "id": "B",
+          "text": "RNNs cannot output probabilities"
+        },
+        {
+          "id": "C",
+          "text": "RNNs are hard to parallize"
+        },
+        {
+          "id": "D",
+          "text": "RNNs require attention masks"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:33:06.371Z",
+      "updatedAt": "2026-06-04T14:33:06.371Z"
+    },
+    {
+      "id": "dfe4db5f-d951-4c3d-979f-9ba40004af34",
+      "type": "single",
+      "question": "In scaled dot-product attention, what are queries and keys used for?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Producing vocabulary probabilities"
+        },
+        {
+          "id": "B",
+          "text": "Determining attention scores"
+        },
+        {
+          "id": "C",
+          "text": "Storing generated text"
+        },
+        {
+          "id": "D",
+          "text": "Replacing value vectors"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:34:12.242Z",
+      "updatedAt": "2026-06-04T14:34:12.242Z"
+    },
+    {
+      "id": "9ec1b9f5-e70a-4f70-8fbc-a816039cbb82",
+      "type": "single",
+      "question": "Why is masking used in decoder self-attention during generation?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "To prevent attention to future tokens"
+        },
+        {
+          "id": "B",
+          "text": "To remove unimportant words"
+        },
+        {
+          "id": "C",
+          "text": "To make all weights equal"
+        },
+        {
+          "id": "D",
+          "text": "To avoid embeddings"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:35:12.699Z",
+      "updatedAt": "2026-06-04T14:35:12.699Z"
+    },
+    {
+      "id": "3e1d0d0e-470e-42dd-b6f1-28d8198e55fc",
+      "type": "single",
+      "question": "In multi-head attention, what happens to the head outputs?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Only the largest head is kept"
+        },
+        {
+          "id": "B",
+          "text": "They are concatenated and transformed"
+        },
+        {
+          "id": "C",
+          "text": "They become token IDs directly"
+        },
+        {
+          "id": "D",
+          "text": "They are averaged into one scalar"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-04T14:36:18.400Z",
+      "updatedAt": "2026-06-04T14:36:18.400Z"
+    }
+  ]
+}

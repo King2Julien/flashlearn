@@ -1,0 +1,816 @@
+{
+  "schemaVersion": 1,
+  "id": "5a5612d2-c480-46f2-9aa0-139722673b64",
+  "title": "unit1-hands-on-ai-1-recap",
+  "subject": "Hands on AI 2",
+  "description": "",
+  "createdAt": "2026-06-06T10:33:27.902Z",
+  "updatedAt": "2026-06-06T10:51:41.454Z",
+  "questions": [
+    {
+      "id": "0f993e1b-3052-40d1-a126-a594929abd5c",
+      "type": "single",
+      "question": "Which data type uses height, width, channels?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Sequences"
+        },
+        {
+          "id": "B",
+          "text": "Text data"
+        },
+        {
+          "id": "C",
+          "text": "Tabular data"
+        },
+        {
+          "id": "D",
+          "text": "Images"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:35:01.770Z",
+      "updatedAt": "2026-06-06T10:35:01.770Z"
+    },
+    {
+      "id": "9e6943be-3bb7-4bd2-9387-356e2012463f",
+      "type": "single",
+      "question": "What does RGB stand for?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Red Gold Black"
+        },
+        {
+          "id": "B",
+          "text": "Red Gray Black"
+        },
+        {
+          "id": "C",
+          "text": "Red Green Blue"
+        },
+        {
+          "id": "D",
+          "text": "Red Green Black"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:35:44.004Z",
+      "updatedAt": "2026-06-06T10:35:44.004Z"
+    },
+    {
+      "id": "d96bf84d-c530-4d0d-be50-2ba8791749f8",
+      "type": "single",
+      "question": "Data augmentation can help to increase model robustness by ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Reducing the number of samples"
+        },
+        {
+          "id": "B",
+          "text": "Reducing the number of features"
+        },
+        {
+          "id": "C",
+          "text": "Scaling the data"
+        },
+        {
+          "id": "D",
+          "text": "Increasing the number of samples"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:36:45.719Z",
+      "updatedAt": "2026-06-06T10:36:45.719Z"
+    },
+    {
+      "id": "c87c344b-a4da-4249-a537-b898ee005ef5",
+      "type": "single",
+      "question": "What does a feature vector represent?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Model parameters"
+        },
+        {
+          "id": "B",
+          "text": "Class labels"
+        },
+        {
+          "id": "C",
+          "text": "A sample"
+        },
+        {
+          "id": "D",
+          "text": "A collection of hyperparameters"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:37:30.885Z",
+      "updatedAt": "2026-06-06T10:37:30.885Z"
+    },
+    {
+      "id": "cca6f5b1-0693-4be5-bb50-de3b81005c86",
+      "type": "single",
+      "question": "What is a sequence in data?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Ordered elements"
+        },
+        {
+          "id": "B",
+          "text": "Unrelated data"
+        },
+        {
+          "id": "C",
+          "text": "Random samples"
+        },
+        {
+          "id": "D",
+          "text": "Tabular rows"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:38:06.618Z",
+      "updatedAt": "2026-06-06T10:38:06.618Z"
+    },
+    {
+      "id": "208d5907-92cb-4a13-a008-20a862fba958",
+      "type": "single",
+      "question": "Which is NOT an unsupervised ML method?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Decision Trees"
+        },
+        {
+          "id": "B",
+          "text": "DBSCAN"
+        },
+        {
+          "id": "C",
+          "text": "k-Means"
+        },
+        {
+          "id": "D",
+          "text": "Hierarchical Clustering"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:39:13.118Z",
+      "updatedAt": "2026-06-06T10:39:13.118Z"
+    },
+    {
+      "id": "7e3639f9-9c26-4a0f-a21d-c61589dbbf7e",
+      "type": "single",
+      "question": "What is the goal of supervised ML?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Cluster data"
+        },
+        {
+          "id": "B",
+          "text": "Downproject high-dimensional data into 2D space"
+        },
+        {
+          "id": "C",
+          "text": "Predict targets"
+        },
+        {
+          "id": "D",
+          "text": "Reduce features"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:40:06.650Z",
+      "updatedAt": "2026-06-06T10:40:06.650Z"
+    },
+    {
+      "id": "99f167db-4889-4416-980c-bdc600c1d7c7",
+      "type": "single",
+      "question": "What is a model in ML?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Loss function"
+        },
+        {
+          "id": "B",
+          "text": "Raw data"
+        },
+        {
+          "id": "C",
+          "text": "Parameterized function"
+        },
+        {
+          "id": "D",
+          "text": "Feature vector"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:40:36.750Z",
+      "updatedAt": "2026-06-06T10:40:36.750Z"
+    },
+    {
+      "id": "7f9b1d1b-4d38-4f6e-a0ab-791bdb3b14d8",
+      "type": "single",
+      "question": "What is a hyperparameter?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Model output"
+        },
+        {
+          "id": "B",
+          "text": "Training setting"
+        },
+        {
+          "id": "C",
+          "text": "Input data"
+        },
+        {
+          "id": "D",
+          "text": "Loss value"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:41:06.815Z",
+      "updatedAt": "2026-06-06T10:41:06.815Z"
+    },
+    {
+      "id": "68b3bcd0-b5fe-448a-82ce-4567f6ec9484",
+      "type": "single",
+      "question": "What does ERM stand for?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Error Rate Model"
+        },
+        {
+          "id": "B",
+          "text": "Empirical Risk Minimization"
+        },
+        {
+          "id": "C",
+          "text": "Estimated Risk Measure"
+        },
+        {
+          "id": "D",
+          "text": "Exact Regression Method"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:41:45.412Z",
+      "updatedAt": "2026-06-06T10:41:45.412Z"
+    },
+    {
+      "id": "cda401af-32f9-4392-b3ec-093d4a1dc22f",
+      "type": "single",
+      "question": "Which algorithm is used for dimensionality reduction?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "k-Means"
+        },
+        {
+          "id": "B",
+          "text": "PCA"
+        },
+        {
+          "id": "C",
+          "text": "Logistic Regression"
+        },
+        {
+          "id": "D",
+          "text": "DBSCAN"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:42:40.111Z",
+      "updatedAt": "2026-06-06T10:42:40.111Z"
+    },
+    {
+      "id": "d4819eb2-68ca-480a-9833-1760ede3f224",
+      "type": "single",
+      "question": "Which clustering method is related to/makes use of a dendrogram?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Hierarchical clustering"
+        },
+        {
+          "id": "B",
+          "text": "k-Means"
+        },
+        {
+          "id": "C",
+          "text": "GMMs"
+        },
+        {
+          "id": "D",
+          "text": "DBSCAN"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:43:24.327Z",
+      "updatedAt": "2026-06-06T10:43:24.327Z"
+    },
+    {
+      "id": "ca9a4c6e-aaa4-414b-a3c1-2e37a6a5c09d",
+      "type": "single",
+      "question": "What is the goal of regression?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Cluster data"
+        },
+        {
+          "id": "B",
+          "text": "Augment data"
+        },
+        {
+          "id": "C",
+          "text": "Predict classes"
+        },
+        {
+          "id": "D",
+          "text": "Predict numerical values"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:43:59.210Z",
+      "updatedAt": "2026-06-06T10:43:59.210Z"
+    },
+    {
+      "id": "1c943698-f61c-4761-bf67-681288b8dd19",
+      "type": "single",
+      "question": "What does a loss function measure?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Data size"
+        },
+        {
+          "id": "B",
+          "text": "Model complexity"
+        },
+        {
+          "id": "C",
+          "text": "Prediction error"
+        },
+        {
+          "id": "D",
+          "text": "Feature count"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:44:36.093Z",
+      "updatedAt": "2026-06-06T10:44:36.093Z"
+    },
+    {
+      "id": "52a44f41-da36-4d61-a926-8052eec1588c",
+      "type": "single",
+      "question": "What does a smaller loss indicate?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It's a good model"
+        },
+        {
+          "id": "B",
+          "text": "There are too few samples available for proper training"
+        },
+        {
+          "id": "C",
+          "text": "It's a bad model"
+        },
+        {
+          "id": "D",
+          "text": "The model parameters have to be adjusted"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:45:33.795Z",
+      "updatedAt": "2026-06-06T10:45:33.795Z"
+    },
+    {
+      "id": "22d3a370-55df-49f6-8afa-09a6fd18a6c2",
+      "type": "single",
+      "question": "How to estimate true risk/estimate generalization capabilities?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Do a pairplot between predicted training set output and true outputs"
+        },
+        {
+          "id": "B",
+          "text": "Using a separate test set"
+        },
+        {
+          "id": "C",
+          "text": "Apply a clustering algorithm on the training set"
+        },
+        {
+          "id": "D",
+          "text": "Use an augmented training set"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:46:52.625Z",
+      "updatedAt": "2026-06-06T10:46:52.625Z"
+    },
+    {
+      "id": "97c48abd-e2e8-4578-9a36-f4822c14decf",
+      "type": "single",
+      "question": "What is logistic regression used for?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Classification"
+        },
+        {
+          "id": "B",
+          "text": "Clustering"
+        },
+        {
+          "id": "C",
+          "text": "Data augmentation"
+        },
+        {
+          "id": "D",
+          "text": "Dimensionality reduction"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:47:30.390Z",
+      "updatedAt": "2026-06-06T10:47:30.390Z"
+    },
+    {
+      "id": "e7fb6c39-fbf7-4839-ad4a-3bdc89591658",
+      "type": "single",
+      "question": "What function does logistic regression use?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Linear"
+        },
+        {
+          "id": "B",
+          "text": "TanH"
+        },
+        {
+          "id": "C",
+          "text": "AdamW"
+        },
+        {
+          "id": "D",
+          "text": "Sigmoid"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:47:57.907Z",
+      "updatedAt": "2026-06-06T10:47:57.907Z"
+    },
+    {
+      "id": "d9341556-ad8b-44ad-b382-d9c017204e00",
+      "type": "single",
+      "question": "What does logistic regression output?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Gradient values"
+        },
+        {
+          "id": "B",
+          "text": "Loss values"
+        },
+        {
+          "id": "C",
+          "text": "Class probabilities"
+        },
+        {
+          "id": "D",
+          "text": "Class labels"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:48:32.790Z",
+      "updatedAt": "2026-06-06T10:48:32.790Z"
+    },
+    {
+      "id": "2c66e4ab-22f0-4846-8d84-44d8399fec69",
+      "type": "single",
+      "question": "What is softmax used for?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Binary classification"
+        },
+        {
+          "id": "B",
+          "text": "Clustering"
+        },
+        {
+          "id": "C",
+          "text": "Regression"
+        },
+        {
+          "id": "D",
+          "text": "Multi-class classification"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:49:11.756Z",
+      "updatedAt": "2026-06-06T10:49:11.756Z"
+    },
+    {
+      "id": "0dbb7e3f-51fe-4d9a-90ca-f473309d1b14",
+      "type": "single",
+      "question": "What method minimized logistic regression loss?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Gradient descent"
+        },
+        {
+          "id": "B",
+          "text": "PCA"
+        },
+        {
+          "id": "C",
+          "text": "k-Means"
+        },
+        {
+          "id": "D",
+          "text": "t-SNE"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:49:46.256Z",
+      "updatedAt": "2026-06-06T10:49:46.256Z"
+    },
+    {
+      "id": "05a9bc99-11f1-4899-b004-4ac63367adac",
+      "type": "single",
+      "question": "What is a model parameter?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A value that measures discrepancies between predicted and true output value"
+        },
+        {
+          "id": "B",
+          "text": "Output label that is predicted by the model"
+        },
+        {
+          "id": "C",
+          "text": "Values that control how the model is trained (e.g. learning rate)"
+        },
+        {
+          "id": "D",
+          "text": "A value that is adjusted during training"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:51:06.888Z",
+      "updatedAt": "2026-06-06T10:51:06.888Z"
+    },
+    {
+      "id": "1350edd8-68d4-4086-9e78-fc30c0220a26",
+      "type": "single",
+      "question": "What are weights and biases in models?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Inputs"
+        },
+        {
+          "id": "B",
+          "text": "Losses"
+        },
+        {
+          "id": "C",
+          "text": "Outputs"
+        },
+        {
+          "id": "D",
+          "text": "Parameters"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:51:39.254Z",
+      "updatedAt": "2026-06-06T10:51:39.254Z"
+    }
+  ]
+}

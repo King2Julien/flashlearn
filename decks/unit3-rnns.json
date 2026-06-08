@@ -1,0 +1,886 @@
+{
+  "schemaVersion": 1,
+  "id": "4c02881b-4114-46bc-8a6e-d647be77a4ad",
+  "title": "unit3-rnns",
+  "subject": "Hands-on AI 2",
+  "description": "",
+  "createdAt": "2026-06-06T09:34:48.912Z",
+  "updatedAt": "2026-06-06T10:08:01.121Z",
+  "questions": [
+    {
+      "id": "d45e7f58-7739-4e0e-8736-f820925d9a17",
+      "type": "single",
+      "question": "Why are feed-forward networks problematic for sequence data?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They cannot use non-linearities"
+        },
+        {
+          "id": "B",
+          "text": "They require fixed-size input vectors"
+        },
+        {
+          "id": "C",
+          "text": "They have too many parameters"
+        },
+        {
+          "id": "D",
+          "text": "They only work on images"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:38:38.213Z",
+      "updatedAt": "2026-06-06T09:38:38.213Z"
+    },
+    {
+      "id": "7153e9d6-c303-4185-ba84-b29f880cd13a",
+      "type": "single",
+      "question": "In sequence data, what may vary between samples?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Number of features D"
+        },
+        {
+          "id": "B",
+          "text": "Vocabulary size V"
+        },
+        {
+          "id": "C",
+          "text": "Sequence length T"
+        },
+        {
+          "id": "D",
+          "text": "Hidden size H"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:40:02.029Z",
+      "updatedAt": "2026-06-06T09:40:02.029Z"
+    },
+    {
+      "id": "21eaff1e-7fc2-425d-b1a3-dd43d9a95bdd",
+      "type": "single",
+      "question": "The RNN hidden state is computed as:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "h_(t) = f(x_(t))"
+        },
+        {
+          "id": "B",
+          "text": "h_(t) = f(h_(t-1))"
+        },
+        {
+          "id": "C",
+          "text": "h_(t) = f(x_(t), h_(t-1))"
+        },
+        {
+          "id": "D",
+          "text": "h_(t) = x_(t) - h_(t-1)"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:42:11.397Z",
+      "updatedAt": "2026-06-06T09:42:11.397Z"
+    },
+    {
+      "id": "03a3f162-370c-4ea9-a391-efc4afafc898",
+      "type": "single",
+      "question": "What is typically used as the initial hidden state h_(0)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Random noise"
+        },
+        {
+          "id": "B",
+          "text": "The first input"
+        },
+        {
+          "id": "C",
+          "text": "Zero vector"
+        },
+        {
+          "id": "D",
+          "text": "The last hidden state"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:43:00.847Z",
+      "updatedAt": "2026-06-06T09:43:00.847Z"
+    },
+    {
+      "id": "b5ac6d55-b890-4070-98a3-17a9ae87d911",
+      "type": "single",
+      "question": "What is shared across time steps in an RNN?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Inputs"
+        },
+        {
+          "id": "B",
+          "text": "Outputs"
+        },
+        {
+          "id": "C",
+          "text": "Weight matrix W"
+        },
+        {
+          "id": "D",
+          "text": "Gradients"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:43:51.219Z",
+      "updatedAt": "2026-06-06T09:43:51.219Z"
+    },
+    {
+      "id": "6b2710c6-bb3c-47aa-b710-0730a3f0d517",
+      "type": "single",
+      "question": "Unrolling an RNN means:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Re-using the hidden state"
+        },
+        {
+          "id": "B",
+          "text": "Viewing it as a deep feed-forward network over time"
+        },
+        {
+          "id": "C",
+          "text": "Re-using gradients across samples"
+        },
+        {
+          "id": "D",
+          "text": "Using different weights per timestep"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:44:56.498Z",
+      "updatedAt": "2026-06-06T09:44:56.498Z"
+    },
+    {
+      "id": "d71b0854-f03b-438b-a510-2510a672b7b2",
+      "type": "single",
+      "question": "Why does Backpropagation through time (BPTT) create very deep networks?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "There are many layers vertically"
+        },
+        {
+          "id": "B",
+          "text": "Depth grows with sequence length"
+        },
+        {
+          "id": "C",
+          "text": "There are multiple output layers"
+        },
+        {
+          "id": "D",
+          "text": "Several loss functions are applied at every timestep"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:46:16.681Z",
+      "updatedAt": "2026-06-06T09:46:16.681Z"
+    },
+    {
+      "id": "51d6df8e-5d98-42cf-a02f-e9983a2ae525",
+      "type": "single",
+      "question": "Vanishing gradients occur when:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Gradients become larger than 1"
+        },
+        {
+          "id": "B",
+          "text": "Gradients approach zero across many steps"
+        },
+        {
+          "id": "C",
+          "text": "Loss becomes zero"
+        },
+        {
+          "id": "D",
+          "text": "Learning rate is too large"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:47:10.732Z",
+      "updatedAt": "2026-06-06T09:47:10.732Z"
+    },
+    {
+      "id": "98dd3fe6-2d9b-4808-96d3-1185d651671d",
+      "type": "single",
+      "question": "Why does tanh contribute to vanishing gradients?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Its derivative can be very small"
+        },
+        {
+          "id": "B",
+          "text": "It scales its input linearly"
+        },
+        {
+          "id": "C",
+          "text": "It causes smaller loss values"
+        },
+        {
+          "id": "D",
+          "text": "Its derivative is 0 for any input x < 0"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:48:29.132Z",
+      "updatedAt": "2026-06-06T09:48:29.132Z"
+    },
+    {
+      "id": "2754dd36-3c08-4507-9d3b-054bc2ab02fb",
+      "type": "single",
+      "question": "If recurrent gradients are consistently < 1, the RNN will:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Become unstable"
+        },
+        {
+          "id": "B",
+          "text": "Forget long-term information"
+        },
+        {
+          "id": "C",
+          "text": "Explode numerically"
+        },
+        {
+          "id": "D",
+          "text": "Abort the training process"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:50:26.783Z",
+      "updatedAt": "2026-06-06T09:50:26.783Z"
+    },
+    {
+      "id": "be1147e2-219b-49c1-9b3f-536abea12f97",
+      "type": "single",
+      "question": "If recurrent gradients are consistently > 1, the training:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Remains stable"
+        },
+        {
+          "id": "B",
+          "text": "Will converge very slowly"
+        },
+        {
+          "id": "C",
+          "text": "Becomes unstable (exploding gradients)"
+        },
+        {
+          "id": "D",
+          "text": "Will get stuck at a local minimum"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:52:13.350Z",
+      "updatedAt": "2026-06-06T09:52:13.350Z"
+    },
+    {
+      "id": "6858405b-9bbf-4b7c-b7d2-d2a06e84c1e2",
+      "type": "single",
+      "question": "Learning long-term dependencies requires gradients to be:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Close to zero"
+        },
+        {
+          "id": "B",
+          "text": "Greater than the computed loss"
+        },
+        {
+          "id": "C",
+          "text": "Very close to 1"
+        },
+        {
+          "id": "D",
+          "text": "Exactly zero"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:53:14.767Z",
+      "updatedAt": "2026-06-06T09:53:14.767Z"
+    },
+    {
+      "id": "f35aecb0-1848-40d4-819e-0e0cef481ff7",
+      "type": "single",
+      "question": "What is the key idea behind LSTMs?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Remove hidden states"
+        },
+        {
+          "id": "B",
+          "text": "Store information with controlled read/write access"
+        },
+        {
+          "id": "C",
+          "text": "Avoid unrolling over timesteps"
+        },
+        {
+          "id": "D",
+          "text": "Use ReLU instead of tanh"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:54:45.085Z",
+      "updatedAt": "2026-06-06T09:54:45.085Z"
+    },
+    {
+      "id": "4f5076f2-2a0b-41ff-9cbd-0dcef86694dc",
+      "type": "single",
+      "question": "The LSTM cell state c_(t) represents:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Short-term memory"
+        },
+        {
+          "id": "B",
+          "text": "Long-term memory"
+        },
+        {
+          "id": "C",
+          "text": "Accumulated loss over all timesteps"
+        },
+        {
+          "id": "D",
+          "text": "Average gradients across timesteps"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:55:53.734Z",
+      "updatedAt": "2026-06-06T09:55:53.734Z"
+    },
+    {
+      "id": "5c48fe2d-cf05-4e22-bf92-aafd5f2948f3",
+      "type": "single",
+      "question": "The hidden state h_(t) in an LSTM represents:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Long-term memory"
+        },
+        {
+          "id": "B",
+          "text": "Short-term memory"
+        },
+        {
+          "id": "C",
+          "text": "Cell candidate"
+        },
+        {
+          "id": "D",
+          "text": "Forget gate activation"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:56:47.085Z",
+      "updatedAt": "2026-06-06T09:56:47.085Z"
+    },
+    {
+      "id": "7565fa86-2660-4c82-8c19-14015ad9fdd7",
+      "type": "single",
+      "question": "Why does the Constant Error Carousel (CEC) prevent vanishing gradients (original LSTM design without forget gate)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "c_(t) is activated using ReLU"
+        },
+        {
+          "id": "B",
+          "text": "c_(t) depends linearly on c_(t-1) (identity path)"
+        },
+        {
+          "id": "C",
+          "text": "c_(t) depends linearly on h_(t-1)"
+        },
+        {
+          "id": "D",
+          "text": "c_(t) is activated using tanh"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T09:59:03.319Z",
+      "updatedAt": "2026-06-06T09:59:03.319Z"
+    },
+    {
+      "id": "d2e9888d-f1ec-4a22-939f-c5ae38476217",
+      "type": "single",
+      "question": "The candidate memory c~_(t) is typically computed/activated using:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Sigmoid"
+        },
+        {
+          "id": "B",
+          "text": "ReLU"
+        },
+        {
+          "id": "C",
+          "text": "tanh"
+        },
+        {
+          "id": "D",
+          "text": "Softmax"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:00:41.353Z",
+      "updatedAt": "2026-06-06T10:00:41.353Z"
+    },
+    {
+      "id": "0ccb4450-00af-4624-934a-a3054c1c8779",
+      "type": "single",
+      "question": "The input gate controls:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "What to forget"
+        },
+        {
+          "id": "B",
+          "text": "What to write into the cell state"
+        },
+        {
+          "id": "C",
+          "text": "What to output"
+        },
+        {
+          "id": "D",
+          "text": "Sequence length"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:01:27.970Z",
+      "updatedAt": "2026-06-06T10:01:27.970Z"
+    },
+    {
+      "id": "f34ed7f8-4f9e-4440-aaf8-480ac9561a0f",
+      "type": "single",
+      "question": "Gate activations are typically computed using:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "ReLU"
+        },
+        {
+          "id": "B",
+          "text": "Softmax"
+        },
+        {
+          "id": "C",
+          "text": "Sigmoid"
+        },
+        {
+          "id": "D",
+          "text": "Linear activation"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:02:09.486Z",
+      "updatedAt": "2026-06-06T10:02:09.486Z"
+    },
+    {
+      "id": "61d98159-9c05-40a1-bc8a-93936f55c063",
+      "type": "single",
+      "question": "Why do gates depend on h_(t-1) as well as x_(t)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "To make unrolling over time unnecessary"
+        },
+        {
+          "id": "B",
+          "text": "To make decisions based on past information"
+        },
+        {
+          "id": "C",
+          "text": "To normalize input"
+        },
+        {
+          "id": "D",
+          "text": "To reduce the parameter count"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:03:38.687Z",
+      "updatedAt": "2026-06-06T10:03:38.687Z"
+    },
+    {
+      "id": "e94f5f5b-754e-4c7b-9ae5-4c2e61f87a14",
+      "type": "single",
+      "question": "Many-to-One RNNs are commonly used for:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Machine translation"
+        },
+        {
+          "id": "B",
+          "text": "Sentiment classification"
+        },
+        {
+          "id": "C",
+          "text": "Music generation"
+        },
+        {
+          "id": "D",
+          "text": "Image segmentation"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:04:45.643Z",
+      "updatedAt": "2026-06-06T10:04:45.643Z"
+    },
+    {
+      "id": "90b451ed-3d4a-40af-9746-87067b0ebe20",
+      "type": "single",
+      "question": "One-to-Many RNNs are used for:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Regression"
+        },
+        {
+          "id": "B",
+          "text": "Clustering"
+        },
+        {
+          "id": "C",
+          "text": "Music generation"
+        },
+        {
+          "id": "D",
+          "text": "Logistic regression"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:05:25.919Z",
+      "updatedAt": "2026-06-06T10:05:25.919Z"
+    },
+    {
+      "id": "91fb10d8-097f-45bc-9add-9f4827fe3761",
+      "type": "single",
+      "question": "Many-to-Many (equal length) is used for:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Named entity recognition"
+        },
+        {
+          "id": "B",
+          "text": "Linear regression"
+        },
+        {
+          "id": "C",
+          "text": "PCA"
+        },
+        {
+          "id": "D",
+          "text": "Binary classification only"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:06:11.736Z",
+      "updatedAt": "2026-06-06T10:06:11.736Z"
+    },
+    {
+      "id": "2f63bb97-4d29-4285-b6e0-5dfb1a5dd1af",
+      "type": "single",
+      "question": "Many-to-Many (different length) is used for:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Time series smoothing"
+        },
+        {
+          "id": "B",
+          "text": "Machine translation"
+        },
+        {
+          "id": "C",
+          "text": "Clustering"
+        },
+        {
+          "id": "D",
+          "text": "Autoencoders only"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:06:56.631Z",
+      "updatedAt": "2026-06-06T10:06:56.631Z"
+    },
+    {
+      "id": "5f72dfb1-89ea-4287-9ff2-8d3baf77205d",
+      "type": "single",
+      "question": "The total loss for sequence outputs is typically:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Only the final timestep loss"
+        },
+        {
+          "id": "B",
+          "text": "The sum of losses over all timesteps"
+        },
+        {
+          "id": "C",
+          "text": "The average of hidden states"
+        },
+        {
+          "id": "D",
+          "text": "Only the first output"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:07:57.311Z",
+      "updatedAt": "2026-06-06T10:07:57.311Z"
+    }
+  ]
+}

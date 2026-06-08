@@ -1,0 +1,711 @@
+{
+  "schemaVersion": 1,
+  "id": "6886a344-268b-4d89-95c8-3828477931fc",
+  "title": "unit2-model-optimization",
+  "subject": "Hands on AI 2",
+  "description": "",
+  "createdAt": "2026-06-06T10:08:40.285Z",
+  "updatedAt": "2026-06-06T10:33:11.456Z",
+  "questions": [
+    {
+      "id": "f0a4b191-63aa-4614-9c7a-064e9ebc5358",
+      "type": "single",
+      "question": "Why does data augmentation improve generalization?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It reduces model depth"
+        },
+        {
+          "id": "B",
+          "text": "It enforces invariance to task-irrelevant transformations"
+        },
+        {
+          "id": "C",
+          "text": "It guarantees a convex loss surface"
+        },
+        {
+          "id": "D",
+          "text": "It removes noisy samples"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:10:47.551Z",
+      "updatedAt": "2026-06-06T10:10:47.551Z"
+    },
+    {
+      "id": "e9b96b05-1dab-4ee8-972d-a4fcadba5efa",
+      "type": "single",
+      "question": "Which of the following is a typical data augmentation technique for images?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Randomly zeroing weights"
+        },
+        {
+          "id": "B",
+          "text": "Flipping images horizontally"
+        },
+        {
+          "id": "C",
+          "text": "Reducing the learning rate"
+        },
+        {
+          "id": "D",
+          "text": "Doubling the batch size"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:12:18.133Z",
+      "updatedAt": "2026-06-06T10:12:18.133Z"
+    },
+    {
+      "id": "b93d5719-b39a-457c-b658-929607b23807",
+      "type": "single",
+      "question": "What happens during dropout training?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Weights are permanently deleted"
+        },
+        {
+          "id": "B",
+          "text": "Random units are temporarily deactivated"
+        },
+        {
+          "id": "C",
+          "text": "The output layer is normalized"
+        },
+        {
+          "id": "D",
+          "text": "The learning rate is reduced"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:13:20.799Z",
+      "updatedAt": "2026-06-06T10:13:20.799Z"
+    },
+    {
+      "id": "c9c48a08-dbde-4423-b74d-2625f1bba005",
+      "type": "single",
+      "question": "Why is dropout sometimes interpreted as model averaging?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Because it trains multiple subnetworks implicitly"
+        },
+        {
+          "id": "B",
+          "text": "Because it averages gradients explicitly"
+        },
+        {
+          "id": "C",
+          "text": "Because it reduces the batch size"
+        },
+        {
+          "id": "D",
+          "text": "Because it duplicates parameters"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:14:42.015Z",
+      "updatedAt": "2026-06-06T10:14:42.015Z"
+    },
+    {
+      "id": "05954317-fe82-4079-be51-34d0999a162d",
+      "type": "single",
+      "question": "Why can't we pre-compute normalization for hidden layers like we can for the input data?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Hidden layers are not differentiable"
+        },
+        {
+          "id": "B",
+          "text": "Their distributions change after each weight update"
+        },
+        {
+          "id": "C",
+          "text": "They contain no bias terms"
+        },
+        {
+          "id": "D",
+          "text": "They are already normalized by ReLU"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:15:51.098Z",
+      "updatedAt": "2026-06-06T10:15:51.098Z"
+    },
+    {
+      "id": "6ebd85ed-243f-4aeb-8009-0a43c1c41d99",
+      "type": "single",
+      "question": "Why are remaining activations scaled by (1/(1-p)) in dropout?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "To increase overfitting"
+        },
+        {
+          "id": "B",
+          "text": "To keep the expected activation constant"
+        },
+        {
+          "id": "C",
+          "text": "To enlarge gradients"
+        },
+        {
+          "id": "D",
+          "text": "To replace batch normalization"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:16:59.081Z",
+      "updatedAt": "2026-06-06T10:16:59.081Z"
+    },
+    {
+      "id": "3f9b6182-d96b-420f-ba9d-9d232d62e22e",
+      "type": "single",
+      "question": "How is dropout applied during testing?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Units are still randomly deactivated"
+        },
+        {
+          "id": "B",
+          "text": "Only every second layer is used"
+        },
+        {
+          "id": "C",
+          "text": "The full network is used"
+        },
+        {
+          "id": "D",
+          "text": "The learning rate is set to zero"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:18:01.620Z",
+      "updatedAt": "2026-06-06T10:18:01.620Z"
+    },
+    {
+      "id": "8a3d1747-543c-45ee-9f84-a9642675693e",
+      "type": "single",
+      "question": "What is normalized in batch normalization?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The entire dataset after each update"
+        },
+        {
+          "id": "B",
+          "text": "Each mini-batch using its mean and standard deviation"
+        },
+        {
+          "id": "C",
+          "text": "Only the output layer"
+        },
+        {
+          "id": "D",
+          "text": "Only the weights"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:18:57.963Z",
+      "updatedAt": "2026-06-06T10:18:57.963Z"
+    },
+    {
+      "id": "d1eaf943-acf7-4645-8745-699b61446d15",
+      "type": "single",
+      "question": "Which statistics are used during testing in batch normalization?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Mini-batch statistics"
+        },
+        {
+          "id": "B",
+          "text": "Stored training statistics"
+        },
+        {
+          "id": "C",
+          "text": "Random statistics"
+        },
+        {
+          "id": "D",
+          "text": "No statistics are used"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:19:51.346Z",
+      "updatedAt": "2026-06-06T10:19:51.346Z"
+    },
+    {
+      "id": "ff7f017c-e69e-41b4-a797-f5cf1de799b7",
+      "type": "single",
+      "question": "What does L1 regularization add to the loss function?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Sum of squared weights"
+        },
+        {
+          "id": "B",
+          "text": "Sum of absolute weights"
+        },
+        {
+          "id": "C",
+          "text": "Mean of gradients"
+        },
+        {
+          "id": "D",
+          "text": "Variance of weights"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:20:56.729Z",
+      "updatedAt": "2026-06-06T10:20:56.729Z"
+    },
+    {
+      "id": "7f5dd81e-b8d3-4acb-bff4-c66a1a3f1445",
+      "type": "single",
+      "question": "L2 regularization is also known as:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Gradient clipping"
+        },
+        {
+          "id": "B",
+          "text": "Weight decay"
+        },
+        {
+          "id": "C",
+          "text": "DropConnect"
+        },
+        {
+          "id": "D",
+          "text": "Early stopping"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:21:50.418Z",
+      "updatedAt": "2026-06-06T10:21:50.418Z"
+    },
+    {
+      "id": "e76be33a-8d9e-4ebc-8d1d-4ea21c7ecca5",
+      "type": "single",
+      "question": "What describes the vanishing gradient problem?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Gradients explode"
+        },
+        {
+          "id": "B",
+          "text": "Early layers receive almost no learning signal"
+        },
+        {
+          "id": "C",
+          "text": "The loss becomes negative"
+        },
+        {
+          "id": "D",
+          "text": "The learning rate becomes zero"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:23:09.094Z",
+      "updatedAt": "2026-06-06T10:23:09.094Z"
+    },
+    {
+      "id": "9c76a249-3872-457d-8444-57952acab7c9",
+      "type": "single",
+      "question": "The derivative of the sigmoid function reaches its maximum value at:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "x ±"
+        },
+        {
+          "id": "B",
+          "text": "x = -1"
+        },
+        {
+          "id": "C",
+          "text": "x = 0"
+        },
+        {
+          "id": "D",
+          "text": "x = 1"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:24:49.399Z",
+      "updatedAt": "2026-06-06T10:24:49.399Z"
+    },
+    {
+      "id": "d5c82983-4ccb-432c-91ff-8e31356b50ea",
+      "type": "single",
+      "question": "What happens to gradients when many sigmoid derivatives are multiplied?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They are added"
+        },
+        {
+          "id": "B",
+          "text": "They become very small"
+        },
+        {
+          "id": "C",
+          "text": "They remain constant"
+        },
+        {
+          "id": "D",
+          "text": "They grow exponentially"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:25:40.592Z",
+      "updatedAt": "2026-06-06T10:25:40.592Z"
+    },
+    {
+      "id": "760da42b-c8a1-4bf8-a366-46124966364f",
+      "type": "single",
+      "question": "Why does ReLU enable training deeper networks compared to sigmoid?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "its derivative does not shrink for positive inputs"
+        },
+        {
+          "id": "B",
+          "text": "It guarantees convex optimization"
+        },
+        {
+          "id": "C",
+          "text": "It removes the need for backpropagation"
+        },
+        {
+          "id": "D",
+          "text": "It makes networks linear"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:26:54.675Z",
+      "updatedAt": "2026-06-06T10:26:54.675Z"
+    },
+    {
+      "id": "1bae0ab8-fcb9-46b0-9e89-4bb554445b37",
+      "type": "single",
+      "question": "What is the derivative value for x = 0 for tanh?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "0.25"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "0.5"
+        },
+        {
+          "id": "D",
+          "text": "0"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:27:49.174Z",
+      "updatedAt": "2026-06-06T10:27:49.174Z"
+    },
+    {
+      "id": "a54c1995-73fb-4a67-93e3-1a346b8c7fdb",
+      "type": "single",
+      "question": "What is the derivative of ReLU for x > 0?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "0"
+        },
+        {
+          "id": "B",
+          "text": "x"
+        },
+        {
+          "id": "C",
+          "text": "1"
+        },
+        {
+          "id": "D",
+          "text": "0.25"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:28:24.224Z",
+      "updatedAt": "2026-06-06T10:28:24.224Z"
+    },
+    {
+      "id": "5c45cd0a-9746-4f8f-9e2a-6c35f1d813f6",
+      "type": "single",
+      "question": "Why are learning rate schedules used?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "To replace dropout"
+        },
+        {
+          "id": "B",
+          "text": "To combine exploration and fine-tuning"
+        },
+        {
+          "id": "C",
+          "text": "To normalize gradients"
+        },
+        {
+          "id": "D",
+          "text": "To adjust batch size automatically"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:29:15.790Z",
+      "updatedAt": "2026-06-06T10:29:15.790Z"
+    },
+    {
+      "id": "c2f7b912-5f8b-4ea5-8626-d49a657d1aba",
+      "type": "single",
+      "question": "What is the main risk of using a learning rate that is too small from the beginning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Exploding gradients"
+        },
+        {
+          "id": "B",
+          "text": "Slow convergence or getting stuck in poor minima"
+        },
+        {
+          "id": "C",
+          "text": "Immediate overfitting"
+        },
+        {
+          "id": "D",
+          "text": "Loss becoming convex"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:30:15.790Z",
+      "updatedAt": "2026-06-06T10:30:15.790Z"
+    },
+    {
+      "id": "f34bc0d2-6330-460d-adcb-a02334662aa1",
+      "type": "single",
+      "question": "What is the correct gradient descent update rule?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "w + n * (L/w)"
+        },
+        {
+          "id": "B",
+          "text": "w - n * (L/w)"
+        },
+        {
+          "id": "C",
+          "text": "- (L/w)"
+        },
+        {
+          "id": "D",
+          "text": "+ L * w"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-06T10:33:06.755Z",
+      "updatedAt": "2026-06-06T10:33:06.755Z"
+    }
+  ]
+}
