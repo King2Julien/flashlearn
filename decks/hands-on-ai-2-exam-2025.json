@@ -1,0 +1,1306 @@
+{
+  "schemaVersion": 1,
+  "id": "00abfc98-69a5-442f-93cc-e6c14d629ac0",
+  "title": "hands-on-ai-2-exam-2025",
+  "subject": "Hands on AI 2",
+  "description": "",
+  "createdAt": "2026-06-08T08:44:16.503Z",
+  "updatedAt": "2026-06-08T21:56:06.222Z",
+  "questions": [
+    {
+      "id": "70367e26-1803-4a79-b2fb-8980d0030770",
+      "type": "multiple",
+      "question": "Which of the following statements about molecular graphs is/are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They have labeled edges"
+        },
+        {
+          "id": "B",
+          "text": "They are directed"
+        },
+        {
+          "id": "C",
+          "text": "They have labeled nodes"
+        },
+        {
+          "id": "D",
+          "text": "They cannot encode 3D information"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T16:53:51.639Z",
+      "updatedAt": "2026-06-08T16:53:51.639Z"
+    },
+    {
+      "id": "e79af102-8dd7-4577-a984-9c70f5355247",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about QSAR (Quantitative Structure-Activity Relationship)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The hypothesis is that similar activities have similar molecular structures"
+        },
+        {
+          "id": "B",
+          "text": "The molecule structure is determined by the bioactivity"
+        },
+        {
+          "id": "C",
+          "text": "The bioactivity is determined by the molecule structure"
+        },
+        {
+          "id": "D",
+          "text": "The hypothesis is that similar molecular structures have similar activites"
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T17:05:31.324Z",
+      "updatedAt": "2026-06-08T17:05:31.324Z"
+    },
+    {
+      "id": "7c6f5701-3553-46c2-9552-bd10a41d634e",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about the vanishing gradient problem?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Repeated multiplication of gradients smaller than 1 leads to a vanishing gradient"
+        },
+        {
+          "id": "B",
+          "text": "The vanishing gradient problem can be mitigated by rescaling the input values"
+        },
+        {
+          "id": "C",
+          "text": "The vanishing gradient problem can be reduced by decreasing the number of nodes in the hidden layers of the neural network"
+        },
+        {
+          "id": "D",
+          "text": "The main culprit of a vanishing gradient is using a \"problematic\" activation function such as sigmoid"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T17:10:03.197Z",
+      "updatedAt": "2026-06-08T17:10:03.197Z"
+    },
+    {
+      "id": "bd622909-76bd-4316-aae9-271745bd383c",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about high throughput screening (HTS)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "In HTS, a trained neural network predicts whether a molecule in the data base is likely to bind/react with the target of interest"
+        },
+        {
+          "id": "B",
+          "text": "In HTS, a trained neural network predicts the 3D structure of a molecule"
+        },
+        {
+          "id": "C",
+          "text": "HTS is an expensive and time-consuming process"
+        },
+        {
+          "id": "D",
+          "text": "In HTS, a trained neural network predicts the most relevant target molecule for a drug against a specific disease"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T17:15:31.554Z",
+      "updatedAt": "2026-06-08T17:15:31.554Z"
+    },
+    {
+      "id": "8cd88284-5b82-4052-af15-b1182543c032",
+      "type": "multiple",
+      "question": "Which of the following statements is are true about sequence data input and standard, feed-forward neural networks?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The relation of elements in the sequence is lost"
+        },
+        {
+          "id": "B",
+          "text": "Sequences with variable lengths must be preprocessed before they can be an input to a feed-forward neural network"
+        },
+        {
+          "id": "C",
+          "text": "Sequence data cannot be an input to a feed-forward neural network"
+        },
+        {
+          "id": "D",
+          "text": "If the sequence length is equal, a feed-forward neural network behaves the same as a recurrent neural network"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T17:19:31.838Z",
+      "updatedAt": "2026-06-08T17:19:31.838Z"
+    },
+    {
+      "id": "aa5a87b8-6992-40aa-94c0-d994dd919414",
+      "type": "multiple",
+      "question": "In the context of language models, which statements is/are true about an embedding?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "An embedding contains the frequency of a word occurring in a text corpus"
+        },
+        {
+          "id": "B",
+          "text": "An embedding is a mapping of a word to similar words"
+        },
+        {
+          "id": "C",
+          "text": "Elements in a word embedding are not allowed to have any relationship/correlation with each other"
+        },
+        {
+          "id": "D",
+          "text": "The encoder part of a language model is closely related to a word embedding"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T17:22:04.153Z",
+      "updatedAt": "2026-06-08T17:22:04.153Z"
+    },
+    {
+      "id": "93cb2276-76df-47ef-a4f3-f314d307dd1d",
+      "type": "multiple",
+      "question": "Which architectures/techniques can be used for generative modeling in Drug Discovery?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Convolutional Neural Networks"
+        },
+        {
+          "id": "B",
+          "text": "Reinforcement Learning"
+        },
+        {
+          "id": "C",
+          "text": "Variational Autoencoders"
+        },
+        {
+          "id": "D",
+          "text": "Generative Adversarial Networks"
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Technically all four are correct but we are not sure",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T17:28:13.228Z",
+      "updatedAt": "2026-06-08T17:28:13.228Z"
+    },
+    {
+      "id": "088a889c-e4df-4934-ad7e-64e3dbfac9bf",
+      "type": "multiple",
+      "question": "Assume a reinforcement learning scenario with a 2-dimensional location grid of size 5x5. Further assume that a robot (the agent) is placed randomly on this grid and must move to the target destination, which is also somewhere random on this grid. There are 4 possible movements: up, down, left and right (if the robot tries to go off the grid, it remains at the same location). Each action has a reward of -2 (negative reward). If the robot reaches the target, +15 is awarded (positive reward). Which of the following statements is/are true?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "With a bad policy, it might happen that the target destination is not reached at all"
+        },
+        {
+          "id": "B",
+          "text": "The maximum number of steps of any policy is 5*5*4=100"
+        },
+        {
+          "id": "C",
+          "text": "The maximum number of steps of an optimal policy is 8"
+        },
+        {
+          "id": "D",
+          "text": "An optimal policy always has an aggregated positive reward for every possible starting state"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T17:35:55.026Z",
+      "updatedAt": "2026-06-08T17:35:55.026Z"
+    },
+    {
+      "id": "17063643-929c-43f6-b6e7-5823d0399632",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about SMILES (Simplified Molecular Input Line Entry Specification)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A molecular graph can be transformed into a SMILES string and the other way around"
+        },
+        {
+          "id": "B",
+          "text": "SMILES representations are unique"
+        },
+        {
+          "id": "C",
+          "text": "It is a tabular data representation of a molecule"
+        },
+        {
+          "id": "D",
+          "text": "A molecule can have different SMILES representations"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T17:40:02.144Z",
+      "updatedAt": "2026-06-08T17:40:02.144Z"
+    },
+    {
+      "id": "5401975e-3ef3-488d-a1e5-503c294b3d51",
+      "type": "multiple",
+      "question": "What is the general data flow through a Transformer language model?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "input -> encoder -> feed-forward -> self-attention -> decoder"
+        },
+        {
+          "id": "B",
+          "text": "input -> self-attention -> encoder -> feed-forward -> decoder"
+        },
+        {
+          "id": "C",
+          "text": "input -> decoder -> feed-forward -> self-attention -> encoder"
+        },
+        {
+          "id": "D",
+          "text": "input -> encoder -> self-attention -> feed-forward -> decoder"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T17:42:10.676Z",
+      "updatedAt": "2026-06-08T17:42:10.676Z"
+    },
+    {
+      "id": "2c3e5e2c-8f79-453b-95f3-b0a9949747f2",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about the concept of an optimal policy?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The optimal policy may be obtained via Q-learning"
+        },
+        {
+          "id": "B",
+          "text": "It minimizes the sum of rewards"
+        },
+        {
+          "id": "C",
+          "text": "Applying the optimal policy essentially means to maximize the immediate reward"
+        },
+        {
+          "id": "D",
+          "text": "There exists exactly one optimal policy"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T17:45:34.252Z",
+      "updatedAt": "2026-06-08T17:45:34.252Z"
+    },
+    {
+      "id": "256cdfbb-f8c9-4445-a518-a404b5082a53",
+      "type": "multiple",
+      "question": "What are problems of RNN based language models when compared to Transformer models?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Word embeddings can have a lower dimensionality in Transformer models"
+        },
+        {
+          "id": "B",
+          "text": "RNN based models cannot be computed in parallel"
+        },
+        {
+          "id": "C",
+          "text": "Transformer models have a lower parameter count"
+        },
+        {
+          "id": "D",
+          "text": "LSTMs based models can have problems with capturing contextual information given long input sequences"
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T17:49:59.808Z",
+      "updatedAt": "2026-06-08T17:49:59.808Z"
+    },
+    {
+      "id": "84c10cb6-e0ce-470a-8278-48952849206b",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about RNN language models?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "At each position in a sequence, a loss is calculated. The loss is based on the decoder's prediction for the next word in the sequence as well as the true next word."
+        },
+        {
+          "id": "B",
+          "text": "Loss is typically measured with negative log likelihood, as it is essentially a classification problem"
+        },
+        {
+          "id": "C",
+          "text": "The RNN inputs are the decoder output at the current position and the output of the RNN at the previous position"
+        },
+        {
+          "id": "D",
+          "text": "An encoder is used to represent each word via a word embedding"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "These answers might be a bit confusing. Maybe ask chatty or just ignore them.",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T20:12:05.365Z",
+      "updatedAt": "2026-06-08T20:12:05.365Z"
+    },
+    {
+      "id": "840d385a-6ea9-4606-914c-b7d1cd595334",
+      "type": "multiple",
+      "question": "Consider some sequence data s. The samples have a certain length T with D features at every timestep t. Which statements are true with regard to different samples of the dataset?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "D is constant between samples"
+        },
+        {
+          "id": "B",
+          "text": "D can var between samples"
+        },
+        {
+          "id": "C",
+          "text": "T is constant between samples"
+        },
+        {
+          "id": "D",
+          "text": "For one specific sample, t can be grater than T."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T20:41:43.268Z",
+      "updatedAt": "2026-06-08T20:41:43.268Z"
+    },
+    {
+      "id": "6bc42651-fb90-4515-860f-38c90fd62b9f",
+      "type": "multiple",
+      "question": "Gating in an LSTM selects important information of a feature vector ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... by averaging all elements and then applying some threshold between 0 and 1"
+        },
+        {
+          "id": "B",
+          "text": "... by element-wise multiplication with a number between -1 (closed gate) and +1 (open gate)"
+        },
+        {
+          "id": "C",
+          "text": "... by element-wise multiplication with a number between 0 (closed gate) and +1 (open gate)"
+        },
+        {
+          "id": "D",
+          "text": "... by element-wise comparison to the feature vector of the previous timestep"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T20:47:07.381Z",
+      "updatedAt": "2026-06-08T20:47:07.381Z"
+    },
+    {
+      "id": "e37f31f0-220a-4c8e-970a-245927b8006c",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about the one-to-one RNN type?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Given an input of length T_(x) = 1, the output/prediction length is T_(y) > 1"
+        },
+        {
+          "id": "B",
+          "text": "Given an input of length T_(x) = 1, the output/prediction length is T_(y) = 1"
+        },
+        {
+          "id": "C",
+          "text": "Given an input of length T_(x) > 1, the output/prediction length is T_(y) = 1"
+        },
+        {
+          "id": "D",
+          "text": "Given an input of length T_(x) > 1, the output/prediction length is T_(y) > 1"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T20:49:26.178Z",
+      "updatedAt": "2026-06-08T20:49:26.178Z"
+    },
+    {
+      "id": "f53ae840-537b-427a-9db6-202f165501a2",
+      "type": "multiple",
+      "question": "The tanh function tanh(x) ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... scales values to the range (0, x)"
+        },
+        {
+          "id": "B",
+          "text": "... scales values to the range (-x, x)"
+        },
+        {
+          "id": "C",
+          "text": "... scales values to the range (0, 1)"
+        },
+        {
+          "id": "D",
+          "text": "... scales values to the range (-1, 1)"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T20:50:27.205Z",
+      "updatedAt": "2026-06-08T20:50:27.205Z"
+    },
+    {
+      "id": "1f9bc9ab-1adb-4fb6-977a-6261e1c64b8b",
+      "type": "multiple",
+      "question": "The output gate of an LSTM ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... will determine the output of the Constant Error Carousel (CEC)"
+        },
+        {
+          "id": "B",
+          "text": "... will determine the next hidden state of the LSTM"
+        },
+        {
+          "id": "C",
+          "text": "... will determine the next cell state"
+        },
+        {
+          "id": "D",
+          "text": "... is typically ReLU activated"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T20:58:04.742Z",
+      "updatedAt": "2026-06-08T20:58:04.742Z"
+    },
+    {
+      "id": "59b593cf-0a30-4255-838d-2e2265112489",
+      "type": "multiple",
+      "question": "Assume you have a sequence of 8 elements, and each element has 10 features. Further assume that you have a standard, single-layer RNN with a hidden state size of 6. What is the size of the first RNN output?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "16"
+        },
+        {
+          "id": "C",
+          "text": "48"
+        },
+        {
+          "id": "D",
+          "text": "4"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:05:28.003Z",
+      "updatedAt": "2026-06-08T21:05:28.003Z"
+    },
+    {
+      "id": "6376d4c1-20c5-4957-b971-400792c9ea07",
+      "type": "multiple",
+      "question": "In a Markov decision process, ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... reward is associated with the transition from one state to another state"
+        },
+        {
+          "id": "B",
+          "text": "... rewards can be 0"
+        },
+        {
+          "id": "C",
+          "text": "... rewards can be positive"
+        },
+        {
+          "id": "D",
+          "text": "... rewards can be negative"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:08:45.695Z",
+      "updatedAt": "2026-06-08T21:08:45.695Z"
+    },
+    {
+      "id": "321214cc-7b5f-4cae-9c0e-3a354692ee99",
+      "type": "multiple",
+      "question": "In the forward pass of a neural network, the input vector is ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... passed through an element-wise non-linearity, multiplied by a weight matrix and added to bias weights"
+        },
+        {
+          "id": "B",
+          "text": "... added to bias weights, multiplied by a weight matrix and passed through an element-wise non-linearity"
+        },
+        {
+          "id": "C",
+          "text": "... passed through an element-wise non-linearity, added to bias weights and multiplied by a weight matrix"
+        },
+        {
+          "id": "D",
+          "text": "... multiplied by a weight matrix, added to bias weights and passed through an element-wise non-linearity"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:11:27.461Z",
+      "updatedAt": "2026-06-08T21:11:27.461Z"
+    },
+    {
+      "id": "82f2190b-3360-43a0-9e26-70dd63482146",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about the ReLU activation function?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "For negative inputs, ReLU equates to values close to 1"
+        },
+        {
+          "id": "B",
+          "text": "For positive inputs, ReLU increases linearly"
+        },
+        {
+          "id": "C",
+          "text": "ReLU is computationally cheap"
+        },
+        {
+          "id": "D",
+          "text": "ReLU can cause the vanishing gradient problem"
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:13:47.093Z",
+      "updatedAt": "2026-06-08T21:13:47.093Z"
+    },
+    {
+      "id": "36a0b9a8-720a-4070-ba8e-b59b58df7a13",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about recurrent neural networks?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They are suitable for processing sequences of variable length"
+        },
+        {
+          "id": "B",
+          "text": "They incorporate information from previous timesteps/positions of a sequence"
+        },
+        {
+          "id": "C",
+          "text": "They are the same as regular feed-forward neural networks in case the sequence length is fixed"
+        },
+        {
+          "id": "D",
+          "text": "They are suitable for processing sequences of fixed length"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:17:01.961Z",
+      "updatedAt": "2026-06-08T21:17:01.961Z"
+    },
+    {
+      "id": "dbce4a3f-7534-4cbf-b336-17686752f81a",
+      "type": "multiple",
+      "question": "Softmax ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... is a method to compute probabilities"
+        },
+        {
+          "id": "B",
+          "text": "... can only be used if there are more than 2 classes"
+        },
+        {
+          "id": "C",
+          "text": "... can only be applied for regression tasks"
+        },
+        {
+          "id": "D",
+          "text": "... is a generalization of the tanh function"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Softmax can also be used if there are exactly 2 classes.",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:19:45.732Z",
+      "updatedAt": "2026-06-08T21:19:45.732Z"
+    },
+    {
+      "id": "eb116838-d183-4644-bf9a-d607873b28ad",
+      "type": "multiple",
+      "question": "Which of these statements about L2 regularization are true?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "L2 regularization is given by L = L + lambda * sum(w_(i)**2)"
+        },
+        {
+          "id": "B",
+          "text": "L2 regularization is given by L = L + lambda * sum(abs(w_(i)))"
+        },
+        {
+          "id": "C",
+          "text": "L2 regularization is also known as weight decay"
+        },
+        {
+          "id": "D",
+          "text": "L2 regularization will force the model to adopt larger weights"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:22:21.080Z",
+      "updatedAt": "2026-06-08T21:22:21.080Z"
+    },
+    {
+      "id": "e687203e-5171-414c-b6bc-8dfa8a426992",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about language models?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Language modeling is the task of predicting the importance of words"
+        },
+        {
+          "id": "B",
+          "text": "Language modeling is the task of predicting a previously unseen word"
+        },
+        {
+          "id": "C",
+          "text": "Language modeling is the task of predicting a word given a context"
+        },
+        {
+          "id": "D",
+          "text": "Language modeling is the task of predicting a context given a word"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:23:50.869Z",
+      "updatedAt": "2026-06-08T21:23:50.869Z"
+    },
+    {
+      "id": "64dd48f6-5c0d-4c92-b093-319858655481",
+      "type": "multiple",
+      "question": "Back-propagation through time ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... generates (potentially) very wide (but not deep) networks"
+        },
+        {
+          "id": "B",
+          "text": "... allows the mitigation of the vanishing gradients problem in unrolled RNNs"
+        },
+        {
+          "id": "C",
+          "text": "... is commonly used to train an RNN"
+        },
+        {
+          "id": "D",
+          "text": "... is the cause of vanishing gradients in RNNs"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:27:26.829Z",
+      "updatedAt": "2026-06-08T21:27:26.829Z"
+    },
+    {
+      "id": "4b5d5ca4-3435-401e-bfbe-43a1c5da5cdc",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about gradient descent?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It might converge to a local minimum"
+        },
+        {
+          "id": "B",
+          "text": "The initial starting value of a parameter can be chosen randomly"
+        },
+        {
+          "id": "C",
+          "text": "The learning rate influences how much the value of a parameter changes"
+        },
+        {
+          "id": "D",
+          "text": "It is an iterative method"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:28:44.129Z",
+      "updatedAt": "2026-06-08T21:28:44.129Z"
+    },
+    {
+      "id": "ba18cdd0-9ac1-4aeb-9c61-247c76e6991a",
+      "type": "multiple",
+      "question": "You are given the derivative of the logistic/sigmoid function sigma'(x) and the following computation: y = sigma'(2*x + 25), x = 10. Which of the following statements is/are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "y is close to x"
+        },
+        {
+          "id": "B",
+          "text": "y is in the range (0, 1)"
+        },
+        {
+          "id": "C",
+          "text": "y is close to 0"
+        },
+        {
+          "id": "D",
+          "text": "y is in the range (0, 1/4)"
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:32:31.463Z",
+      "updatedAt": "2026-06-08T21:32:31.463Z"
+    },
+    {
+      "id": "480e6b60-de59-4619-b8d4-b261db27f7df",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about the weights of an RNN?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The size of the weight matrix is independent of the sequence length"
+        },
+        {
+          "id": "B",
+          "text": "For each timestep, the same (shared) weight matrix is used"
+        },
+        {
+          "id": "C",
+          "text": "For sequences of different length, multiple (shared) weight matrices must be learned (one for each unique sequence length)"
+        },
+        {
+          "id": "D",
+          "text": "For each timestep, a dedicated weight matrix is used"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:34:46.693Z",
+      "updatedAt": "2026-06-08T21:34:46.693Z"
+    },
+    {
+      "id": "8a2ff451-b071-44f1-8718-d947fde87265",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about (deep) Q-learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Q-learning is an implementation of reinforcement learning"
+        },
+        {
+          "id": "B",
+          "text": "Q-learning can be applied to any MDP (Markov decision process)"
+        },
+        {
+          "id": "C",
+          "text": "Deep Q-learning is often necessary for larger MDPs (Markov decision processes)"
+        },
+        {
+          "id": "D",
+          "text": "Deep Q-learning is about approximating the Q-value function"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:37:19.635Z",
+      "updatedAt": "2026-06-08T21:37:19.635Z"
+    },
+    {
+      "id": "2ce37309-3666-4348-a59a-f520cca772f4",
+      "type": "multiple",
+      "question": "A convex function ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... can also be solved iteratively (e.g. via gradient descent) to compute/approximate its minimum"
+        },
+        {
+          "id": "B",
+          "text": "... always has an analytical solution (i.e., can be directly calculated) for computing its minimum"
+        },
+        {
+          "id": "C",
+          "text": "... can have several local minima"
+        },
+        {
+          "id": "D",
+          "text": "... sometimes has an analytical solution (i.e., can be directly calculated) for computing its minimum"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "For a convex function, every local minimum is also a global minimum.",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:41:16.958Z",
+      "updatedAt": "2026-06-08T21:41:16.958Z"
+    },
+    {
+      "id": "ff9d0156-8ae9-4f18-9f32-97570b1f4f4c",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about sequence data?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "There are dedicated machine learning models that deal with sequence data"
+        },
+        {
+          "id": "B",
+          "text": "Sequence data is typically displayed in line plots"
+        },
+        {
+          "id": "C",
+          "text": "Typically, there is some sort of order in the data (time, position, etc.)"
+        },
+        {
+          "id": "D",
+          "text": "Sequence data cannot be meaningfully displayed in tabular form"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Not all sequence data is typically displayed as a line plot.",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:44:02.724Z",
+      "updatedAt": "2026-06-08T21:44:02.724Z"
+    },
+    {
+      "id": "26ea72d7-8141-4cd9-ac57-db40d0f6007e",
+      "type": "multiple",
+      "question": "Which of the following statements is/are true about gating/gates in an LSTM?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Gates are not affected by gradient computations and therefore the vanishing gradient problem"
+        },
+        {
+          "id": "B",
+          "text": "Typically, ReLU is used as gate function"
+        },
+        {
+          "id": "C",
+          "text": "Gates depend on the current input and the past"
+        },
+        {
+          "id": "D",
+          "text": "There are optional gates"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Gates depend on the current input (x_(t)) and on h_(t-1) which might depends on x_(t-1).",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:47:44.360Z",
+      "updatedAt": "2026-06-08T21:47:44.360Z"
+    },
+    {
+      "id": "4b831eb7-0e47-480a-8786-4b503e66aff9",
+      "type": "multiple",
+      "question": "Which of these statements about Dropout are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "When using dropout, no other regularization techniques can be applied"
+        },
+        {
+          "id": "B",
+          "text": "When using dropout, a certain percentage of units in a layer is randomly deactivated"
+        },
+        {
+          "id": "C",
+          "text": "Dropout typically results in lower training error rates, but helps with overfitting"
+        },
+        {
+          "id": "D",
+          "text": "As a regularization technique, dropout is only used during model training"
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:49:54.856Z",
+      "updatedAt": "2026-06-08T21:49:54.856Z"
+    },
+    {
+      "id": "ddbd9dec-c4bb-47c0-9c3d-d91bcbbc25c9",
+      "type": "multiple",
+      "question": "Consider the update function used during Q-learning:\nWhich of the following statements is/are true?",
+      "code": "Q(s_t,a_t) <- (1-alpha) * Q(s_t,a_t) + alpha * (r_t + gamma * max_(a_(t+1))(Q(s_(t+1),a_(t+1)))",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "0 < alpha < 1 means that both the old Q-value as well as the new information will be used in the update step"
+        },
+        {
+          "id": "B",
+          "text": "alpha = 1 means that no update at all is performed"
+        },
+        {
+          "id": "C",
+          "text": "alpha = 0 means that no update at all is performed"
+        },
+        {
+          "id": "D",
+          "text": "alpha is the learning rate"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2025",
+      "createdAt": "2026-06-08T21:55:42.907Z",
+      "updatedAt": "2026-06-08T21:55:42.907Z"
+    }
+  ]
+}
