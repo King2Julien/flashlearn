@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "id": "4dd06522-7699-42df-a125-e4bacd1c3b27",
+  "title": "unit5-pytorch",
+  "subject": "Programming in Python 2",
+  "description": "",
+  "createdAt": "2026-06-09T18:31:15.862Z",
+  "updatedAt": "2026-06-09T18:44:11.772Z",
+  "questions": [
+    {
+      "id": "eac36004-0d40-4dd6-919c-a5f874241520",
+      "type": "single",
+      "question": "What is the primary function of a DataLoader?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Supply samples in mini-batches"
+        },
+        {
+          "id": "B",
+          "text": "Splitting data sets in train/val/test data"
+        },
+        {
+          "id": "C",
+          "text": "Standardizing data"
+        },
+        {
+          "id": "D",
+          "text": "Augment training data"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-09T18:32:11.355Z",
+      "updatedAt": "2026-06-09T18:32:11.355Z"
+    },
+    {
+      "id": "cdc5c8d4-46e1-4111-ae4d-b2866f679678",
+      "type": "single",
+      "question": "What does \\(loss.backward()\\) do?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Computes gradients and updates the parameters"
+        },
+        {
+          "id": "B",
+          "text": "Computes the loss"
+        },
+        {
+          "id": "C",
+          "text": "Only computes gradients"
+        },
+        {
+          "id": "D",
+          "text": "Nullifies previous gradients"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-09T18:33:26.383Z",
+      "updatedAt": "2026-06-09T18:33:26.383Z"
+    },
+    {
+      "id": "8e0b1e52-4907-4e7f-963e-be50fcb85112",
+      "type": "single",
+      "question": "What distinguishes the Adam optimizer from standard Stochastic Gradient Descent (SGD)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Adam does not require a learning rate hyperparameter"
+        },
+        {
+          "id": "B",
+          "text": "Adam computes the true analytical global minimum without iterations"
+        },
+        {
+          "id": "C",
+          "text": "Adam utilizes an adaptive learning rate ofr each individual parameter"
+        },
+        {
+          "id": "D",
+          "text": "Adam is a convex optimization method that eliminates local minima"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-09T18:35:06.556Z",
+      "updatedAt": "2026-06-09T18:35:06.556Z"
+    },
+    {
+      "id": "de8a4581-d2aa-407d-9028-a29d9cd9e865",
+      "type": "single",
+      "question": "What is the purpose of \\(torch.nn.Sequential\\)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Defines a fully-connected layer"
+        },
+        {
+          "id": "B",
+          "text": "Treats multiple modules as one"
+        },
+        {
+          "id": "C",
+          "text": "Removes the need for defining a forward pass"
+        },
+        {
+          "id": "D",
+          "text": "Automatically updates parameters"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-09T18:36:23.040Z",
+      "updatedAt": "2026-06-09T18:36:23.040Z"
+    },
+    {
+      "id": "7e12f662-14a0-4298-97a0-5085e5505c55",
+      "type": "single",
+      "question": "For a defined neural network model, \\(model.eval()\\) ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Automatically computes evaluation metrics for the model"
+        },
+        {
+          "id": "B",
+          "text": "Switches the model to evaluation mode"
+        },
+        {
+          "id": "C",
+          "text": "Optimises the runtime of the model"
+        },
+        {
+          "id": "D",
+          "text": "Splits the training and evaluation data"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-09T18:37:40.741Z",
+      "updatedAt": "2026-06-09T18:37:40.741Z"
+    },
+    {
+      "id": "1a1b87dc-a7b6-4b6c-b586-16ff3205f9fd",
+      "type": "single",
+      "question": "A custom dataset must implement ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\(__init__\\), \\(__len__\\) and \\(__getitem__\\)"
+        },
+        {
+          "id": "B",
+          "text": "\\(__getitem__\\)"
+        },
+        {
+          "id": "C",
+          "text": "\\(__init__\\) and \\(__transform__\\)"
+        },
+        {
+          "id": "D",
+          "text": "\\(__len__\\) and \\(__transform__\\)"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-09T18:39:11.271Z",
+      "updatedAt": "2026-06-09T18:39:11.271Z"
+    },
+    {
+      "id": "ed36e7d0-f9b0-4dda-8ae4-80ffb7cf1df4",
+      "type": "single",
+      "question": "What is the variable \\(device\\) conventionally used for?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Controlling the precision type"
+        },
+        {
+          "id": "B",
+          "text": "Selecting the optimizer"
+        },
+        {
+          "id": "C",
+          "text": "Determining whether gradients are accumulated"
+        },
+        {
+          "id": "D",
+          "text": "Specifying where tensors and models are allocated"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-09T18:40:17.287Z",
+      "updatedAt": "2026-06-09T18:40:17.287Z"
+    },
+    {
+      "id": "11361f06-7161-4297-9c30-d621d5701239",
+      "type": "true_false",
+      "question": "When you specify \\(device = \"cuda\"\\), all models and tensors are automatically moved to it.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-09T18:41:09.871Z",
+      "updatedAt": "2026-06-09T18:41:09.871Z"
+    },
+    {
+      "id": "6c11fa7f-88be-483c-b4a3-23eb7cff99d1",
+      "type": "single",
+      "question": "What is the difference between \\(torch.nn.ReLU\\) and \\(torch.nn.functional.relu\\)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\(ReLU\\) is a class and \\(relu\\) is a function"
+        },
+        {
+          "id": "B",
+          "text": "They use different hyperparameters"
+        },
+        {
+          "id": "C",
+          "text": "\\(relu\\) only works on GPUs"
+        },
+        {
+          "id": "D",
+          "text": "\\(ReLU\\) modifies in-place by default and \\(relu\\) always creates a copy"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-09T18:43:02.522Z",
+      "updatedAt": "2026-06-09T18:43:02.522Z"
+    },
+    {
+      "id": "582b59db-2f6f-4232-9765-4575137f268a",
+      "type": "single",
+      "question": "If you do not use \\(zero_grad()\\) between \\(backward()\\) calls ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Gradients are accumulated"
+        },
+        {
+          "id": "B",
+          "text": "Gradients are overwritten"
+        },
+        {
+          "id": "C",
+          "text": "Gradients are nullified"
+        },
+        {
+          "id": "D",
+          "text": "You receive an error"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-09T18:44:08.206Z",
+      "updatedAt": "2026-06-09T18:44:08.206Z"
+    }
+  ]
+}
