@@ -141,11 +141,10 @@
         }
       ],
       "correctOptions": [
-        "A",
         "C"
       ],
       "correctTextAnswer": "",
-      "explanation": "",
+      "explanation": "HTS is automated but does not use neural networks. Virtual screening is the one with neural networks.",
       "tags": [],
       "difficulty": "",
       "source": "Exam 2025",
@@ -213,10 +212,11 @@
         }
       ],
       "correctOptions": [
+        "B",
         "D"
       ],
       "correctTextAnswer": "",
-      "explanation": "",
+      "explanation": "I don't like option 4 because an encoder in a Transformer can mean something different than in an RNN.",
       "tags": [],
       "difficulty": "",
       "source": "Exam 2025",
@@ -464,6 +464,7 @@
       "correctOptions": [
         "A",
         "B",
+        "C",
         "D"
       ],
       "correctTextAnswer": "",
@@ -891,7 +892,8 @@
         }
       ],
       "correctOptions": [
-        "A"
+        "A",
+        "C"
       ],
       "correctTextAnswer": "",
       "explanation": "",
@@ -1254,11 +1256,10 @@
       ],
       "correctOptions": [
         "B",
-        "C",
         "D"
       ],
       "correctTextAnswer": "",
-      "explanation": "",
+      "explanation": "Dropout usually raises the training error because it makes it harder for the model to overfit.",
       "tags": [],
       "difficulty": "",
       "source": "Exam 2025",
