@@ -1,0 +1,1323 @@
+{
+  "schemaVersion": 1,
+  "id": "mlpc-retry-2024-complete",
+  "title": "MLPC Retake 2024 - Complete Exam",
+  "subject": "Machine Learning and Pattern Classification",
+  "description": "All 43 questions from the six consecutive MLPC retake PDF exports created on July 9, 2024. Correct answers and short explanations are included. The original density-estimation and classifier dataset figures are broken in the source PDFs and are therefore noted but not embedded.",
+  "createdAt": "2026-06-09T00:00:00.000Z",
+  "updatedAt": "2026-06-09T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "mlpc-retry-2024-q01",
+      "type": "true_false",
+      "question": "Consider Bayes' rule for classification: P(omega_i | x) = p(x | omega_i) P(omega_i) / p(x). Assume a classification problem with 5 fish classes, a 100-dimensional real-valued feature space, and a training set D containing 5000 fish.\n\nQuestion 1: For any fish x in D, p(x) <= 1/5000.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "For continuous features, p(x) is a density and is not bounded by the empirical frequency 1/5000.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Bayesian Classification"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-1.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q02",
+      "type": "true_false",
+      "question": "Consider Bayes' rule for classification: P(omega_i | x) = p(x | omega_i) P(omega_i) / p(x). Assume a classification problem with 5 fish classes, a 100-dimensional real-valued feature space, and a training set D containing 5000 fish.\n\nQuestion 2: For any fish x in D, p(x) is a vector with 100 values.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "p(x) is a scalar marginal density evaluated at the 100-dimensional vector x.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Bayesian Classification"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-1.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q03",
+      "type": "true_false",
+      "question": "Consider Bayes' rule for classification: P(omega_i | x) = p(x | omega_i) P(omega_i) / p(x). Assume a classification problem with 5 fish classes, a 100-dimensional real-valued feature space, and a training set D containing 5000 fish.\n\nQuestion 3: For any x, sum_i p(x | omega_i) = 1.0.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Class-conditional densities do not generally sum to one across classes for a fixed x.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Bayesian Classification"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-1.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q04",
+      "type": "true_false",
+      "question": "Consider Bayes' rule for classification: P(omega_i | x) = p(x | omega_i) P(omega_i) / p(x). Assume a classification problem with 5 fish classes, a 100-dimensional real-valued feature space, and a training set D containing 5000 fish.\n\nQuestion 4: P(omega_1 | x) is a vector with 5 entries.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "P(omega_1 | x) is one scalar posterior probability.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Bayesian Classification"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-1.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q05",
+      "type": "true_false",
+      "question": "Consider the 5 x 5 zero-one loss function lambda for the classification problem above, learned prior and class-conditional distributions, and a Bayesian minimum-risk classifier.\n\nQuestion 5: On any specific test set T, the minimum-risk classifier has exactly the same ROC-space position as a MAP classifier.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "With zero-one loss, minimizing conditional risk is equivalent to choosing the maximum posterior class (MAP).",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Bayesian Minimum-Risk Classification"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-1.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q06",
+      "type": "true_false",
+      "question": "Consider the 5 x 5 zero-one loss function lambda for the classification problem above, learned prior and class-conditional distributions, and a Bayesian minimum-risk classifier.\n\nQuestion 6: sum_i sum_j lambda_ij = 1.0.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A loss matrix is not required to have entries summing to one.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Bayesian Minimum-Risk Classification"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-1.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q07",
+      "type": "true_false",
+      "question": "Consider the 5 x 5 zero-one loss function lambda for the classification problem above, learned prior and class-conditional distributions, and a Bayesian minimum-risk classifier.\n\nQuestion 7: Multiplying every value in lambda by 5 makes it an invalid loss function.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Positive scaling preserves all risk comparisons and therefore the classifier's decisions.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Bayesian Minimum-Risk Classification"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-1.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q08",
+      "type": "true_false",
+      "question": "Consider the lecture figure about estimating the mean theta of a normal distribution with fixed variance from observations in a 1D dataset. The source PDF contains a broken image placeholder, so the original figure is unavailable.\n\nQuestion 8: The likelihood function cannot be negative anywhere.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A likelihood is a product or density value and is non-negative.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Density Estimation"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-2.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q09",
+      "type": "true_false",
+      "question": "Consider the lecture figure about estimating the mean theta of a normal distribution with fixed variance from observations in a 1D dataset. The source PDF contains a broken image placeholder, so the original figure is unavailable.\n\nQuestion 9: The y-values in the lower plot cannot be probabilities because they are negative.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Negative values in the lower plot cannot directly be probabilities; the lower plot is typically a log-likelihood.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Density Estimation"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-2.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q10",
+      "type": "single",
+      "question": "Consider the lecture figure about estimating the mean theta of a normal distribution with fixed variance from observations in a 1D dataset. The source PDF contains a broken image placeholder, so the original figure is unavailable.\n\nQuestion 10: In the figure, which plot is the likelihood function?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "At the top"
+        },
+        {
+          "id": "B",
+          "text": "At the bottom"
+        },
+        {
+          "id": "C",
+          "text": "At the middle"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The middle plot is the likelihood as a function of theta.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Density Estimation"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-2.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q11",
+      "type": "true_false",
+      "question": "Consider the lecture figure about estimating the mean theta of a normal distribution with fixed variance from observations in a 1D dataset. The source PDF contains a broken image placeholder, so the original figure is unavailable.\n\nQuestion 11: The likelihood function is itself a normal distribution.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "As a function of the parameter, a likelihood is not itself required to be a normalized probability distribution.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Density Estimation"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-2.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q12",
+      "type": "true_false",
+      "question": "Consider the lecture figure about estimating the mean theta of a normal distribution with fixed variance from observations in a 1D dataset. The source PDF contains a broken image placeholder, so the original figure is unavailable.\n\nQuestion 12: theta_hat is the maximum probability of the dataset.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "theta_hat is the parameter value that maximizes the likelihood, not the maximum probability value.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Density Estimation"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-2.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q13",
+      "type": "true_false",
+      "question": "Consider the lecture figure about estimating the mean theta of a normal distribution with fixed variance from observations in a 1D dataset. The source PDF contains a broken image placeholder, so the original figure is unavailable.\n\nQuestion 13: We need to plot the likelihood function in order to find its maximum.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The maximum can be found analytically or numerically without plotting.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Density Estimation"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-2.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q14",
+      "type": "true_false",
+      "question": "Consider a k-nearest-neighbour classifier in a d-dimensional numeric feature space, with a training set D containing N > 0 instances of two classes and Euclidean distance. Set k = N = |D|.\n\nQuestion 14: The classifier will maximally overfit the training data.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Using all N neighbours heavily smooths the classifier rather than maximally overfitting.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Nearest-Neighbour Classifiers"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-3.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q15",
+      "type": "true_false",
+      "question": "Consider a k-nearest-neighbour classifier in a d-dimensional numeric feature space, with a training set D containing N > 0 instances of two classes and Euclidean distance. Set k = N = |D|.\n\nQuestion 15: The resulting classifier has an expected accuracy of 1/N.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The prediction is driven by the overall class majority, so accuracy is not generally 1/N.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Nearest-Neighbour Classifiers"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-3.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q16",
+      "type": "true_false",
+      "question": "Consider a k-nearest-neighbour classifier in a d-dimensional numeric feature space, with a training set D containing N > 0 instances of two classes and Euclidean distance. Set k = N = |D|.\n\nQuestion 16: Every training example is classified into its correct class.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Minority-class training examples are generally assigned to the global majority class.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Nearest-Neighbour Classifiers"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-3.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q17",
+      "type": "true_false",
+      "question": "Consider a k-nearest-neighbour classifier in a d-dimensional numeric feature space, with a training set D containing N > 0 instances of two classes and Euclidean distance. Set k = N = |D|.\n\nQuestion 17: The resubstitution estimate on D is 1.0.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The resubstitution accuracy equals the proportion of the majority class, not necessarily 1.0.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Nearest-Neighbour Classifiers"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-3.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q18",
+      "type": "true_false",
+      "question": "Consider a k-nearest-neighbour classifier in a d-dimensional numeric feature space, with a training set D containing N > 0 instances of two classes and Euclidean distance. Set k = N = |D|.\n\nQuestion 18: All test examples are classified into the same class.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "With k = N, every query uses the full training set and receives the global majority class.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Nearest-Neighbour Classifiers"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-3.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q19",
+      "type": "true_false",
+      "question": "A decision-tree learner receives a training set D and discrete features F. It randomly selects one feature, builds a one-level tree by splitting on that feature, and labels each resulting leaf with the majority class in that node.\n\nQuestion 19: Combining several such trees into a random forest makes no sense because the trees rely on incompatible features.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Random forests intentionally combine diverse trees built from different feature choices.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Trees and Forests"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-4.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q20",
+      "type": "true_false",
+      "question": "A decision-tree learner receives a training set D and discrete features F. It randomly selects one feature, builds a one-level tree by splitting on that feature, and labels each resulting leaf with the majority class in that node.\n\nQuestion 20: The randomly chosen feature split might have information gain zero.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A randomly selected feature may be independent of the class labels and yield zero information gain.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Trees and Forests"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-4.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q21",
+      "type": "true_false",
+      "question": "A decision-tree learner receives a training set D and discrete features F. It randomly selects one feature, builds a one-level tree by splitting on that feature, and labels each resulting leaf with the majority class in that node.\n\nQuestion 21: Every such decision tree has training accuracy on D higher than the default accuracy.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A split may fail to improve on predicting the global majority class.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Trees and Forests"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-4.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q22",
+      "type": "true_false",
+      "question": "A decision-tree learner receives a training set D and discrete features F. It randomly selects one feature, builds a one-level tree by splitting on that feature, and labels each resulting leaf with the majority class in that node.\n\nQuestion 22: Every such decision tree has exactly the default accuracy on D.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Some splits improve accuracy while others do not, so exact equality is not guaranteed.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Trees and Forests"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-4.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q23",
+      "type": "true_false",
+      "question": "A decision-tree learner receives a training set D and discrete features F. It randomly selects one feature, builds a one-level tree by splitting on that feature, and labels each resulting leaf with the majority class in that node.\n\nQuestion 23: The resulting structure is not a decision tree.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A one-level split with labelled leaves is a valid decision tree.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Trees and Forests"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-4.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q24",
+      "type": "true_false",
+      "question": "Consider the lecture's two-class dataset in a 2D feature space (x1, x2), with classes represented by filled and empty dots. The source PDF contains a broken image placeholder, so the original dataset figure is unavailable.\n\nQuestion 24: An SVM with a quadratic kernel can achieve zero error on this dataset.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The exam's dataset is separable after the feature mapping induced by a quadratic kernel.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Various Classifiers"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-5.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q25",
+      "type": "true_false",
+      "question": "Consider the lecture's two-class dataset in a 2D feature space (x1, x2), with classes represented by filled and empty dots. The source PDF contains a broken image placeholder, so the original dataset figure is unavailable.\n\nQuestion 25: After mapping the dataset into the 2D feature space (x1^2, x2^2), ID3 can separate the classes with a two-level decision tree.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The stated two-feature mapping and two split levels are insufficient for the shown class arrangement.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Various Classifiers"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-5.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q26",
+      "type": "true_false",
+      "question": "Consider the lecture's two-class dataset in a 2D feature space (x1, x2), with classes represented by filled and empty dots. The source PDF contains a broken image placeholder, so the original dataset figure is unavailable.\n\nQuestion 26: An ID3 decision tree needs infinitely many splits (infinite depth) to achieve zero error on this dataset.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A finite axis-aligned tree can isolate a finite dataset.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Various Classifiers"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-5.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q27",
+      "type": "true_false",
+      "question": "Consider the lecture's two-class dataset in a 2D feature space (x1, x2), with classes represented by filled and empty dots. The source PDF contains a broken image placeholder, so the original dataset figure is unavailable.\n\nQuestion 27: A nearest-neighbour classifier can perform well only with circular, not rectangular, neighbourhoods.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Neighbourhood shape depends on the distance metric; good performance is not restricted to circular regions.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Various Classifiers"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-5.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q28",
+      "type": "true_false",
+      "question": "Consider the lecture's two-class dataset in a 2D feature space (x1, x2), with classes represented by filled and empty dots. The source PDF contains a broken image placeholder, so the original dataset figure is unavailable.\n\nQuestion 28: The maximum-margin hyperplane learned by a quadratic-kernel SVM remains the same when the +1 and -1 class labels are swapped.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Swapping labels reverses the hyperplane orientation/sign but leaves the geometric separating boundary unchanged.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Various Classifiers"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-5.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q29",
+      "type": "true_false",
+      "question": "Consider the lecture's two-class dataset in a 2D feature space (x1, x2), with classes represented by filled and empty dots. The source PDF contains a broken image placeholder, so the original dataset figure is unavailable.\n\nQuestion 29: There is no k for which k-NN predicts class 'white' for point (0, 0).",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "For at least one choice of k, the neighbourhood vote at (0, 0) can favour the white class.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Various Classifiers"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-5.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q30",
+      "type": "true_false",
+      "question": "For the same two-class dataset, consider a feedforward neural network with two inputs x1 and x2, one tanh hidden unit, and one identity-activation output. Classes are encoded as 0 (white) and 1 (black), training uses squared error, and prediction is black when output > threshold tau and white otherwise. Weights are unrestricted.\n\nQuestion 30: Increasing threshold tau cannot increase recall for class 0 on the training set.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Raising tau predicts white more often, which can increase recall for class 0.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Feedforward Neural Network"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-5.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q31",
+      "type": "true_false",
+      "question": "For the same two-class dataset, consider a feedforward neural network with two inputs x1 and x2, one tanh hidden unit, and one identity-activation output. Classes are encoded as 0 (white) and 1 (black), training uses squared error, and prediction is black when output > threshold tau and white otherwise. Weights are unrestricted.\n\nQuestion 31: The single hidden unit is unnecessary; a network without a hidden unit can learn the same function.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The tanh hidden unit introduces a nonlinearity that a network without a hidden layer cannot generally reproduce.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Feedforward Neural Network"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-5.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q32",
+      "type": "true_false",
+      "question": "For the same two-class dataset, consider a feedforward neural network with two inputs x1 and x2, one tanh hidden unit, and one identity-activation output. Classes are encoded as 0 (white) and 1 (black), training uses squared error, and prediction is black when output > threshold tau and white otherwise. Weights are unrestricted.\n\nQuestion 32: Setting tau to 0.0 or 1.0 makes every possible input receive the same class from any model trained this way.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The identity output is unbounded, so outputs may lie below 0 or above 1.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Feedforward Neural Network"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-5.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q33",
+      "type": "true_false",
+      "question": "For the same two-class dataset, consider a feedforward neural network with two inputs x1 and x2, one tanh hidden unit, and one identity-activation output. Classes are encoded as 0 (white) and 1 (black), training uses squared error, and prediction is black when output > threshold tau and white otherwise. Weights are unrestricted.\n\nQuestion 33: The value predicted by the output unit is a probability.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "An identity-activation output trained with squared error is a real-valued score, not necessarily a calibrated probability.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Feedforward Neural Network"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-5.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q34",
+      "type": "true_false",
+      "question": "For the same two-class dataset, consider a feedforward neural network with two inputs x1 and x2, one tanh hidden unit, and one identity-activation output. Classes are encoded as 0 (white) and 1 (black), training uses squared error, and prediction is black when output > threshold tau and white otherwise. Weights are unrestricted.\n\nQuestion 34: Different tau values for a fixed learned model can produce classifiers at different positions in ROC space.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Changing the threshold changes the true-positive and false-positive rates.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Feedforward Neural Network"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-5.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q35",
+      "type": "true_false",
+      "question": "For the same two-class dataset, consider a feedforward neural network with two inputs x1 and x2, one tanh hidden unit, and one identity-activation output. Classes are encoded as 0 (white) and 1 (black), training uses squared error, and prediction is black when output > threshold tau and white otherwise. Weights are unrestricted.\n\nQuestion 35: The output unit's prediction is always in [0, 1].",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Identity activation imposes no [0, 1] bound.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Feedforward Neural Network"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-5.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q36",
+      "type": "text",
+      "question": "Model whether a football game is occurring as an HMM with states S = {game, no game} and observations O = {none, cheer, shout, curse, snore}. Use the matrix conventions from the lecture slides.\n\nQuestion 36: What are the dimensions of transition matrix A (rows x columns)?",
+      "code": "",
+      "image": null,
+      "options": [],
+      "correctOptions": [],
+      "correctTextAnswer": "2 x 2",
+      "explanation": "There are two hidden states, so the state-transition matrix is 2 x 2.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Hidden Markov Models"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-6.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q37",
+      "type": "text",
+      "question": "Model whether a football game is occurring as an HMM with states S = {game, no game} and observations O = {none, cheer, shout, curse, snore}. Use the matrix conventions from the lecture slides.\n\nQuestion 37: What are the dimensions of emission matrix B (rows x columns)?",
+      "code": "",
+      "image": null,
+      "options": [],
+      "correctOptions": [],
+      "correctTextAnswer": "5 x 2",
+      "explanation": "With the lecture convention used by the exam, B has one row per observation and one column per state: 5 x 2.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Hidden Markov Models"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-6.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q38",
+      "type": "text",
+      "question": "Model whether a football game is occurring as an HMM with states S = {game, no game} and observations O = {none, cheer, shout, curse, snore}. Use the matrix conventions from the lecture slides.\n\nQuestion 38: What is the dimension of initial-state vector Pi?",
+      "code": "",
+      "image": null,
+      "options": [],
+      "correctOptions": [],
+      "correctTextAnswer": "2",
+      "explanation": "Pi contains one initial probability for each of the two states.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Hidden Markov Models"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-6.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q39",
+      "type": "true_false",
+      "question": "Model whether a football game is occurring as an HMM with states S = {game, no game} and observations O = {none, cheer, shout, curse, snore}. Use the matrix conventions from the lecture slides.\n\nQuestion 39: With only two states, matrix A must be symmetric.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Each row/column normalization constraint does not force equal off-diagonal transition probabilities.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Hidden Markov Models"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-6.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q40",
+      "type": "true_false",
+      "question": "Model whether a football game is occurring as an HMM with states S = {game, no game} and observations O = {none, cheer, shout, curse, snore}. Use the matrix conventions from the lecture slides.\n\nQuestion 40: If the neighbour never snores, one row of matrix B is all zeros.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "With observations represented by rows, the 'snore' row contains zeros when snoring is impossible.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Hidden Markov Models"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-6.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q41",
+      "type": "true_false",
+      "question": "Model whether a football game is occurring as an HMM with states S = {game, no game} and observations O = {none, cheer, shout, curse, snore}. Use the matrix conventions from the lecture slides.\n\nQuestion 41: Matrix B represents a Markov process.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "B contains emission probabilities; A defines the state Markov process.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Hidden Markov Models"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-6.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q42",
+      "type": "true_false",
+      "question": "Model whether a football game is occurring as an HMM with states S = {game, no game} and observations O = {none, cheer, shout, curse, snore}. Use the matrix conventions from the lecture slides.\n\nQuestion 42: The diagonal of matrix A must sum to 1.0.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The normalization applies to transition distributions, not specifically to the diagonal entries.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Hidden Markov Models"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-6.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-retry-2024-q43",
+      "type": "single",
+      "question": "Model whether a football game is occurring as an HMM with states S = {game, no game} and observations O = {none, cheer, shout, curse, snore}. Use the matrix conventions from the lecture slides.\n\nQuestion 43: From which model component can the expected duration of a game (consecutive time points with q_t = game) be estimated?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Matrix A"
+        },
+        {
+          "id": "B",
+          "text": "Vector Pi"
+        },
+        {
+          "id": "C",
+          "text": "Not at all"
+        },
+        {
+          "id": "D",
+          "text": "Matrix B"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Expected state duration is determined by the self-transition probability in A.",
+      "tags": [
+        "MLPC",
+        "2024 retake",
+        "Hidden Markov Models"
+      ],
+      "difficulty": "",
+      "source": "/Users/julian/Documents/Studium/semester_2/machine_learning/MLPC-Retry-24S/mlpc-retake-6.pdf",
+      "createdAt": "2026-06-09T00:00:00.000Z",
+      "updatedAt": "2026-06-09T00:00:00.000Z"
+    }
+  ]
+}
