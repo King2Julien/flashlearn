@@ -317,7 +317,7 @@
     {
       "id": "582b59db-2f6f-4232-9765-4575137f268a",
       "type": "single",
-      "question": "If you do not use \\(zero_grad()\\) between \\(backward()\\) calls ...",
+      "question": "If you do not use \\(zero\\)_\\(grad()\\) between \\(backward()\\) calls ...",
       "code": "",
       "image": null,
       "options": [
