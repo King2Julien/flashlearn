@@ -1,4 +1,6 @@
 [
+  "./decks/hands-on-ai-2-exam-2025.json",
+  "./decks/mlpc-retry-2024-complete.json",
   "./decks/unit1-hands-on-ai-1-recap.json",
   "./decks/unit2-model-optimization.json",
   "./decks/unit3-rnns.json",

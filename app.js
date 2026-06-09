@@ -28,6 +28,7 @@ init();
 async function init() {
   applyTheme();
   bindGlobalEvents();
+  window.addEventListener("katex-ready", () => renderMath(app));
   state.decks = await loadDecks();
   render();
   registerServiceWorker();
@@ -217,6 +218,12 @@ function renderStudy() {
   const progress = Math.round((session.index / total) * 100);
   const isText = question.type === "text";
   const checked = session.checked;
+  const questionLength = question.question.replace(/\s+/g, " ").trim().length;
+  const questionSizeClass = questionLength > 520
+    ? "question-text very-long"
+    : questionLength > 280
+      ? "question-text long"
+      : "question-text";
 
   app.innerHTML = `
     <section class="study-layout">
@@ -237,8 +244,8 @@ function renderStudy() {
           <span class="eyebrow">${escapeHtml(questionTypeLabel(question.type))}</span>
           <span class="pill">${escapeHtml(question.difficulty || question.source || "Practice")}</span>
         </div>
-        <h1>${escapeHtml(question.question)}</h1>
-        ${question.code ? `<pre class="code-block"><code>${escapeHtml(question.code)}</code></pre>` : ""}
+        <h1 class="${questionSizeClass}">${renderRichText(question.question)}</h1>
+        ${question.code ? `<div class="code-block rich-text">${renderRichText(question.code)}</div>` : ""}
         ${renderQuestionImage(question.image)}
         ${
           isText
@@ -261,6 +268,8 @@ function renderStudy() {
       </article>
     </section>
   `;
+
+  renderMath(app);
 
   if (isText && !checked) {
     requestAnimationFrame(() => document.querySelector("#textAnswer")?.focus());
@@ -287,7 +296,7 @@ function renderOptions(question, selected, checked) {
               checked ? "disabled" : ""
             }>
               <span class="option-key">${index + 1}</span>
-              <span>${escapeHtml(option.text)}</span>
+              <span class="option-text rich-text">${renderRichText(option.text)}</span>
             </button>
           `;
         })
@@ -318,8 +327,8 @@ function renderFeedback(question, correct) {
         <h3>${correct ? "Correct" : "Not quite"}</h3>
         <span class="pill">${correct ? "Building mastery" : "Scheduled sooner"}</span>
       </div>
-      ${!correct ? `<p><strong>Answer:</strong> ${escapeHtml(answer)}</p>` : ""}
-      ${question.explanation ? `<p>${escapeHtml(question.explanation)}</p>` : ""}
+      ${!correct ? `<p><strong>Answer:</strong> <span class="rich-text">${renderRichText(answer)}</span></p>` : ""}
+      ${question.explanation ? `<p class="rich-text">${renderRichText(question.explanation)}</p>` : ""}
     </section>
   `;
 }
@@ -328,6 +337,23 @@ function renderQuestionImage(image) {
   if (!image) return "";
   const src = typeof image === "string" ? image : image.dataUrl || image.path || "";
   return src ? `<img class="question-image" src="${escapeHtml(src)}" alt="Question illustration" />` : "";
+}
+
+function renderRichText(value) {
+  return escapeHtml(String(value || "")).replace(/\r?\n/g, "<br>");
+}
+
+function renderMath(root) {
+  if (!root || typeof window.renderMathInElement !== "function") return;
+
+  window.renderMathInElement(root, {
+    delimiters: [
+      { left: "\\[", right: "\\]", display: true },
+      { left: "\\(", right: "\\)", display: false },
+    ],
+    throwOnError: false,
+    strict: false,
+  });
 }
 
 function renderSummary() {
