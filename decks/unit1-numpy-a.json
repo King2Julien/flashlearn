@@ -1,0 +1,431 @@
+{
+  "schemaVersion": 1,
+  "id": "ac0e2b39-cbd4-4b45-9b5a-f960ae0b9290",
+  "title": "unit1-numpy-a",
+  "subject": "Programming in Python 2",
+  "description": "",
+  "createdAt": "2026-06-10T12:25:57.663Z",
+  "updatedAt": "2026-06-10T12:43:37.566Z",
+  "questions": [
+    {
+      "id": "34429491-bca9-4c59-8998-f965f751926f",
+      "type": "single",
+      "question": "What does shape (3, 4) represent?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "7 total axes"
+        },
+        {
+          "id": "B",
+          "text": "3 rows, 4 columns"
+        },
+        {
+          "id": "C",
+          "text": "4 rows, 3 columns"
+        },
+        {
+          "id": "D",
+          "text": "3 columns only"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:27:14.128Z",
+      "updatedAt": "2026-06-10T12:27:14.128Z"
+    },
+    {
+      "id": "dabb5325-4f62-4dd4-ba42-a758bbf1e21d",
+      "type": "single",
+      "question": "What is printed?",
+      "code": "import numpy as np\na = np.array(range(6), dtype=float).reshape(2,3)\nb= a.reshape(a.size)\nb[0] = 99\nprint(a[0, 0])",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "0.0"
+        },
+        {
+          "id": "B",
+          "text": "1.0"
+        },
+        {
+          "id": "C",
+          "text": "99.0"
+        },
+        {
+          "id": "D",
+          "text": "An error occurs"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:29:02.431Z",
+      "updatedAt": "2026-06-10T12:29:02.431Z"
+    },
+    {
+      "id": "92a7917c-6709-4e70-9eef-60170c297d71",
+      "type": "single",
+      "question": "What is the shape of s?",
+      "code": "import numpy as np\na = np.arrange(24).reshape(2, 3, 4)\ns = np.sum(a, axis=(0, 1))\nprint(s.shape)",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "(2,3)"
+        },
+        {
+          "id": "B",
+          "text": "(4,)"
+        },
+        {
+          "id": "C",
+          "text": "(3,4)"
+        },
+        {
+          "id": "D",
+          "text": "()"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:30:32.348Z",
+      "updatedAt": "2026-06-10T12:30:32.348Z"
+    },
+    {
+      "id": "37ba4e50-c3d9-4cc2-989c-5f932e6d0360",
+      "type": "single",
+      "question": "Which shape is NOT broadcast-compatible?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "(5, 3) and (3,)"
+        },
+        {
+          "id": "B",
+          "text": "(5,3) and (1,3)"
+        },
+        {
+          "id": "C",
+          "text": "(5,3) and (5,1)"
+        },
+        {
+          "id": "D",
+          "text": "(5,3) and (4,)"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:32:11.531Z",
+      "updatedAt": "2026-06-10T12:32:11.531Z"
+    },
+    {
+      "id": "901af497-c3b0-477d-9b2f-af210ca7a74f",
+      "type": "single",
+      "question": "Why are NumPy arrays typically faster than Python lists?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They are stored as nested objects"
+        },
+        {
+          "id": "B",
+          "text": "They store references to Python objects"
+        },
+        {
+          "id": "C",
+          "text": "Their elements are stored in contiguous memory blocks"
+        },
+        {
+          "id": "D",
+          "text": "They automatically use GPU acceleration"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:35:15.914Z",
+      "updatedAt": "2026-06-10T12:35:15.914Z"
+    },
+    {
+      "id": "9a026cf8-c16c-4ea3-b96f-c2127fad261e",
+      "type": "single",
+      "question": "What is true about data types in a NumPy array?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Each element can have a different type"
+        },
+        {
+          "id": "B",
+          "text": "The array has no information about data type"
+        },
+        {
+          "id": "C",
+          "text": "All elements share the same fixed data type"
+        },
+        {
+          "id": "D",
+          "text": "NumPy arrays can only store floats"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:36:31.414Z",
+      "updatedAt": "2026-06-10T12:36:31.414Z"
+    },
+    {
+      "id": "daafb96d-45f1-4fae-8194-2129e6c4a70c",
+      "type": "single",
+      "question": "What does the \"axis\" parameter in NumPy functions usually refer to?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The data type of elements"
+        },
+        {
+          "id": "B",
+          "text": "The memory address"
+        },
+        {
+          "id": "C",
+          "text": "The dimension along which an operation is applied"
+        },
+        {
+          "id": "D",
+          "text": "The size of the array"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:37:34.770Z",
+      "updatedAt": "2026-06-10T12:37:34.770Z"
+    },
+    {
+      "id": "47640231-69f9-4ca2-a560-f881cd596600",
+      "type": "single",
+      "question": "What value is printed?",
+      "code": "import numpy as np\na = np.array([[10, 20, 30], [40, 50, 60]])\nprint(a[1,2])",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "30"
+        },
+        {
+          "id": "B",
+          "text": "40"
+        },
+        {
+          "id": "C",
+          "text": "50"
+        },
+        {
+          "id": "D",
+          "text": "60"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:39:02.497Z",
+      "updatedAt": "2026-06-10T12:39:02.497Z"
+    },
+    {
+      "id": "7c6920e1-00d8-4277-ba60-339d79f02f2e",
+      "type": "single",
+      "question": "What is the result shape?",
+      "code": "import numpy as np\na = np.ones((3,4))\nb = np.ones((4,))\na + b",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "(4,)"
+        },
+        {
+          "id": "B",
+          "text": "(3,1)"
+        },
+        {
+          "id": "C",
+          "text": "(3,4)"
+        },
+        {
+          "id": "D",
+          "text": "The code will raise an error"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:40:21.797Z",
+      "updatedAt": "2026-06-10T12:40:21.797Z"
+    },
+    {
+      "id": "f07bb4f8-1519-4698-8184-15747d7fd623",
+      "type": "single",
+      "question": "What does dimension \\(-1\\) mean when reshaping arrays?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Infers the size automatically"
+        },
+        {
+          "id": "B",
+          "text": "Transposes the array"
+        },
+        {
+          "id": "C",
+          "text": "Flattens the array"
+        },
+        {
+          "id": "D",
+          "text": "Inserts new axis after the last dimension"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:41:27.498Z",
+      "updatedAt": "2026-06-10T12:41:27.498Z"
+    },
+    {
+      "id": "c0479dbb-2566-4444-b5cb-d9d5673cb7cd",
+      "type": "single",
+      "question": "Which indexing selects column index 2 of array \\(arr\\)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "arr[:,2]"
+        },
+        {
+          "id": "B",
+          "text": "arr[:,1:2]"
+        },
+        {
+          "id": "C",
+          "text": "arr[2]"
+        },
+        {
+          "id": "D",
+          "text": "arr[2,:]"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:42:44.999Z",
+      "updatedAt": "2026-06-10T12:42:44.999Z"
+    },
+    {
+      "id": "2153e0ce-902a-419d-8252-2c54b79cba11",
+      "type": "single",
+      "question": "Which function returns the index position of the maximum element in the flattened array?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "np.max"
+        },
+        {
+          "id": "B",
+          "text": "np.where"
+        },
+        {
+          "id": "C",
+          "text": "np.unravel_index"
+        },
+        {
+          "id": "D",
+          "text": "np.argmax"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:43:34.100Z",
+      "updatedAt": "2026-06-10T12:43:34.100Z"
+    }
+  ]
+}

@@ -1,0 +1,431 @@
+{
+  "schemaVersion": 1,
+  "id": "264c60d9-fe2c-482b-bbcd-2d79b557dd5d",
+  "title": "unit3-pandas",
+  "subject": "Programming in Python 2",
+  "description": "",
+  "createdAt": "2026-06-10T11:44:54.097Z",
+  "updatedAt": "2026-06-10T12:15:38.184Z",
+  "questions": [
+    {
+      "id": "15c70b76-d241-4b24-9b6b-fbe1fbe32379",
+      "type": "single",
+      "question": "Why can a Pandas DataFrame contain columns with different data types, unlike a typical NumPy array?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Because Pandas automatically converts all columns to strings"
+        },
+        {
+          "id": "B",
+          "text": "Because each row is stored as a separate NumPy array"
+        },
+        {
+          "id": "C",
+          "text": "Because each column is internally stored as a separate Series/array"
+        },
+        {
+          "id": "D",
+          "text": "Because Pandas does not use NumPy internally"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:47:29.115Z",
+      "updatedAt": "2026-06-10T11:47:29.115Z"
+    },
+    {
+      "id": "5c32e764-d922-4193-a6b3-c15985b781d8",
+      "type": "single",
+      "question": "What will be printed?",
+      "code": "df = pd.DataFrame({\"x\": [1, 2, 3], \"y\": [10, 20, 30]})\ndf.loc[df[\"x\"] > 1, \"y\"] = 99\nprint(df[\"y\"].tolist())",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "[10, 20, 30]"
+        },
+        {
+          "id": "B",
+          "text": "[99, 99, 99]"
+        },
+        {
+          "id": "C",
+          "text": "[10, 99, 99]"
+        },
+        {
+          "id": "D",
+          "text": "Error, because loc cannot assign values"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:50:23.907Z",
+      "updatedAt": "2026-06-10T11:50:23.907Z"
+    },
+    {
+      "id": "a08b6990-6bdb-46cc-94d2-6411e0aa30e1",
+      "type": "single",
+      "question": "What is the key difference between loc and iloc?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "loc uses integer positions, iloc uses labels"
+        },
+        {
+          "id": "B",
+          "text": "loc uses labels, iloc uses integer positions"
+        },
+        {
+          "id": "C",
+          "text": "loc only works for columns, iloc only for rows"
+        },
+        {
+          "id": "D",
+          "text": "iloc includes the upper boundary, loc excludes it"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:52:17.008Z",
+      "updatedAt": "2026-06-10T11:52:17.008Z"
+    },
+    {
+      "id": "930be83d-52a9-4a7e-b714-c61127c3740a",
+      "type": "single",
+      "question": "What will be printed",
+      "code": "df = pd.DataFrame({\"group\": [\"A\", \"A\", \"B\"], \"value\": [1, 3, 10]})\nresult = df.groupby(\"group\")[\"value\"].sum()\nprint(result.loc[\"A\"])",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "4"
+        },
+        {
+          "id": "D",
+          "text": "10"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:54:36.877Z",
+      "updatedAt": "2026-06-10T11:54:36.877Z"
+    },
+    {
+      "id": "e63e1f97-874e-4e29-ab2e-5ac40e88d72a",
+      "type": "single",
+      "question": "What is special about slicing with df.loc['r1': 'r4']?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The upper boundary 'r4' is included"
+        },
+        {
+          "id": "B",
+          "text": "The upper boundary 'r4' is excluded"
+        },
+        {
+          "id": "C",
+          "text": "It only works if the index is numeric"
+        },
+        {
+          "id": "D",
+          "text": "It always returns a NumPy array"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:55:51.978Z",
+      "updatedAt": "2026-06-10T11:55:51.978Z"
+    },
+    {
+      "id": "3e6e3473-d4ac-4d59-a782-a6b44698fbdd",
+      "type": "single",
+      "question": "Which statement about selecting a single column from a DataFrame is correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It returns a DataFrame"
+        },
+        {
+          "id": "B",
+          "text": "It returns for a Series"
+        },
+        {
+          "id": "C",
+          "text": "It returns a dictionary"
+        },
+        {
+          "id": "D",
+          "text": "It returns a list"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:56:36.285Z",
+      "updatedAt": "2026-06-10T11:56:36.285Z"
+    },
+    {
+      "id": "26830c0e-4bad-4980-b635-e0e49df96787",
+      "type": "single",
+      "question": "Which command is the safest way to assign a value to rows matching a condition?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "df[df['x'] > 0, 'y'] = 1"
+        },
+        {
+          "id": "B",
+          "text": "df.query('x > 0')['y'] = 1"
+        },
+        {
+          "id": "C",
+          "text": "df.loc[df['x'] > 0, 'y'] = 1"
+        },
+        {
+          "id": "D",
+          "text": "df.iloc[df['x'] > 0, 'y'] = 1"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:01:40.583Z",
+      "updatedAt": "2026-06-10T12:01:40.583Z"
+    },
+    {
+      "id": "6178555a-0b0d-42c0-b7f4-0c176b3f561a",
+      "type": "single",
+      "question": "What does groupby() primarily implement?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A split-apply-combine strategy"
+        },
+        {
+          "id": "B",
+          "text": "A sorting-only operation"
+        },
+        {
+          "id": "C",
+          "text": "A reshaping operation from long to wide format"
+        },
+        {
+          "id": "D",
+          "text": "A method for removing duplicates"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:09:20.273Z",
+      "updatedAt": "2026-06-10T12:09:20.273Z"
+    },
+    {
+      "id": "d3def10e-6e92-440a-9270-a17ad9840c0e",
+      "type": "single",
+      "question": "Which of these statements about transform/apply/map is correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "apply can only be used with Series"
+        },
+        {
+          "id": "B",
+          "text": "map is an in-place operation"
+        },
+        {
+          "id": "C",
+          "text": "transform returns a DataFrame of the same shape as the original"
+        },
+        {
+          "id": "D",
+          "text": "transform can only work with strings"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:11:32.275Z",
+      "updatedAt": "2026-06-10T12:11:32.275Z"
+    },
+    {
+      "id": "e3eb3e30-601c-4d1a-9a02-a157abd60c31",
+      "type": "single",
+      "question": "Which statements best describes tidy data?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Each row is a variable, each column is an observation"
+        },
+        {
+          "id": "B",
+          "text": "Each variable is a column, each observation is a row, each value is a cell"
+        },
+        {
+          "id": "C",
+          "text": "All categorical variables must be removed"
+        },
+        {
+          "id": "D",
+          "text": "The table must always be in wide format"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:12:59.134Z",
+      "updatedAt": "2026-06-10T12:12:59.134Z"
+    },
+    {
+      "id": "8f8d7b8f-0479-4315-a483-bc2d36785322",
+      "type": "single",
+      "question": "Which function can be used to combine DataFrame, given a specific column (like Joins in dataset)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "melt"
+        },
+        {
+          "id": "B",
+          "text": "merge"
+        },
+        {
+          "id": "C",
+          "text": "concat"
+        },
+        {
+          "id": "D",
+          "text": "join"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:13:52.548Z",
+      "updatedAt": "2026-06-10T12:13:52.548Z"
+    },
+    {
+      "id": "2b9e0828-5a46-4829-9be3-2ca8fdb203ac",
+      "type": "single",
+      "question": "Which of these statements is true?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "apply() is typically faster than a vectorized operation"
+        },
+        {
+          "id": "B",
+          "text": "An index in pandas must be unique"
+        },
+        {
+          "id": "C",
+          "text": "string is a nullable data type"
+        },
+        {
+          "id": "D",
+          "text": "pivot() aggregates values in a DataFrame"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:15:34.465Z",
+      "updatedAt": "2026-06-10T12:15:34.465Z"
+    }
+  ]
+}

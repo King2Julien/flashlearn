@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "id": "aef74690-d2f9-45e9-82b8-931291605523",
+  "title": "unit4-shiny",
+  "subject": "Programming in Python 2",
+  "description": "",
+  "createdAt": "2026-06-10T11:21:48.214Z",
+  "updatedAt": "2026-06-10T11:44:50.713Z",
+  "questions": [
+    {
+      "id": "83564a54-e911-4a35-b85a-dd80b2cab023",
+      "type": "single",
+      "question": "What does \\(@reactive.event(*args)\\) do?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It makes a function respond only to the listed reactive dependencies"
+        },
+        {
+          "id": "B",
+          "text": "It makes a function respond to every input in the app"
+        },
+        {
+          "id": "C",
+          "text": "It creates a new button automatically"
+        },
+        {
+          "id": "D",
+          "text": "It is only used in Shiny Core, not Shiny Express"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:24:15.403Z",
+      "updatedAt": "2026-06-10T11:24:15.403Z"
+    },
+    {
+      "id": "cd7e9c6a-f2a7-4808-b283-de1271eb0c53",
+      "type": "single",
+      "question": "How are UI layouts commonly defined in Shiny Express?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "By using the context manager \\(with\\)"
+        },
+        {
+          "id": "B",
+          "text": "By using nested function calls"
+        },
+        {
+          "id": "C",
+          "text": "By using class/method definitions"
+        },
+        {
+          "id": "D",
+          "text": "By using the \\(@render.ui\\) decorator"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:27:00.263Z",
+      "updatedAt": "2026-06-10T11:27:00.263Z"
+    },
+    {
+      "id": "8790d9e0-c4dc-4325-afdf-e7b58b3e4df2",
+      "type": "single",
+      "question": "What is a key difference between Shiny Express and Shiny Core?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Shiny Core cannot use reactive effects"
+        },
+        {
+          "id": "B",
+          "text": "Shiny Core requires explicit output elements placement"
+        },
+        {
+          "id": "C",
+          "text": "Shiny Express does not support UI layouts"
+        },
+        {
+          "id": "D",
+          "text": "Shiny Express requires separate ui and server functions"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:30:12.148Z",
+      "updatedAt": "2026-06-10T11:30:12.148Z"
+    },
+    {
+      "id": "9b19fced-f4cc-4e01-821c-20b55effd023",
+      "type": "single",
+      "question": "What is a \\(@reactive.effect\\)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It returns a value that must be rendered in the UI"
+        },
+        {
+          "id": "B",
+          "text": "It is used for reactive side effects and does not return an output value"
+        },
+        {
+          "id": "C",
+          "text": "It is used to render interactive widgets"
+        },
+        {
+          "id": "D",
+          "text": "It disables reactivity for a function"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:31:48.365Z",
+      "updatedAt": "2026-06-10T11:31:48.365Z"
+    },
+    {
+      "id": "50f2e2f1-a224-4a84-8226-7be32280b38d",
+      "type": "single",
+      "question": "What does it mean when a reactive dependency is \"invalidated\"?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A reactive value/input value has changed"
+        },
+        {
+          "id": "B",
+          "text": "The return value of a reactive function has changed"
+        },
+        {
+          "id": "C",
+          "text": "In Shiny Core, the output element does not align with the id it accesses"
+        },
+        {
+          "id": "D",
+          "text": "There is a mismatch between input id and reactive function name"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:33:27.433Z",
+      "updatedAt": "2026-06-10T11:33:27.433Z"
+    },
+    {
+      "id": "3cd3fe7c-9556-47e8-98bf-6414fbf8fce0",
+      "type": "single",
+      "question": "In Shiny Express, how is an input value accessed if the input has id=\"val\"?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "input[\"val\"]"
+        },
+        {
+          "id": "B",
+          "text": "input.val"
+        },
+        {
+          "id": "C",
+          "text": "input.val()"
+        },
+        {
+          "id": "D",
+          "text": "ui.val()"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:38:44.084Z",
+      "updatedAt": "2026-06-10T11:38:44.084Z"
+    },
+    {
+      "id": "afeda287-8c52-4a4d-ba15-88753b08e8d0",
+      "type": "single",
+      "question": "What is the purpose of defining a reactive.value()?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "To define a UI input element as reactive in Shiny Core"
+        },
+        {
+          "id": "B",
+          "text": "reactive.value is needed for UI elements to work, e.g. numeric inputs etc."
+        },
+        {
+          "id": "C",
+          "text": "To track reactivity across input UI elements"
+        },
+        {
+          "id": "D",
+          "text": "To enable reactivity for values where there is no UI input element"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:40:12.201Z",
+      "updatedAt": "2026-06-10T11:40:12.201Z"
+    },
+    {
+      "id": "650fbe08-336f-453a-aafa-1c856bb59a79",
+      "type": "true_false",
+      "question": "The decorators \\(@render.text\\), \\(@render.plot\\) etc. establish a reactive context.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:41:01.085Z",
+      "updatedAt": "2026-06-10T11:41:01.085Z"
+    },
+    {
+      "id": "25c603e0-fea4-4d6a-a40b-6d14e2f02114",
+      "type": "single",
+      "question": "In a reactive function, how can we prevent re-execution when a specific input (e.g.  input_numeric) changes?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "By using reactive.isolate()"
+        },
+        {
+          "id": "B",
+          "text": "By setting reactive.value == False"
+        },
+        {
+          "id": "C",
+          "text": "By using the decorator \\(@reactive.truncate_graph\\)"
+        },
+        {
+          "id": "D",
+          "text": "By using the decorator \\(@reactive.effect('off')\\)"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:42:49.952Z",
+      "updatedAt": "2026-06-10T11:42:49.952Z"
+    },
+    {
+      "id": "70638b9a-62cb-412d-abc6-f0feb24dc478",
+      "type": "single",
+      "question": "What will trigger out() to re-execute",
+      "code": "@reactive.calc\ndef value():\n    return input.b()\n\n@render.text\ndef out():\n    return input.a() + value()",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Only changes to input.a()"
+        },
+        {
+          "id": "B",
+          "text": "Only changes to input.b()"
+        },
+        {
+          "id": "C",
+          "text": "Changes to either input.a() or input.b()"
+        },
+        {
+          "id": "D",
+          "text": "Neither, because value() hides its dependency"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T11:44:46.061Z",
+      "updatedAt": "2026-06-10T11:44:46.061Z"
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "id": "91561cf9-6d35-4144-9b17-1b75d6ba8fda",
+  "title": "unit2-plotting",
+  "subject": "Programming in Python 2",
+  "description": "",
+  "createdAt": "2026-06-10T12:15:41.599Z",
+  "updatedAt": "2026-06-10T12:25:53.498Z",
+  "questions": [
+    {
+      "id": "ca0b307a-6024-447c-b3c1-1f7bd333d756",
+      "type": "single",
+      "question": "Which of these image formats uses lossy compression?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "JPG"
+        },
+        {
+          "id": "B",
+          "text": "TIFF"
+        },
+        {
+          "id": "C",
+          "text": "SVG"
+        },
+        {
+          "id": "D",
+          "text": "PDF"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:16:34.815Z",
+      "updatedAt": "2026-06-10T12:16:34.815Z"
+    },
+    {
+      "id": "de068db9-f1af-49d2-84ce-85cb415fc1ba",
+      "type": "true_false",
+      "question": "Axes can consist of several figures in matplotlib.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:17:04.948Z",
+      "updatedAt": "2026-06-10T12:17:04.948Z"
+    },
+    {
+      "id": "16c04adf-f8f5-4f1b-9437-64fa33c873ff",
+      "type": "single",
+      "question": "What makes SVG files fundamentally different from PNG or JPEG?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They store pixels with color values"
+        },
+        {
+          "id": "B",
+          "text": "They store drawing instructions (vector data)"
+        },
+        {
+          "id": "C",
+          "text": "They cannot be zoomed"
+        },
+        {
+          "id": "D",
+          "text": "They always lose quality when resized"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:18:05.632Z",
+      "updatedAt": "2026-06-10T12:18:05.632Z"
+    },
+    {
+      "id": "6665010d-170d-40bd-9d0e-cd2bb0b92669",
+      "type": "single",
+      "question": "What is a key property of PNG images?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They use lossy compression"
+        },
+        {
+          "id": "B",
+          "text": "They are always interactive"
+        },
+        {
+          "id": "C",
+          "text": "They use lossless compression"
+        },
+        {
+          "id": "D",
+          "text": "They store only grayscale information"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:18:50.871Z",
+      "updatedAt": "2026-06-10T12:18:50.871Z"
+    },
+    {
+      "id": "24bd37f9-ac33-42bc-8a06-5b8c266f06e9",
+      "type": "single",
+      "question": "The seaborn module is typically used for what?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Statistical visualization"
+        },
+        {
+          "id": "B",
+          "text": "In a web development context"
+        },
+        {
+          "id": "C",
+          "text": "when interactivity is required"
+        },
+        {
+          "id": "D",
+          "text": "They are required when plotting in Jupyter Notebooks"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:19:46.065Z",
+      "updatedAt": "2026-06-10T12:19:46.065Z"
+    },
+    {
+      "id": "02acff09-7ac7-4b1c-83ce-9a7113c8e0cc",
+      "type": "single",
+      "question": "What is an Axes object in matplotlib?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The plotting area where data is drawn"
+        },
+        {
+          "id": "B",
+          "text": "The image file format used for saving plots"
+        },
+        {
+          "id": "C",
+          "text": "The backend rendering engine"
+        },
+        {
+          "id": "D",
+          "text": "The grid layout manager"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:20:41.532Z",
+      "updatedAt": "2026-06-10T12:20:41.532Z"
+    },
+    {
+      "id": "571a5643-daf7-4532-a65e-486ed2e3ac19",
+      "type": "single",
+      "question": "Why might matplotlib plots look different on different operating systems?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Different Python syntax rules"
+        },
+        {
+          "id": "B",
+          "text": "Different matplotlib backends are used"
+        },
+        {
+          "id": "C",
+          "text": "Images are stored in different formats"
+        },
+        {
+          "id": "D",
+          "text": "The plotting functions are different"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:21:39.331Z",
+      "updatedAt": "2026-06-10T12:21:39.331Z"
+    },
+    {
+      "id": "850fd6d2-3af2-45ea-bcb7-47aef75d4e80",
+      "type": "single",
+      "question": "What will this code produce?",
+      "code": "import matplotlib.pyplot as plt\n\nplt.plot([1, 2, 3], [1, 4, 9])\nplt.show()",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A scatter plot with 3 points"
+        },
+        {
+          "id": "B",
+          "text": "A bar chart"
+        },
+        {
+          "id": "C",
+          "text": "A line plot connecting the points"
+        },
+        {
+          "id": "D",
+          "text": "Nothing (missing figure object)"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:23:38.265Z",
+      "updatedAt": "2026-06-10T12:23:38.265Z"
+    },
+    {
+      "id": "6004a41c-b6a2-4925-ae80-cb0008159f90",
+      "type": "single",
+      "question": "What is the problem in this code?",
+      "code": "import matplotlib.pyplot as plt\n\nfig, ax = plt.subplots(1, 2)\nax.plot([1, 2], [3, 4])",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "plot() requires 3 arguments"
+        },
+        {
+          "id": "B",
+          "text": "ax is a list/array of axes, not a single axis"
+        },
+        {
+          "id": "C",
+          "text": "subplots cannot create multiple plots"
+        },
+        {
+          "id": "D",
+          "text": "The figure must be shown first"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:25:21.931Z",
+      "updatedAt": "2026-06-10T12:25:21.931Z"
+    },
+    {
+      "id": "92ba449a-3e2e-4c10-8e50-36e4a428af61",
+      "type": "true_false",
+      "question": "The seaborn library is built on top of matplotlib.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-10T12:25:48.531Z",
+      "updatedAt": "2026-06-10T12:25:48.531Z"
+    }
+  ]
+}
