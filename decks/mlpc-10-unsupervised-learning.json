@@ -1,0 +1,657 @@
+{
+  "schemaVersion": 1,
+  "id": "mlpc-10-unsupervised-learning",
+  "title": "MLPC 10 - Unsupervised Learning and Clustering",
+  "subject": "Machine Learning and Pattern Classification",
+  "description": "Covers unsupervised learning, k-means, cluster model selection, BIC/MML, Gaussian mixture models, and EM. All questions are single-choice and modeled after the conceptual style of the MLPC Retry 2024S exam. Source: 10_Unsupervised_Learning.pdf.",
+  "createdAt": "2026-06-12T00:00:00.000Z",
+  "updatedAt": "2026-06-12T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "mlpc-10-unsupervised-learning-q01",
+      "type": "single",
+      "question": "What distinguishes unsupervised learning from supervised classification?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Unsupervised learning receives unlabeled examples and seeks structure or a data model"
+        },
+        {
+          "id": "B",
+          "text": "Unsupervised learning requires more class labels"
+        },
+        {
+          "id": "C",
+          "text": "Supervised learning never predicts"
+        },
+        {
+          "id": "D",
+          "text": "There is no input data in unsupervised learning"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Unsupervised methods describe the structure or distribution of unlabeled data.",
+      "tags": [
+        "MLPC",
+        "Unsupervised Learning"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q02",
+      "type": "single",
+      "question": "Which is a valid motivation for clustering?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Find prototypical cases that compactly represent the data"
+        },
+        {
+          "id": "B",
+          "text": "Guarantee the true class labels"
+        },
+        {
+          "id": "C",
+          "text": "Estimate test accuracy without labels"
+        },
+        {
+          "id": "D",
+          "text": "Remove the need for a distance measure"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Cluster centers can serve as prototypes or compressed representatives.",
+      "tags": [
+        "MLPC",
+        "Clustering Motivation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q03",
+      "type": "single",
+      "question": "What parameter must be supplied to standard k-means?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The class labels"
+        },
+        {
+          "id": "B",
+          "text": "The number of clusters k"
+        },
+        {
+          "id": "C",
+          "text": "A loss matrix"
+        },
+        {
+          "id": "D",
+          "text": "The ROC threshold"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Standard k-means searches for a partition into a user-specified number of clusters.",
+      "tags": [
+        "MLPC",
+        "k-Means"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q04",
+      "type": "single",
+      "question": "What does mean quantisation error measure?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Average distance from each point to its assigned cluster centroid"
+        },
+        {
+          "id": "B",
+          "text": "Distance between class labels"
+        },
+        {
+          "id": "C",
+          "text": "Number of test errors"
+        },
+        {
+          "id": "D",
+          "text": "Entropy of a decision-tree root"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "MQE measures the approximation error incurred by replacing points with their centroids.",
+      "tags": [
+        "MLPC",
+        "k-Means"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q05",
+      "type": "single",
+      "question": "After assigning all points to their nearest centers, what does k-means do next?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Recomputes each center as the mean of its assigned points"
+        },
+        {
+          "id": "B",
+          "text": "Changes every point's label"
+        },
+        {
+          "id": "C",
+          "text": "Increases k automatically"
+        },
+        {
+          "id": "D",
+          "text": "Fits an SVM"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The update step replaces each centroid with the mean of its current cluster.",
+      "tags": [
+        "MLPC",
+        "k-Means"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q06",
+      "type": "single",
+      "question": "Why can two runs of k-means on the same data return different clusterings?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The objective contains class labels"
+        },
+        {
+          "id": "B",
+          "text": "Random initial centers can lead to different local optima"
+        },
+        {
+          "id": "C",
+          "text": "MQE is never computed"
+        },
+        {
+          "id": "D",
+          "text": "Centroids are fixed by the file name"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "k-means is sensitive to initialization and is not guaranteed to find the global optimum.",
+      "tags": [
+        "MLPC",
+        "k-Means"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q07",
+      "type": "single",
+      "question": "Why is raw MQE unsuitable by itself for choosing the best k?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "MQE cannot be computed"
+        },
+        {
+          "id": "B",
+          "text": "Increasing k tends to reduce MQE even when the extra complexity is not useful"
+        },
+        {
+          "id": "C",
+          "text": "MQE always increases with k"
+        },
+        {
+          "id": "D",
+          "text": "MQE uses class labels"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "More centroids can fit the same data more closely, so complexity needs separate control.",
+      "tags": [
+        "MLPC",
+        "Cluster Model Selection"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q08",
+      "type": "single",
+      "question": "What does the Davies-Bouldin index reward?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "High within-cluster spread and close centers"
+        },
+        {
+          "id": "B",
+          "text": "Compact clusters that are well separated"
+        },
+        {
+          "id": "C",
+          "text": "Many parameters regardless of fit"
+        },
+        {
+          "id": "D",
+          "text": "Perfect training labels"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The index compares within-cluster scatter with distances between cluster centers and is minimized.",
+      "tags": [
+        "MLPC",
+        "Cluster Model Selection"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q09",
+      "type": "single",
+      "question": "How does BIC balance model fit and complexity?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It adds a reward for every parameter"
+        },
+        {
+          "id": "B",
+          "text": "It combines log-likelihood with a penalty for the number of parameters"
+        },
+        {
+          "id": "C",
+          "text": "It ignores the data likelihood"
+        },
+        {
+          "id": "D",
+          "text": "It always selects the largest model"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "BIC favors good fit while penalizing unnecessary parameter complexity.",
+      "tags": [
+        "MLPC",
+        "BIC and MML"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q10",
+      "type": "single",
+      "question": "Under the minimum-message-length interpretation, a good model should:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Minimize the combined description length of the model and data given the model"
+        },
+        {
+          "id": "B",
+          "text": "Maximize the raw number of clusters"
+        },
+        {
+          "id": "C",
+          "text": "Encode only the model and discard the data"
+        },
+        {
+          "id": "D",
+          "text": "Use no probabilities"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "MML formalizes a tradeoff between a compact model and compact residual data encoding.",
+      "tags": [
+        "MLPC",
+        "BIC and MML"
+      ],
+      "difficulty": "hard",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q11",
+      "type": "single",
+      "question": "In a Gaussian mixture model, the density p(x) is:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The maximum of the component densities"
+        },
+        {
+          "id": "B",
+          "text": "A weighted sum of component Gaussian densities"
+        },
+        {
+          "id": "C",
+          "text": "A hard class label"
+        },
+        {
+          "id": "D",
+          "text": "The distance to the nearest centroid only"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A mixture density combines component densities using nonnegative mixture weights.",
+      "tags": [
+        "MLPC",
+        "Gaussian Mixture Models"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q12",
+      "type": "single",
+      "question": "What does P(C_i | x) represent in a GMM?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The probability that component i generated x"
+        },
+        {
+          "id": "B",
+          "text": "The distance from x to every centroid"
+        },
+        {
+          "id": "C",
+          "text": "The number of components"
+        },
+        {
+          "id": "D",
+          "text": "The final test accuracy"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "It is the posterior or responsibility of component i for the observation.",
+      "tags": [
+        "MLPC",
+        "Gaussian Mixture Models"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q13",
+      "type": "single",
+      "question": "What happens in the E-step of EM for a GMM?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Compute probabilistic assignments of points to components"
+        },
+        {
+          "id": "B",
+          "text": "Delete low-likelihood points"
+        },
+        {
+          "id": "C",
+          "text": "Choose a final test set"
+        },
+        {
+          "id": "D",
+          "text": "Increase the number of components"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The E-step calculates component responsibilities using the current parameters.",
+      "tags": [
+        "MLPC",
+        "Expectation-Maximisation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q14",
+      "type": "single",
+      "question": "What happens in the M-step of EM for a GMM?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Re-estimate weights, means, and covariances from the responsibilities"
+        },
+        {
+          "id": "B",
+          "text": "Set every covariance to zero"
+        },
+        {
+          "id": "C",
+          "text": "Convert probabilities to class labels permanently"
+        },
+        {
+          "id": "D",
+          "text": "Compute a ROC curve"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The M-step maximizes likelihood given the soft assignments from the E-step.",
+      "tags": [
+        "MLPC",
+        "Expectation-Maximisation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q15",
+      "type": "single",
+      "question": "Which convergence statement about EM is correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It decreases likelihood at every iteration"
+        },
+        {
+          "id": "B",
+          "text": "It increases likelihood but may converge to a local maximum"
+        },
+        {
+          "id": "C",
+          "text": "It always finds the unique global optimum"
+        },
+        {
+          "id": "D",
+          "text": "It converges without initialization"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "EM monotonically improves likelihood but remains sensitive to initialization and local optima.",
+      "tags": [
+        "MLPC",
+        "Expectation-Maximisation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q16",
+      "type": "single",
+      "question": "Why can a GMM be viewed as soft clustering?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Each point has graded membership probabilities across components"
+        },
+        {
+          "id": "B",
+          "text": "Each point must belong equally to every component"
+        },
+        {
+          "id": "C",
+          "text": "GMMs contain no cluster descriptions"
+        },
+        {
+          "id": "D",
+          "text": "The number of components is always one"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Responsibilities provide probabilistic rather than all-or-nothing cluster assignments.",
+      "tags": [
+        "MLPC",
+        "GMM Interpretation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-10-unsupervised-learning-q17",
+      "type": "single",
+      "question": "Why is a GMM also a density estimator rather than only a clustering method?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It defines a proper p(x) and can assign density to or generate new points"
+        },
+        {
+          "id": "B",
+          "text": "It uses only centroid names"
+        },
+        {
+          "id": "C",
+          "text": "It requires known class labels"
+        },
+        {
+          "id": "D",
+          "text": "It cannot evaluate unseen locations"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The fitted mixture is a generative probability density over the feature space.",
+      "tags": [
+        "MLPC",
+        "GMM Interpretation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    }
+  ]
+}

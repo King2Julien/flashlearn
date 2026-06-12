@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "id": "mlpc-02-bayesian-decision-theory",
+  "title": "MLPC 02 - Bayesian Decision Theory",
+  "subject": "Machine Learning and Pattern Classification",
+  "description": "Covers probabilities and densities, Bayes' rule, posterior classification, conditional risk, MAP decisions, likelihood ratios, and Gaussian decision boundaries. All questions are single-choice and modeled after the conceptual style of the MLPC Retry 2024S exam. Source: 02_Bayesian_Decision_Theory.pdf.",
+  "createdAt": "2026-06-12T00:00:00.000Z",
+  "updatedAt": "2026-06-12T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q01",
+      "type": "single",
+      "question": "A continuous probability density has p(x) = 1.4 at a particular point. Which conclusion is correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The density is invalid because it exceeds 1"
+        },
+        {
+          "id": "B",
+          "text": "The event X = x has probability 1.4"
+        },
+        {
+          "id": "C",
+          "text": "This can be valid if the total area under the density is 1"
+        },
+        {
+          "id": "D",
+          "text": "The cumulative probability must be negative"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A density value is not itself a probability and may exceed 1; its integral over the domain must equal 1.",
+      "tags": [
+        "MLPC",
+        "Probabilities and Densities"
+      ],
+      "difficulty": "hard",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q02",
+      "type": "single",
+      "question": "For a continuous variable with density p(x), how is P(a <= X <= b) obtained?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "By adding p(a) and p(b)"
+        },
+        {
+          "id": "B",
+          "text": "By integrating p(x) from a to b"
+        },
+        {
+          "id": "C",
+          "text": "By dividing p(a) by p(b)"
+        },
+        {
+          "id": "D",
+          "text": "By counting the number of possible real values"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Probabilities for continuous variables are areas under the density over intervals.",
+      "tags": [
+        "MLPC",
+        "Probabilities and Densities"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q03",
+      "type": "single",
+      "question": "In a multivariate Gaussian, what does an off-diagonal covariance entry describe?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The number of classes"
+        },
+        {
+          "id": "B",
+          "text": "Pairwise dependence between two features"
+        },
+        {
+          "id": "C",
+          "text": "The prior probability of a class"
+        },
+        {
+          "id": "D",
+          "text": "The dimensionality of the output label"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Off-diagonal covariance terms capture how pairs of variables vary together.",
+      "tags": [
+        "MLPC",
+        "Gaussian Distributions"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q04",
+      "type": "single",
+      "question": "In Bayes' rule for classification, what does P(omega_i) represent?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The posterior after observing x"
+        },
+        {
+          "id": "B",
+          "text": "The prior probability of class omega_i"
+        },
+        {
+          "id": "C",
+          "text": "The density of x in every class"
+        },
+        {
+          "id": "D",
+          "text": "The loss of predicting omega_i"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The prior describes class frequency before the current feature observation is considered.",
+      "tags": [
+        "MLPC",
+        "Bayes Rule"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q05",
+      "type": "single",
+      "question": "In Bayes' rule, what is p(x | omega_i)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The probability that class omega_i is correct after observing x"
+        },
+        {
+          "id": "B",
+          "text": "The class-conditional density of observing x within class omega_i"
+        },
+        {
+          "id": "C",
+          "text": "The marginal density of x over all classes"
+        },
+        {
+          "id": "D",
+          "text": "The cost of assigning x to omega_i"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The class-conditional density describes how plausible the observed features are under a given class.",
+      "tags": [
+        "MLPC",
+        "Bayes Rule"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q06",
+      "type": "single",
+      "question": "What is the role of p(x) in the posterior formula P(omega_i | x) = p(x | omega_i)P(omega_i)/p(x)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It normalizes the posteriors so they sum to one"
+        },
+        {
+          "id": "B",
+          "text": "It selects the loss matrix"
+        },
+        {
+          "id": "C",
+          "text": "It changes the feature vector into a scalar"
+        },
+        {
+          "id": "D",
+          "text": "It is the prior of omega_i"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The evidence p(x) is shared across classes and normalizes the posterior distribution.",
+      "tags": [
+        "MLPC",
+        "Bayes Rule"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q07",
+      "type": "single",
+      "question": "Two classes have equal priors. Which class does a MAP classifier choose for observation x?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The class with the larger p(x | omega_i)"
+        },
+        {
+          "id": "B",
+          "text": "The class with the smaller p(x | omega_i)"
+        },
+        {
+          "id": "C",
+          "text": "Always the first class"
+        },
+        {
+          "id": "D",
+          "text": "The class with the larger loss"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "With equal priors, maximizing the posterior is equivalent to maximizing the class-conditional density.",
+      "tags": [
+        "MLPC",
+        "MAP Classification"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q08",
+      "type": "single",
+      "question": "A prior assigns probability 1 to class A and 0 to every other class. Assuming that prior is used exactly, what can MAP predict?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Any class with high likelihood"
+        },
+        {
+          "id": "B",
+          "text": "Only class A"
+        },
+        {
+          "id": "C",
+          "text": "Only a class with posterior 0"
+        },
+        {
+          "id": "D",
+          "text": "No class at all"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Multiplication by a zero prior gives zero posterior support to every other class.",
+      "tags": [
+        "MLPC",
+        "MAP Classification"
+      ],
+      "difficulty": "hard",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q09",
+      "type": "single",
+      "question": "For two classes, P(A | x) = 0.75 and P(B | x) = 0.25. Under zero-one loss, what is the conditional probability of error when predicting A?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "0.00"
+        },
+        {
+          "id": "B",
+          "text": "0.25"
+        },
+        {
+          "id": "C",
+          "text": "0.50"
+        },
+        {
+          "id": "D",
+          "text": "0.75"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "If A is predicted, the error probability is the posterior probability that B is the true class.",
+      "tags": [
+        "MLPC",
+        "Bayes Error"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q10",
+      "type": "single",
+      "question": "What does conditional risk R(alpha_i | x) compute?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The largest class posterior"
+        },
+        {
+          "id": "B",
+          "text": "The expected loss of action alpha_i, weighted by posterior class probabilities"
+        },
+        {
+          "id": "C",
+          "text": "The density integrated over all feature values"
+        },
+        {
+          "id": "D",
+          "text": "The empirical training accuracy"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Conditional risk averages the action's class-dependent losses using the posterior probabilities.",
+      "tags": [
+        "MLPC",
+        "Risk Minimisation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q11",
+      "type": "single",
+      "question": "What does the general Bayes decision rule choose?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The action with minimum conditional risk"
+        },
+        {
+          "id": "B",
+          "text": "The class with minimum likelihood in every case"
+        },
+        {
+          "id": "C",
+          "text": "The action with maximum cost"
+        },
+        {
+          "id": "D",
+          "text": "The most complex decision boundary"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Bayes-optimal action selection minimizes expected loss for the observed x.",
+      "tags": [
+        "MLPC",
+        "Risk Minimisation"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q12",
+      "type": "single",
+      "question": "Why can a rejection action be useful in Bayesian decision theory?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It permits an 'I do not know' decision when classification risk is high"
+        },
+        {
+          "id": "B",
+          "text": "It guarantees that all observations receive a class"
+        },
+        {
+          "id": "C",
+          "text": "It makes posterior probabilities unnecessary"
+        },
+        {
+          "id": "D",
+          "text": "It changes continuous features into discrete features"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The action set may include rejection when committing to a class would be too costly or uncertain.",
+      "tags": [
+        "MLPC",
+        "Risk Minimisation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q13",
+      "type": "single",
+      "question": "Under zero-one loss, minimizing conditional risk is equivalent to:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Choosing the maximum posterior class"
+        },
+        {
+          "id": "B",
+          "text": "Choosing the minimum prior class"
+        },
+        {
+          "id": "C",
+          "text": "Ignoring the observation x"
+        },
+        {
+          "id": "D",
+          "text": "Minimizing p(x)"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "With zero cost for correct decisions and unit cost for errors, risk is 1 minus the selected class posterior.",
+      "tags": [
+        "MLPC",
+        "Minimum Error Classification"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q14",
+      "type": "single",
+      "question": "In a two-class Bayesian classifier, the likelihood ratio is compared with a threshold determined by:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Only the feature dimension"
+        },
+        {
+          "id": "B",
+          "text": "The priors and misclassification costs"
+        },
+        {
+          "id": "C",
+          "text": "The number of test folds"
+        },
+        {
+          "id": "D",
+          "text": "The sample ordering"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The input-dependent likelihood ratio is compared with a constant based on prior odds and cost ratios.",
+      "tags": [
+        "MLPC",
+        "Likelihood Ratios"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q15",
+      "type": "single",
+      "question": "The cost of predicting omega_1 when omega_2 is true is increased. What generally happens to the decision region for omega_1?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It becomes smaller"
+        },
+        {
+          "id": "B",
+          "text": "It must become the entire feature space"
+        },
+        {
+          "id": "C",
+          "text": "It is unaffected by all costs"
+        },
+        {
+          "id": "D",
+          "text": "It becomes identical to the density p(x)"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A higher penalty requires stronger evidence before choosing omega_1, shrinking its decision region.",
+      "tags": [
+        "MLPC",
+        "Decision Boundaries"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q16",
+      "type": "single",
+      "question": "Two Gaussian classes have identical spherical covariance matrices. What form does their Bayes decision boundary have?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A linear hyperplane perpendicular to the line between their means"
+        },
+        {
+          "id": "B",
+          "text": "An arbitrary disconnected set"
+        },
+        {
+          "id": "C",
+          "text": "A Gaussian density"
+        },
+        {
+          "id": "D",
+          "text": "A nearest-neighbour Voronoi cell"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Equal spherical covariances yield a linear separator orthogonal to the line connecting the means.",
+      "tags": [
+        "MLPC",
+        "Gaussian Decision Boundaries"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q17",
+      "type": "single",
+      "question": "Two Gaussian classes have equal but non-spherical covariance matrices. Which statement is correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Their boundary remains linear but need not be perpendicular to the line between the means"
+        },
+        {
+          "id": "B",
+          "text": "Their boundary must be circular"
+        },
+        {
+          "id": "C",
+          "text": "Their boundary cannot be computed"
+        },
+        {
+          "id": "D",
+          "text": "Their priors must be equal"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A shared covariance cancels quadratic terms, leaving a linear boundary whose orientation reflects the covariance.",
+      "tags": [
+        "MLPC",
+        "Gaussian Decision Boundaries"
+      ],
+      "difficulty": "hard",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-02-bayesian-decision-theory-q18",
+      "type": "single",
+      "question": "What form can arise when Gaussian classes have different covariance matrices?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Only a constant prediction"
+        },
+        {
+          "id": "B",
+          "text": "A quadratic decision surface"
+        },
+        {
+          "id": "C",
+          "text": "Only a boundary halfway between the means"
+        },
+        {
+          "id": "D",
+          "text": "No decision region"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Unequal covariance matrices generally leave quadratic terms in the discriminant functions.",
+      "tags": [
+        "MLPC",
+        "Gaussian Decision Boundaries"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    }
+  ]
+}

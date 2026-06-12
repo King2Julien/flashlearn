@@ -1,0 +1,581 @@
+{
+  "schemaVersion": 1,
+  "id": "mlpc-05-popular-classifiers",
+  "title": "MLPC 05 - Decision Trees, Random Forests, and SVMs",
+  "subject": "Machine Learning and Pattern Classification",
+  "description": "Covers baseline classifiers, ID3, information gain, pruning, random forests, margins, kernels, and support vector machines. All questions are single-choice and modeled after the conceptual style of the MLPC Retry 2024S exam. Source: 05_Common_Machine_Learning_Algorithms.pdf.",
+  "createdAt": "2026-06-12T00:00:00.000Z",
+  "updatedAt": "2026-06-12T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "mlpc-05-popular-classifiers-q01",
+      "type": "single",
+      "question": "Which weakness of Naive Bayes follows directly from its independence assumption?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It cannot handle multiple classes"
+        },
+        {
+          "id": "B",
+          "text": "It may estimate probabilities poorly when features are correlated"
+        },
+        {
+          "id": "C",
+          "text": "It has no training algorithm"
+        },
+        {
+          "id": "D",
+          "text": "It requires a distance metric"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Correlated features violate the conditional-independence assumption and can distort probability estimates.",
+      "tags": [
+        "MLPC",
+        "Naive Bayes"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q02",
+      "type": "single",
+      "question": "Which statement about k-nearest neighbours is correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Training is expensive but prediction is constant-time"
+        },
+        {
+          "id": "B",
+          "text": "It stores examples and can represent complex boundaries"
+        },
+        {
+          "id": "C",
+          "text": "It is unaffected by irrelevant features"
+        },
+        {
+          "id": "D",
+          "text": "It always produces an interpretable rule set"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "k-NN has little explicit training but relies on stored examples and can form flexible boundaries.",
+      "tags": [
+        "MLPC",
+        "k-NN"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q03",
+      "type": "single",
+      "question": "ID3 chooses a split feature primarily by:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximizing information gain"
+        },
+        {
+          "id": "B",
+          "text": "Minimizing the number of branches regardless of labels"
+        },
+        {
+          "id": "C",
+          "text": "Selecting the first numeric feature"
+        },
+        {
+          "id": "D",
+          "text": "Maximizing training-set size"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Information gain measures the expected reduction in class-label entropy.",
+      "tags": [
+        "MLPC",
+        "Decision Trees"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q04",
+      "type": "single",
+      "question": "A node contains examples from only one class. What does ID3 do?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Splits on every remaining feature"
+        },
+        {
+          "id": "B",
+          "text": "Creates a leaf labeled with that class"
+        },
+        {
+          "id": "C",
+          "text": "Restarts from the root"
+        },
+        {
+          "id": "D",
+          "text": "Uses the global majority class"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A pure node is a stopping case and becomes a leaf.",
+      "tags": [
+        "MLPC",
+        "Decision Trees"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q05",
+      "type": "single",
+      "question": "Why is ID3 described as greedy?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It evaluates every possible complete tree"
+        },
+        {
+          "id": "B",
+          "text": "It selects the locally best split without guaranteeing the globally simplest tree"
+        },
+        {
+          "id": "C",
+          "text": "It always chooses the feature with most values"
+        },
+        {
+          "id": "D",
+          "text": "It removes training examples after each split"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Local information-gain decisions are efficient but can miss globally better combinations.",
+      "tags": [
+        "MLPC",
+        "Decision Trees"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q06",
+      "type": "single",
+      "question": "For a numeric feature A, a standard decision-tree split has which form?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A is a probability"
+        },
+        {
+          "id": "B",
+          "text": "A <= t"
+        },
+        {
+          "id": "C",
+          "text": "A equals every observed value simultaneously"
+        },
+        {
+          "id": "D",
+          "text": "A is removed from all examples"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Numeric features are commonly split using binary threshold tests.",
+      "tags": [
+        "MLPC",
+        "Decision Trees"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q07",
+      "type": "single",
+      "question": "What is the intended effect of post-pruning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Grow no tree at all"
+        },
+        {
+          "id": "B",
+          "text": "First fit a detailed tree, then remove subtrees that harm validation performance"
+        },
+        {
+          "id": "C",
+          "text": "Increase training accuracy at any cost"
+        },
+        {
+          "id": "D",
+          "text": "Convert the tree into k-NN"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Post-pruning simplifies an already grown tree to improve generalisation.",
+      "tags": [
+        "MLPC",
+        "Pruning"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q08",
+      "type": "single",
+      "question": "Why can a random forest combine individually overfitting trees successfully?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "All trees make identical errors"
+        },
+        {
+          "id": "B",
+          "text": "Diverse, weakly correlated errors can be reduced by voting"
+        },
+        {
+          "id": "C",
+          "text": "Voting removes the need for data"
+        },
+        {
+          "id": "D",
+          "text": "Every tree is linear"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "High-variance trees that overfit differently can produce a stable ensemble prediction.",
+      "tags": [
+        "MLPC",
+        "Random Forest"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q09",
+      "type": "single",
+      "question": "At each random-forest node, the standard lecture algorithm considers:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Every feature in a fixed order"
+        },
+        {
+          "id": "B",
+          "text": "A random subset of features"
+        },
+        {
+          "id": "C",
+          "text": "Only the target label"
+        },
+        {
+          "id": "D",
+          "text": "No feature because trees are untrained"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Random feature subsets decorrelate the trees and improve the ensemble.",
+      "tags": [
+        "MLPC",
+        "Random Forest"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q10",
+      "type": "single",
+      "question": "Which is a disadvantage of a random forest compared with a single small decision tree?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It cannot classify new examples"
+        },
+        {
+          "id": "B",
+          "text": "The ensemble is much less interpretable"
+        },
+        {
+          "id": "C",
+          "text": "It is necessarily less robust to noise"
+        },
+        {
+          "id": "D",
+          "text": "It cannot use numeric features"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Combining many trees sacrifices the simple rule-based interpretation of one tree.",
+      "tags": [
+        "MLPC",
+        "Random Forest"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q11",
+      "type": "single",
+      "question": "What does a hard-margin SVM maximize when the training data are linearly separable?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The number of features"
+        },
+        {
+          "id": "B",
+          "text": "The distance between the separator and the nearest training examples"
+        },
+        {
+          "id": "C",
+          "text": "The empirical class imbalance"
+        },
+        {
+          "id": "D",
+          "text": "The depth of a decision tree"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The maximum-margin hyperplane is as far as possible from the closest points of both classes.",
+      "tags": [
+        "MLPC",
+        "Support Vector Machines"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q12",
+      "type": "single",
+      "question": "Which training examples determine the position of an SVM separator?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Only examples farthest from the boundary"
+        },
+        {
+          "id": "B",
+          "text": "The support vectors nearest the margin"
+        },
+        {
+          "id": "C",
+          "text": "Only the majority-class examples"
+        },
+        {
+          "id": "D",
+          "text": "All examples with equal influence"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Only support vectors have nonzero influence in the final dual-form classifier.",
+      "tags": [
+        "MLPC",
+        "Support Vector Machines"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q13",
+      "type": "single",
+      "question": "What is the purpose of the soft-margin formulation?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Require perfect separation in every dataset"
+        },
+        {
+          "id": "B",
+          "text": "Trade margin size against violations or classification errors"
+        },
+        {
+          "id": "C",
+          "text": "Remove the kernel function"
+        },
+        {
+          "id": "D",
+          "text": "Turn binary labels into probabilities"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Slack or hinge-loss terms permit errors when perfect separation is impossible or undesirable.",
+      "tags": [
+        "MLPC",
+        "Support Vector Machines"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q14",
+      "type": "single",
+      "question": "What does the kernel trick avoid?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Computing class labels"
+        },
+        {
+          "id": "B",
+          "text": "Explicitly constructing the potentially huge transformed feature vectors"
+        },
+        {
+          "id": "C",
+          "text": "Choosing a binary decision"
+        },
+        {
+          "id": "D",
+          "text": "Using dot products"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A kernel computes transformed-space dot products directly from original-space vectors.",
+      "tags": [
+        "MLPC",
+        "Kernels"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-05-popular-classifiers-q15",
+      "type": "single",
+      "question": "A circular boundary in the original feature space may become what after a suitable quadratic feature mapping?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A linear hyperplane in the transformed space"
+        },
+        {
+          "id": "B",
+          "text": "An unlabeled cluster"
+        },
+        {
+          "id": "C",
+          "text": "A decision-tree leaf"
+        },
+        {
+          "id": "D",
+          "text": "A probability that must equal zero"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Nonlinear mappings can make a nonlinear original-space problem linearly separable in a higher-dimensional space.",
+      "tags": [
+        "MLPC",
+        "Kernels"
+      ],
+      "difficulty": "hard",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    }
+  ]
+}

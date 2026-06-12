@@ -1,0 +1,391 @@
+{
+  "schemaVersion": 1,
+  "id": "mlpc-01-introduction-classification",
+  "title": "MLPC 01 - Introduction to Classification",
+  "subject": "Machine Learning and Pattern Classification",
+  "description": "Covers the classification pipeline, features, decision boundaries, generalisation, overfitting, and learning paradigms. All questions are single-choice and modeled after the conceptual style of the MLPC Retry 2024S exam. Source: 01_Introduction_to_Class.pdf.",
+  "createdAt": "2026-06-12T00:00:00.000Z",
+  "updatedAt": "2026-06-12T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "mlpc-01-introduction-classification-q01",
+      "type": "single",
+      "question": "A fish classifier receives raw camera images. Which step is specifically responsible for turning each image into measurements such as length, width, and lightness?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Classification"
+        },
+        {
+          "id": "B",
+          "text": "Feature extraction"
+        },
+        {
+          "id": "C",
+          "text": "Cost-sensitive evaluation"
+        },
+        {
+          "id": "D",
+          "text": "Model selection"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Feature extraction reduces raw data to informative measurements used by the classifier.",
+      "tags": [
+        "MLPC",
+        "Classification Pipeline"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-01-introduction-classification-q02",
+      "type": "single",
+      "question": "A fish is represented by lightness and width. What is the correct geometric interpretation?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It is a class label in a two-class set"
+        },
+        {
+          "id": "B",
+          "text": "It is a point in a two-dimensional feature space"
+        },
+        {
+          "id": "C",
+          "text": "It is a decision boundary"
+        },
+        {
+          "id": "D",
+          "text": "It is a probability distribution"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A vector of two feature values identifies one point in a two-dimensional feature space.",
+      "tags": [
+        "MLPC",
+        "Feature Space"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-01-introduction-classification-q03",
+      "type": "single",
+      "question": "A length threshold misclassifies some salmon and sea bass because their length distributions overlap. Which conclusion is justified?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "No classifier can solve the task"
+        },
+        {
+          "id": "B",
+          "text": "Length alone is not a perfect discriminator"
+        },
+        {
+          "id": "C",
+          "text": "The labels must be incorrect"
+        },
+        {
+          "id": "D",
+          "text": "The threshold must equal the mean fish length"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Overlap means no single threshold on length can perfectly separate the classes.",
+      "tags": [
+        "MLPC",
+        "Decision Boundaries"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-01-introduction-classification-q04",
+      "type": "single",
+      "question": "Misclassifying sea bass as salmon is made much more costly than the reverse error. What should a minimum-risk designer generally consider?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Moving the decision boundary to reduce the expensive error"
+        },
+        {
+          "id": "B",
+          "text": "Keeping the boundary fixed because accuracy is unchanged"
+        },
+        {
+          "id": "C",
+          "text": "Removing all sea bass examples"
+        },
+        {
+          "id": "D",
+          "text": "Using only the cheapest class as training data"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Unequal costs can justify shifting the boundary even if the total number of errors changes.",
+      "tags": [
+        "MLPC",
+        "Misclassification Costs"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-01-introduction-classification-q05",
+      "type": "single",
+      "question": "A highly curved boundary makes zero errors on a small training set, while a simpler boundary makes two errors. Which model is guaranteed to perform better on future fish?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The curved model"
+        },
+        {
+          "id": "B",
+          "text": "The simple model"
+        },
+        {
+          "id": "C",
+          "text": "Both perform identically"
+        },
+        {
+          "id": "D",
+          "text": "Neither is guaranteed from training error alone"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Training fit alone does not determine generalisation; the complex model may be overfitting.",
+      "tags": [
+        "MLPC",
+        "Generalisation"
+      ],
+      "difficulty": "hard",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-01-introduction-classification-q06",
+      "type": "single",
+      "question": "What is the primary purpose of a learned classifier?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Memorise the labels of training examples"
+        },
+        {
+          "id": "B",
+          "text": "Correctly classify new cases from the application domain"
+        },
+        {
+          "id": "C",
+          "text": "Maximise the number of features"
+        },
+        {
+          "id": "D",
+          "text": "Create the most complex possible boundary"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The goal is generalisation to new, unseen cases, not merely remembering the training set.",
+      "tags": [
+        "MLPC",
+        "Generalisation"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-01-introduction-classification-q07",
+      "type": "single",
+      "question": "Which change most directly increases the expressive complexity of a two-feature classifier?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Replacing a curved boundary with a straight line"
+        },
+        {
+          "id": "B",
+          "text": "Allowing more complex decision boundaries"
+        },
+        {
+          "id": "C",
+          "text": "Reducing the number of training examples"
+        },
+        {
+          "id": "D",
+          "text": "Ignoring one of the two features"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A richer family of boundaries can represent more complicated class regions.",
+      "tags": [
+        "MLPC",
+        "Model Complexity"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-01-introduction-classification-q08",
+      "type": "single",
+      "question": "Which description best matches classical machine learning in the lecture's comparison of learning paradigms?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Hand-write both features and decision rules"
+        },
+        {
+          "id": "B",
+          "text": "Hand-design a feature extractor, then train a classifier"
+        },
+        {
+          "id": "C",
+          "text": "Learn every stage end-to-end from raw input"
+        },
+        {
+          "id": "D",
+          "text": "Use no labeled examples"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Classical ML commonly uses engineered features followed by a learned classifier.",
+      "tags": [
+        "MLPC",
+        "Learning Paradigms"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-01-introduction-classification-q09",
+      "type": "single",
+      "question": "Which description best matches end-to-end deep learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The feature extractor and classifier are learned jointly from input to output"
+        },
+        {
+          "id": "B",
+          "text": "Only the final threshold is learned"
+        },
+        {
+          "id": "C",
+          "text": "All rules are written manually"
+        },
+        {
+          "id": "D",
+          "text": "Training labels are unnecessary in every case"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "End-to-end systems optimise a stack of functions, often learning features and classification jointly.",
+      "tags": [
+        "MLPC",
+        "Learning Paradigms"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-01-introduction-classification-q10",
+      "type": "single",
+      "question": "Which property is most desirable for training and test data in a real classification project?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They should contain only easy examples"
+        },
+        {
+          "id": "B",
+          "text": "They should be representative, correctly labeled, and sufficiently large"
+        },
+        {
+          "id": "C",
+          "text": "They should contain as many duplicated examples as possible"
+        },
+        {
+          "id": "D",
+          "text": "They should be selected after seeing the classifier's mistakes"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Representative and reliable data are required for learning and meaningful evaluation.",
+      "tags": [
+        "MLPC",
+        "Design Cycle"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    }
+  ]
+}

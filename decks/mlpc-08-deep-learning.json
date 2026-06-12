@@ -1,0 +1,657 @@
+{
+  "schemaVersion": 1,
+  "id": "mlpc-08-deep-learning",
+  "title": "MLPC 08 - Deep Learning",
+  "subject": "Machine Learning and Pattern Classification",
+  "description": "Covers task formalization, deep architectures, CNNs, sequence models, optimization, regularization, transfer learning, and limitations. All questions are single-choice and modeled after the conceptual style of the MLPC Retry 2024S exam. Source: 08_Deep_Learning.pdf.",
+  "createdAt": "2026-06-12T00:00:00.000Z",
+  "updatedAt": "2026-06-12T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "mlpc-08-deep-learning-q01",
+      "type": "single",
+      "question": "What is the defining design choice highlighted for deep learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Use only one linear function"
+        },
+        {
+          "id": "B",
+          "text": "Compose multiple nonlinear functions"
+        },
+        {
+          "id": "C",
+          "text": "Avoid parameter optimization"
+        },
+        {
+          "id": "D",
+          "text": "Train only on unlabeled tables"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A deep model represents the solution as a stack or composition of nonlinear transformations.",
+      "tags": [
+        "MLPC",
+        "Deep Learning Basics"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q02",
+      "type": "single",
+      "question": "For categorical classification, which loss is commonly used?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Mean quantisation error"
+        },
+        {
+          "id": "B",
+          "text": "Categorical cross-entropy"
+        },
+        {
+          "id": "C",
+          "text": "Information gain"
+        },
+        {
+          "id": "D",
+          "text": "Davies-Bouldin index"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Categorical cross-entropy compares predicted class probabilities with one-hot targets.",
+      "tags": [
+        "MLPC",
+        "Loss Functions"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q03",
+      "type": "single",
+      "question": "Why are dense layers poorly matched to raw images compared with convolutional layers?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Dense layers cannot multiply numbers"
+        },
+        {
+          "id": "B",
+          "text": "They do not encode local spatial structure or weight sharing"
+        },
+        {
+          "id": "C",
+          "text": "They require binary pixels"
+        },
+        {
+          "id": "D",
+          "text": "They always output sequences"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Convolutions preserve layout and reuse local kernels across positions.",
+      "tags": [
+        "MLPC",
+        "Architectures"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q04",
+      "type": "single",
+      "question": "What is a key parameter-efficiency benefit of convolution?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Every image position gets unrelated weights"
+        },
+        {
+          "id": "B",
+          "text": "The same kernel weights are reused across positions"
+        },
+        {
+          "id": "C",
+          "text": "It removes all nonlinearities"
+        },
+        {
+          "id": "D",
+          "text": "It requires one parameter per training example"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Weight sharing lets a small kernel process large inputs.",
+      "tags": [
+        "MLPC",
+        "Convolutional Networks"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q05",
+      "type": "single",
+      "question": "What does max pooling retain from each local patch?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The class label"
+        },
+        {
+          "id": "B",
+          "text": "The largest activation"
+        },
+        {
+          "id": "C",
+          "text": "The sum of all model parameters"
+        },
+        {
+          "id": "D",
+          "text": "The smallest loss over the dataset"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Max pooling downsamples by keeping the maximum local response.",
+      "tags": [
+        "MLPC",
+        "Convolutional Networks"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q06",
+      "type": "single",
+      "question": "A fully convolutional network is especially suitable when the task requires:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "One global label only"
+        },
+        {
+          "id": "B",
+          "text": "An output label for each pixel or time step"
+        },
+        {
+          "id": "C",
+          "text": "No spatial structure"
+        },
+        {
+          "id": "D",
+          "text": "A decision-tree rule"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Without dense layers, the network can retain an output grid or sequence aligned with the input.",
+      "tags": [
+        "MLPC",
+        "Convolutional Networks"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q07",
+      "type": "single",
+      "question": "Which limitation of a basic RNN follows from processing sequence items one after another?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It cannot share parameters"
+        },
+        {
+          "id": "B",
+          "text": "Sequence positions cannot all be processed in parallel"
+        },
+        {
+          "id": "C",
+          "text": "It cannot produce outputs"
+        },
+        {
+          "id": "D",
+          "text": "It has no hidden state"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Each recurrent step depends on the previous state, imposing sequential computation.",
+      "tags": [
+        "MLPC",
+        "Sequence Models"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q08",
+      "type": "single",
+      "question": "What does transformer self-attention do for each sequence item?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Compares it only with the immediately previous item"
+        },
+        {
+          "id": "B",
+          "text": "Compares it with all other sequence items"
+        },
+        {
+          "id": "C",
+          "text": "Deletes the sequence order in every implementation"
+        },
+        {
+          "id": "D",
+          "text": "Replaces the loss function"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Self-attention provides direct access to the full sequence for each prediction.",
+      "tags": [
+        "MLPC",
+        "Sequence Models"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q09",
+      "type": "single",
+      "question": "What is a major computational caveat of full self-attention?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Cost grows quadratically with sequence length"
+        },
+        {
+          "id": "B",
+          "text": "It can process only two classes"
+        },
+        {
+          "id": "C",
+          "text": "It cannot use GPUs"
+        },
+        {
+          "id": "D",
+          "text": "It requires labeled kernels"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "All-pairs comparisons lead to quadratic growth in sequence length.",
+      "tags": [
+        "MLPC",
+        "Sequence Models"
+      ],
+      "difficulty": "hard",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q10",
+      "type": "single",
+      "question": "Why are ReLU activations often preferred over saturated sigmoids in hidden layers?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "ReLU guarantees calibrated probabilities"
+        },
+        {
+          "id": "B",
+          "text": "Saturated sigmoids can block gradients"
+        },
+        {
+          "id": "C",
+          "text": "ReLU has no derivative anywhere"
+        },
+        {
+          "id": "D",
+          "text": "Sigmoids cannot output numbers"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Very large positive or negative sigmoid inputs produce tiny derivatives and vanishing gradients.",
+      "tags": [
+        "MLPC",
+        "Optimization"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q11",
+      "type": "single",
+      "question": "Why are mini-batches used during optimization?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They balance noisy single-example gradients against expensive full-dataset gradients"
+        },
+        {
+          "id": "B",
+          "text": "They remove the need for random initialization"
+        },
+        {
+          "id": "C",
+          "text": "They guarantee a global optimum"
+        },
+        {
+          "id": "D",
+          "text": "They make the model interpretable"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Mini-batches provide a practical compromise in gradient quality and computation.",
+      "tags": [
+        "MLPC",
+        "Optimization"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q12",
+      "type": "single",
+      "question": "What problem is ADAM intended to address?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Choosing class labels"
+        },
+        {
+          "id": "B",
+          "text": "Adapting update directions and step sizes using recent gradients"
+        },
+        {
+          "id": "C",
+          "text": "Selecting k in k-means"
+        },
+        {
+          "id": "D",
+          "text": "Constructing decision-tree leaves"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "ADAM combines gradient momentum-like information with adaptive scaling.",
+      "tags": [
+        "MLPC",
+        "Optimization"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q13",
+      "type": "single",
+      "question": "Why does data augmentation regularize an image classifier?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It teaches invariance to label-preserving transformations"
+        },
+        {
+          "id": "B",
+          "text": "It permanently deletes hidden units"
+        },
+        {
+          "id": "C",
+          "text": "It reduces every image to one pixel"
+        },
+        {
+          "id": "D",
+          "text": "It uses the test set for training"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Transformed training examples discourage reliance on irrelevant orientation, color, scale, or similar details.",
+      "tags": [
+        "MLPC",
+        "Regularization"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q14",
+      "type": "single",
+      "question": "What happens during dropout training?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "All weights are permanently removed"
+        },
+        {
+          "id": "B",
+          "text": "A random subset of hidden units is temporarily dropped for each example"
+        },
+        {
+          "id": "C",
+          "text": "The output classes are merged"
+        },
+        {
+          "id": "D",
+          "text": "The validation set is duplicated"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Dropout trains many overlapping subnetworks through temporary random deactivation.",
+      "tags": [
+        "MLPC",
+        "Regularization"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q15",
+      "type": "single",
+      "question": "At test time with the lecture's dropout convention, what should happen?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Continue dropping half the units"
+        },
+        {
+          "id": "B",
+          "text": "Use all units without the training-time scale-up"
+        },
+        {
+          "id": "C",
+          "text": "Delete the output layer"
+        },
+        {
+          "id": "D",
+          "text": "Retrain from random weights"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The described inverted compensation is applied during training; inference uses the complete network.",
+      "tags": [
+        "MLPC",
+        "Regularization"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q16",
+      "type": "single",
+      "question": "What is the standard first step when adapting a pretrained classifier to a new label set?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Replace its prediction head"
+        },
+        {
+          "id": "B",
+          "text": "Randomize all labels"
+        },
+        {
+          "id": "C",
+          "text": "Delete the feature extractor"
+        },
+        {
+          "id": "D",
+          "text": "Use the final test set as training data"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Transfer learning commonly keeps useful early features and replaces the task-specific final layers.",
+      "tags": [
+        "MLPC",
+        "Transfer Learning"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-08-deep-learning-q17",
+      "type": "single",
+      "question": "Which statement is a genuine limitation of deep learning discussed in the slides?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Deep models are always fully interpretable"
+        },
+        {
+          "id": "B",
+          "text": "They can inherit data bias and be vulnerable to adversarial examples"
+        },
+        {
+          "id": "C",
+          "text": "They require no engineering choices"
+        },
+        {
+          "id": "D",
+          "text": "They work only for images"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The lecture highlights black-box behavior, algorithmic bias, adversarial examples, and incomplete theory.",
+      "tags": [
+        "MLPC",
+        "Limitations"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    }
+  ]
+}

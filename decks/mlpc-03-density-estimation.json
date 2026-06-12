@@ -1,0 +1,923 @@
+{
+  "schemaVersion": 1,
+  "id": "mlpc-03-density-estimation",
+  "title": "MLPC 03 - Density Estimation",
+  "subject": "Machine Learning and Pattern Classification",
+  "description": "Covers likelihood and maximum-likelihood estimation, Gaussian and Naive Bayes classifiers, nearest-neighbour and kernel density estimation, k-NN classification, scaling, and dimensionality. All questions are single-choice and modeled after the conceptual style of the MLPC Retry 2024S exam. Source: 03_Density_Estimation.pdf.",
+  "createdAt": "2026-06-12T00:00:00.000Z",
+  "updatedAt": "2026-06-12T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "mlpc-03-density-estimation-q01",
+      "type": "single",
+      "question": "What is the defining assumption of parametric density estimation?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The distribution belongs to a chosen family described by finitely many parameters"
+        },
+        {
+          "id": "B",
+          "text": "Every training point defines a separate class"
+        },
+        {
+          "id": "C",
+          "text": "The density must be estimated only at test points"
+        },
+        {
+          "id": "D",
+          "text": "No assumption about distribution shape is permitted"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Parametric estimation selects a distribution family and learns its unknown parameters.",
+      "tags": [
+        "MLPC",
+        "Density Estimation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q02",
+      "type": "single",
+      "question": "How does non-parametric density estimation differ from parametric estimation?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It fixes a Gaussian shape for every class"
+        },
+        {
+          "id": "B",
+          "text": "It estimates density locally without committing to one fixed global family"
+        },
+        {
+          "id": "C",
+          "text": "It requires no training examples"
+        },
+        {
+          "id": "D",
+          "text": "It can only be used with discrete features"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Non-parametric methods use the observed sample directly to estimate local density.",
+      "tags": [
+        "MLPC",
+        "Density Estimation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q03",
+      "type": "single",
+      "question": "For i.i.d. observations D = {x_1, ..., x_n}, the likelihood L(theta : D) is:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The sum of the parameters"
+        },
+        {
+          "id": "B",
+          "text": "The product of p(x_i | theta) over the observations"
+        },
+        {
+          "id": "C",
+          "text": "A posterior distribution over classes"
+        },
+        {
+          "id": "D",
+          "text": "The probability P(theta | D)"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Independence allows the joint probability or density of the sample to factor into a product.",
+      "tags": [
+        "MLPC",
+        "Likelihood"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q04",
+      "type": "single",
+      "question": "Why is log-likelihood commonly optimized instead of likelihood?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It changes the maximizing parameter"
+        },
+        {
+          "id": "B",
+          "text": "It turns products into sums and improves numerical stability"
+        },
+        {
+          "id": "C",
+          "text": "It makes negative densities valid"
+        },
+        {
+          "id": "D",
+          "text": "It normalizes the parameter distribution"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The logarithm is monotonic, preserves the argmax, and avoids tiny products.",
+      "tags": [
+        "MLPC",
+        "Likelihood"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q05",
+      "type": "single",
+      "question": "Which statement correctly distinguishes p(x | theta) from L(theta : D)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Both are necessarily normalized densities over theta"
+        },
+        {
+          "id": "B",
+          "text": "p(x | theta) varies with x, while likelihood varies with theta after D is fixed"
+        },
+        {
+          "id": "C",
+          "text": "Likelihood is a class label"
+        },
+        {
+          "id": "D",
+          "text": "p(x | theta) can only be discrete"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The same model expression is viewed as a function of observations for a density and of parameters for likelihood.",
+      "tags": [
+        "MLPC",
+        "Likelihood"
+      ],
+      "difficulty": "hard",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q06",
+      "type": "single",
+      "question": "What is a maximum-likelihood estimate theta-hat?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The maximum numeric likelihood value"
+        },
+        {
+          "id": "B",
+          "text": "The parameter value that maximizes likelihood for the observed data"
+        },
+        {
+          "id": "C",
+          "text": "A posterior class probability"
+        },
+        {
+          "id": "D",
+          "text": "The number of observations"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "An ML estimate is an argmax in parameter space, not the likelihood's height.",
+      "tags": [
+        "MLPC",
+        "Maximum Likelihood"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q07",
+      "type": "single",
+      "question": "A training set contains 60 bass and 40 salmon. What is the ML estimate of the prior P(bass)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "0.40"
+        },
+        {
+          "id": "B",
+          "text": "0.50"
+        },
+        {
+          "id": "C",
+          "text": "0.60"
+        },
+        {
+          "id": "D",
+          "text": "1.00"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "For a discrete distribution, the ML estimate is the observed relative frequency.",
+      "tags": [
+        "MLPC",
+        "Maximum Likelihood"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q08",
+      "type": "single",
+      "question": "For a univariate Gaussian with unknown mean, what is the ML estimate of the mean?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The sample mean"
+        },
+        {
+          "id": "B",
+          "text": "The sample maximum"
+        },
+        {
+          "id": "C",
+          "text": "Always zero"
+        },
+        {
+          "id": "D",
+          "text": "The number of samples"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The Gaussian mean that maximizes likelihood is the arithmetic mean of the observations.",
+      "tags": [
+        "MLPC",
+        "Maximum Likelihood"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q09",
+      "type": "single",
+      "question": "What does a single-Gaussian Bayes classifier assume for each class?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Each class-conditional density can be represented by one multivariate Gaussian"
+        },
+        {
+          "id": "B",
+          "text": "Every feature is a class label"
+        },
+        {
+          "id": "C",
+          "text": "All classes contain one training example"
+        },
+        {
+          "id": "D",
+          "text": "The decision boundary is always nonlinear"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The learner estimates one mean vector and covariance matrix for each class.",
+      "tags": [
+        "MLPC",
+        "Gaussian Classifier"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q10",
+      "type": "single",
+      "question": "Why can a single Gaussian be a poor class-conditional model?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It is always multimodal"
+        },
+        {
+          "id": "B",
+          "text": "Real class distributions may contain several distinct modes or subgroups"
+        },
+        {
+          "id": "C",
+          "text": "It cannot have a mean"
+        },
+        {
+          "id": "D",
+          "text": "It requires no parameters"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "One Gaussian is unimodal and may not represent multiple separated clouds within a class.",
+      "tags": [
+        "MLPC",
+        "Gaussian Classifier"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q11",
+      "type": "single",
+      "question": "What assumption gives Naive Bayes its parameter-efficiency?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Features are conditionally independent given the class"
+        },
+        {
+          "id": "B",
+          "text": "All classes have probability zero"
+        },
+        {
+          "id": "C",
+          "text": "Every feature has the same observed value"
+        },
+        {
+          "id": "D",
+          "text": "The test set is used during training"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Conditional independence factorizes a high-dimensional joint density into one-dimensional terms.",
+      "tags": [
+        "MLPC",
+        "Naive Bayes"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q12",
+      "type": "single",
+      "question": "If two features are strongly correlated within a class, what is a likely Naive Bayes problem?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It may produce inaccurate posterior probability estimates"
+        },
+        {
+          "id": "B",
+          "text": "It becomes a nearest-neighbour classifier"
+        },
+        {
+          "id": "C",
+          "text": "It cannot predict any class"
+        },
+        {
+          "id": "D",
+          "text": "It automatically learns the correlation matrix"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The independence model misrepresents correlated evidence, although classification can still work well.",
+      "tags": [
+        "MLPC",
+        "Naive Bayes"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q13",
+      "type": "single",
+      "question": "Why is Naive Bayes attractive for document classification with tens of thousands of word features?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It models the full exponential joint table"
+        },
+        {
+          "id": "B",
+          "text": "It estimates separate low-dimensional feature distributions efficiently"
+        },
+        {
+          "id": "C",
+          "text": "It requires dense documents"
+        },
+        {
+          "id": "D",
+          "text": "It ignores class priors"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Factorization avoids estimating a joint distribution over all word combinations.",
+      "tags": [
+        "MLPC",
+        "Naive Bayes"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q14",
+      "type": "single",
+      "question": "In fixed-radius nearest-neighbour density estimation, what happens if radius h is too small?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The estimate can be zero because the neighbourhood is empty"
+        },
+        {
+          "id": "B",
+          "text": "Every training point contributes equally"
+        },
+        {
+          "id": "C",
+          "text": "The estimate is always over-smoothed"
+        },
+        {
+          "id": "D",
+          "text": "Feature scaling becomes irrelevant"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A tiny neighbourhood may contain no observations, producing an unstable zero estimate.",
+      "tags": [
+        "MLPC",
+        "Neighbour Density Estimation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q15",
+      "type": "single",
+      "question": "In fixed-radius nearest-neighbour density estimation, what happens if radius h is too large?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The estimate becomes overly blurred by distant points"
+        },
+        {
+          "id": "B",
+          "text": "The neighbourhood must be empty"
+        },
+        {
+          "id": "C",
+          "text": "The number of features becomes zero"
+        },
+        {
+          "id": "D",
+          "text": "The estimate becomes a posterior automatically"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Large neighbourhoods average over distant regions and erase local density structure.",
+      "tags": [
+        "MLPC",
+        "Neighbour Density Estimation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q16",
+      "type": "single",
+      "question": "How does k-nearest-neighbour density estimation adapt to sparse regions?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It uses a larger radius to enclose the required k neighbours"
+        },
+        {
+          "id": "B",
+          "text": "It reduces the feature dimension to one"
+        },
+        {
+          "id": "C",
+          "text": "It duplicates the query point"
+        },
+        {
+          "id": "D",
+          "text": "It fixes the radius at zero"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The neighbourhood expands where data are sparse and contracts where data are dense.",
+      "tags": [
+        "MLPC",
+        "Neighbour Density Estimation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q17",
+      "type": "single",
+      "question": "Why should features often be standardized before Euclidean-distance methods are applied?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Large-scale features would otherwise dominate the distance"
+        },
+        {
+          "id": "B",
+          "text": "Standardization creates class labels"
+        },
+        {
+          "id": "C",
+          "text": "Distances require probabilities summing to one"
+        },
+        {
+          "id": "D",
+          "text": "It guarantees no overfitting"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Centering and scaling put features on comparable units of standard deviation.",
+      "tags": [
+        "MLPC",
+        "Distance and Scaling"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q18",
+      "type": "single",
+      "question": "What is the basic idea of kernel density estimation?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Each training example contributes a distance-decaying kernel to the density estimate"
+        },
+        {
+          "id": "B",
+          "text": "Only the nearest example contributes"
+        },
+        {
+          "id": "C",
+          "text": "A decision tree selects one feature"
+        },
+        {
+          "id": "D",
+          "text": "The density is assumed to be uniform"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The estimated density is an average of kernels centered on the observations.",
+      "tags": [
+        "MLPC",
+        "Kernel Density Estimation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q19",
+      "type": "single",
+      "question": "What is the effect of using a very wide Gaussian kernel?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A smoother but more blurred density estimate"
+        },
+        {
+          "id": "B",
+          "text": "A separate class for every point"
+        },
+        {
+          "id": "C",
+          "text": "A guaranteed zero estimate between points"
+        },
+        {
+          "id": "D",
+          "text": "A smaller training set"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Increasing bandwidth spreads each observation's contribution over a wider region.",
+      "tags": [
+        "MLPC",
+        "Kernel Density Estimation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q20",
+      "type": "single",
+      "question": "In a k-NN classifier, what estimates P(omega_i | x)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The fraction of the k neighbours belonging to class omega_i"
+        },
+        {
+          "id": "B",
+          "text": "The distance to the farthest point in the entire dataset"
+        },
+        {
+          "id": "C",
+          "text": "The global number of features"
+        },
+        {
+          "id": "D",
+          "text": "The likelihood maximum over theta"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The local class frequency k_i/k directly estimates the class posterior around x.",
+      "tags": [
+        "MLPC",
+        "k-NN Classification"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q21",
+      "type": "single",
+      "question": "What is the explicit learning phase of the standard k-NN classifier?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Store the training set"
+        },
+        {
+          "id": "B",
+          "text": "Fit one covariance matrix"
+        },
+        {
+          "id": "C",
+          "text": "Optimize a separating hyperplane"
+        },
+        {
+          "id": "D",
+          "text": "Prune a tree"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "k-NN is a lazy learner; most computation occurs when a query is classified.",
+      "tags": [
+        "MLPC",
+        "k-NN Classification"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q22",
+      "type": "single",
+      "question": "Which statement about k-NN prediction time is correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It generally grows with the size of the stored training set"
+        },
+        {
+          "id": "B",
+          "text": "It is independent of the amount of training data"
+        },
+        {
+          "id": "C",
+          "text": "It is always faster than a linear classifier"
+        },
+        {
+          "id": "D",
+          "text": "It requires no distance calculations"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A straightforward query compares the new point with stored examples.",
+      "tags": [
+        "MLPC",
+        "k-NN Classification"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q23",
+      "type": "single",
+      "question": "What is the curse of dimensionality for neighbour-based methods?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A fixed-size dataset becomes sparse and even nearest neighbours can be far away"
+        },
+        {
+          "id": "B",
+          "text": "More dimensions always make all points identical"
+        },
+        {
+          "id": "C",
+          "text": "The number of required examples decreases exponentially"
+        },
+        {
+          "id": "D",
+          "text": "Distances become exact class probabilities"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Maintaining local sample density requires exponentially more data as dimensionality grows.",
+      "tags": [
+        "MLPC",
+        "Curse of Dimensionality"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-03-density-estimation-q24",
+      "type": "single",
+      "question": "Why do irrelevant features particularly harm distance-based classifiers in high dimensions?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Their random distance contributions can obscure the relevant similarities"
+        },
+        {
+          "id": "B",
+          "text": "They are automatically assigned zero weight"
+        },
+        {
+          "id": "C",
+          "text": "They reduce the number of dimensions"
+        },
+        {
+          "id": "D",
+          "text": "They make all class priors uniform"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Distance treats included dimensions as evidence even when they carry no class information.",
+      "tags": [
+        "MLPC",
+        "Curse of Dimensionality"
+      ],
+      "difficulty": "hard",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "id": "mlpc-07-neural-networks",
+  "title": "MLPC 07 - Feed-Forward Neural Networks",
+  "subject": "Machine Learning and Pattern Classification",
+  "description": "Covers neurons, activation functions, gradient descent, backpropagation, learning modes, overfitting, and neural-network classification. All questions are single-choice and modeled after the conceptual style of the MLPC Retry 2024S exam. Source: 07_Neural_Networks.pdf.",
+  "createdAt": "2026-06-12T00:00:00.000Z",
+  "updatedAt": "2026-06-12T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "mlpc-07-neural-networks-q01",
+      "type": "single",
+      "question": "What does a standard artificial neuron compute before applying its activation function?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The unweighted median of all labels"
+        },
+        {
+          "id": "B",
+          "text": "A weighted sum of inputs plus a bias"
+        },
+        {
+          "id": "C",
+          "text": "A confusion matrix"
+        },
+        {
+          "id": "D",
+          "text": "A nearest-neighbour vote"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A neuron first forms an affine combination of its inputs, then applies an activation.",
+      "tags": [
+        "MLPC",
+        "ANN Basics"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q02",
+      "type": "single",
+      "question": "Why are nonlinear hidden activations important in an MLP?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Without them, stacked affine layers still represent only an affine function"
+        },
+        {
+          "id": "B",
+          "text": "They guarantee zero test error"
+        },
+        {
+          "id": "C",
+          "text": "They remove all weights"
+        },
+        {
+          "id": "D",
+          "text": "They make backpropagation unnecessary"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Composing linear or affine layers without nonlinearities does not create a nonlinear model.",
+      "tags": [
+        "MLPC",
+        "Activation Functions"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q03",
+      "type": "single",
+      "question": "A network with enough hidden units and a suitable nonlinear activation is called a universal function approximator because it can:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Memorise only binary labels"
+        },
+        {
+          "id": "B",
+          "text": "Approximate a broad class of functions arbitrarily well"
+        },
+        {
+          "id": "C",
+          "text": "Find the global optimum in one step"
+        },
+        {
+          "id": "D",
+          "text": "Avoid all variance"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The approximation result concerns representational capacity, not optimization or generalisation guarantees.",
+      "tags": [
+        "MLPC",
+        "MLP Capacity"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q04",
+      "type": "single",
+      "question": "Gradient descent updates a parameter theta using which direction?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The positive gradient"
+        },
+        {
+          "id": "B",
+          "text": "The negative gradient"
+        },
+        {
+          "id": "C",
+          "text": "A random class label"
+        },
+        {
+          "id": "D",
+          "text": "The largest feature value"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The negative gradient points in the direction of steepest local decrease of the loss.",
+      "tags": [
+        "MLPC",
+        "Gradient Descent"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q05",
+      "type": "single",
+      "question": "What is the main role of the learning rate eta?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Choose the number of classes"
+        },
+        {
+          "id": "B",
+          "text": "Scale the size of each parameter update"
+        },
+        {
+          "id": "C",
+          "text": "Normalize output probabilities"
+        },
+        {
+          "id": "D",
+          "text": "Select the test set"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The learning rate controls how far the parameters move along the update direction.",
+      "tags": [
+        "MLPC",
+        "Gradient Descent"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q06",
+      "type": "single",
+      "question": "What can happen if the learning rate is much too large?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Training must converge faster"
+        },
+        {
+          "id": "B",
+          "text": "The loss may oscillate or diverge"
+        },
+        {
+          "id": "C",
+          "text": "The model becomes linear"
+        },
+        {
+          "id": "D",
+          "text": "All gradients become exact"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Oversized updates can repeatedly overshoot useful regions and destabilize training.",
+      "tags": [
+        "MLPC",
+        "Gradient Descent"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q07",
+      "type": "single",
+      "question": "Why is backpropagation needed in a multilayer network?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Hidden units have no direct target values, so their contribution to output error must be propagated backward"
+        },
+        {
+          "id": "B",
+          "text": "Output units cannot compute activations"
+        },
+        {
+          "id": "C",
+          "text": "The training set has no inputs"
+        },
+        {
+          "id": "D",
+          "text": "It converts regression into clustering"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Backpropagation applies the chain rule to assign gradients to hidden-layer parameters.",
+      "tags": [
+        "MLPC",
+        "Backpropagation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q08",
+      "type": "single",
+      "question": "Which order describes one backpropagation training iteration?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Update labels, remove inputs, create folds"
+        },
+        {
+          "id": "B",
+          "text": "Forward pass, compute output error, propagate error backward, update weights"
+        },
+        {
+          "id": "C",
+          "text": "Prune tree, choose kernel, vote"
+        },
+        {
+          "id": "D",
+          "text": "Cluster points, estimate k, stop"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Activations are computed forward and gradients are then computed backward.",
+      "tags": [
+        "MLPC",
+        "Backpropagation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q09",
+      "type": "single",
+      "question": "How does online learning differ from full-batch learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Online learning updates after individual examples; batch learning accumulates gradients over the dataset"
+        },
+        {
+          "id": "B",
+          "text": "Online learning never updates weights"
+        },
+        {
+          "id": "C",
+          "text": "Batch learning uses no loss"
+        },
+        {
+          "id": "D",
+          "text": "They differ only in output activation"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The difference is when and from how much data each weight update is computed.",
+      "tags": [
+        "MLPC",
+        "Learning Modes"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q10",
+      "type": "single",
+      "question": "Why can adding too many hidden units increase overfitting risk?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It reduces the number of parameters"
+        },
+        {
+          "id": "B",
+          "text": "It increases model capacity and the ability to fit noise"
+        },
+        {
+          "id": "C",
+          "text": "It forces every output to zero"
+        },
+        {
+          "id": "D",
+          "text": "It removes nonlinear functions"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "More units generally mean more parameters and a more expressive, higher-variance model.",
+      "tags": [
+        "MLPC",
+        "Overfitting"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q11",
+      "type": "single",
+      "question": "In early stopping, when should training usually stop?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "When training error first decreases"
+        },
+        {
+          "id": "B",
+          "text": "When validation error begins to worsen while training continues to improve"
+        },
+        {
+          "id": "C",
+          "text": "Only after training error is exactly zero"
+        },
+        {
+          "id": "D",
+          "text": "Before any parameter update"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "A rising validation error indicates that continued fitting is harming generalisation.",
+      "tags": [
+        "MLPC",
+        "Early Stopping"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q12",
+      "type": "single",
+      "question": "A binary classifier uses one identity output trained with squared error and targets -1 and +1. Is its raw output automatically a probability?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes, because every neural output is a probability"
+        },
+        {
+          "id": "B",
+          "text": "No, an identity output is not constrained to [0,1]"
+        },
+        {
+          "id": "C",
+          "text": "Yes, but only when negative"
+        },
+        {
+          "id": "D",
+          "text": "No, because binary tasks cannot use neural networks"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "This setup learns a discriminant score; probability interpretation requires an appropriate output transformation and loss.",
+      "tags": [
+        "MLPC",
+        "NN Classification"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q13",
+      "type": "single",
+      "question": "Which output/loss pairing is appropriate for probabilistic binary classification?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Identity and entropy of the input"
+        },
+        {
+          "id": "B",
+          "text": "Sigmoid and binary cross-entropy"
+        },
+        {
+          "id": "C",
+          "text": "Softmax and mean quantisation error"
+        },
+        {
+          "id": "D",
+          "text": "Tanh and information gain"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Sigmoid constrains one output to [0,1], and binary cross-entropy matches Bernoulli targets.",
+      "tags": [
+        "MLPC",
+        "NN Classification"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-07-neural-networks-q14",
+      "type": "single",
+      "question": "Which output/loss pairing is standard for mutually exclusive k-class classification?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "k softmax outputs and categorical cross-entropy"
+        },
+        {
+          "id": "B",
+          "text": "One identity output and k-means"
+        },
+        {
+          "id": "C",
+          "text": "k linear outputs with no decision rule"
+        },
+        {
+          "id": "D",
+          "text": "One sigmoid for every input feature"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Softmax produces a normalized class distribution, and categorical cross-entropy scores the one-hot target.",
+      "tags": [
+        "MLPC",
+        "NN Classification"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    }
+  ]
+}

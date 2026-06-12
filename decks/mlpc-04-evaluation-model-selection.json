@@ -1,0 +1,543 @@
+{
+  "schemaVersion": 1,
+  "id": "mlpc-04-evaluation-model-selection",
+  "title": "MLPC 04 - Evaluation and Model Selection",
+  "subject": "Machine Learning and Pattern Classification",
+  "description": "Covers empirical evaluation, cross-validation, overfitting, bias and variance, model selection, confusion matrices, ROC analysis, and costs. All questions are single-choice and modeled after the conceptual style of the MLPC Retry 2024S exam. Source: 04_Classification_General_Issues.pdf.",
+  "createdAt": "2026-06-12T00:00:00.000Z",
+  "updatedAt": "2026-06-12T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "mlpc-04-evaluation-model-selection-q01",
+      "type": "single",
+      "question": "The true error of a classifier is best described as:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Its error on the training set"
+        },
+        {
+          "id": "B",
+          "text": "The probability of misclassifying a new draw from the underlying distribution"
+        },
+        {
+          "id": "C",
+          "text": "One minus its validation loss after model selection"
+        },
+        {
+          "id": "D",
+          "text": "The number of model parameters"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "True error is defined relative to future examples drawn from the underlying data distribution.",
+      "tags": [
+        "MLPC",
+        "True and Empirical Error"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q02",
+      "type": "single",
+      "question": "Why is the resubstitution estimate usually optimistic?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The training data have no labels"
+        },
+        {
+          "id": "B",
+          "text": "The classifier was optimized using the same data on which it is tested"
+        },
+        {
+          "id": "C",
+          "text": "It always predicts the majority class"
+        },
+        {
+          "id": "D",
+          "text": "It uses too many test examples"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Testing on training data violates the independence needed for an unbiased estimate.",
+      "tags": [
+        "MLPC",
+        "Resubstitution"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q03",
+      "type": "single",
+      "question": "In 5-fold cross-validation, how many learned classifiers contribute to the performance estimate?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "1"
+        },
+        {
+          "id": "B",
+          "text": "4"
+        },
+        {
+          "id": "C",
+          "text": "5"
+        },
+        {
+          "id": "D",
+          "text": "The number of training examples"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Each fold is held out once, producing five separately trained classifiers and five estimates.",
+      "tags": [
+        "MLPC",
+        "Cross-Validation"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q04",
+      "type": "single",
+      "question": "What does stratified cross-validation try to preserve across folds?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The order of examples"
+        },
+        {
+          "id": "B",
+          "text": "Approximately the class distribution"
+        },
+        {
+          "id": "C",
+          "text": "The learned model parameters"
+        },
+        {
+          "id": "D",
+          "text": "Exactly the same examples"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Stratification keeps class proportions approximately similar in each fold.",
+      "tags": [
+        "MLPC",
+        "Cross-Validation"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q05",
+      "type": "single",
+      "question": "A dataset contains 80% class A and 20% class B. What is its default accuracy?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "20%"
+        },
+        {
+          "id": "B",
+          "text": "50%"
+        },
+        {
+          "id": "C",
+          "text": "80%"
+        },
+        {
+          "id": "D",
+          "text": "100%"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Always predicting the majority class A is correct on 80% of the examples.",
+      "tags": [
+        "MLPC",
+        "Baseline Accuracy"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q06",
+      "type": "single",
+      "question": "A model family changes drastically when the training sample changes slightly. This behavior is most closely associated with:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "High bias"
+        },
+        {
+          "id": "B",
+          "text": "High variance"
+        },
+        {
+          "id": "C",
+          "text": "Perfect calibration"
+        },
+        {
+          "id": "D",
+          "text": "Low dimensionality"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "High-variance learners are sensitive to the particular sample and tend to overfit.",
+      "tags": [
+        "MLPC",
+        "Bias and Variance"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q07",
+      "type": "single",
+      "question": "A strictly linear model cannot represent the true curved boundary even with unlimited clean data. This is primarily:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Variance error"
+        },
+        {
+          "id": "B",
+          "text": "Bias error"
+        },
+        {
+          "id": "C",
+          "text": "Test leakage"
+        },
+        {
+          "id": "D",
+          "text": "Class imbalance"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The restricted model class introduces bias because it cannot express the target boundary.",
+      "tags": [
+        "MLPC",
+        "Bias and Variance"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q08",
+      "type": "single",
+      "question": "Several hyperparameter settings are compared on a validation set. Why should the winning validation score not be reported as the final unbiased performance estimate?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Validation examples have no labels"
+        },
+        {
+          "id": "B",
+          "text": "The selected model has been optimized toward that validation set"
+        },
+        {
+          "id": "C",
+          "text": "Validation sets are always smaller than training sets"
+        },
+        {
+          "id": "D",
+          "text": "Hyperparameters do not affect performance"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Selection exploits random favorable error in the validation estimates, producing the optimiser's curse.",
+      "tags": [
+        "MLPC",
+        "Model Selection"
+      ],
+      "difficulty": "hard",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q09",
+      "type": "single",
+      "question": "Which data should be used exactly once for the final performance estimate after model selection?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Training data"
+        },
+        {
+          "id": "B",
+          "text": "Validation data"
+        },
+        {
+          "id": "C",
+          "text": "An independent test set"
+        },
+        {
+          "id": "D",
+          "text": "The union of all previously inspected sets"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The final test set must remain independent of training and model-selection decisions.",
+      "tags": [
+        "MLPC",
+        "Model Selection"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q10",
+      "type": "single",
+      "question": "For a positive class, recall is:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "TP / (TP + FN)"
+        },
+        {
+          "id": "B",
+          "text": "TP / (TP + FP)"
+        },
+        {
+          "id": "C",
+          "text": "TN / (TN + FP)"
+        },
+        {
+          "id": "D",
+          "text": "(TP + TN) / N"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Recall is the fraction of actual positive examples that are correctly recognized.",
+      "tags": [
+        "MLPC",
+        "Precision and Recall"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q11",
+      "type": "single",
+      "question": "For a positive class, precision is:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "TP / (TP + FN)"
+        },
+        {
+          "id": "B",
+          "text": "TP / (TP + FP)"
+        },
+        {
+          "id": "C",
+          "text": "FP / (FP + TN)"
+        },
+        {
+          "id": "D",
+          "text": "TN / (TN + FN)"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Precision is the fraction of positive predictions that are correct.",
+      "tags": [
+        "MLPC",
+        "Precision and Recall"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q12",
+      "type": "single",
+      "question": "Two binary classifiers have identical accuracy on the same test set. What can still differ?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Their positions in ROC space"
+        },
+        {
+          "id": "B",
+          "text": "The number of test examples"
+        },
+        {
+          "id": "C",
+          "text": "The true labels"
+        },
+        {
+          "id": "D",
+          "text": "The definition of accuracy"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The classifiers can trade false positives against true positives differently while retaining equal accuracy.",
+      "tags": [
+        "MLPC",
+        "ROC Analysis"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q13",
+      "type": "single",
+      "question": "Which point in ROC space represents always predicting the negative class?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "(0, 0)"
+        },
+        {
+          "id": "B",
+          "text": "(0, 1)"
+        },
+        {
+          "id": "C",
+          "text": "(1, 0)"
+        },
+        {
+          "id": "D",
+          "text": "(1, 1)"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Always-negative prediction yields zero true-positive rate and zero false-positive rate.",
+      "tags": [
+        "MLPC",
+        "ROC Analysis"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-04-evaluation-model-selection-q14",
+      "type": "single",
+      "question": "When false negatives become much more expensive, which evaluation choice is most defensible?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Use accuracy only"
+        },
+        {
+          "id": "B",
+          "text": "Include the cost matrix or a cost-sensitive criterion"
+        },
+        {
+          "id": "C",
+          "text": "Ignore the minority class"
+        },
+        {
+          "id": "D",
+          "text": "Select the model with the most parameters"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Unequal error costs should enter evaluation or learning explicitly.",
+      "tags": [
+        "MLPC",
+        "Cost-Sensitive Learning"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    }
+  ]
+}

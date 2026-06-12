@@ -1,0 +1,467 @@
+{
+  "schemaVersion": 1,
+  "id": "mlpc-06-improving-results",
+  "title": "MLPC 06 - Improving Learning Results",
+  "subject": "Machine Learning and Pattern Classification",
+  "description": "Covers feature selection and construction, parameter optimization, ensemble methods, and prediction post-processing. All questions are single-choice and modeled after the conceptual style of the MLPC Retry 2024S exam. Source: 06_Improving_Learning_Results.pdf.",
+  "createdAt": "2026-06-12T00:00:00.000Z",
+  "updatedAt": "2026-06-12T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "mlpc-06-improving-results-q01",
+      "type": "single",
+      "question": "Why can removing irrelevant features improve k-NN?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It changes labels into probabilities"
+        },
+        {
+          "id": "B",
+          "text": "Irrelevant dimensions can distort distances"
+        },
+        {
+          "id": "C",
+          "text": "k-NN requires exactly one feature"
+        },
+        {
+          "id": "D",
+          "text": "It makes every neighbour identical"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Distance-based classifiers can be strongly affected by irrelevant dimensions.",
+      "tags": [
+        "MLPC",
+        "Feature Selection"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-06-improving-results-q02",
+      "type": "single",
+      "question": "Why can removing redundant correlated features help Naive Bayes?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It reduces violations of the independence assumption"
+        },
+        {
+          "id": "B",
+          "text": "It creates more classes"
+        },
+        {
+          "id": "C",
+          "text": "It forces nonlinear boundaries"
+        },
+        {
+          "id": "D",
+          "text": "It eliminates the need for priors"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Duplicated or correlated evidence is problematic for a model that treats features as conditionally independent.",
+      "tags": [
+        "MLPC",
+        "Feature Selection"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-06-improving-results-q03",
+      "type": "single",
+      "question": "Why is exhaustive feature-subset search usually impractical for N features?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "There are only N possible subsets"
+        },
+        {
+          "id": "B",
+          "text": "The number of subsets grows on the order of 2^N"
+        },
+        {
+          "id": "C",
+          "text": "Cross-validation cannot compare subsets"
+        },
+        {
+          "id": "D",
+          "text": "Features cannot be removed"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Every feature can be included or excluded, yielding exponentially many subsets.",
+      "tags": [
+        "MLPC",
+        "Feature Selection"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-06-improving-results-q04",
+      "type": "single",
+      "question": "Forward feature selection starts with:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "All features and removes the worst"
+        },
+        {
+          "id": "B",
+          "text": "An empty set and repeatedly adds the most useful feature"
+        },
+        {
+          "id": "C",
+          "text": "A random forest"
+        },
+        {
+          "id": "D",
+          "text": "The test set"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Forward selection greedily grows the selected subset from no features.",
+      "tags": [
+        "MLPC",
+        "Feature Selection"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-06-improving-results-q05",
+      "type": "single",
+      "question": "A decision tree cannot easily identify squares from separate length and width features. Which constructed feature is most directly useful?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Length + color"
+        },
+        {
+          "id": "B",
+          "text": "Length / width"
+        },
+        {
+          "id": "C",
+          "text": "A random identifier"
+        },
+        {
+          "id": "D",
+          "text": "The class label copied as a feature"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The ratio directly expresses the relation needed to distinguish equal sides from unequal sides.",
+      "tags": [
+        "MLPC",
+        "Feature Construction"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-06-improving-results-q06",
+      "type": "single",
+      "question": "How should a proposed new feature representation be evaluated?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Only by checking training accuracy"
+        },
+        {
+          "id": "B",
+          "text": "By mapping the data and estimating performance with a proper validation procedure such as cross-validation"
+        },
+        {
+          "id": "C",
+          "text": "By counting feature names"
+        },
+        {
+          "id": "D",
+          "text": "On the final test set repeatedly"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Feature engineering is a model-selection decision and should be assessed without test leakage.",
+      "tags": [
+        "MLPC",
+        "Feature Construction"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-06-improving-results-q07",
+      "type": "single",
+      "question": "Which ensemble method trains different algorithms on the same data and predicts by class votes?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Voting"
+        },
+        {
+          "id": "B",
+          "text": "Bagging"
+        },
+        {
+          "id": "C",
+          "text": "Boosting"
+        },
+        {
+          "id": "D",
+          "text": "Filtering"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Voting combines predictions from different classifier types.",
+      "tags": [
+        "MLPC",
+        "Ensemble Methods"
+      ],
+      "difficulty": "easy",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-06-improving-results-q08",
+      "type": "single",
+      "question": "In bagging, each base learner is typically trained on:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The same single example"
+        },
+        {
+          "id": "B",
+          "text": "A bootstrap sample drawn with replacement"
+        },
+        {
+          "id": "C",
+          "text": "Only examples misclassified by the previous learner"
+        },
+        {
+          "id": "D",
+          "text": "The untouched final test set"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Bootstrap aggregation creates diverse training sets by sampling with replacement.",
+      "tags": [
+        "MLPC",
+        "Ensemble Methods"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-06-improving-results-q09",
+      "type": "single",
+      "question": "What distinguishes stacking from simple voting?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Stacking trains a meta-classifier from base-model predictions"
+        },
+        {
+          "id": "B",
+          "text": "Stacking uses no base models"
+        },
+        {
+          "id": "C",
+          "text": "Stacking requires all votes to be equal"
+        },
+        {
+          "id": "D",
+          "text": "Stacking only smooths temporal labels"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "The second-level model learns how to combine the base learners' outputs.",
+      "tags": [
+        "MLPC",
+        "Ensemble Methods"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-06-improving-results-q10",
+      "type": "single",
+      "question": "In boosting, what happens to an example misclassified by the current classifier?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It is permanently deleted"
+        },
+        {
+          "id": "B",
+          "text": "Its weight is increased for the next classifier"
+        },
+        {
+          "id": "C",
+          "text": "It becomes a test example"
+        },
+        {
+          "id": "D",
+          "text": "Its class is changed"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Boosting focuses subsequent learners on examples that earlier learners handled poorly.",
+      "tags": [
+        "MLPC",
+        "Ensemble Methods"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-06-improving-results-q11",
+      "type": "single",
+      "question": "A single 'no music' frame lies inside a long run of 'music' predictions. Which post-processing method directly targets this?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Neighbourhood smoothing"
+        },
+        {
+          "id": "B",
+          "text": "Feature elimination"
+        },
+        {
+          "id": "C",
+          "text": "Bootstrap sampling"
+        },
+        {
+          "id": "D",
+          "text": "Kernel mapping"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Smoothing uses nearby predicted labels to correct isolated implausible outputs.",
+      "tags": [
+        "MLPC",
+        "Post-Processing"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    },
+    {
+      "id": "mlpc-06-improving-results-q12",
+      "type": "single",
+      "question": "After smoothing, a predicted music segment is shorter than the minimum plausible duration. What does filtering do?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Retrain the classifier"
+        },
+        {
+          "id": "B",
+          "text": "Relabel the short segment as no music"
+        },
+        {
+          "id": "C",
+          "text": "Increase the feature dimension"
+        },
+        {
+          "id": "D",
+          "text": "Add the segment to every fold"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "Duration-based filtering encodes application knowledge after classification.",
+      "tags": [
+        "MLPC",
+        "Post-Processing"
+      ],
+      "difficulty": "medium",
+      "source": "MLPC lecture slides SS 2026",
+      "createdAt": "2026-06-12T00:00:00.000Z",
+      "updatedAt": "2026-06-12T00:00:00.000Z"
+    }
+  ]
+}
