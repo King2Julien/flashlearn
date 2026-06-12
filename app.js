@@ -389,12 +389,6 @@ function renderProgress() {
 
   app.innerHTML = `
     <section class="progress-dashboard">
-      <header>
-        <p class="eyebrow">Your progress</p>
-        <h1>Small sessions add up.</h1>
-        <p class="lead">Progress is stored on this device. A card counts as mastered after reaching a review interval of at least seven days.</p>
-      </header>
-
       <div class="dashboard-grid">
         ${dashboardCard("Cards studied", attempts, "Total answers")}
         ${dashboardCard("Accuracy", attempts ? `${Math.round((correct / attempts) * 100)}%` : "—", "Across all sessions")}
