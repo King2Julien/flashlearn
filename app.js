@@ -153,6 +153,7 @@ function renderLibrary() {
       left.subject.localeCompare(right.subject, undefined, { sensitivity: "base" })
       || left.title.localeCompare(right.title, undefined, { sensitivity: "base" })
     );
+  const subjectGroups = groupDecksBySubject(filtered);
 
   app.innerHTML = `
     <section>
@@ -163,20 +164,51 @@ function renderLibrary() {
         </div>
         <input class="search" id="deckSearch" type="search" value="${escapeHtml(state.search)}" placeholder="Search your library" aria-label="Search decks" />
       </div>
-      <div class="deck-grid">
-        ${filtered.map(renderDeckCard).join("")}
-        ${
-          filtered.length
-            ? `<label class="drop-zone import-button">
-                <strong>Drop another JSON deck here</strong>
-                <p class="quiet">or click to browse</p>
-                <input type="file" accept=".json,application/json" multiple data-import />
-              </label>`
-            : `<div class="empty-state"><h2>No decks match that search.</h2><p class="quiet">Try another title or subject.</p></div>`
+      <div class="subject-list">
+        ${renderSubjectGroups(subjectGroups)}
+        ${filtered.length
+          ? `<label class="drop-zone import-button">
+              <strong>Drop another JSON deck here</strong>
+              <p class="quiet">or click to browse</p>
+              <input type="file" accept=".json,application/json" multiple data-import />
+            </label>`
+          : `<div class="empty-state"><h2>No decks match that search.</h2><p class="quiet">Try another title or subject.</p></div>`
         }
       </div>
     </section>
   `;
+}
+
+function groupDecksBySubject(decks) {
+  const groups = new Map();
+
+  decks.forEach((deck) => {
+    const subject = deck.subject.trim() || "General";
+    const key = subject.toLowerCase().replace(/[^a-z0-9]+/g, "");
+    const group = groups.get(key) || { subject, decks: [] };
+    group.decks.push(deck);
+    groups.set(key, group);
+  });
+
+  return [...groups.values()];
+}
+
+function renderSubjectGroups(groups) {
+  let deckIndex = 0;
+
+  return groups
+    .map((group) => `
+      <section class="subject-section">
+        <div class="subject-heading">
+          <h2>${escapeHtml(group.subject)}</h2>
+          <span>${group.decks.length} ${group.decks.length === 1 ? "deck" : "decks"}</span>
+        </div>
+        <div class="deck-grid">
+          ${group.decks.map((deck) => renderDeckCard(deck, deckIndex++)).join("")}
+        </div>
+      </section>
+    `)
+    .join("");
 }
 
 function renderDeckCard(deck, index) {

@@ -304,6 +304,37 @@ h2 {
   color: var(--muted);
 }
 
+.subject-list {
+  display: grid;
+  gap: 38px;
+}
+
+.subject-section {
+  display: grid;
+  gap: 15px;
+}
+
+.subject-heading {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 9px;
+  border-bottom: 1px solid var(--line);
+}
+
+.subject-heading h2 {
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: -0.01em;
+}
+
+.subject-heading span {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
 .deck-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -421,7 +452,6 @@ h2 {
 
 .empty-state,
 .drop-zone {
-  grid-column: 1 / -1;
   border: 1px dashed var(--line);
   border-radius: var(--radius-lg);
   padding: 54px 25px;
