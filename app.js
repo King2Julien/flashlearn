@@ -536,6 +536,8 @@ function startSession(deckId, mode, providedQuestions = null) {
     questions = shuffle(deck.questions).slice(0, 10);
   }
 
+  questions = questions.map(randomizeQuestionOptions);
+
   state.session = {
     deckId,
     mode,
@@ -550,6 +552,17 @@ function startSession(deckId, mode, providedQuestions = null) {
     startedAt: Date.now(),
   };
   goTo("study");
+}
+
+function randomizeQuestionOptions(question) {
+  if (!["single", "multiple"].includes(question.type) || question.options.length < 2) {
+    return question;
+  }
+
+  return {
+    ...question,
+    options: shuffle(question.options),
+  };
 }
 
 function selectOption(optionId) {
