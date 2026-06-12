@@ -454,9 +454,16 @@ function handleClick(event) {
 
 function handleInput(event) {
   if (event.target.id === "deckSearch") {
+    const selectionStart = event.target.selectionStart;
+    const selectionEnd = event.target.selectionEnd;
+    const selectionDirection = event.target.selectionDirection;
     state.search = event.target.value;
     renderLibrary();
-    document.querySelector("#deckSearch")?.focus();
+    const searchInput = document.querySelector("#deckSearch");
+    searchInput?.focus({ preventScroll: true });
+    if (selectionStart !== null && selectionEnd !== null) {
+      searchInput?.setSelectionRange(selectionStart, selectionEnd, selectionDirection || "none");
+    }
   }
   if (event.target.id === "textAnswer" && state.session) {
     state.session.textAnswer = event.target.value;
