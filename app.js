@@ -144,27 +144,24 @@ function updateNavigation() {
 }
 
 function renderLibrary() {
-  const filtered = state.decks.filter((deck) => {
-    const query = state.search.toLowerCase();
-    return `${deck.title} ${deck.subject} ${deck.description}`.toLowerCase().includes(query);
-  });
+  const query = state.search.toLowerCase();
+  const filtered = state.decks
+    .filter((deck) =>
+      `${deck.title} ${deck.subject} ${deck.description}`.toLowerCase().includes(query)
+    )
+    .sort((left, right) =>
+      left.subject.localeCompare(right.subject, undefined, { sensitivity: "base" })
+      || left.title.localeCompare(right.title, undefined, { sensitivity: "base" })
+    );
 
   app.innerHTML = `
-    <section class="library-head">
-      <div>
-        <p class="eyebrow">${greeting()}</p>
-        <h1>What will you master today?</h1>
-        <p class="lead">Choose a deck, answer at your own pace, and let Flashlearn bring difficult questions back when you need them.</p>
-      </div>
-      <div class="library-actions">
-        <input class="search" id="deckSearch" type="search" value="${escapeHtml(state.search)}" placeholder="Search your library" aria-label="Search decks" />
-      </div>
-    </section>
-
     <section>
-      <div class="section-row">
-        <h2>Your decks</h2>
-        <span class="quiet">${state.decks.length} decks · ${sum(state.decks.map((deck) => deck.questions.length))} cards</span>
+      <div class="library-toolbar">
+        <div>
+          <h1>Your decks</h1>
+          <p class="quiet">${state.decks.length} decks · ${sum(state.decks.map((deck) => deck.questions.length))} cards</p>
+        </div>
+        <input class="search" id="deckSearch" type="search" value="${escapeHtml(state.search)}" placeholder="Search your library" aria-label="Search decks" />
       </div>
       <div class="deck-grid">
         ${filtered.map(renderDeckCard).join("")}
@@ -762,13 +759,6 @@ function questionTypeLabel(type) {
     true_false: "True or false",
     text: "Type your answer",
   }[type];
-}
-
-function greeting() {
-  const hour = new Date().getHours();
-  if (hour < 12) return "Good morning";
-  if (hour < 18) return "Good afternoon";
-  return "Good evening";
 }
 
 function humanizeTitle(value) {

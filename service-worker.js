@@ -1,4 +1,4 @@
-const CACHE = "flashlearn-v5";
+const CACHE = "flashlearn-v6";
 const ASSETS = [
   "./",
   "./index.html",
