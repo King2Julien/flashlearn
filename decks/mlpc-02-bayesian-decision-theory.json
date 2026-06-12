@@ -10,7 +10,7 @@
     {
       "id": "mlpc-02-bayesian-decision-theory-q01",
       "type": "single",
-      "question": "A continuous probability density has p(x) = 1.4 at a particular point. Which conclusion is correct?",
+      "question": "A continuous probability density has \\(p(x)=1.4\\) at a particular point. Which conclusion is correct?",
       "code": "",
       "image": null,
       "options": [
@@ -20,11 +20,11 @@
         },
         {
           "id": "B",
-          "text": "The event X = x has probability 1.4"
+          "text": "The event \\(X=x\\) has probability 1.4"
         },
         {
           "id": "C",
-          "text": "This can be valid if the total area under the density is 1"
+          "text": "This can be valid if \\(\\int p(x)\\,dx=1\\)"
         },
         {
           "id": "D",
@@ -35,7 +35,7 @@
         "C"
       ],
       "correctTextAnswer": "",
-      "explanation": "A density value is not itself a probability and may exceed 1; its integral over the domain must equal 1.",
+      "explanation": "A density value is not itself a probability and may exceed 1; a valid density satisfies \\(\\int p(x)\\,dx=1\\).",
       "tags": [
         "MLPC",
         "Probabilities and Densities"
@@ -48,21 +48,21 @@
     {
       "id": "mlpc-02-bayesian-decision-theory-q02",
       "type": "single",
-      "question": "For a continuous variable with density p(x), how is P(a <= X <= b) obtained?",
+      "question": "For a continuous variable with density \\(p(x)\\), how is \\(P(a \\leq X \\leq b)\\) obtained?",
       "code": "",
       "image": null,
       "options": [
         {
           "id": "A",
-          "text": "By adding p(a) and p(b)"
+          "text": "By adding \\(p(a)\\) and \\(p(b)\\)"
         },
         {
           "id": "B",
-          "text": "By integrating p(x) from a to b"
+          "text": "By computing \\(\\int_a^b p(x)\\,dx\\)"
         },
         {
           "id": "C",
-          "text": "By dividing p(a) by p(b)"
+          "text": "By dividing \\(p(a)\\) by \\(p(b)\\)"
         },
         {
           "id": "D",
@@ -124,25 +124,25 @@
     {
       "id": "mlpc-02-bayesian-decision-theory-q04",
       "type": "single",
-      "question": "In Bayes' rule for classification, what does P(omega_i) represent?",
+      "question": "In Bayes' rule for classification, what does \\(P(\\omega_i)\\) represent?",
       "code": "",
       "image": null,
       "options": [
         {
           "id": "A",
-          "text": "The posterior after observing x"
+          "text": "The posterior after observing \\(\\mathbf{x}\\)"
         },
         {
           "id": "B",
-          "text": "The prior probability of class omega_i"
+          "text": "The prior probability of class \\(\\omega_i\\)"
         },
         {
           "id": "C",
-          "text": "The density of x in every class"
+          "text": "The density of \\(\\mathbf{x}\\) in every class"
         },
         {
           "id": "D",
-          "text": "The loss of predicting omega_i"
+          "text": "The loss of predicting \\(\\omega_i\\)"
         }
       ],
       "correctOptions": [
@@ -162,25 +162,25 @@
     {
       "id": "mlpc-02-bayesian-decision-theory-q05",
       "type": "single",
-      "question": "In Bayes' rule, what is p(x | omega_i)?",
+      "question": "In Bayes' rule, what is \\(p(\\mathbf{x}\\mid\\omega_i)\\)?",
       "code": "",
       "image": null,
       "options": [
         {
           "id": "A",
-          "text": "The probability that class omega_i is correct after observing x"
+          "text": "The probability that class \\(\\omega_i\\) is correct after observing \\(\\mathbf{x}\\)"
         },
         {
           "id": "B",
-          "text": "The class-conditional density of observing x within class omega_i"
+          "text": "The class-conditional density of observing \\(\\mathbf{x}\\) within class \\(\\omega_i\\)"
         },
         {
           "id": "C",
-          "text": "The marginal density of x over all classes"
+          "text": "The marginal density of \\(\\mathbf{x}\\) over all classes"
         },
         {
           "id": "D",
-          "text": "The cost of assigning x to omega_i"
+          "text": "The cost of assigning \\(\\mathbf{x}\\) to \\(\\omega_i\\)"
         }
       ],
       "correctOptions": [
@@ -200,7 +200,7 @@
     {
       "id": "mlpc-02-bayesian-decision-theory-q06",
       "type": "single",
-      "question": "What is the role of p(x) in the posterior formula P(omega_i | x) = p(x | omega_i)P(omega_i)/p(x)?",
+      "question": "What is the role of \\(p(\\mathbf{x})\\) in \\(P(\\omega_i\\mid\\mathbf{x})=\\frac{p(\\mathbf{x}\\mid\\omega_i)P(\\omega_i)}{p(\\mathbf{x})}\\)?",
       "code": "",
       "image": null,
       "options": [
@@ -225,7 +225,7 @@
         "A"
       ],
       "correctTextAnswer": "",
-      "explanation": "The evidence p(x) is shared across classes and normalizes the posterior distribution.",
+      "explanation": "The evidence \\(p(\\mathbf{x})\\) is shared across classes and ensures \\(\\sum_i P(\\omega_i\\mid\\mathbf{x})=1\\).",
       "tags": [
         "MLPC",
         "Bayes Rule"
@@ -238,17 +238,17 @@
     {
       "id": "mlpc-02-bayesian-decision-theory-q07",
       "type": "single",
-      "question": "Two classes have equal priors. Which class does a MAP classifier choose for observation x?",
+      "question": "Two classes have equal priors. Which class does a MAP classifier choose for observation \\(\\mathbf{x}\\)?",
       "code": "",
       "image": null,
       "options": [
         {
           "id": "A",
-          "text": "The class with the larger p(x | omega_i)"
+          "text": "The class with the larger \\(p(\\mathbf{x}\\mid\\omega_i)\\)"
         },
         {
           "id": "B",
-          "text": "The class with the smaller p(x | omega_i)"
+          "text": "The class with the smaller \\(p(\\mathbf{x}\\mid\\omega_i)\\)"
         },
         {
           "id": "C",
@@ -314,7 +314,7 @@
     {
       "id": "mlpc-02-bayesian-decision-theory-q09",
       "type": "single",
-      "question": "For two classes, P(A | x) = 0.75 and P(B | x) = 0.25. Under zero-one loss, what is the conditional probability of error when predicting A?",
+      "question": "For two classes, \\(P(A\\mid\\mathbf{x})=0.75\\) and \\(P(B\\mid\\mathbf{x})=0.25\\). Under zero-one loss, what is the conditional probability of error when predicting \\(A\\)?",
       "code": "",
       "image": null,
       "options": [
@@ -352,7 +352,7 @@
     {
       "id": "mlpc-02-bayesian-decision-theory-q10",
       "type": "single",
-      "question": "What does conditional risk R(alpha_i | x) compute?",
+      "question": "What does conditional risk \\(R(\\alpha_i\\mid\\mathbf{x})\\) compute?",
       "code": "",
       "image": null,
       "options": [
@@ -362,7 +362,7 @@
         },
         {
           "id": "B",
-          "text": "The expected loss of action alpha_i, weighted by posterior class probabilities"
+          "text": "The expected loss of action \\(\\alpha_i\\), weighted by posterior class probabilities"
         },
         {
           "id": "C",
@@ -453,7 +453,7 @@
         "A"
       ],
       "correctTextAnswer": "",
-      "explanation": "The action set may include rejection when committing to a class would be too costly or uncertain.",
+      "explanation": "The action set \\(\\mathcal{A}\\) may include rejection when committing to a class would be too costly or uncertain.",
       "tags": [
         "MLPC",
         "Risk Minimisation"
@@ -491,7 +491,7 @@
         "A"
       ],
       "correctTextAnswer": "",
-      "explanation": "With zero cost for correct decisions and unit cost for errors, risk is 1 minus the selected class posterior.",
+      "explanation": "Under zero-one loss, \\(R(\\alpha_i\\mid\\mathbf{x})=1-P(\\omega_i\\mid\\mathbf{x})\\), so minimizing risk maximizes the posterior.",
       "tags": [
         "MLPC",
         "Minimum Error Classification"
@@ -542,7 +542,7 @@
     {
       "id": "mlpc-02-bayesian-decision-theory-q15",
       "type": "single",
-      "question": "The cost of predicting omega_1 when omega_2 is true is increased. What generally happens to the decision region for omega_1?",
+      "question": "The cost of predicting \\(\\omega_1\\) when \\(\\omega_2\\) is true is increased. What generally happens to the decision region \\(R_1\\)?",
       "code": "",
       "image": null,
       "options": [
@@ -560,7 +560,7 @@
         },
         {
           "id": "D",
-          "text": "It becomes identical to the density p(x)"
+          "text": "It becomes identical to the density \\(p(\\mathbf{x})\\)"
         }
       ],
       "correctOptions": [
@@ -580,7 +580,7 @@
     {
       "id": "mlpc-02-bayesian-decision-theory-q16",
       "type": "single",
-      "question": "Two Gaussian classes have identical spherical covariance matrices. What form does their Bayes decision boundary have?",
+      "question": "Two Gaussian classes have identical spherical covariance matrices \\(\\Sigma=\\sigma^2 I\\). What form does their Bayes decision boundary have?",
       "code": "",
       "image": null,
       "options": [
@@ -618,7 +618,7 @@
     {
       "id": "mlpc-02-bayesian-decision-theory-q17",
       "type": "single",
-      "question": "Two Gaussian classes have equal but non-spherical covariance matrices. Which statement is correct?",
+      "question": "Two Gaussian classes have equal but non-spherical covariance matrices \\(\\Sigma\\). Which statement is correct?",
       "code": "",
       "image": null,
       "options": [
@@ -656,7 +656,7 @@
     {
       "id": "mlpc-02-bayesian-decision-theory-q18",
       "type": "single",
-      "question": "What form can arise when Gaussian classes have different covariance matrices?",
+      "question": "What form can arise when Gaussian classes have different covariance matrices \\(\\Sigma_i\\)?",
       "code": "",
       "image": null,
       "options": [

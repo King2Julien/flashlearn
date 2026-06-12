@@ -86,7 +86,7 @@
     {
       "id": "mlpc-03-density-estimation-q03",
       "type": "single",
-      "question": "For i.i.d. observations D = {x_1, ..., x_n}, the likelihood L(theta : D) is:",
+      "question": "For i.i.d. observations \\(\\mathcal{D}=\\{\\mathbf{x}_1,\\ldots,\\mathbf{x}_n\\}\\), the likelihood \\(L(\\theta:\\mathcal{D})\\) is:",
       "code": "",
       "image": null,
       "options": [
@@ -96,7 +96,7 @@
         },
         {
           "id": "B",
-          "text": "The product of p(x_i | theta) over the observations"
+          "text": "\\(\\prod_i p(\\mathbf{x}_i\\mid\\theta)\\)"
         },
         {
           "id": "C",
@@ -104,7 +104,7 @@
         },
         {
           "id": "D",
-          "text": "The probability P(theta | D)"
+          "text": "The probability \\(P(\\theta\\mid\\mathcal{D})\\)"
         }
       ],
       "correctOptions": [
@@ -162,17 +162,17 @@
     {
       "id": "mlpc-03-density-estimation-q05",
       "type": "single",
-      "question": "Which statement correctly distinguishes p(x | theta) from L(theta : D)?",
+      "question": "Which statement correctly distinguishes \\(p(\\mathbf{x}\\mid\\theta)\\) from \\(L(\\theta:\\mathcal{D})\\)?",
       "code": "",
       "image": null,
       "options": [
         {
           "id": "A",
-          "text": "Both are necessarily normalized densities over theta"
+          "text": "Both are necessarily normalized densities over \\(\\theta\\)"
         },
         {
           "id": "B",
-          "text": "p(x | theta) varies with x, while likelihood varies with theta after D is fixed"
+          "text": "\\(p(\\mathbf{x}\\mid\\theta)\\) varies with \\(\\mathbf{x}\\), while likelihood varies with \\(\\theta\\) after \\(\\mathcal{D}\\) is fixed"
         },
         {
           "id": "C",
@@ -180,7 +180,7 @@
         },
         {
           "id": "D",
-          "text": "p(x | theta) can only be discrete"
+          "text": "\\(p(\\mathbf{x}\\mid\\theta)\\) can only be discrete"
         }
       ],
       "correctOptions": [
@@ -200,7 +200,7 @@
     {
       "id": "mlpc-03-density-estimation-q06",
       "type": "single",
-      "question": "What is a maximum-likelihood estimate theta-hat?",
+      "question": "What is a maximum-likelihood estimate \\(\\hat{\\theta}\\)?",
       "code": "",
       "image": null,
       "options": [
@@ -225,7 +225,7 @@
         "B"
       ],
       "correctTextAnswer": "",
-      "explanation": "An ML estimate is an argmax in parameter space, not the likelihood's height.",
+      "explanation": "An ML estimate is \\(\\hat{\\theta}=\\arg\\max_\\theta L(\\theta:\\mathcal{D})\\), not the likelihood's maximum numeric value.",
       "tags": [
         "MLPC",
         "Maximum Likelihood"
@@ -238,7 +238,7 @@
     {
       "id": "mlpc-03-density-estimation-q07",
       "type": "single",
-      "question": "A training set contains 60 bass and 40 salmon. What is the ML estimate of the prior P(bass)?",
+      "question": "A training set contains 60 bass and 40 salmon. What is the ML estimate of the prior \\(P(\\mathrm{bass})\\)?",
       "code": "",
       "image": null,
       "options": [
@@ -276,13 +276,13 @@
     {
       "id": "mlpc-03-density-estimation-q08",
       "type": "single",
-      "question": "For a univariate Gaussian with unknown mean, what is the ML estimate of the mean?",
+      "question": "For a univariate Gaussian with unknown mean \\(\\mu\\), what is the ML estimate \\(\\hat{\\mu}\\)?",
       "code": "",
       "image": null,
       "options": [
         {
           "id": "A",
-          "text": "The sample mean"
+          "text": "The sample mean \\(\\frac{1}{N}\\sum_i x_i\\)"
         },
         {
           "id": "B",
@@ -415,7 +415,7 @@
         "A"
       ],
       "correctTextAnswer": "",
-      "explanation": "Conditional independence factorizes a high-dimensional joint density into one-dimensional terms.",
+      "explanation": "Conditional independence gives \\(p(\\mathbf{x}\\mid\\omega_k)=\\prod_j p(x_j\\mid\\omega_k)\\).",
       "tags": [
         "MLPC",
         "Naive Bayes"
@@ -504,7 +504,7 @@
     {
       "id": "mlpc-03-density-estimation-q14",
       "type": "single",
-      "question": "In fixed-radius nearest-neighbour density estimation, what happens if radius h is too small?",
+      "question": "In fixed-radius nearest-neighbour density estimation, what happens if radius \\(h\\) is too small?",
       "code": "",
       "image": null,
       "options": [
@@ -542,7 +542,7 @@
     {
       "id": "mlpc-03-density-estimation-q15",
       "type": "single",
-      "question": "In fixed-radius nearest-neighbour density estimation, what happens if radius h is too large?",
+      "question": "In fixed-radius nearest-neighbour density estimation, what happens if radius \\(h\\) is too large?",
       "code": "",
       "image": null,
       "options": [
@@ -580,13 +580,13 @@
     {
       "id": "mlpc-03-density-estimation-q16",
       "type": "single",
-      "question": "How does k-nearest-neighbour density estimation adapt to sparse regions?",
+      "question": "How does \\(k\\)-nearest-neighbour density estimation adapt to sparse regions?",
       "code": "",
       "image": null,
       "options": [
         {
           "id": "A",
-          "text": "It uses a larger radius to enclose the required k neighbours"
+          "text": "It uses a larger radius to enclose the required \\(k\\) neighbours"
         },
         {
           "id": "B",
@@ -732,13 +732,13 @@
     {
       "id": "mlpc-03-density-estimation-q20",
       "type": "single",
-      "question": "In a k-NN classifier, what estimates P(omega_i | x)?",
+      "question": "In a \\(k\\)-NN classifier, what estimates \\(P(\\omega_i\\mid\\mathbf{x})\\)?",
       "code": "",
       "image": null,
       "options": [
         {
           "id": "A",
-          "text": "The fraction of the k neighbours belonging to class omega_i"
+          "text": "The fraction \\(k_i/k\\) of neighbours belonging to class \\(\\omega_i\\)"
         },
         {
           "id": "B",
@@ -750,7 +750,7 @@
         },
         {
           "id": "D",
-          "text": "The likelihood maximum over theta"
+          "text": "The likelihood maximum over \\(\\theta\\)"
         }
       ],
       "correctOptions": [
