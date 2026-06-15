@@ -1,0 +1,1637 @@
+{
+  "schemaVersion": 1,
+  "id": "python-2-exam-2024ss",
+  "title": "Programming in Python 2 - Exam 2024SS",
+  "subject": "Programming in Python 2",
+  "description": "Questions reconstructed from Python_SS2024.pdf. The academic-integrity confirmation item is omitted.",
+  "createdAt": "2026-06-14T00:00:00.000Z",
+  "updatedAt": "2026-06-14T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "python-2-exam-2024ss-q01",
+      "type": "single",
+      "question": "Given a sample image `img` (type `PIL.Image`) and a PyTorch transformation pipeline `transforms` (type `torchvision.transforms.v2.Compose`), which of the following is the correct way of applying the transformations to the image?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "transformed_img = transforms(img)"
+        },
+        {
+          "id": "B",
+          "text": "transformed_img = img(transforms)"
+        },
+        {
+          "id": "C",
+          "text": "transformed_img = transforms.apply(img)"
+        },
+        {
+          "id": "D",
+          "text": "transformed_img = img.apply(transforms)"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q02",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding TorchScript?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "TorchScript creates serializable and optimizable models from PyTorch code."
+        },
+        {
+          "id": "B",
+          "text": "With TorchScript, serialized models can be deployed in environments other than Python (e.g., C++)."
+        },
+        {
+          "id": "C",
+          "text": "Every TorchScript code is also valid Python code."
+        },
+        {
+          "id": "D",
+          "text": "Every Python code is also valid TorchScript code."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q03",
+      "type": "single",
+      "question": "What is the output of the following code?\n\n      import torch\n\n      def function(x: torch.Tensor):\n            if x.sum() < 0:\n                return x * -1\n            return x\n\n      scripted_function = torch.jit.script(function)\n      traced_function = torch.jit.trace(function, example_inputs=torch.tensor([3, 4]))\n\n      actual_input = torch.tensor([-1, -2])\n      print(\"s:\", scripted_function(actual_input).tolist())\n      print(\"t:\", traced_function(actual_input).tolist())",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "s: [-1, -2]\n                  t: [3, 4]"
+        },
+        {
+          "id": "B",
+          "text": "s: [-1, -2]\n                  t: [-1, -2]"
+        },
+        {
+          "id": "C",
+          "text": "s: [-1, -2]\n                  t: [-3, -4]"
+        },
+        {
+          "id": "D",
+          "text": "s: [1, 2]\n                  t: [3, 4]"
+        },
+        {
+          "id": "E",
+          "text": "s: [1, 2]\n                  t: [-3, -4]"
+        },
+        {
+          "id": "F",
+          "text": "s: [-1, -2]\n                  t: [1, 2]"
+        },
+        {
+          "id": "G",
+          "text": "s: [1, 2]\n                  t: [-1, -2]"
+        },
+        {
+          "id": "H",
+          "text": "s: [1, 2]\n                  t: [1, 2]"
+        }
+      ],
+      "correctOptions": [
+        "G"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q04",
+      "type": "single",
+      "question": "You are measuring the air temperatur every day (e.g., 14.23°C, 15.01°C, etc.). Which type of data is this?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Continuous numerical data"
+        },
+        {
+          "id": "B",
+          "text": "Discrete numerical data"
+        },
+        {
+          "id": "C",
+          "text": "Categorical data"
+        },
+        {
+          "id": "D",
+          "text": "Ordinal data"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q05",
+      "type": "multiple",
+      "question": "You are given a data set from your employer for a new machine learning project. Which of the following statements should be ta\n     account?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The data might require preprocessing to make it work with machine learning models."
+        },
+        {
+          "id": "B",
+          "text": "The data might be incorrect (e.g., incorrect labeling)."
+        },
+        {
+          "id": "C",
+          "text": "There might be more data (which your employer might not have considered as important but could still be useful)."
+        },
+        {
+          "id": "D",
+          "text": "The data might include outlier values."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q06",
+      "type": "single",
+      "question": "What is the output of the following code?\n\n      import torch\n\n      class MyModule(torch.nn.Module):\n             def __init__(self, a):\n                 super().__init__()\n                  self.a = a\n\n             def forward(self, x):\n                 return x + (2 * self.a)\n\n      my_module = MyModule(3)\n      c = my_module(4)\n      print(c)",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "10"
+        },
+        {
+          "id": "B",
+          "text": "It raises an exception because the parameter x is not specified as a PyTorch tensor."
+        },
+        {
+          "id": "C",
+          "text": "It raises an exception because MyModule does not have any trainable parameters."
+        },
+        {
+          "id": "D",
+          "text": "It raises an exception because self.a is not a (sub)module."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q07",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding model parameters and hyperparameters?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Model parameters are adjusted during model training."
+        },
+        {
+          "id": "B",
+          "text": "Hyperparameters are a subset of the model parameters."
+        },
+        {
+          "id": "C",
+          "text": "Hyperparameters might influence the model architecture."
+        },
+        {
+          "id": "D",
+          "text": "Hyperparameters and model parameters are the same thing."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q08",
+      "type": "multiple",
+      "question": "Assume that MyModule is a class properly derived from the torch.nn.Module class and x, y, z are PyTorch tensors. What does the\n     code do?\n\n      my_module = MyModule()\n      my_module(x, y, z)",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It creates an instance of MyModule. Then it (ultimately) calls the __getitem__ method of my_module with arguments x, y,"
+        },
+        {
+          "id": "B",
+          "text": "It creates an instance of MyModule. Then it (ultimately) calls the backward method of my_module with arguments x, y, z."
+        },
+        {
+          "id": "C",
+          "text": "It creates an instance of MyModule. Then it (ultimately) calls the forward method of my_module with arguments x, y, z."
+        },
+        {
+          "id": "D",
+          "text": "It creates an instance of MyModule. Then it (ultimately) calls the __init__ method of my_module with arguments x, y, z."
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "A",
+        "B",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q09",
+      "type": "multiple",
+      "question": "Which of the following are typical data normalization/scaling approaches?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Scaling to range [-1, 1]."
+        },
+        {
+          "id": "B",
+          "text": "Scaling to zero (0) mean and unit (1) variance."
+        },
+        {
+          "id": "C",
+          "text": "Scaling to range [min, max], where min and max are the minimum and maximum values of the data set."
+        },
+        {
+          "id": "D",
+          "text": "Scaling to range [0, 100]."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q10",
+      "type": "single",
+      "question": "What is the shape of the output tensor result when running the following code?\n\n      import torch\n\n      class MyModule(torch.nn.Module):\n             def __init__(self):\n                 super().__init__()\n                  self.chain = torch.nn.Sequential(\n                      torch.nn.Linear(in_features=16, out_features=24),\n                      torch.nn.Sigmoid(),\n                      torch.nn.Linear(in_features=24, out_features=2)\n                  )\n\n             def forward(self, x):\n                 return self.chain(x)\n\n      inp = torch.rand(size=(32, 16))\n      my_module = MyModule()\n      result = my_module(inp)",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "(16, 2)"
+        },
+        {
+          "id": "B",
+          "text": "(32, 16)"
+        },
+        {
+          "id": "C",
+          "text": "(32, 16, 2)"
+        },
+        {
+          "id": "D",
+          "text": "(32, 24, 16, 2)"
+        },
+        {
+          "id": "E",
+          "text": "(32, 24)"
+        },
+        {
+          "id": "F",
+          "text": "(32, 24, 2)"
+        },
+        {
+          "id": "G",
+          "text": "(24, 2)"
+        },
+        {
+          "id": "H",
+          "text": "(32, 2)"
+        }
+      ],
+      "correctOptions": [
+        "H"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q11",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding early stopping?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Early stopping cannot guarantee the best possible model."
+        },
+        {
+          "id": "B",
+          "text": "Early stopping can reduce the number of model parameters."
+        },
+        {
+          "id": "C",
+          "text": "Early stopping cannot be applied if the loss continuously changes."
+        },
+        {
+          "id": "D",
+          "text": "Early stopping can reduce the training duration."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q12",
+      "type": "multiple",
+      "question": "Which of the following is the correct order of performing one weight update in PyTorch (you can assume that optimizer is a vali\n     optimizer object)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "1. Compute loss\n                  2. Compute gradients loss.backward()\n                  3. Update weights optimizer.step()\n                  4. Reset gradients optimizer.zero_grad()"
+        },
+        {
+          "id": "B",
+          "text": "1. Compute loss\n                2. Compute gradients loss.backward()\n                  3. Reset gradients optimizer.zero_grad()\n                  4. Update weights optimizer.step()"
+        },
+        {
+          "id": "C",
+          "text": "1. Compute loss\n                  2. Update weights optimizer.step()\n                  3. Compute gradients loss.backward()\n                  4. Reset gradients optimizer.zero_grad()"
+        },
+        {
+          "id": "D",
+          "text": "1. Reset gradients optimizer.zero_grad()\n                2. Compute loss\n                  3. Update weights optimizer.step()\n                  4. Compute gradients loss.backward()"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q13",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding scripting and tracing to create TorchScript programs?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Scripting requires an example input."
+        },
+        {
+          "id": "B",
+          "text": "With tracing, control flow such as branching is lost."
+        },
+        {
+          "id": "C",
+          "text": "The entire program must either be scripted or traced, mixing both approaches is not allowed."
+        },
+        {
+          "id": "D",
+          "text": "Scripting and tracing can be combined."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q14",
+      "type": "multiple",
+      "question": "Which of the following are common steps when designing a machine learning project?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Assessing which software and hardware can and/or should be available."
+        },
+        {
+          "id": "B",
+          "text": "Considering which machine learning methods are fitting."
+        },
+        {
+          "id": "C",
+          "text": "Getting and overview of the data which is going to be used."
+        },
+        {
+          "id": "D",
+          "text": "Getting a clear definition and understanding of the project goal."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q15",
+      "type": "single",
+      "question": "What is the primary purpose of a torch.utils.data.DataLoader?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Loading the hyperparameters of a neural network model."
+        },
+        {
+          "id": "B",
+          "text": "Extracting the gradients from a gradient-based model."
+        },
+        {
+          "id": "C",
+          "text": "Extracting minibatches of samples from a torch.utils.data.Dataset instance."
+        },
+        {
+          "id": "D",
+          "text": "Loading the parameters of a neural network model."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q16",
+      "type": "multiple",
+      "question": "Assume you apply the following PyTorch image transformation transform_chain to some example RGB image:\n\n      import torch\n      from torchvision.transforms import v2\n\n      transform_chain = v2.Compose([\n          v2.PILToTensor(),\n             v2.ToDtype(torch.float32, scale=True),\n             v2.Resize(size=100),\n             v2.ColorJitter(),\n             v2.RandomRotation(degrees=180),\n             v2.RandomVerticalFlip(p=0.5),\n             v2.RandomHorizontalFlip(p=0.5)\n      ])\n\n     Which of the following statements are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The resulting image might be rotated."
+        },
+        {
+          "id": "B",
+          "text": "The resulting image will be in grayscale."
+        },
+        {
+          "id": "C",
+          "text": "The resulting image might be vertically flipped."
+        },
+        {
+          "id": "D",
+          "text": "The resulting image will be horizontally flipped."
+        },
+        {
+          "id": "E",
+          "text": "The resulting image is either both horizontally and vertically flipped, or not flipped at all."
+        },
+        {
+          "id": "F",
+          "text": "The resulting image will be a PyTorch tensor."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C",
+        "F"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q17",
+      "type": "single",
+      "question": "In a supervised setting, how can one determine the prediction performance of some machine learning model?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "By averaging the gradients of the model and comparing it to a specified threshold."
+        },
+        {
+          "id": "B",
+          "text": "By using a loss function to compute the deviation between the model prediction and the true target."
+        },
+        {
+          "id": "C",
+          "text": "By running a performance profiler on the model."
+        },
+        {
+          "id": "D",
+          "text": "By comparing the model input and the model prediction with each other."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q18",
+      "type": "single",
+      "question": "The forward method of a class derived from torch.nn.Module ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... pushes a PyTorch module to a given device."
+        },
+        {
+          "id": "B",
+          "text": "... specifies how an input is transformed into an output (the \"flow\" through the architecture)."
+        },
+        {
+          "id": "C",
+          "text": "... adds a new forward layer to the network architecture of a module."
+        },
+        {
+          "id": "D",
+          "text": "... sets up the module architecture."
+        },
+        {
+          "id": "E",
+          "text": "... performs one weight update during training."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q19",
+      "type": "multiple",
+      "question": "Which of the following statements must be taken into consideration when doing a literature review regarding a new machine lea",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Wikis, blog posts, reddit and other similar sites can provide a good overview and introduction"
+        },
+        {
+          "id": "B",
+          "text": "If there is no matching literature, it means that the project cannot be done using machine learning."
+        },
+        {
+          "id": "C",
+          "text": "There can be research biases."
+        },
+        {
+          "id": "D",
+          "text": "Peer-reviewed literature can be a good way to get state-of-the-art information."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q20",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding online learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The batch size is a hyperparameter."
+        },
+        {
+          "id": "B",
+          "text": "Gradients might be contradicting."
+        },
+        {
+          "id": "C",
+          "text": "A single training sample is used for one update."
+        },
+        {
+          "id": "D",
+          "text": "It leads to smooth gradients."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q21",
+      "type": "single",
+      "question": "Which of the following statements are correct when talking about normalization/scaling?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It could be that applying normalization/scaling does not have any beneficial effects."
+        },
+        {
+          "id": "B",
+          "text": "Normalization/scaling cannot be used in conjunction with cross validation."
+        },
+        {
+          "id": "C",
+          "text": "Normalization/scaling is independent from the method/model."
+        },
+        {
+          "id": "D",
+          "text": "When applying normalization/scaling in a setting with a dedicated training and test set, care must be taken which data\n                for computing normalization constants."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q22",
+      "type": "single",
+      "question": "Training a neural network for one epoch will ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... perform training for a fixed number of seconds."
+        },
+        {
+          "id": "B",
+          "text": "... perform one training iteration over all training samples."
+        },
+        {
+          "id": "C",
+          "text": "... perform one weight update."
+        },
+        {
+          "id": "D",
+          "text": "... perform training until the model overfits on all training samples."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q23",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding the following code (you can assume correct imports)?\n\n      def function(x):\n           if x.min() <= 0:\n               return 0\n           return x",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The code\n\n                  scripted_function = torch.jit.script(function)\n                  scripted_function(torch.ones(3,))\n\n                  works."
+        },
+        {
+          "id": "B",
+          "text": "The code\n\n                  traced_function = torch.jit.trace(function, (torch.rand(5),))\n                  traced_function(torch.ones(3,))\n\n                  works."
+        },
+        {
+          "id": "C",
+          "text": "The code\n\n                  traced_function = torch.jit.trace(function, (torch.rand(5),))\n                  traced_function(123)\n\n                  works."
+        },
+        {
+          "id": "D",
+          "text": "The code\n\n                  scripted_function = torch.jit.script(function)\n                  scripted_function(123)\n\n                  works."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q24",
+      "type": "multiple",
+      "question": "Which of the following code snippets are correct (you can assume correct imports and that MyDataset(...) returns a valid\n     torch.utils.data.Dataset instance)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "dataset = MyDataset(...)\n                  loader = DataLoader(shuffle=True, batch_size=16)\n                  for data in loader(dataset)\n                      # do something"
+        },
+        {
+          "id": "B",
+          "text": "dataset = MyDataset(...)\n                  for data in dataset:\n                       loader = DataLoader(data, shuffle=True, batch_size=16)\n                       samples = loader.get_minibatch()\n                       # do something"
+        },
+        {
+          "id": "C",
+          "text": "dataset = MyDataset(...)\n                  loader = DataLoader(dataset, shuffle=True, batch_size=16)\n                  for data in loader:\n                       # do something"
+        },
+        {
+          "id": "D",
+          "text": "dataset = MyDataset(...)\n                  loader = DataLoader(dataset, shuffle=True, batch_size=16)\n                  data = loader.get_minibatch()"
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q25",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding a hash function?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A hash function is typically used as a non-linear activation function."
+        },
+        {
+          "id": "B",
+          "text": "A hash function is used to compute a fixed-sized data vector for a given input."
+        },
+        {
+          "id": "C",
+          "text": "A hash function should have a minimal number of (hash) collisions."
+        },
+        {
+          "id": "D",
+          "text": "A hash function can be used to hash the inputs of a neural network for improved performance."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q26",
+      "type": "multiple",
+      "question": "Assume you want to normalize your data and compute a normalization constant from your data set (e.g., the mean over many s\n     would be the correct way to proceed in terms of training, validation and test set?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Determine the constant for normalization on the training data and apply it also to the validation and test data."
+        },
+        {
+          "id": "B",
+          "text": "Determine the constant for normalization on the training and test data and apply it also to the validation data."
+        },
+        {
+          "id": "C",
+          "text": "Determine the constant for normalization on the training and validation data and apply it also to the test data."
+        },
+        {
+          "id": "D",
+          "text": "Determine the constant for normalization on the whole data set and apply it to training, validation and test data."
+        },
+        {
+          "id": "E",
+          "text": "Determine the constant for normalization on the validation and test data and apply it also to the training data."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q27",
+      "type": "multiple",
+      "question": "Assume a classification task where you want to predict the time of day based on images of analog clocks (clocks with a minute h\n     hour hand) that do not have any numbers on them. In a preprocessing step, all images were centered and aligned. Which of the\n     augmentation techniques might be problematic?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Rotating by 180 degrees"
+        },
+        {
+          "id": "B",
+          "text": "Flipping vertically"
+        },
+        {
+          "id": "C",
+          "text": "Flipping horizontally"
+        },
+        {
+          "id": "D",
+          "text": "Rotating by 90 degrees"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q28",
+      "type": "single",
+      "question": "Which of the following statements are correct regarding cross validation?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Cross validation is helpful to utilize all samples for evaluating the model performance."
+        },
+        {
+          "id": "B",
+          "text": "k-fold cross validation means that the entire data set is split into k non-overlapping parts, (k-1) of which are used for tra\n                the remaining one for testing (per iteration)."
+        },
+        {
+          "id": "C",
+          "text": "Cross validation can only be used for small data sets."
+        },
+        {
+          "id": "D",
+          "text": "k-fold cross validation means that the entire data set is split into k non-overlapping parts, (k-1) of which are used for te\n                remaining one for training (per iteration)."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q29",
+      "type": "single",
+      "question": "The special method __getitem__ in a torch.utils.data.Dataset derived class should ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... return one sample."
+        },
+        {
+          "id": "B",
+          "text": "... return all samples."
+        },
+        {
+          "id": "C",
+          "text": "... return minibatched samples."
+        },
+        {
+          "id": "D",
+          "text": "... return the data set."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q30",
+      "type": "single",
+      "question": "Assume you have the following categorical data in exactly this fixed order:\n\n      flower, tree, earth, water\n\n     You are asked to create a one-hot encoding. Which of the following is the correct one-hot encoded representation of earth?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "(0, 0, 1, 0)"
+        },
+        {
+          "id": "B",
+          "text": "(1, 1, 1, 1)"
+        },
+        {
+          "id": "C",
+          "text": "(0, 1, 0, 0)"
+        },
+        {
+          "id": "D",
+          "text": "(1, 0, 0, 0)"
+        },
+        {
+          "id": "E",
+          "text": "(0, 0, 0, 0)"
+        },
+        {
+          "id": "F",
+          "text": "(0, 0, 0, 1)"
+        },
+        {
+          "id": "G",
+          "text": "(1, 0, 1, 1)"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q31",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding monitoring a model during training?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Switching on monitoring improves the performance of the model."
+        },
+        {
+          "id": "B",
+          "text": "It enables an easier detection of over- or underfitting."
+        },
+        {
+          "id": "C",
+          "text": "It allows inspecting weights and gradients and how they change during training."
+        },
+        {
+          "id": "D",
+          "text": "It allows inspecting the losses and how they change during training."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q32",
+      "type": "single",
+      "question": "Assume you have the following binary confusion matrix:\n\n                                    Predicted\n                       positive   negative\n      ------------------------------------\n      Actual positive |         40          10   |\n             negative |         35          15   |\n      ------------------------------------\n\n     Which of the following statements are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "There are 35 true positives."
+        },
+        {
+          "id": "B",
+          "text": "The classification performance is perfect."
+        },
+        {
+          "id": "C",
+          "text": "Out of all samples, the used model predicted 50 to be positive."
+        },
+        {
+          "id": "D",
+          "text": "The used model is more likely to predict the positive class."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q33",
+      "type": "multiple",
+      "question": "Which statements regarding PyTorch's torch.nn.Module are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The __init__ method sets up the model architecture."
+        },
+        {
+          "id": "B",
+          "text": "The __getitem__ method specifies how an input is transformed into an output (the \"flow\" through the architecture)."
+        },
+        {
+          "id": "C",
+          "text": "It must not contain trainable parameters (torch.nn.Parameter)."
+        },
+        {
+          "id": "D",
+          "text": "It is the base class for all neural network modules."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q34",
+      "type": "single",
+      "question": "You are training a neural network model using some gradient-based iterative method. The first training loss that you compute is\n     but continuing the training process does not change the loss in any way, i.e., it remains constant. Which of the following stateme\n     correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The gradients are too big."
+        },
+        {
+          "id": "B",
+          "text": "The model is overfitting."
+        },
+        {
+          "id": "C",
+          "text": "The model is perfect (for every sample, it computes the expected output value)."
+        },
+        {
+          "id": "D",
+          "text": "The model weights are not changed."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q35",
+      "type": "multiple",
+      "question": "What is the term \"generalization\" about?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It tells us how well our model will perform on future (unseen) data."
+        },
+        {
+          "id": "B",
+          "text": "A model that fits the training data well will also generalize well."
+        },
+        {
+          "id": "C",
+          "text": "It is about trying to find a model which overfits the data."
+        },
+        {
+          "id": "D",
+          "text": "Using a dedicated test set is important for evaluating the generalization capability of a model."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q36",
+      "type": "multiple",
+      "question": "Which of the following statements are true regarding data augmentation?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Data augmentation can reduce overfitting."
+        },
+        {
+          "id": "B",
+          "text": "Data augmentation can have a negative impact on the model performance."
+        },
+        {
+          "id": "C",
+          "text": "Data augmentation must only be applied on the evaluation set, not on the training set."
+        },
+        {
+          "id": "D",
+          "text": "Data augmentation is about deleting existing samples to balance the data set."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q37",
+      "type": "multiple",
+      "question": "Categorical data can be described as:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Quantitative data with mathematical meaning but without a natural ordering."
+        },
+        {
+          "id": "B",
+          "text": "Qualitative data without mathematical meaning."
+        },
+        {
+          "id": "C",
+          "text": "Quantitative data with mathematical meaning."
+        },
+        {
+          "id": "D",
+          "text": "Qualitative data with mathematical meaning."
+        },
+        {
+          "id": "E",
+          "text": "Quantitative data without mathematical meaning."
+        },
+        {
+          "id": "F",
+          "text": "Qualitative data without mathematical meaning but with a natural ordering."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "F"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q38",
+      "type": "single",
+      "question": "Which statements regarding PyTorch's automatic parameter registration of a torch.nn.Module are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "When assigned as attribute, a torch.Tensor will automatically be registered."
+        },
+        {
+          "id": "B",
+          "text": "When assigned as an attribute, the trainable parameters of a `torch.nn.Module` (or submodule) will automatically be registered."
+        },
+        {
+          "id": "C",
+          "text": "If a module does not have any automatically registered parameters, an exception is raised."
+        },
+        {
+          "id": "D",
+          "text": "Calling the `forward` method of a `torch.nn.Module` is redundant if all parameters have already been registered automatically."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q39",
+      "type": "multiple",
+      "question": "Which of the following statements regarding loss functions are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "There are different loss functions for different purposes (e.g., classification and regression)."
+        },
+        {
+          "id": "B",
+          "text": "In gradient-based iterative methods, the derivative of the loss function with respect to the model weights must be computed."
+        },
+        {
+          "id": "C",
+          "text": "Typically, the lower the loss, the closer the model output is to the true target value."
+        },
+        {
+          "id": "D",
+          "text": "Loss functions play an essential role in Empirical Risk Minimization (ERM) and assessing the generalization capability of a model."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C",
+        "B",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2024ss-q40",
+      "type": "single",
+      "question": "Which of the following are benefits of a version control system (VCS) such as git?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Deployment of machine learning models into high performance environments (e.g., C++)."
+        },
+        {
+          "id": "B",
+          "text": "Improved performance for deep neural networks."
+        },
+        {
+          "id": "C",
+          "text": "Efficient tracking of files and their changes."
+        },
+        {
+          "id": "D",
+          "text": "Automatic monitoring of neural network parameters."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Python_SS2024.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    }
+  ]
+}

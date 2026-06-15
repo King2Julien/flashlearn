@@ -1,0 +1,1605 @@
+{
+  "schemaVersion": 1,
+  "id": "python-2-retry-2024-2",
+  "title": "Programming in Python 2 - Retry Exam 2024 #2",
+  "subject": "Programming in Python 2",
+  "description": "Questions reconstructed from Retry Exam 2 - JKU Moodle.pdf. The academic-integrity confirmation item is omitted.",
+  "createdAt": "2026-06-14T00:00:00.000Z",
+  "updatedAt": "2026-06-14T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "python-2-retry-2024-2-q01",
+      "type": "multiple",
+      "question": "Assume a classification task where you want to classify handwritten digits (0-9), which are available as grayscale images. Which of the following data augmentation techniques are useful?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Modifying color channels."
+        },
+        {
+          "id": "B",
+          "text": "Adding slight noise."
+        },
+        {
+          "id": "C",
+          "text": "Rotating by +-5 degrees."
+        },
+        {
+          "id": "D",
+          "text": "Flipping vertically."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q02",
+      "type": "multiple",
+      "question": "Assume that MyModule is a class properly derived from the torch.nn.Module class and x, y, z are PyTorch tensors. W\n             statements are correct regarding the following code?\n\n             my_module = MyModule(x, y)\n             my_module(z)",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It (ultimately) calls the forward method of my_module with arguments x, y, z."
+        },
+        {
+          "id": "B",
+          "text": "It creates an instance of MyModule and calls the __init__ method with argument z."
+        },
+        {
+          "id": "C",
+          "text": "It creates an instance of MyModule and calls the __init__ method with arguments x, y, z."
+        },
+        {
+          "id": "D",
+          "text": "It (ultimately) calls the forward method of my_module with argument z."
+        },
+        {
+          "id": "E",
+          "text": "It (ultimately) calls the forward method of my_module with arguments x, y."
+        },
+        {
+          "id": "F",
+          "text": "It creates an instance of MyModule and calls the __init__ method with arguments x, y."
+        }
+      ],
+      "correctOptions": [
+        "D",
+        "B",
+        "C",
+        "F"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q03",
+      "type": "multiple",
+      "question": "Assume you apply the following PyTorch image transformation transform_chain to some example RGB image:\n\n             import torch\n             from torchvision.transforms import v2\n\n             transform_chain = v2.Compose([\n                     v2.PILToTensor(),\n                     v2.ToDtype(torch.float32, scale=True),\n                     v2.Resize(size=100),\n                     v2.ColorJitter(),\n                     v2.RandomRotation(degrees=180),\n                     v2.RandomVerticalFlip(p=0.5),\n                     v2.RandomHorizontalFlip(p=0.5)\n             ])\n\n             Which of the following statements are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The resulting image might have its colors changed."
+        },
+        {
+          "id": "B",
+          "text": "The resulting image might be horizontally flipped."
+        },
+        {
+          "id": "C",
+          "text": "The resulting image might be vertically flipped."
+        },
+        {
+          "id": "D",
+          "text": "The resulting image might be rotated."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q04",
+      "type": "multiple",
+      "question": "Assume you have the following binary confusion matrix:\n\n                                         Predicted\n                                    positive   negative\n             ------------------------------------\n             Actual positive |          40          0     |\n                        negative |      55          5     |\n             ------------------------------------\n\n             Which of the following statements are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The classification performance is close to perfect (only off by 5 samples)."
+        },
+        {
+          "id": "B",
+          "text": "The model never made an incorrect classification regarding the actually positive samples."
+        },
+        {
+          "id": "C",
+          "text": "The model never made an incorrect classification regarding the actually negative samples."
+        },
+        {
+          "id": "D",
+          "text": "The model is more likely to predict the positive class."
+        }
+      ],
+      "correctOptions": [
+        "D",
+        "B",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q05",
+      "type": "single",
+      "question": "Assume you have the following categorical data in exactly this fixed order:\n\n             flower, tree, earth, water\n\n             You are asked to create a one-hot encoding. Which of the following is the correct one-hot encoded representation",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "(1, 0, 1, 1)"
+        },
+        {
+          "id": "B",
+          "text": "(0, 1, 0, 0)"
+        },
+        {
+          "id": "C",
+          "text": "(1, 0, 0, 0)"
+        },
+        {
+          "id": "D",
+          "text": "(0, 0, 0, 1)"
+        },
+        {
+          "id": "E",
+          "text": "(0, 0, 0, 0)"
+        },
+        {
+          "id": "F",
+          "text": "(0, 0, 1, 0)"
+        },
+        {
+          "id": "G",
+          "text": "(1, 1, 1, 1)"
+        }
+      ],
+      "correctOptions": [
+        "F"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q06",
+      "type": "multiple",
+      "question": "Assume you want to normalize your data and compute a normalization constant from your data set (e.g., the mean\n             would be the correct way to proceed in terms of training, validation and test set?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Determine the constant for normalization on the validation and test data and apply it also to the training"
+        },
+        {
+          "id": "B",
+          "text": "Determine the constant for normalization on the training and test data and apply it also to the validation"
+        },
+        {
+          "id": "C",
+          "text": "Determine the constant for normalization on the training data and apply it also to the validation and test"
+        },
+        {
+          "id": "D",
+          "text": "Determine the constant for normalization on the whole data set and apply it to training, validation and te"
+        },
+        {
+          "id": "E",
+          "text": "Determine the constant for normalization on the training and validation data and apply it also to the test"
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q07",
+      "type": "multiple",
+      "question": "Categorical data can be described as:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Qualitative data without mathematical meaning."
+        },
+        {
+          "id": "B",
+          "text": "Quantitative data without mathematical meaning."
+        },
+        {
+          "id": "C",
+          "text": "Quantitative data with mathematical meaning."
+        },
+        {
+          "id": "D",
+          "text": "Qualitative data with mathematical meaning."
+        },
+        {
+          "id": "E",
+          "text": "Qualitative data without mathematical meaning but with a natural ordering."
+        },
+        {
+          "id": "F",
+          "text": "Quantitative data with mathematical meaning but without a natural ordering."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q08",
+      "type": "single",
+      "question": "In a supervised setting, how can one determine the prediction performance of some machine learning model?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "By running a performance profiler on the model."
+        },
+        {
+          "id": "B",
+          "text": "By using a loss function to compute the deviation between the model prediction and the true target."
+        },
+        {
+          "id": "C",
+          "text": "By comparing the model input and the model prediction with each other."
+        },
+        {
+          "id": "D",
+          "text": "By averaging the gradients of the model and comparing it to a specified threshold."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q09",
+      "type": "single",
+      "question": "The forward method of a class derived from torch.nn.Module ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... performs one weight update during training."
+        },
+        {
+          "id": "B",
+          "text": "... sets up the module architecture."
+        },
+        {
+          "id": "C",
+          "text": "... specifies how an input is transformed into an output (the \"flow\" through the architecture)."
+        },
+        {
+          "id": "D",
+          "text": "... pushes a PyTorch module to a given device."
+        },
+        {
+          "id": "E",
+          "text": "... computes the gradients."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q10",
+      "type": "single",
+      "question": "The __init__ method of a class derived from torch.nn.Module ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... initializes all submodules based on the superclass."
+        },
+        {
+          "id": "B",
+          "text": "... initializes the training procedure."
+        },
+        {
+          "id": "C",
+          "text": "... specifies how an input is transformed into an output (the \"flow\" through the architecture)."
+        },
+        {
+          "id": "D",
+          "text": "... sets up the module architecture."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q11",
+      "type": "single",
+      "question": "The special method __getitem__ in a torch.utils.data.Dataset derived class should ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... return the data set."
+        },
+        {
+          "id": "B",
+          "text": "... return one sample."
+        },
+        {
+          "id": "C",
+          "text": "... return minibatched samples."
+        },
+        {
+          "id": "D",
+          "text": "... return all samples."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q12",
+      "type": "single",
+      "question": "Training a neural network for one update will ...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "... perform training for a fixed number of iterations."
+        },
+        {
+          "id": "B",
+          "text": "... perform training until early stopping is applied."
+        },
+        {
+          "id": "C",
+          "text": "... perform one training iteration over all training samples."
+        },
+        {
+          "id": "D",
+          "text": "... perform one weight update."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q13",
+      "type": "single",
+      "question": "What is meant by the term \"regularization\" in the context of machine learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Techniques to reduce underfitting."
+        },
+        {
+          "id": "B",
+          "text": "Techniques to reduce overfitting."
+        },
+        {
+          "id": "C",
+          "text": "Using cross entropy as loss."
+        },
+        {
+          "id": "D",
+          "text": "Replacing non-linear activation functions with linear activation functions."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q14",
+      "type": "multiple",
+      "question": "What is the output of the following code?\n\n              import torch\n\n              class MyModule(torch.nn.Module):\n                      def __init__(self, x):\n                           super().__init__()\n                           self.x = x\n\n              my_module = MyModule(2)\n              result = my_module(5)\n              print(result)",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It raises an exception because MyModule does not have a forward method."
+        },
+        {
+          "id": "B",
+          "text": "It raises an exception because MyModule does not have any trainable parameters."
+        },
+        {
+          "id": "C",
+          "text": "10"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        },
+        {
+          "id": "E",
+          "text": "It raises an exception because self.x is not a (sub)module."
+        },
+        {
+          "id": "F",
+          "text": "7"
+        },
+        {
+          "id": "G",
+          "text": "2"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q15",
+      "type": "single",
+      "question": "What is the output of the following code?\n\n              import torch\n\n              def function(x: torch.Tensor):\n                     return -x if x.sum() < 0 else x\n\n              scripted_function = torch.jit.script(function)\n              traced_function = torch.jit.trace(function, example_inputs=torch.tensor([0, -1]))\n\n              actual_input = torch.tensor([1, 2, 3])\n              print(\"s:\", scripted_function(actual_input).tolist())\n              print(\"t:\", traced_function(actual_input).tolist())",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "s: [1, 2, 3]\n                          t: [0, 1]"
+        },
+        {
+          "id": "B",
+          "text": "s: [1, 2, 3]\n                          t: [-1, -2, -3]"
+        },
+        {
+          "id": "C",
+          "text": "s: [-1, -2, -3]\n                          t: [-1, -2, -3]"
+        },
+        {
+          "id": "D",
+          "text": "s: [-1, -2, -3]\n                          t: [0, 1]"
+        },
+        {
+          "id": "E",
+          "text": "s: [1, 2, 3]\n                          t: [0, -1]"
+        },
+        {
+          "id": "F",
+          "text": "s: [1, 2, 3]\n                          t: [1, 2, 3]"
+        },
+        {
+          "id": "G",
+          "text": "s: [-1, -2, -3]\n                          t: [0, -1]"
+        },
+        {
+          "id": "H",
+          "text": "s: [-1, -2, -3]\n                          t: [1, 2, 3]"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q16",
+      "type": "single",
+      "question": "What is the primary purpose of a torch.utils.data.DataLoader?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Extracting the gradients from a gradient-based model."
+        },
+        {
+          "id": "B",
+          "text": "Extracting minibatches of samples from a torch.utils.data.Dataset instance."
+        },
+        {
+          "id": "C",
+          "text": "Loading the parameters of a neural network model."
+        },
+        {
+          "id": "D",
+          "text": "Loading the hyperparameters of a neural network model."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q17",
+      "type": "single",
+      "question": "What is the purpose of a loss function?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "To compute the run-time performance of a model."
+        },
+        {
+          "id": "B",
+          "text": "To compute the quality of the input data."
+        },
+        {
+          "id": "C",
+          "text": "To compute the gradients for gradient-based iterative methods."
+        },
+        {
+          "id": "D",
+          "text": "To compute the difference between the model ouput and the actual targets (ground truth)."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q18",
+      "type": "single",
+      "question": "What is the shape of the output tensor result when running the following code?\n\n              import torch\n\n              class MyModule(torch.nn.Module):\n                  def __init__(self):\n                           super().__init__()\n                           self.linear = torch.nn.Linear(in_features=64, out_features=32)\n\n                      def forward(self, x):\n                          out = self.linear(x)\n                           return torch.sigmoid(out)\n\n              inp = torch.rand(size=(128, 64))\n              my_module = MyModule()\n              result = my_module(inp)",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "(32,)"
+        },
+        {
+          "id": "B",
+          "text": "(64,)"
+        },
+        {
+          "id": "C",
+          "text": "(128, 64, 32)"
+        },
+        {
+          "id": "D",
+          "text": "(64, 32)"
+        },
+        {
+          "id": "E",
+          "text": "(128,)"
+        },
+        {
+          "id": "F",
+          "text": "(128, 64)"
+        },
+        {
+          "id": "G",
+          "text": "(128, 32)"
+        }
+      ],
+      "correctOptions": [
+        "G"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q19",
+      "type": "single",
+      "question": "What is the term \"generalization\" about?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A model that fits the training data well will also generalize well."
+        },
+        {
+          "id": "B",
+          "text": "It is about trying to find a model which overfits the data."
+        },
+        {
+          "id": "C",
+          "text": "Using a dedicated test set is important for evaluating the generalization capability of a model."
+        },
+        {
+          "id": "D",
+          "text": "It tells us how well our model will perform on future (unseen) data."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q20",
+      "type": "multiple",
+      "question": "Which of the following are benefits of a version control system (VCS) such as git?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Improved performance for deep neural networks."
+        },
+        {
+          "id": "B",
+          "text": "Useful for collaboration."
+        },
+        {
+          "id": "C",
+          "text": "Makes hyperparameter tuning easier."
+        },
+        {
+          "id": "D",
+          "text": "Efficient tracking of files and their changes."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q21",
+      "type": "multiple",
+      "question": "Which of the following are common steps when designing a machine learning project?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Considering which machine learning methods are fitting."
+        },
+        {
+          "id": "B",
+          "text": "Assessing which software and hardware can and/or should be available."
+        },
+        {
+          "id": "C",
+          "text": "Getting and overview of the data which is going to be used."
+        },
+        {
+          "id": "D",
+          "text": "Getting a clear definition and understanding of the project goal."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q22",
+      "type": "multiple",
+      "question": "Which of the following are typical data normalization/scaling approaches?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Scaling to range [0, 100]."
+        },
+        {
+          "id": "B",
+          "text": "Scaling to zero (0) mean and unit (1) variance."
+        },
+        {
+          "id": "C",
+          "text": "Scaling to range [min, max], where min and max are the minimum and maximum values of the data set."
+        },
+        {
+          "id": "D",
+          "text": "Scaling to range [-1, 1]."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q23",
+      "type": "multiple",
+      "question": "Which of the following code snippets are correct (you can assume correct imports and that MyDataset(...)\n              torch.utils.data.Dataset instance)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "dataset = MyDataset(...)\n                           loader = DataLoader(shuffle=True, batch_size=16)\n                           for data in loader(dataset)\n                              # do something"
+        },
+        {
+          "id": "B",
+          "text": "dataset = MyDataset(...)\n                           for data in dataset:\n                              loader = DataLoader(data, shuffle=True, batch_size=16)\n                              samples = loader.get_minibatch()\n                              # do something"
+        },
+        {
+          "id": "C",
+          "text": "dataset = MyDataset(...)\n                           loader = DataLoader(dataset, shuffle=True, batch_size=16)\n                           data = loader.get_minibatch()"
+        },
+        {
+          "id": "D",
+          "text": "dataset = MyDataset(...)\n                           loader = DataLoader(dataset, shuffle=True, batch_size=16)\n                           for data in loader:\n                               # do something"
+        }
+      ],
+      "correctOptions": [
+        "D",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q24",
+      "type": "multiple",
+      "question": "Which of the following is the correct order of performing one weight update in PyTorch (you can assume that\n              optimizer object)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "1. Compute loss\n                          2. Compute gradients loss.backward()\n                          3. Reset gradients optimizer.zero_grad()\n                          4. Update weights optimizer.step()"
+        },
+        {
+          "id": "B",
+          "text": "1. Reset gradients optimizer.zero_grad()\n                          2. Compute loss\n                          3. Update weights optimizer.step()\n                          4. Compute gradients loss.backward()"
+        },
+        {
+          "id": "C",
+          "text": "1. Compute loss\n                          2. Update weights optimizer.step()\n                          3. Compute gradients loss.backward()\n                          4. Reset gradients optimizer.zero_grad()"
+        },
+        {
+          "id": "D",
+          "text": "1. Compute loss\n                          2. Compute gradients loss.backward()\n                          3. Update weights optimizer.step()\n                          4. Reset gradients optimizer.zero_grad()"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q25",
+      "type": "single",
+      "question": "Which of the following statements are correct regarding a hash function?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A hash function is used to compute a variably sized data vector for a given input."
+        },
+        {
+          "id": "B",
+          "text": "A hash function can only be used for files."
+        },
+        {
+          "id": "C",
+          "text": "A hash function should ideally be fast to compute."
+        },
+        {
+          "id": "D",
+          "text": "A hash function is typically used as a non-linear activation function."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q26",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding model parameters and hyperparameters?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Hyperparameters might influence the model architecture."
+        },
+        {
+          "id": "B",
+          "text": "Hyperparameters and model parameters are the same thing."
+        },
+        {
+          "id": "C",
+          "text": "Hyperparameters are a subset of the model parameters."
+        },
+        {
+          "id": "D",
+          "text": "Model parameters are adjusted during model training."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q27",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding monitoring a model during training?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It enables an easier detection of over- or underfitting."
+        },
+        {
+          "id": "B",
+          "text": "It increases the model performance."
+        },
+        {
+          "id": "C",
+          "text": "It reduces the time needed for training."
+        },
+        {
+          "id": "D",
+          "text": "It allows inspecting weights and gradients and how they change during training."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q28",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding online learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Gradients might be contradicting."
+        },
+        {
+          "id": "B",
+          "text": "A single training sample is used for one update."
+        },
+        {
+          "id": "C",
+          "text": "It leads to smooth gradients."
+        },
+        {
+          "id": "D",
+          "text": "The batch size is a hyperparameter."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q29",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding scripting and tracing to create TorchScript programs?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Scripting and tracing cannot be combined."
+        },
+        {
+          "id": "B",
+          "text": "Tracing requires an example input."
+        },
+        {
+          "id": "C",
+          "text": "With scripting, control flow such as branching is lost."
+        },
+        {
+          "id": "D",
+          "text": "Both scripting and tracing turn Python code into TorchScript code."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q30",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding the following function and with respect to TorchScript?\n\n              def function(x):\n                  if x.min() <= 0:\n                          return 0\n                      return x",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Tracing the function is not possible."
+        },
+        {
+          "id": "B",
+          "text": "Scripting the function is not possible."
+        },
+        {
+          "id": "C",
+          "text": "Tracing the function is possible."
+        },
+        {
+          "id": "D",
+          "text": "Scripting the function is possible."
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q31",
+      "type": "multiple",
+      "question": "Which of the following statements are correct regarding TorchScript?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Every TorchScript code is also valid Python code."
+        },
+        {
+          "id": "B",
+          "text": "TorchScript eases the implementation of neural networks compared to plain Python."
+        },
+        {
+          "id": "C",
+          "text": "TorchScript code can provide a performance speed-up."
+        },
+        {
+          "id": "D",
+          "text": "Every Python code is also valid TorchScript code."
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q32",
+      "type": "single",
+      "question": "Which of the following statements are correct when talking about normalization/scaling?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "When applying normalization/scaling in a setting with a dedicated training and test set, care must be take\n                           for computing normalization constants."
+        },
+        {
+          "id": "B",
+          "text": "Normalization/scaling cannot be used in conjunction with cross validation."
+        },
+        {
+          "id": "C",
+          "text": "Normalization/scaling is independent from the method/model."
+        },
+        {
+          "id": "D",
+          "text": "It could be that applying normalization/scaling does not have any beneficial effects."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q33",
+      "type": "multiple",
+      "question": "Which of the following statements are true regarding data augmentation?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Data augmentation can have a positive impact on the model performance."
+        },
+        {
+          "id": "B",
+          "text": "Data augmentation reduces underfitting."
+        },
+        {
+          "id": "C",
+          "text": "Data augmentation is about creating \"new\" artificial samples by modifying existing samples."
+        },
+        {
+          "id": "D",
+          "text": "Data augmentation can have a negative impact on the model performance."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q34",
+      "type": "multiple",
+      "question": "Which of the following statements must be taken into consideration when doing a literature review regarding a ne",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Wikis, blog posts, reddit and other similar sites can provide a good overview and introduction"
+        },
+        {
+          "id": "B",
+          "text": "There can be research biases."
+        },
+        {
+          "id": "C",
+          "text": "Peer-reviewed literature can be a good way to get state-of-the-art information."
+        },
+        {
+          "id": "D",
+          "text": "If there is no matching literature, it means that the project cannot be done using machine learning."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q35",
+      "type": "single",
+      "question": "Which statements regarding PyTorch's automatic parameter registration of a torch.nn.Module are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "When assigned as attribute, a torch.nn.Parameter will automatically be registered."
+        },
+        {
+          "id": "B",
+          "text": "When assigned as attribute, a torch.utils.data.Dataset's parameters will automatically be registered."
+        },
+        {
+          "id": "C",
+          "text": "When assigned as attribute, a torch.Tensor will automatically be registered."
+        },
+        {
+          "id": "D",
+          "text": "When assigned as attribute, a torch.nn.Module's trainable parameters will automatically be registered."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q36",
+      "type": "multiple",
+      "question": "Which statements regarding PyTorch's torch.nn.Module are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It is the base class for all data sets."
+        },
+        {
+          "id": "B",
+          "text": "It can contain and utilize other modules."
+        },
+        {
+          "id": "C",
+          "text": "Many predefined PyTorch modules exist."
+        },
+        {
+          "id": "D",
+          "text": "It can contain trainable parameters (torch.nn.Parameter)."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q37",
+      "type": "multiple",
+      "question": "You are given a data set from your employer for a new machine learning project. Which of the following statement\n              account?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The data might be incorrect (e.g., incorrect labeling)."
+        },
+        {
+          "id": "B",
+          "text": "The data might include outlier values."
+        },
+        {
+          "id": "C",
+          "text": "The data might require preprocessing to make it work with machine learning models."
+        },
+        {
+          "id": "D",
+          "text": "There might be more data (which your employer might not have considered as important but could still b"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q38",
+      "type": "single",
+      "question": "You are measuring the air temperatur every day (e.g., 14.23°C, 15.01°C, etc.). Which type of data is this?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Categorical data"
+        },
+        {
+          "id": "B",
+          "text": "Continuous numerical data"
+        },
+        {
+          "id": "C",
+          "text": "Discrete numerical data"
+        },
+        {
+          "id": "D",
+          "text": "Ordinal data"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-retry-2024-2-q39",
+      "type": "multiple",
+      "question": "You are training a neural network model using a gradient-based iterative method. The first training loss that you compute is rather high. Continuing the training process leads to a gradually lower loss. Which statements are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The model parameters are changing."
+        },
+        {
+          "id": "B",
+          "text": "The training appears to be working, i.e., the performance is improving."
+        },
+        {
+          "id": "C",
+          "text": "The gradients are zero."
+        },
+        {
+          "id": "D",
+          "text": "The model is getting continuously worse, since the loss should get higher during training."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Retry Exam 2 - JKU Moodle.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    }
+  ]
+}

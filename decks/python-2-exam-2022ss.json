@@ -1,0 +1,1760 @@
+{
+  "schemaVersion": 1,
+  "id": "python-2-exam-2022ss",
+  "title": "Programming in Python 2 - Exam 2022SS",
+  "subject": "Programming in Python 2",
+  "description": "Questions reconstructed from Pip2_2022SS.pdf. The academic-integrity confirmation item is omitted.",
+  "createdAt": "2026-06-14T00:00:00.000Z",
+  "updatedAt": "2026-06-14T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "python-2-exam-2022ss-q01",
+      "type": "single",
+      "question": "What is the main purpose of a version control system (VCS)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Automatic usage of the most recent Python package versions."
+        },
+        {
+          "id": "B",
+          "text": "Efficient tracking of files and their changes."
+        },
+        {
+          "id": "C",
+          "text": "Keeping all software versions up to date."
+        },
+        {
+          "id": "D",
+          "text": "Fast integration of unit tests."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q02",
+      "type": "single",
+      "question": "Assume that you have a classification task where you want to classify images into either \"dog\" or \"cat\". Each image only contains a\n      single dog or a single cat on some arbitrary background. Which of the following data augmentation techniques does NOT make\n      sense?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "adding noise"
+        },
+        {
+          "id": "B",
+          "text": "applying input dropout"
+        },
+        {
+          "id": "C",
+          "text": "zooming into the background"
+        },
+        {
+          "id": "D",
+          "text": "flipping horizontally"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q03",
+      "type": "single",
+      "question": "Which of the following is NOT a typical data normalization/scaling approach?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Scaling to range [-1, 1]."
+        },
+        {
+          "id": "B",
+          "text": "Scaling to zero (0) mean and unit (1) variance."
+        },
+        {
+          "id": "C",
+          "text": "Scaling to range [0, 1]."
+        },
+        {
+          "id": "D",
+          "text": "Scaling to range [0, 10^-15]"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q04",
+      "type": "single",
+      "question": "What is one primary purpose of the automatic parameter registration of torch.nn.Module?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "To allow for easier debugging."
+        },
+        {
+          "id": "B",
+          "text": "To allow more inputs to the forward method."
+        },
+        {
+          "id": "C",
+          "text": "To collect all trainable parameters and provide convenient acces to them via the module's parameters method."
+        },
+        {
+          "id": "D",
+          "text": "To keep track of all parameters and assess whether they can be removed in order to increase performance."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q05",
+      "type": "single",
+      "question": "Assume you have the raw model outputs logits as a PyTorch tensor with arbitrary floating point numbers in the range [-100, 100].\n      Which of the following code snippets is correct when the task is to get binary classification predictions preds (integer, either 0 or\n      1), given some prediction threshold t (float) in the range [0, 1] (assume correct imports)?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "preds = (logits >= t).long()"
+        },
+        {
+          "id": "B",
+          "text": "preds = (torch.sigmoid(logits) * t).long()"
+        },
+        {
+          "id": "C",
+          "text": "preds = (torch.sigmoid(logits) >= t).long()"
+        },
+        {
+          "id": "D",
+          "text": "preds = logits.long() >= t"
+        },
+        {
+          "id": "E",
+          "text": "preds = (logits * t).long()"
+        },
+        {
+          "id": "F",
+          "text": "preds = torch.sigmoid(logits).long() >= t"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q06",
+      "type": "single",
+      "question": "What does the following PyTorch image transformation composition do when applied on an image?\n\n      transforms = transforms.Compose([\n              transforms.Resize(4),\n              transforms.Grayscale(),\n              transforms.RandomRotation(degrees=180),\n              transforms.ToTensor()\n      ])",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It sequentially resizes an image, converts it to grayscale, applies randomized rotation and transforms it to a Pytorch\n                   tensor."
+        },
+        {
+          "id": "B",
+          "text": "It randomly performs one of the four transformations on an image."
+        },
+        {
+          "id": "C",
+          "text": "It randomly performs arbitrary many of the four transformations on an image."
+        },
+        {
+          "id": "D",
+          "text": "It sequentially transforms an image to a PyTorch tensor, applies randomized rotation, converts it to grayscale and resizes\n                 it."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q07",
+      "type": "single",
+      "question": "Select the correct solution when asked to normalize (scale to range [0, 1]) some numpy array arr.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "arr * 0 + (1 * arr)"
+        },
+        {
+          "id": "B",
+          "text": "(arr - arr.mean()) / arr.std()"
+        },
+        {
+          "id": "C",
+          "text": "arr / 255"
+        },
+        {
+          "id": "D",
+          "text": "(arr - arr.min()) / (arr.max() - arr.min())"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q08",
+      "type": "single",
+      "question": "You get data that measures the times it took for trees to grow. The measured times can be any real numbers in range [0, 1000].\n      Which type of data is this?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "categorical data"
+        },
+        {
+          "id": "B",
+          "text": "continuous data"
+        },
+        {
+          "id": "C",
+          "text": "ordinal data"
+        },
+        {
+          "id": "D",
+          "text": "discrete data"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q09",
+      "type": "single",
+      "question": "The forward method in context of torch.nn.Module...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "...defines the module architecture."
+        },
+        {
+          "id": "B",
+          "text": "...specifies how a PyTorch module is applied (the \"flow\" through the module architecture)."
+        },
+        {
+          "id": "C",
+          "text": "...pushes a PyTorch module to a given device."
+        },
+        {
+          "id": "D",
+          "text": "...adds a new forward layer to the network architecture of a module."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q10",
+      "type": "multiple",
+      "question": "Categorical data can be described as:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Quantitative data with mathematical meaning and a natural ordering."
+        },
+        {
+          "id": "B",
+          "text": "A subset of numerical data with continuous values."
+        },
+        {
+          "id": "C",
+          "text": "Qualitative data without mathematical meaning but with a natural ordering."
+        },
+        {
+          "id": "D",
+          "text": "Qualitative data without mathematical meaning."
+        }
+      ],
+      "correctOptions": [
+        "D",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q11",
+      "type": "multiple",
+      "question": "What does independently and identically distributed (i.i.d.) mean?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Each sample has the same probability distribution as the others and all are mutually independent."
+        },
+        {
+          "id": "B",
+          "text": "Each sample has a different probability distribution as the others and all are mutually dependent."
+        },
+        {
+          "id": "C",
+          "text": "Each sample has the same probability distribution as the others and all are mutually dependent."
+        },
+        {
+          "id": "D",
+          "text": "Each sample has a different probability distribution as the others and all are mutually independent."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q12",
+      "type": "single",
+      "question": "What is the purpose of a loss function?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "To get the predictions of a model."
+        },
+        {
+          "id": "B",
+          "text": "To change the model parameters."
+        },
+        {
+          "id": "C",
+          "text": "To compute the difference between the model ouput and the actual targets (ground truth)."
+        },
+        {
+          "id": "D",
+          "text": "To compute the gradients for gradient-based iterative methods."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q13",
+      "type": "single",
+      "question": "Assume that MyModule is a class properly derived from the torch.nn.Module class and tensor_a is a PyTorch tensor. What does the\n      following code do?\n\n      my_module = MyModule()\n      my_module(tensor_a)",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It raises an exception, since one can not create instances of MyModule."
+        },
+        {
+          "id": "B",
+          "text": "Creates an instance of MyModule. Then reads a sample into tensor_a."
+        },
+        {
+          "id": "C",
+          "text": "Creates an instance of MyModule. Then applies the forward method of my_module with argument tensor_a."
+        },
+        {
+          "id": "D",
+          "text": "Creates an instance of MyModule. Then calls the __getitem__ method of my_module with argument tensor_a."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q14",
+      "type": "single",
+      "question": "What is the output of the following code?\n\n      import torch\n      from torch.utils.data import Dataset, DataLoader\n\n      class MyDataset(Dataset):\n          def __getitem__(self, index):\n              return torch.tensor([1, 2, 3])\n\n              def __len__(self):\n                  return 4\n\n      dataset = MyDataset()\n      loader = DataLoader(dataset, batch_size=2)\n\n      for i, x in enumerate(loader):\n          print(f\"{i}: {tuple(x.shape)}\")",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "0: (3, 2)\n                   1: (3, 2)"
+        },
+        {
+          "id": "B",
+          "text": "0: (2, 3)\n                   1: (2, 3)"
+        },
+        {
+          "id": "C",
+          "text": "0: (4, 3)"
+        },
+        {
+          "id": "D",
+          "text": "0: (6,)"
+        },
+        {
+          "id": "E",
+          "text": "0: (4, 2, 3)"
+        },
+        {
+          "id": "F",
+          "text": "0: (3,)\n                   1: (3,)\n                   2: (3,)\n                   3: (3,)"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q15",
+      "type": "single",
+      "question": "What can be a potential risk of data augmentation?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It can introduce artifacts or even change the task."
+        },
+        {
+          "id": "B",
+          "text": "There are no risks, data augmentation is always safe."
+        },
+        {
+          "id": "C",
+          "text": "It can increase the model complexity."
+        },
+        {
+          "id": "D",
+          "text": "It can increase the number of trainable parameters of a model."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q16",
+      "type": "single",
+      "question": "Why is the following code problematic (you can assume correct inputs, shapes and arguments)?\n\n      import torch\n\n      class MyModule(torch.nn.Module):\n          def __init__(self):\n              super().__init__()\n              self.conv = torch.nn.Conv2d(...)\n\n              def forward(self, x):\n                  out1 = self.conv(x)\n                   ... # process \"out1\" so it can be an input to \"linear\"\n                   linear = torch.nn.Linear(...)\n                   out2 = linear(out1)\n                   return out2",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "torch.nn.Linear is assigned to a local identifier but torch.nn.Conv2d is not. Both should be defined to locals or the code\n                   will suffer from reproducibility."
+        },
+        {
+          "id": "B",
+          "text": "torch.nn.Linear must be invoked before passing the data to the convolutional layer."
+        },
+        {
+          "id": "C",
+          "text": "torch.nn.Conv2d can never be combined with torch.nn.Linear."
+        },
+        {
+          "id": "D",
+          "text": "The submodule torch.nn.Linear is created inside the forward method rather than the __init__ method. This means\n                   that the submodule is repeatedly created in every forward call, including its random parameter initialization."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q17",
+      "type": "single",
+      "question": "torch.utils.data.Dataset can be used to derive a custom class that...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "...specifies that architecture of a neural network model."
+        },
+        {
+          "id": "B",
+          "text": "...provides access to data via a standardized interface."
+        },
+        {
+          "id": "C",
+          "text": "...takes care of multiprocessing."
+        },
+        {
+          "id": "D",
+          "text": "...creates minibatches from samples."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q18",
+      "type": "single",
+      "question": "What is the output of the following code?\n\n      import torch\n\n      class MyModule(torch.nn.Module):\n          def __init__(self, a):\n              super().__init__()\n              self.a = a\n\n              def forward(self, x):\n                  output = x + self.a\n                  return output\n\n      my_module = MyModule(2.0)\n      c = my_module(5.0)\n      print(c)",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It raises an exception because super().__init__() should not be used with torch.nn.Module."
+        },
+        {
+          "id": "B",
+          "text": "It raises an exception because the __getitem__ method is missing in MyModule."
+        },
+        {
+          "id": "C",
+          "text": "7.0"
+        },
+        {
+          "id": "D",
+          "text": "It raises an exception at self.a = a because only PyTorch trainable parameters and submodules can be used as attribute."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q19",
+      "type": "single",
+      "question": "Consider a binary classification task, where you have to classify patients into either healthy (negative) or diseased (positive). Your\n      dataset is imbalanced, there are far more healthy patients than diseased patients. Which of the following evaluation metrics is the\n      most fitting one to assess a model performance?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "area under the receiver operating characteristic (ROC) curve (AUC)"
+        },
+        {
+          "id": "B",
+          "text": "true negative rate (TNR)"
+        },
+        {
+          "id": "C",
+          "text": "mean squared error (MSE)"
+        },
+        {
+          "id": "D",
+          "text": "accuracy (ACC)"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q20",
+      "type": "single",
+      "question": "Assume you want to normalize your data and compute a normalization constant from your dataset (e.g., the mean over many\n      samples). What would be the correct way to proceed in terms of training and test set?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Determine the constant for normalization on the training data and apply it also to the test data."
+        },
+        {
+          "id": "B",
+          "text": "Determine the constant for normalization on the whole dataset and apply it to training and test data."
+        },
+        {
+          "id": "C",
+          "text": "Determine the constant for normalization on the test data and apply it also to the training data."
+        },
+        {
+          "id": "D",
+          "text": "Determine the constant for normalization on a random set of samples from training and test data and apply it to training\n                 and test data."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q21",
+      "type": "single",
+      "question": "Which of the following statements is NOT correct regarding the following hash function:\n\n      def my_hash(x):\n          return 125",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The hash value is the same in different Python interpreter sessions."
+        },
+        {
+          "id": "B",
+          "text": "The computation of the hash value is fast."
+        },
+        {
+          "id": "C",
+          "text": "Up to 125 hash collisions can occur for unequal inputs."
+        },
+        {
+          "id": "D",
+          "text": "The hash function will work on any input."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q22",
+      "type": "multiple",
+      "question": "When translating PyTorch/Python code into a TorchScript program, there are two ways: scripting and tracing. Which of the\n      following statements is correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Scripting: recording the operations of a PyTorch/Python program given some example input; control flow is ignored\n                   Tracing: writing a TorchScript program directly; control flow is supported"
+        },
+        {
+          "id": "B",
+          "text": "Scripting: writing a TorchScript program directly; control flow is ignored\n                   Tracing: recording the operations of a PyTorch/Python program given some example input; control flow is supported"
+        },
+        {
+          "id": "C",
+          "text": "Scripting: recording the operations of a PyTorch/Python program given some example input; control flow is supported\n                   Tracing: writing a TorchScript program directly; control flow is ignored"
+        },
+        {
+          "id": "D",
+          "text": "Scripting: writing a TorchScript program directly; control flow is supported\n                 Tracing: recording the operations of a PyTorch/Python program given some example input; control flow is ignored"
+        }
+      ],
+      "correctOptions": [
+        "D",
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q23",
+      "type": "single",
+      "question": "Consider the following incomplete implementation of a custom Dataset which should return image data as numpy arrays (assume\n      read_image to be fully implemented):\n\n      import numpy as np\n      from torch.utils.data import Dataset\n\n      def read_image(path: str) -> np.ndarray:\n          # reads an image from the path and returns a numpy array\n          ...\n\n      class MyDataset(Dataset):\n          def __init__(self, image_paths: list[str]):\n              self.image_paths = image_paths\n\n      Which of the following is the correct implementation of the missing __getitem__ method?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "def __getitem__(self, path):\n                       return read_image(path)"
+        },
+        {
+          "id": "B",
+          "text": "def __getitem__(self, index):\n                       return np.array([index])"
+        },
+        {
+          "id": "C",
+          "text": "def __getitem__(self, index):\n                       path = self.image_paths[index]\n                       return read_image(path)"
+        },
+        {
+          "id": "D",
+          "text": "def __getitem__(self, index):\n                       data = []\n                       for path in self.image_paths:\n                           data.append(read_image(path))\n                       return data"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q24",
+      "type": "multiple",
+      "question": "Which is the correct way to perform an update step on network parameters after the forward pass in PyTorch?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Set gradients to zero, calculate the loss, call backward() on the optimizer, call step() on the optimizer."
+        },
+        {
+          "id": "B",
+          "text": "Set gradients to zero, calculate the loss, call backward() on the loss, call step() on the optimizer."
+        },
+        {
+          "id": "C",
+          "text": "Set gradients to zero, calculate the loss, call backward() on the optimizer, call step() on the network."
+        },
+        {
+          "id": "D",
+          "text": "Set gradients to zero, calculate the loss, call backward() on the loss, call step() on the network."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "A",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q25",
+      "type": "single",
+      "question": "What does collate_fn (collate function) do in terms of torch.utils.data.DataLoader?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Specifies how a sample is loaded from the disk."
+        },
+        {
+          "id": "B",
+          "text": "Applies data augmentation methods to the samples."
+        },
+        {
+          "id": "C",
+          "text": "Specifies how the samples are combined into minibatches."
+        },
+        {
+          "id": "D",
+          "text": "Specifies the size of the subsets of the dataset."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q26",
+      "type": "multiple",
+      "question": "What is the purpose of the zero_grad method?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It is called on the loss (loss.zero_grad()) to set the associated trainable parameters to values for which the loss is zero."
+        },
+        {
+          "id": "B",
+          "text": "It is called on the optimizer (optim.zero_grad()) in order to set the associated trainable parameters to zero after a\n                   gradient update."
+        },
+        {
+          "id": "C",
+          "text": "It is called on the optimizer (optim.zero_grad()) in order to set the gradients of the associated trainable parameters to\n                   zero."
+        },
+        {
+          "id": "D",
+          "text": "It is called on the loss (loss.zero_grad()) to set the associated trainable parameters to values for which the loss has a\n                   vanishing gradient."
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q27",
+      "type": "single",
+      "question": "An instance of the torch.utils.data.DataLoader class...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "...creates minibatches from the samples returned by a torch.utils.data.Dataset instance."
+        },
+        {
+          "id": "B",
+          "text": "...represents a PyTorch Dataset and must include a __getitem__ method."
+        },
+        {
+          "id": "C",
+          "text": "...splits the dataset into training and test set automatically."
+        },
+        {
+          "id": "D",
+          "text": "...must be passed to a PyTorch model and will automatically train it on all samples in the dataset."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q28",
+      "type": "single",
+      "question": "The __init__ method in context of torch.nn.Module...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "...specifies how a PyTorch module is applied (the \"flow\" through the module architecture)."
+        },
+        {
+          "id": "B",
+          "text": "...defines the module architecture."
+        },
+        {
+          "id": "C",
+          "text": "...initializes all sub-modules based on the super-class."
+        },
+        {
+          "id": "D",
+          "text": "...is a replacement for torch.nn.init."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q29",
+      "type": "single",
+      "question": "What can be a potential benefit of data augmentation?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Overfitting can be reduced."
+        },
+        {
+          "id": "B",
+          "text": "The computational run time of the model can be increased."
+        },
+        {
+          "id": "C",
+          "text": "The computational run time of the model can be reduced."
+        },
+        {
+          "id": "D",
+          "text": "Overfitting can be increased."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q30",
+      "type": "single",
+      "question": "What is the output of the following code?\n\n      import torch\n\n      def function(x: torch.Tensor):\n          return x if x.min() >= 0 else x * -1\n\n      scripted_function = torch.jit.script(function)\n      traced_function = torch.jit.trace(function, example_inputs=torch.tensor([1, 2, 3]))\n\n      actual_input = torch.tensor([-4, -5, -6])\n      print(\"s:\", scripted_function(actual_input).tolist())\n      print(\"t:\", traced_function(actual_input).tolist())",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "s: [-4, -5, -6]\n                   t: [4, 5, 6]"
+        },
+        {
+          "id": "B",
+          "text": "s: [4, 5, 6]\n                   t: [-1, -2, -3]"
+        },
+        {
+          "id": "C",
+          "text": "s: [-4, -5, -6]\n                   t: [-1, -2, -3]"
+        },
+        {
+          "id": "D",
+          "text": "s: [4, 5, 6]\n                   t: [1, 2, 3]"
+        },
+        {
+          "id": "E",
+          "text": "s: [4, 5, 6]\n                   t: [-4, -5, -6]"
+        },
+        {
+          "id": "F",
+          "text": "s: [-4, -5, -6]\n                   t: [-4, -5, -6]"
+        },
+        {
+          "id": "G",
+          "text": "s: [4, 5, 6]\n                   t: [4, 5, 6]"
+        },
+        {
+          "id": "H",
+          "text": "s: [-4, -5, -6]\n                   t: [1, 2, 3]"
+        }
+      ],
+      "correctOptions": [
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q31",
+      "type": "single",
+      "question": "Given a PyTorch optimizer optim = torch.optim.SGD(my_model.parameters(), lr=0.01), what does optim.step() do and when\n      should it be called?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It carries out an update on the registered trainable parameters of my_model. It should be called after the loss of the\n                   output of my_model has been calculated and loss.backward() has been called."
+        },
+        {
+          "id": "B",
+          "text": "It iterates to the next batch of training data in the training loop of my_model. It should be called after a the the parameters\n                   of my_model were updated."
+        },
+        {
+          "id": "C",
+          "text": "It increases the step size of optim. It should only be called before the loss of the output of my_model has been calculated\n                   and loss.backward() has been called."
+        },
+        {
+          "id": "D",
+          "text": "It calculates the gradients of my_model in the training loop. It should be called after the loss of the output of my_model has\n                 been calculated and loss.backward() has been called."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q32",
+      "type": "single",
+      "question": "What is a common loss function for regression tasks?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "mean squared error"
+        },
+        {
+          "id": "B",
+          "text": "cross entropy"
+        },
+        {
+          "id": "C",
+          "text": "binary cross entropy"
+        },
+        {
+          "id": "D",
+          "text": "stochastic gradient descent"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q33",
+      "type": "single",
+      "question": "What is the primary task of a hash function?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "To compute whether two objects are equal."
+        },
+        {
+          "id": "B",
+          "text": "To compute a fixed-sized data vector for a given input."
+        },
+        {
+          "id": "C",
+          "text": "To make implementations of dictionaries and sets fast (high run-time performance)."
+        },
+        {
+          "id": "D",
+          "text": "To compare image data."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q34",
+      "type": "single",
+      "question": "Which statement is NOT true about torch.nn.Module?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Trainable parameters are automatically registered when specified as attributes in the __init__ method."
+        },
+        {
+          "id": "B",
+          "text": "torch.nn.Module can be used to implement custom neural networks in PyTorch."
+        },
+        {
+          "id": "C",
+          "text": "PyTorch datasets are automatically registered when specified as attributes in the __init__ method."
+        },
+        {
+          "id": "D",
+          "text": "Other PyTorch modules are automatically registered when specified as attributes in the __init__ method."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q35",
+      "type": "single",
+      "question": "When training a model using some gradient-based iterative method, how should the loss (computed with some loss function)\n      change?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The loss should be minimized."
+        },
+        {
+          "id": "B",
+          "text": "The loss is irrelevant when training a model."
+        },
+        {
+          "id": "C",
+          "text": "The loss should be maximized."
+        },
+        {
+          "id": "D",
+          "text": "The loss should nearly stay constant (given some user-defined value)."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q36",
+      "type": "single",
+      "question": "When creating randomized data splits, a common thing to do is setting the seed of the used random number generators. Why is\n      that?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "To enable shuffling in the DataLoader istances."
+        },
+        {
+          "id": "B",
+          "text": "To make different libraries compatible with each other (e.g., data from numpy and data from torch)."
+        },
+        {
+          "id": "C",
+          "text": "To allow for a faster program execution, as the seed is now just a constant."
+        },
+        {
+          "id": "D",
+          "text": "To get reproducible results, so that the splits always contain the same (randomized) samples."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q37",
+      "type": "single",
+      "question": "What does a binary confusion matrix contain?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Given regression predictions and the actual targets, it contains the counts how often the model was close, given some\n                   threshold."
+        },
+        {
+          "id": "B",
+          "text": "It contains the loss values of all iterations of a nested cross validation."
+        },
+        {
+          "id": "C",
+          "text": "Given some loss functions, it contains the minimum and maximum loss values of these functions."
+        },
+        {
+          "id": "D",
+          "text": "Given classification predictions and the actual targets, it contains the counts how often the model was correct and\n                   incorrect."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q38",
+      "type": "single",
+      "question": "In a supervised setting, how can one determine the performance of some machine learning model?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "By using a loss function to compute the deviation between the model prediction and the true target."
+        },
+        {
+          "id": "B",
+          "text": "By averaging the gradients of the model and compare it to a specified threshold."
+        },
+        {
+          "id": "C",
+          "text": "By running a performance profiler on the model."
+        },
+        {
+          "id": "D",
+          "text": "By comparing the model input and the model prediction with each other."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q39",
+      "type": "single",
+      "question": "torch.utils.data.Subset can be used to...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "...derive a custom class that creates minibatches from samples."
+        },
+        {
+          "id": "B",
+          "text": "...generate a Dataset from a subset of the original Dataset according to a list of indices."
+        },
+        {
+          "id": "C",
+          "text": "...distribute the sampling process over multiple sub-processes."
+        },
+        {
+          "id": "D",
+          "text": "...find a good subset of the input features, e.g., for dimensionality reduction."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q40",
+      "type": "single",
+      "question": "Given a sample image img (type PIL.Image) and a PyTorch transformation pipeline transforms (type\n      torchvision.transforms.Compose), which of the following is the correct way of applying the transformations on the image?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "transformed_img = img.apply(transforms)"
+        },
+        {
+          "id": "B",
+          "text": "transformed_img = transforms(img)"
+        },
+        {
+          "id": "C",
+          "text": "transformed_img = img(transforms)"
+        },
+        {
+          "id": "D",
+          "text": "transformed_img = transforms.apply(img)"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q41",
+      "type": "single",
+      "question": "Which training method corresponds to full-batch learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Train a model on individual data samples from the training dataset in each update."
+        },
+        {
+          "id": "B",
+          "text": "Divide the full training dataset into batches of several samples and use one batch per update."
+        },
+        {
+          "id": "C",
+          "text": "Train a model on the whole training dataset in each update."
+        },
+        {
+          "id": "D",
+          "text": "Divide the full training and test dataset into batches of several samples and use one batch per update."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q42",
+      "type": "single",
+      "question": "The special method __getitem__ in a torch.utils.data.Dataset derived class should...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "...calculate the mean of all samples."
+        },
+        {
+          "id": "B",
+          "text": "...return minibatched samples."
+        },
+        {
+          "id": "C",
+          "text": "...return one sample."
+        },
+        {
+          "id": "D",
+          "text": "...return the index of a specified sample."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q43",
+      "type": "single",
+      "question": "What is a hash collision?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Equal inputs result in the same hash code."
+        },
+        {
+          "id": "B",
+          "text": "Different inputs result in different hash codes."
+        },
+        {
+          "id": "C",
+          "text": "Equal inputs result in different hash codes."
+        },
+        {
+          "id": "D",
+          "text": "Different inputs result in the same hash code."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q44",
+      "type": "single",
+      "question": "What is data augmentation?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Creating new artificial samples by modifying existing samples."
+        },
+        {
+          "id": "B",
+          "text": "Randomly swapping targets/labels of samples while keeping the features the same."
+        },
+        {
+          "id": "C",
+          "text": "Creating data splits (training, validation, test splits)."
+        },
+        {
+          "id": "D",
+          "text": "Creating new models by choosing different parameters."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-exam-2022ss-q45",
+      "type": "single",
+      "question": "Training a neural network for one epoch will...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "...perform one weight update."
+        },
+        {
+          "id": "B",
+          "text": "...perform training until the model overfits on all training samples."
+        },
+        {
+          "id": "C",
+          "text": "...perform training for a fixed number of seconds."
+        },
+        {
+          "id": "D",
+          "text": "...perform one training iteration over all training samples."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam"
+      ],
+      "difficulty": "",
+      "source": "Pip2_2022SS.pdf",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    }
+  ]
+}

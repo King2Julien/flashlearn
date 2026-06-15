@@ -1,0 +1,1349 @@
+{
+  "schemaVersion": 1,
+  "id": "python-2-photo-exam",
+  "title": "Programming in Python 2 - Photographed Previous Exam",
+  "subject": "Programming in Python 2",
+  "description": "Questions transcribed from the six photographed exam pages in the previous-exams folder. Questions 11 and 27 are omitted because their prompt or code is incomplete in the available photographs.",
+  "createdAt": "2026-06-14T00:00:00.000Z",
+  "updatedAt": "2026-06-14T00:00:00.000Z",
+  "questions": [
+    {
+      "id": "python-2-photo-exam-q01",
+      "type": "multiple",
+      "question": "Regarding `transform()` versus `apply()` in pandas, which statements are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "`apply()` does not work with string data."
+        },
+        {
+          "id": "B",
+          "text": "`transform()` can only be used with numeric data."
+        },
+        {
+          "id": "C",
+          "text": "`apply()` with `axis=1` iterates over rows."
+        },
+        {
+          "id": "D",
+          "text": "`transform()` can be conveniently used for column-wise standardization."
+        },
+        {
+          "id": "E",
+          "text": "`transform()` must return the same shape as the input data."
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "D",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q02",
+      "type": "multiple",
+      "question": "Which statements about transfer learning are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It can save a lot of compute power."
+        },
+        {
+          "id": "B",
+          "text": "Knowledge learned on a large source task can be reused."
+        },
+        {
+          "id": "C",
+          "text": "It can save a lot of training time."
+        },
+        {
+          "id": "D",
+          "text": "Pretrained models are difficult to obtain."
+        },
+        {
+          "id": "E",
+          "text": "A test set is unnecessary because the model was already validated."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q03",
+      "type": "multiple",
+      "question": "What is the purpose of reactive decorators in Shiny?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "To establish a reactive context."
+        },
+        {
+          "id": "B",
+          "text": "To enable a function to adapt to changing input automatically."
+        },
+        {
+          "id": "C",
+          "text": "To enable conditional execution of the function."
+        },
+        {
+          "id": "D",
+          "text": "To enable the decorated function to access a reactive dependency."
+        },
+        {
+          "id": "E",
+          "text": "To prevent reactive side effects."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q04",
+      "type": "multiple",
+      "question": "Which statements about neural-network types are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Feed-forward neural networks can only be used for classification tasks."
+        },
+        {
+          "id": "B",
+          "text": "LSTMs are a type of recurrent neural network."
+        },
+        {
+          "id": "C",
+          "text": "Recurrent neural networks process sequence data."
+        },
+        {
+          "id": "D",
+          "text": "Feed-forward neural networks typically expect vectorized input."
+        },
+        {
+          "id": "E",
+          "text": "Convolutional neural networks typically use convolution operations on input tensors."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q05",
+      "type": "multiple",
+      "question": "What are common transfer-learning techniques in PyTorch?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Use a pretrained model as a feature extractor by freezing its backbone."
+        },
+        {
+          "id": "B",
+          "text": "Fine-tune selected layers or the entire pretrained model."
+        },
+        {
+          "id": "C",
+          "text": "Train a custom architecture from scratch."
+        },
+        {
+          "id": "D",
+          "text": "Use multiple pretrained models simultaneously."
+        },
+        {
+          "id": "E",
+          "text": "Replace the classification head or last layer."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q06",
+      "type": "multiple",
+      "question": "Which statements about Matplotlib backends are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "All backends provide the same functionality."
+        },
+        {
+          "id": "B",
+          "text": "Backends only affect performance."
+        },
+        {
+          "id": "C",
+          "text": "Some backends are platform-specific."
+        },
+        {
+          "id": "D",
+          "text": "Backends affect plot appearance and functionality."
+        },
+        {
+          "id": "E",
+          "text": "Interactive and non-interactive modes exist."
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "D",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q07",
+      "type": "multiple",
+      "question": "Given a pandas DataFrame `employee_data` whose row label for Alice Feiner is `e3` and whose third column is `Salary`, which expressions validly access her salary?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "`employee_data.Salary[\"e3\"]`"
+        },
+        {
+          "id": "B",
+          "text": "`employee_data.at[\"e3\", \"Salary\"]`"
+        },
+        {
+          "id": "C",
+          "text": "`employee_data.iloc[2, 2]`"
+        },
+        {
+          "id": "D",
+          "text": "`employee_data.loc[\"e3\", \"Salary\"]`"
+        },
+        {
+          "id": "E",
+          "text": "`employee_data.iat[2, 2]`"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q08",
+      "type": "multiple",
+      "question": "Which statements correctly describe what decorators do?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They can take arguments to customize their behavior."
+        },
+        {
+          "id": "B",
+          "text": "They always improve performance."
+        },
+        {
+          "id": "C",
+          "text": "They modify or wrap function behavior without changing the function body."
+        },
+        {
+          "id": "D",
+          "text": "They are syntactic sugar for nested callable transformations."
+        },
+        {
+          "id": "E",
+          "text": "They can only be applied to class methods."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q09",
+      "type": "multiple",
+      "question": "Which statements about coroutines are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They can be declared with `async def`."
+        },
+        {
+          "id": "B",
+          "text": "They must always use `await`."
+        },
+        {
+          "id": "C",
+          "text": "They can be paused and resumed."
+        },
+        {
+          "id": "D",
+          "text": "They are the same as generators."
+        },
+        {
+          "id": "E",
+          "text": "They return control to the event loop while awaiting."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "C",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q10",
+      "type": "multiple",
+      "question": "Which statements about confusion matrices are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They show the balanced accuracy of the trained model directly."
+        },
+        {
+          "id": "B",
+          "text": "They can only be computed for binary classification tasks."
+        },
+        {
+          "id": "C",
+          "text": "They show Type II errors."
+        },
+        {
+          "id": "D",
+          "text": "They show true positives and true negatives."
+        },
+        {
+          "id": "E",
+          "text": "They show Type I errors."
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "D",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q12",
+      "type": "single",
+      "question": "What will this code output?",
+      "code": "import pandas as pd\n\ns = pd.Series([1, 2, 3, 4, 5])\nresult = s[s > 3]\nprint(len(result))",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "3"
+        },
+        {
+          "id": "B",
+          "text": "1"
+        },
+        {
+          "id": "C",
+          "text": "0"
+        },
+        {
+          "id": "D",
+          "text": "2"
+        },
+        {
+          "id": "E",
+          "text": "5"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q13",
+      "type": "multiple",
+      "question": "Which statements about `torch.nn.Module` are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It is used to handle data loading and preprocessing."
+        },
+        {
+          "id": "B",
+          "text": "It provides modules for model evaluation."
+        },
+        {
+          "id": "C",
+          "text": "It is used to define a neural-network architecture."
+        },
+        {
+          "id": "D",
+          "text": "It provides a base class for neural-network modules."
+        },
+        {
+          "id": "E",
+          "text": "It encapsulates parameters and methods used by a model."
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "D",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q14",
+      "type": "multiple",
+      "question": "A PyTorch `DataLoader` can:",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Prefetch data directly into GPU memory by default."
+        },
+        {
+          "id": "B",
+          "text": "Rescale all samples during loading automatically."
+        },
+        {
+          "id": "C",
+          "text": "Create minibatches from a `Dataset`."
+        },
+        {
+          "id": "D",
+          "text": "Physically load every file into RAM."
+        },
+        {
+          "id": "E",
+          "text": "Shuffle the order of samples."
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q15",
+      "type": "multiple",
+      "question": "What can invalidate a reactive dependency in Shiny?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A reactive value has changed."
+        },
+        {
+          "id": "B",
+          "text": "A global variable in `app.py` has changed."
+        },
+        {
+          "id": "C",
+          "text": "The return value of a reactive function has changed without a dependency changing."
+        },
+        {
+          "id": "D",
+          "text": "The wrong decorator was used for an unrelated function."
+        },
+        {
+          "id": "E",
+          "text": "A reactive input has changed."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q16",
+      "type": "multiple",
+      "question": "Which are advantages or common uses of lambda functions?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "They execute much faster than regular functions."
+        },
+        {
+          "id": "B",
+          "text": "They automatically handle exceptions."
+        },
+        {
+          "id": "C",
+          "text": "They can be conveniently used with higher-order functions such as `map()`."
+        },
+        {
+          "id": "D",
+          "text": "They are useful for specifying short sorting keys."
+        },
+        {
+          "id": "E",
+          "text": "They always use less memory than regular functions."
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q17",
+      "type": "single",
+      "question": "What is the output of this code?",
+      "code": "numbers = [1, 2, 3, 4, 5]\nresult = list(filter(lambda x: x % 2 == 0, numbers))\nprint(result)",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "[False, True, False, True, False]"
+        },
+        {
+          "id": "B",
+          "text": "[1, 4, 2, 5, 3]"
+        },
+        {
+          "id": "C",
+          "text": "[1, 2, 3]"
+        },
+        {
+          "id": "D",
+          "text": "[2, 4]"
+        },
+        {
+          "id": "E",
+          "text": "[]"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q18",
+      "type": "multiple",
+      "question": "Which pandas methods are used to detect or handle missing values?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "`convertna()`"
+        },
+        {
+          "id": "B",
+          "text": "`dropna()`"
+        },
+        {
+          "id": "C",
+          "text": "`isna()`"
+        },
+        {
+          "id": "D",
+          "text": "`fillna()`"
+        },
+        {
+          "id": "E",
+          "text": "`cleanna()`"
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q19",
+      "type": "multiple",
+      "question": "What are differences between `Figure` and `Axes` in Matplotlib?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Figure properties cannot be adjusted, only Axes properties can."
+        },
+        {
+          "id": "B",
+          "text": "A Figure can contain multiple Axes."
+        },
+        {
+          "id": "C",
+          "text": "Axes is the object on which plots are drawn."
+        },
+        {
+          "id": "D",
+          "text": "Figure is the overall window or canvas, while Axes is a plotting area."
+        },
+        {
+          "id": "E",
+          "text": "Figure is only for 2D plots and Axes is only for 3D plots."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q20",
+      "type": "multiple",
+      "question": "Which are common activation functions used in PyTorch?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Cross-entropy"
+        },
+        {
+          "id": "B",
+          "text": "AdamW"
+        },
+        {
+          "id": "C",
+          "text": "ReLU"
+        },
+        {
+          "id": "D",
+          "text": "Sigmoid"
+        },
+        {
+          "id": "E",
+          "text": "Tanh"
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "D",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q21",
+      "type": "single",
+      "question": "What is the purpose of pandas' `pivot_table()` method?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Split a DataFrame into multiple sub-DataFrames."
+        },
+        {
+          "id": "B",
+          "text": "Visualize data directly."
+        },
+        {
+          "id": "C",
+          "text": "Convert a DataFrame to a NumPy array."
+        },
+        {
+          "id": "D",
+          "text": "Select columns based on conditions."
+        },
+        {
+          "id": "E",
+          "text": "Create a spreadsheet-like summary table from data."
+        }
+      ],
+      "correctOptions": [
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q22",
+      "type": "multiple",
+      "question": "Which validation metrics are suitable for an imbalanced classification task?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Balanced accuracy (BACC)"
+        },
+        {
+          "id": "B",
+          "text": "Mean absolute error (MAE)"
+        },
+        {
+          "id": "C",
+          "text": "Mean squared error (MSE)"
+        },
+        {
+          "id": "D",
+          "text": "Plain accuracy (ACC) as the only metric"
+        },
+        {
+          "id": "E",
+          "text": "Area under the ROC curve (AUC)"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q23",
+      "type": "multiple",
+      "question": "Which statements about selecting and indexing in pandas are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Selecting a row in a DataFrame commonly returns a Series."
+        },
+        {
+          "id": "B",
+          "text": "Selecting a single value in a Series returns a scalar."
+        },
+        {
+          "id": "C",
+          "text": "Selecting a single value in a DataFrame always returns a Series of length 1."
+        },
+        {
+          "id": "D",
+          "text": "Selecting a rectangular subregion of several rows and columns returns a DataFrame."
+        },
+        {
+          "id": "E",
+          "text": "Selecting a column in a DataFrame commonly returns a Series."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "D",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q24",
+      "type": "multiple",
+      "question": "Which statements about image-data representation are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "An alpha channel contains Gaussian-blur intensity information."
+        },
+        {
+          "id": "B",
+          "text": "A grayscale image can be represented as a 2D array."
+        },
+        {
+          "id": "C",
+          "text": "An RGB image can be represented as a 3D array."
+        },
+        {
+          "id": "D",
+          "text": "Each pixel value in a color channel carries intensity information."
+        },
+        {
+          "id": "E",
+          "text": "RGB stands for red, gray, blue."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q25",
+      "type": "single",
+      "question": "There is a bug in this Shiny Express code. Which line contains it?",
+      "code": "from shiny.express import input, render, ui\n\nui.input_slider(id=\"val\", label=\"Slider label\", min=0, max=100, value=50)\n\n@render.string\ndef slider_val():\n    return f\"Slider value: {input.val()}\"",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "6"
+        },
+        {
+          "id": "B",
+          "text": "3"
+        },
+        {
+          "id": "C",
+          "text": "1"
+        },
+        {
+          "id": "D",
+          "text": "5"
+        },
+        {
+          "id": "E",
+          "text": "7"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q26",
+      "type": "single",
+      "question": "Which decorator from `functools` is used to preserve wrapped-function metadata?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "`@wraps`"
+        },
+        {
+          "id": "B",
+          "text": "`@cache`"
+        },
+        {
+          "id": "C",
+          "text": "`@lru_cache`"
+        },
+        {
+          "id": "D",
+          "text": "`@singledispatch`"
+        },
+        {
+          "id": "E",
+          "text": "`@preserve`"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q28",
+      "type": "multiple",
+      "question": "What are characteristics of tidy data?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Each cell contains a single value."
+        },
+        {
+          "id": "B",
+          "text": "Each observation is represented by a row."
+        },
+        {
+          "id": "C",
+          "text": "Each variable is represented by a column."
+        },
+        {
+          "id": "D",
+          "text": "Every column in the entire table must use the same data type."
+        },
+        {
+          "id": "E",
+          "text": "Rows cannot be added without rescaling every column."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q29",
+      "type": "single",
+      "question": "What does this PyTorch training-step sequence do?",
+      "code": "optimizer.zero_grad()\nloss.backward()\noptimizer.step()",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Compute gradients, reset gradients, update weights."
+        },
+        {
+          "id": "B",
+          "text": "Reset gradients, update weights, compute gradients."
+        },
+        {
+          "id": "C",
+          "text": "Cause an error."
+        },
+        {
+          "id": "D",
+          "text": "Reset gradients, compute gradients, update weights."
+        },
+        {
+          "id": "E",
+          "text": "Update weights, compute gradients, reset gradients."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q30",
+      "type": "multiple",
+      "question": "Which statements about `torch.utils.data.Dataset` are correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It is used to create a neural-network model class."
+        },
+        {
+          "id": "B",
+          "text": "It handles batching by itself."
+        },
+        {
+          "id": "C",
+          "text": "It represents a dataset through a standardized interface."
+        },
+        {
+          "id": "D",
+          "text": "It automatically performs data cleaning."
+        },
+        {
+          "id": "E",
+          "text": "It defines how individual data samples are accessed and can be transformed."
+        }
+      ],
+      "correctOptions": [
+        "C",
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q31",
+      "type": "multiple",
+      "question": "Which statements about the SVG graphics format are true?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "It is suitable for line plots or histograms."
+        },
+        {
+          "id": "B",
+          "text": "It is resolution-independent."
+        },
+        {
+          "id": "C",
+          "text": "It can have difficulty representing complex continuous color gradients efficiently."
+        },
+        {
+          "id": "D",
+          "text": "It is a good choice when a plot is used in a document or report."
+        },
+        {
+          "id": "E",
+          "text": "It is not supported by Matplotlib."
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    },
+    {
+      "id": "python-2-photo-exam-q32",
+      "type": "multiple",
+      "question": "What are main advantages of PyTorch over NumPy for deep-learning workloads?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A universally larger community."
+        },
+        {
+          "id": "B",
+          "text": "GPU acceleration support."
+        },
+        {
+          "id": "C",
+          "text": "Automatic differentiation through autograd."
+        },
+        {
+          "id": "D",
+          "text": "Dynamic computational graphs."
+        },
+        {
+          "id": "E",
+          "text": "Necessarily better syntax for every mathematical operation."
+        }
+      ],
+      "correctOptions": [
+        "B",
+        "C",
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "Programming in Python 2",
+        "Previous Exam",
+        "Photographed Exam"
+      ],
+      "difficulty": "",
+      "source": "Photographed exam pages (image.webp and image (1)-(5).webp)",
+      "createdAt": "2026-06-14T00:00:00.000Z",
+      "updatedAt": "2026-06-14T00:00:00.000Z"
+    }
+  ]
+}
