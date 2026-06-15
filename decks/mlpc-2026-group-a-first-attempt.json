@@ -1,0 +1,1759 @@
+{
+  "schemaVersion": 1,
+  "id": "f0a039a7-1aa5-42ec-8798-d055573d2d48",
+  "title": "mlpc-2026-group-a-first-attempt",
+  "subject": "Machine Learning and Pattern Classification",
+  "description": "",
+  "createdAt": "2026-06-12T12:07:48.620Z",
+  "updatedAt": "2026-06-15T20:38:52.496Z",
+  "questions": [
+    {
+      "id": "67e47bde-ce69-4495-8b4c-54ac958e9490",
+      "type": "single",
+      "question": "10% of the population have a certain disease X. A company creates 4 simple tests to determine whether a person has the disease X or not.\nT1 predicts always true, T2 predicts always false, T3 predicts 50% of the time true, T4 predicts 10% of the time true.\n\nQuestion 1:\nWhat is the expected accuracy that T1 will achieve on the population of A?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "0%"
+        },
+        {
+          "id": "B",
+          "text": "5%"
+        },
+        {
+          "id": "C",
+          "text": "10%"
+        },
+        {
+          "id": "D",
+          "text": "50%"
+        },
+        {
+          "id": "E",
+          "text": "80%"
+        },
+        {
+          "id": "F",
+          "text": "90%"
+        },
+        {
+          "id": "G",
+          "text": "95%"
+        },
+        {
+          "id": "H",
+          "text": "100%"
+        },
+        {
+          "id": "I",
+          "text": "none of these (or undefined)"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:20:12.875Z",
+      "updatedAt": "2026-06-15T19:41:54.193Z"
+    },
+    {
+      "id": "d3c54757-1462-4f03-8f1c-11e1a676e4c2",
+      "type": "single",
+      "question": "10% of the population have a certain disease X. A company creates 4 simple tests to determine whether a person has the disease X or not.\nT1 predicts always true, T2 predicts always false, T3 predicts 50% of the time true, T4 predicts 10% of the time true.\n\nQuestion 2:\nWhat is the expected accuracy that T3 will achieve on the population of A?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "0%"
+        },
+        {
+          "id": "B",
+          "text": "5%"
+        },
+        {
+          "id": "C",
+          "text": "10%"
+        },
+        {
+          "id": "D",
+          "text": "50%"
+        },
+        {
+          "id": "E",
+          "text": "80%"
+        },
+        {
+          "id": "F",
+          "text": "90%"
+        },
+        {
+          "id": "G",
+          "text": "95%"
+        },
+        {
+          "id": "H",
+          "text": "100%"
+        },
+        {
+          "id": "I",
+          "text": "none of these (or undefined)"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:21:57.889Z",
+      "updatedAt": "2026-06-15T19:42:20.356Z"
+    },
+    {
+      "id": "a7acbc87-9230-4af7-98c2-017ab7d2ae45",
+      "type": "single",
+      "question": "10% of the population have a certain disease X. A company creates 4 simple tests to determine whether a person has the disease X or not.\nT1 predicts always true, T2 predicts always false, T3 predicts 50% of the time true, T4 predicts 10% of the time true.\n\nQuestion 3:\nWhat is the expected recall that T2 will achieve on the population of A?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "0%"
+        },
+        {
+          "id": "B",
+          "text": "5%"
+        },
+        {
+          "id": "C",
+          "text": "10%"
+        },
+        {
+          "id": "D",
+          "text": "50%"
+        },
+        {
+          "id": "E",
+          "text": "80%"
+        },
+        {
+          "id": "F",
+          "text": "90%"
+        },
+        {
+          "id": "G",
+          "text": "95%"
+        },
+        {
+          "id": "H",
+          "text": "100%"
+        },
+        {
+          "id": "I",
+          "text": "none of these (or undefined)"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:23:35.421Z",
+      "updatedAt": "2026-06-15T19:42:33.440Z"
+    },
+    {
+      "id": "79568058-9f58-47d6-baa9-9ac686b5757d",
+      "type": "single",
+      "question": "10% of the population have a certain disease X. A company creates 4 simple tests to determine whether a person has the disease X or not.\nT1 predicts always true, T2 predicts always false, T3 predicts 50% of the time true, T4 predicts 10% of the time true.\n\nQuestion 4:\nWhat is the expected precision that T1 will achieve on the population of A?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "0%"
+        },
+        {
+          "id": "B",
+          "text": "5%"
+        },
+        {
+          "id": "C",
+          "text": "10%"
+        },
+        {
+          "id": "D",
+          "text": "50%"
+        },
+        {
+          "id": "E",
+          "text": "80%"
+        },
+        {
+          "id": "F",
+          "text": "90%"
+        },
+        {
+          "id": "G",
+          "text": "95%"
+        },
+        {
+          "id": "H",
+          "text": "100%"
+        },
+        {
+          "id": "I",
+          "text": "none of these (or undefined)"
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:24:49.637Z",
+      "updatedAt": "2026-06-15T19:43:43.542Z"
+    },
+    {
+      "id": "f31d43ad-1e46-4529-ae3b-4ce698b6070a",
+      "type": "single",
+      "question": "10% of the population have a certain disease X. A company creates 4 simple tests to determine whether a person has the disease X or not.\nT1 predicts always true, T2 predicts always false, T3 predicts 50% of the time true, T4 predicts 10% of the time true.\n\nGiven the certain cost matrix, which classifier achieves the smallest cost?\n\nQuestion 5:\n\\[\\lambda =\\begin{pmatrix}0 & 1 \\\\1 & 0\\end{pmatrix}\\]",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "T1"
+        },
+        {
+          "id": "B",
+          "text": "T2"
+        },
+        {
+          "id": "C",
+          "text": "T3"
+        },
+        {
+          "id": "D",
+          "text": "T4"
+        },
+        {
+          "id": "E",
+          "text": "all equally good"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:29:22.433Z",
+      "updatedAt": "2026-06-15T19:45:11.343Z"
+    },
+    {
+      "id": "d8435fcd-7164-4b40-bf54-d4a117bd25c3",
+      "type": "single",
+      "question": "10% of the population have a certain disease X. A company creates 4 simple tests to determine whether a person has the disease X or not.\nT1 predicts always true, T2 predicts always false, T3 predicts 50% of the time true, T4 predicts 10% of the time true.\n\nGiven the certain cost matrix, which classifier achieves the smallest cost?\n\nQuestion 6:\n\\[\\lambda =\\begin{pmatrix}0 & 100 \\\\1 & 0\\end{pmatrix}\\]",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "T1"
+        },
+        {
+          "id": "B",
+          "text": "T2"
+        },
+        {
+          "id": "C",
+          "text": "T3"
+        },
+        {
+          "id": "D",
+          "text": "T4"
+        },
+        {
+          "id": "E",
+          "text": "all equally good"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:44:59.256Z",
+      "updatedAt": "2026-06-15T19:44:59.256Z"
+    },
+    {
+      "id": "1a072447-54e4-4c79-851b-5c2d19d2b3f8",
+      "type": "single",
+      "question": "10% of the population have a certain disease X. A company creates 4 simple tests to determine whether a person has the disease X or not.\nT1 predicts always true, T2 predicts always false, T3 predicts 50% of the time true, T4 predicts 10% of the time true.\n\nGiven the certain cost matrix, which classifier achieves the smallest cost?\n\nQuestion 7:\n\\[\\lambda =\\begin{pmatrix}0 & 1 \\\\100 & 0\\end{pmatrix}\\]",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "T1"
+        },
+        {
+          "id": "B",
+          "text": "T2"
+        },
+        {
+          "id": "C",
+          "text": "T3"
+        },
+        {
+          "id": "D",
+          "text": "T4"
+        },
+        {
+          "id": "E",
+          "text": "all equally good"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:45:55.172Z",
+      "updatedAt": "2026-06-15T19:45:55.172Z"
+    },
+    {
+      "id": "155fdeaf-b3e5-421a-865e-61125c11ca48",
+      "type": "single",
+      "question": "10% of the population have a certain disease X. A company creates 4 simple tests to determine whether a person has the disease X or not.\nT1 predicts always true, T2 predicts always false, T3 predicts 50% of the time true, T4 predicts 10% of the time true.\n\nGiven the certain cost matrix, which classifier achieves the smallest cost?\n\nQuestion 8:\n\\[\\lambda =\\begin{pmatrix}0 & 100 \\\\100 & 0\\end{pmatrix}\\]",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "T1"
+        },
+        {
+          "id": "B",
+          "text": "T2"
+        },
+        {
+          "id": "C",
+          "text": "T3"
+        },
+        {
+          "id": "D",
+          "text": "T4"
+        },
+        {
+          "id": "E",
+          "text": "all equally good"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:46:32.788Z",
+      "updatedAt": "2026-06-15T19:46:32.788Z"
+    },
+    {
+      "id": "31cb2079-81be-4518-b061-4e4f6f22e04d",
+      "type": "true_false",
+      "question": "Question 9:\nRecall can never be higher than precision",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:47:26.538Z",
+      "updatedAt": "2026-06-15T19:47:26.538Z"
+    },
+    {
+      "id": "d7376ec0-5a96-4336-822d-92380437ed80",
+      "type": "true_false",
+      "question": "Question 10:\nPrecision can never be strictly zero",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:47:51.172Z",
+      "updatedAt": "2026-06-15T19:47:51.172Z"
+    },
+    {
+      "id": "7aea8aac-3e25-4b69-8a32-a980e2ce309f",
+      "type": "true_false",
+      "question": "Question 11:\nAny classifier above the diagonal in ROC space (except the one at \\((0,0)\\)) has a recall \\(> 0\\).",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:49:00.039Z",
+      "updatedAt": "2026-06-15T19:49:00.039Z"
+    },
+    {
+      "id": "b03d6bf1-d60d-41f6-b7dc-d6bc4ca4bf91",
+      "type": "true_false",
+      "question": "Question 12:\nTwo classifiers can have the same accuracy on a fixed dataset, but occupy different places in ROC space.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:49:38.838Z",
+      "updatedAt": "2026-06-15T19:49:38.838Z"
+    },
+    {
+      "id": "7b27f4d4-c17b-4ff7-b139-c1d4f8176bcb",
+      "type": "true_false",
+      "question": "Question 13:\nFor a fixed dataset, two classifiers can occupy the same position in ROC space, but have different accuracies.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:50:57.956Z",
+      "updatedAt": "2026-06-15T19:50:57.956Z"
+    },
+    {
+      "id": "71f34949-1a10-46d0-b7b8-ccfcce459a47",
+      "type": "true_false",
+      "question": "Question 14:\nIn a world where false positives and false negatives have the same misclassification costs, recall = accuracy.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:51:51.205Z",
+      "updatedAt": "2026-06-15T19:51:51.205Z"
+    },
+    {
+      "id": "69373616-de12-4d73-abb2-b0c176e46f9d",
+      "type": "true_false",
+      "question": "Question 15:\nIncreasing k in k-NN classifier.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:52:24.005Z",
+      "updatedAt": "2026-06-15T19:52:24.005Z"
+    },
+    {
+      "id": "f58bf2cb-c9ef-46fe-83d5-d3b71816d9ae",
+      "type": "true_false",
+      "question": "Question 16:\nIncreasing the number of trees in a random forest.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:52:51.389Z",
+      "updatedAt": "2026-06-15T19:52:51.389Z"
+    },
+    {
+      "id": "dc08c16f-8417-4799-b7fb-03d056cf5f7c",
+      "type": "true_false",
+      "question": "Question 17:\nStopping Neural Network training before the error on the training data has reached its minimum.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:53:40.556Z",
+      "updatedAt": "2026-06-15T19:53:40.556Z"
+    },
+    {
+      "id": "2e78f10d-8b7e-4c70-bc80-8c631f57f9c1",
+      "type": "true_false",
+      "question": "Question 18:\nLimiting the depth of a decision tree.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:54:38.456Z",
+      "updatedAt": "2026-06-15T19:54:38.456Z"
+    },
+    {
+      "id": "95956674-4e7f-400e-88fd-6df14fe5bde3",
+      "type": "true_false",
+      "question": "Question 19:\nDoubling the number of hidden units in a feed-forward neural network.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:55:12.122Z",
+      "updatedAt": "2026-06-15T19:55:12.122Z"
+    },
+    {
+      "id": "75dcbfa5-a226-4b70-82bb-65549343ca42",
+      "type": "true_false",
+      "question": "Question 20:\nReplacing a non-linear activation function in a feed-forward neural network with a linear one.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:56:21.993Z",
+      "updatedAt": "2026-06-15T19:56:21.993Z"
+    },
+    {
+      "id": "8e9ec07e-4d58-40c8-8444-e374cabf8696",
+      "type": "true_false",
+      "question": "Question 21:\nReducing the set of features permitted in decision tree construction.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:57:36.407Z",
+      "updatedAt": "2026-06-15T19:57:36.407Z"
+    },
+    {
+      "id": "d8e1ffa0-69c1-47f9-8bc2-4fb111f12129",
+      "type": "true_false",
+      "question": "Question 22:\nNot normalising by \\(p(x)\\) in a Bayesian MAP classifier",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T19:58:19.607Z",
+      "updatedAt": "2026-06-15T19:58:19.607Z"
+    },
+    {
+      "id": "bc7bfba6-d149-411b-bf52-e7fa0b420d70",
+      "type": "single",
+      "question": "Question 23:\nThe gradient of the loss w.r.t some weight \\(w_i\\) in the network tells us",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "what direction \\(w_i\\) is pointing."
+        },
+        {
+          "id": "B",
+          "text": "how large the error is caused by \\(w_i\\)."
+        },
+        {
+          "id": "C",
+          "text": "whether \\(w_i\\) is positive or negative."
+        },
+        {
+          "id": "D",
+          "text": "whether we need to make \\(w_i\\) smaller or larger to reduce the error."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:01:25.109Z",
+      "updatedAt": "2026-06-15T20:01:25.109Z"
+    },
+    {
+      "id": "918fcb90-a58f-494f-b5a4-91de7a4ca9a8",
+      "type": "single",
+      "question": "Question 24:\nParameter optimisation via iterative gradient descent",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "cannot end up in a global optimum."
+        },
+        {
+          "id": "B",
+          "text": "may end up in a global optimum."
+        },
+        {
+          "id": "C",
+          "text": "will always end up in a global optimum if the learning rate is small enough."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:03:19.126Z",
+      "updatedAt": "2026-06-15T20:03:19.126Z"
+    },
+    {
+      "id": "2f3e279c-3659-491c-8c9b-43c296b1a0da",
+      "type": "single",
+      "question": "Question 25:\nThe loss function must be differentiable because",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "otherwise it could not reach zero."
+        },
+        {
+          "id": "B",
+          "text": "otherwise it would not have a minimum."
+        },
+        {
+          "id": "C",
+          "text": "otherwise changes to the weights would have no effect."
+        },
+        {
+          "id": "D",
+          "text": "otherwise we could not calculate how weights need to be changed."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:04:40.542Z",
+      "updatedAt": "2026-06-15T20:04:40.542Z"
+    },
+    {
+      "id": "fbfd538b-e3a8-41f6-acc6-5454138c924a",
+      "type": "single",
+      "question": "Question 26:\nThe learning rate is used to",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "control the direction of change to a weight \\(w_i\\) during training."
+        },
+        {
+          "id": "B",
+          "text": "control how much overfitting is permitted."
+        },
+        {
+          "id": "C",
+          "text": "control how close the error must come to zero before stopping the learning process."
+        },
+        {
+          "id": "D",
+          "text": "control the amount of change to a weight \\(w_i\\) during training."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:06:14.943Z",
+      "updatedAt": "2026-06-15T20:06:14.943Z"
+    },
+    {
+      "id": "4c98880d-badf-4e50-8fda-9b5388b03942",
+      "type": "single",
+      "question": "Question 27:\nA single unit in a hidden layer of a FFNN, as defined above, caluclates",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "a linear transformation of a non-linear (weighted) sum of inputs."
+        },
+        {
+          "id": "B",
+          "text": "a non-linear transformation of a weighted sum of inputs."
+        },
+        {
+          "id": "C",
+          "text": "a sum of weights and inputs, transformed by a non-linear activation function."
+        },
+        {
+          "id": "D",
+          "text": "a weighted sum of non-linearly transformed inputs."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:07:53.859Z",
+      "updatedAt": "2026-06-15T20:07:53.859Z"
+    },
+    {
+      "id": "19f3da13-c39a-4760-a638-16eb485a1a47",
+      "type": "single",
+      "question": "Question 28:\nThe sum-squared-error measures",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "the sum of the squares of the errors a classifier will make in the future."
+        },
+        {
+          "id": "B",
+          "text": "the square of the sum of the errors a classifier will make in the future."
+        },
+        {
+          "id": "C",
+          "text": "the sum of the errors a classifier will make in the future."
+        },
+        {
+          "id": "D",
+          "text": "the error of a regression model on a specific dataset."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:09:22.327Z",
+      "updatedAt": "2026-06-15T20:09:22.327Z"
+    },
+    {
+      "id": "0040ae1d-dc3e-419e-aef9-ab1489c54783",
+      "type": "single",
+      "question": "Question 29:\nThe purpose of gradient descent in artificial neural networks is",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "to find the optimal combination of values for the input units."
+        },
+        {
+          "id": "B",
+          "text": "to find the optimal combination of values for the weights."
+        },
+        {
+          "id": "C",
+          "text": "to find the smallest values for the weights that produce an error of zero."
+        },
+        {
+          "id": "D",
+          "text": "to find the optimal number of weights"
+        },
+        {
+          "id": "E",
+          "text": "to find the optimal number of units"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:11:01.243Z",
+      "updatedAt": "2026-06-15T20:11:01.243Z"
+    },
+    {
+      "id": "eefb22e6-d384-41b7-986b-0275dd8abee0",
+      "type": "single",
+      "question": "Question 30:\nIf, in an artificial neural network, two fully connected neighbouring layers L1 and L2 have N and M units, respectively, then the weight matrix that represents the connection from L1 to L2 (and including the bias weights) will have",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\(N^2+M^2+M\\) weights"
+        },
+        {
+          "id": "B",
+          "text": "\\((N+M)^2+N\\) weights"
+        },
+        {
+          "id": "C",
+          "text": "\\(M \\times N + N\\) weights"
+        },
+        {
+          "id": "D",
+          "text": "\\(N \\times M + M\\) weights"
+        },
+        {
+          "id": "E",
+          "text": "\\(N \\times M\\) weights"
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:13:40.127Z",
+      "updatedAt": "2026-06-15T20:13:40.127Z"
+    },
+    {
+      "id": "4ea5c3f0-46f9-4a2c-b906-78a9263f5f37",
+      "type": "single",
+      "question": "Question 31:\nWhen running an ANN training algorithm several times on the same dataset, we will get different models (with possibly different error) because of",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "randomness in the backpropagation update algorithm."
+        },
+        {
+          "id": "B",
+          "text": "randomness due to the learning rate."
+        },
+        {
+          "id": "C",
+          "text": "randomness in the input feature values."
+        },
+        {
+          "id": "D",
+          "text": "randomness in the loss function."
+        },
+        {
+          "id": "E",
+          "text": "randomness in the initialisation of the weights."
+        }
+      ],
+      "correctOptions": [
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:15:35.810Z",
+      "updatedAt": "2026-06-15T20:15:35.810Z"
+    },
+    {
+      "id": "27e80951-2941-4f84-961d-9c49efedd680",
+      "type": "single",
+      "question": "Question 32:\nIn early stopping, we stop training an ANN",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "when the error on the validation data reaches zero."
+        },
+        {
+          "id": "B",
+          "text": "when the error on the validation data starts going up."
+        },
+        {
+          "id": "C",
+          "text": "when the error on the training data goes above the error on the validation data."
+        },
+        {
+          "id": "D",
+          "text": "when the error on the validation data reaches the error on the training data."
+        },
+        {
+          "id": "E",
+          "text": "when the error on the training data reaches zero."
+        },
+        {
+          "id": "F",
+          "text": "when the error on the training data starts going up."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:16:42.894Z",
+      "updatedAt": "2026-06-15T20:16:42.894Z"
+    },
+    {
+      "id": "fe11ff38-2d83-45a2-ae59-15192322dcc7",
+      "type": "single",
+      "question": "Question 33:\nBinary Cross-Entropy is",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "a measure of influence between two binary class distributions."
+        },
+        {
+          "id": "B",
+          "text": "a measure of information gain in decision trees in binary classification problems."
+        },
+        {
+          "id": "C",
+          "text": "a measure of the prediction error of an FFNN in a binary classification problem."
+        },
+        {
+          "id": "D",
+          "text": "a measure of difference between two binary class distributions."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:17:36.445Z",
+      "updatedAt": "2026-06-15T20:17:36.445Z"
+    },
+    {
+      "id": "a78ad641-71f5-4cea-b0c5-72833db9f581",
+      "type": "single",
+      "question": "Question 34:\nA Naive Bayes Classifier",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "assumes that any pair of features is uncorrelated in \\(D\\)."
+        },
+        {
+          "id": "B",
+          "text": "assumes pairwise independence between classes."
+        },
+        {
+          "id": "C",
+          "text": "assumes that features and classes are uncorrelated."
+        },
+        {
+          "id": "D",
+          "text": "assumes pairwise independence between features in each class."
+        },
+        {
+          "id": "E",
+          "text": "assumes that examples of two different classes have no feature values in common."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:18:52.446Z",
+      "updatedAt": "2026-06-15T20:18:52.446Z"
+    },
+    {
+      "id": "bd64561e-3054-4392-b8ab-80752e2d4ecc",
+      "type": "single",
+      "question": "Question 35:\nA k-Nearest Neighbour Classifier",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "predicts the class of an example \\(x\\) based on the number of neighbours in a neighbourhood of radius \\(k\\)."
+        },
+        {
+          "id": "B",
+          "text": "predicts the class of an example \\(x\\) based on a majority vote of \\(x\\)'s \\(k\\) closest neighbours."
+        },
+        {
+          "id": "C",
+          "text": "predicts the class of an example \\(x\\) based on the number of neighbours of \\(x\\)."
+        },
+        {
+          "id": "D",
+          "text": "predicts the class of an example \\(x\\) based on the colour of \\(x\\)'s \\(k\\) neighbours."
+        },
+        {
+          "id": "E",
+          "text": "predicts the class of an example \\(x\\) based on the distance between \\(x\\) and its \\(k\\)-th neighbour."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:22:45.432Z",
+      "updatedAt": "2026-06-15T20:22:45.432Z"
+    },
+    {
+      "id": "d72f6cf6-07d2-4a88-9027-9c1aba4a021c",
+      "type": "single",
+      "question": "Question 36:\nWhich of the following statements about decision trees and the learning algorithm ID3 is correct?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "In a decision tree learned by ID3, all leaves are at the same tree level."
+        },
+        {
+          "id": "B",
+          "text": "If two training examples have the same feature values, but different class labels, there can be no decision tree that is \\(100\\%\\) consistent with the training data."
+        },
+        {
+          "id": "C",
+          "text": "In a decision tree learned by ID3, there can be no leaf that contains training examples of different classes."
+        },
+        {
+          "id": "D",
+          "text": "There can be no dataset for which a consistent decision tree consists only of a root node."
+        },
+        {
+          "id": "E",
+          "text": "In a decision tree learned by ID3, nodes at the same tree level are labeled with the same feature."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:24:05.333Z",
+      "updatedAt": "2026-06-15T20:24:05.333Z"
+    },
+    {
+      "id": "1a0f1fc9-0d64-4cf6-a61e-0053c77f7954",
+      "type": "single",
+      "question": "Question 37:\nIn decision tree learning, the Information Gain...",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "is always highest for the feature at the root of a decision tree."
+        },
+        {
+          "id": "B",
+          "text": "of a feature that has the same value for all training examples is zero."
+        },
+        {
+          "id": "C",
+          "text": "of a feature cannot be zero when there are still examples of more than one class in the current example subset."
+        },
+        {
+          "id": "D",
+          "text": "is negative for all features in nodes where all examples already belong to the same class."
+        },
+        {
+          "id": "E",
+          "text": "measures how much information a training example gives about the class."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:25:14.117Z",
+      "updatedAt": "2026-06-15T20:25:14.117Z"
+    },
+    {
+      "id": "6dc4f13e-7b45-4b43-8540-66ce9e1a5805",
+      "type": "single",
+      "question": "Question 38:\nWhich of the following will *not* reduce the probability of overfitting when learning a decision tree from a dataset \\(D\\):",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "add new features that are non-linear combinations of existing ones."
+        },
+        {
+          "id": "B",
+          "text": "reduce the set of features."
+        },
+        {
+          "id": "C",
+          "text": "discretise numeric features."
+        },
+        {
+          "id": "D",
+          "text": "stop splitting at a node when the number of examples in the node is below some fixed threshold."
+        },
+        {
+          "id": "E",
+          "text": "use a numeric feature at most once along each branch."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:26:10.736Z",
+      "updatedAt": "2026-06-15T20:26:10.736Z"
+    },
+    {
+      "id": "10b4f702-9f81-44eb-bd5f-06bdc553c512",
+      "type": "single",
+      "question": "Question 39:\nA decision tree can overfit a given training set",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "only if we apply no pruning."
+        },
+        {
+          "id": "B",
+          "text": "only if the training set does not contain all observations that are possible in the world."
+        },
+        {
+          "id": "C",
+          "text": "only if the data contain numeric features."
+        },
+        {
+          "id": "D",
+          "text": "only if all the features in the data are irrelevant."
+        },
+        {
+          "id": "E",
+          "text": "only if there are errors in the training data (incorrect class labels and/or incorrect feature values)."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:26:59.685Z",
+      "updatedAt": "2026-06-15T20:26:59.685Z"
+    },
+    {
+      "id": "eb88093a-46a0-48c9-a28f-706542704724",
+      "type": "single",
+      "question": "Question 40:\nThe motivation for the Random Forest classifier is the idea that",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "combining decision trees into a larger tree reduces the danger of overfitting."
+        },
+        {
+          "id": "B",
+          "text": "multiplying the input features permits more confident class predictions."
+        },
+        {
+          "id": "C",
+          "text": "decision trees are high-bias classifiers."
+        },
+        {
+          "id": "D",
+          "text": "more training data reduces the danger of overfitting."
+        },
+        {
+          "id": "E",
+          "text": "combining classifiers with different errors reduces the danger of overfitting."
+        }
+      ],
+      "correctOptions": [
+        "E"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:27:38.569Z",
+      "updatedAt": "2026-06-15T20:27:38.569Z"
+    },
+    {
+      "id": "1b764441-a49a-4312-8a82-89989abad39a",
+      "type": "single",
+      "question": "Question 41:\nA Support Vector Machine",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "fits a non-linear decision boundary into a space of linear feature combinations."
+        },
+        {
+          "id": "B",
+          "text": "fits a linear decision boundary into a space of non-linear feature combinations."
+        },
+        {
+          "id": "C",
+          "text": "basis its classification decisions on vectors between pairs of examples of different classes."
+        },
+        {
+          "id": "D",
+          "text": "bases its classification decisions on training examples that are linear combinations of each other."
+        },
+        {
+          "id": "E",
+          "text": "moves some of the training examples apart by forcing a maximal margin between different classes."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:28:28.137Z",
+      "updatedAt": "2026-06-15T20:28:28.137Z"
+    },
+    {
+      "id": "b8d4085a-7de3-4112-9e53-3419dd06ce05",
+      "type": "single",
+      "question": "Question 42:\nA k-means clustering model trained on this dataset will have",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\(kd^2\\) parameters."
+        },
+        {
+          "id": "B",
+          "text": "\\(k(d+d(d+1)/2+1)\\) parameters."
+        },
+        {
+          "id": "C",
+          "text": "\\(kdN^2\\) parameters."
+        },
+        {
+          "id": "D",
+          "text": "\\(kd\\) parameters."
+        },
+        {
+          "id": "E",
+          "text": "\\(k^2\\) parameters."
+        },
+        {
+          "id": "F",
+          "text": "\\(k(d+1)\\) parameters."
+        },
+        {
+          "id": "G",
+          "text": "\\(kN+d\\) parameters."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:30:24.838Z",
+      "updatedAt": "2026-06-15T20:30:24.838Z"
+    },
+    {
+      "id": "21bc1953-c2f3-44de-82d0-b436389e838a",
+      "type": "single",
+      "question": "Question 43:\nA Gaussian Mixture Model (GMM) with k components trained on this dataset will have",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\(kd^2\\) parameters."
+        },
+        {
+          "id": "B",
+          "text": "\\(k(d+1)\\) parameters."
+        },
+        {
+          "id": "C",
+          "text": "\\(k(d+d(d+1)/2+1)\\) parameters."
+        },
+        {
+          "id": "D",
+          "text": "\\(kdN^2\\) parameters."
+        },
+        {
+          "id": "E",
+          "text": "\\(kd\\) parameters."
+        },
+        {
+          "id": "F",
+          "text": "\\(kN+d\\) parameters."
+        },
+        {
+          "id": "G",
+          "text": "\\(k^2\\) parameters."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:32:52.074Z",
+      "updatedAt": "2026-06-15T20:32:52.074Z"
+    },
+    {
+      "id": "3f8b55aa-5985-48ef-8abe-ef3c39df38b9",
+      "type": "single",
+      "question": "Question 44:\nThe Mean Quantisation Error measures",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The error that would result from quantising each feature dimension into discrete clusters (intervals)."
+        },
+        {
+          "id": "B",
+          "text": "The mean distance between any pair of cluster centers."
+        },
+        {
+          "id": "C",
+          "text": "The average difference between mean and median of all features in \\(D\\)."
+        },
+        {
+          "id": "D",
+          "text": "The average distance of examples from their cluster mean."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:33:31.991Z",
+      "updatedAt": "2026-06-15T20:33:31.991Z"
+    },
+    {
+      "id": "7e3c390f-f2cb-4ee6-81eb-4178fa97a9c8",
+      "type": "single",
+      "question": "Question 45:\nRunning the complete k-means algorithm several times on the same dataset \\(D\\)",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "will gradually reduce the MQE in each run until it reaches a global minimum."
+        },
+        {
+          "id": "B",
+          "text": "is a strategy for preventing overfitting."
+        },
+        {
+          "id": "C",
+          "text": "may result in a different clustering every time."
+        },
+        {
+          "id": "D",
+          "text": "will produce the same result every time."
+        },
+        {
+          "id": "E",
+          "text": "will gradually reduce the MQE in each run until the MQE starts to grow on an independent evaluation set."
+        }
+      ],
+      "correctOptions": [
+        "C"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:34:23.626Z",
+      "updatedAt": "2026-06-15T20:34:23.626Z"
+    },
+    {
+      "id": "215a1304-9abd-426a-a038-5b95e78f8bf8",
+      "type": "single",
+      "question": "Question 46:\nFor a fixed dataset \\(D\\) and any \\(k<N\\),",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "the quantisation error for any cluster is only defined if the cluster contains at least 2 examples."
+        },
+        {
+          "id": "B",
+          "text": "the quantisation error for any cluster cannot be larger than \\(k\\)."
+        },
+        {
+          "id": "C",
+          "text": "the MQE can be non-zero only for even \\(k\\)."
+        },
+        {
+          "id": "D",
+          "text": "the minimal MQE that can be obtained with \\(k\\) clusters cannot be lower than the minimal MQE that can be obtained with \\(k+1\\) clusters."
+        }
+      ],
+      "correctOptions": [
+        "D"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:36:00.227Z",
+      "updatedAt": "2026-06-15T20:36:00.227Z"
+    },
+    {
+      "id": "cce9429a-30a8-40fb-b600-9f5f161cb611",
+      "type": "single",
+      "question": "Question 47:\nIn clustering, the Bayes Information Criterion (BIC) is used",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "to determine the optimal center for each cluster."
+        },
+        {
+          "id": "B",
+          "text": "to determine the optimal number of clusters."
+        },
+        {
+          "id": "C",
+          "text": "to determine the optimal initialisation for each cluster center."
+        },
+        {
+          "id": "D",
+          "text": "to determine the optimal number of parameters."
+        },
+        {
+          "id": "E",
+          "text": "to determine the optimal number of examples per cluster."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:36:54.744Z",
+      "updatedAt": "2026-06-15T20:36:54.744Z"
+    },
+    {
+      "id": "61c54a9e-eb84-4a8e-99d8-8a287adc8038",
+      "type": "single",
+      "question": "Question 48:\nA Gaussan Mixture Model is",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "a probability density function over feature space."
+        },
+        {
+          "id": "B",
+          "text": "a mixture of Gaussian (normal) and uniform distributions."
+        },
+        {
+          "id": "C",
+          "text": "an alternative to Bayes' Rule for calculating posterior class probabilities."
+        },
+        {
+          "id": "D",
+          "text": "a compact description of \\(D\\) in the form of a weighted sum of examples \\(x_i \\in D\\)."
+        },
+        {
+          "id": "E",
+          "text": "a partitioning of dataset \\(D\\) into \\(k\\) subsets (based on random mixing of the data)."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Exam 2026 group A first attempt",
+      "createdAt": "2026-06-15T20:38:40.712Z",
+      "updatedAt": "2026-06-15T20:38:40.712Z"
+    }
+  ]
+}
