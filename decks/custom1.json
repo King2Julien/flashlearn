@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "id": "22f27f52-38db-4d29-9736-6845231676e6",
+  "title": "custom1",
+  "subject": "Programming in Python 2",
+  "description": "",
+  "createdAt": "2026-06-16T13:22:22.695Z",
+  "updatedAt": "2026-06-16T20:10:33.667Z",
+  "questions": [
+    {
+      "id": "3f68d246-75ba-429c-91d6-c82a4bd87b0a",
+      "type": "single",
+      "question": "Which shape does b have?",
+      "code": "import numpy as np\n\na = np.zeros((2, 3, 4, 5, 6))\nb = a[:, 0, 0]",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\((2, 5, 6)\\)"
+        },
+        {
+          "id": "B",
+          "text": "\\((2, )\\)"
+        },
+        {
+          "id": "C",
+          "text": "\\((2, 0, 0, 5, 6)\\)"
+        },
+        {
+          "id": "D",
+          "text": "\\((2, 3, 4)\\)"
+        },
+        {
+          "id": "E",
+          "text": "\\((4, 5, 6)\\)"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "numpy"
+      ],
+      "difficulty": "",
+      "source": "",
+      "createdAt": "2026-06-16T19:44:20.676Z",
+      "updatedAt": "2026-06-16T19:44:20.676Z"
+    },
+    {
+      "id": "5b24fbbf-bce1-4abc-82fd-20ffd4b46385",
+      "type": "multiple",
+      "question": "Which of the following reshape shapes are valid for the given numpy array?",
+      "code": "arr = np.ones(2, 5)",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "\\((10, )\\)"
+        },
+        {
+          "id": "B",
+          "text": "\\((10, 1)\\)"
+        },
+        {
+          "id": "C",
+          "text": "\\((10, )\\)"
+        },
+        {
+          "id": "D",
+          "text": "\\((-1, 10)\\)"
+        },
+        {
+          "id": "E",
+          "text": "\\((5, 2)\\)"
+        },
+        {
+          "id": "F",
+          "text": "\\((2, 5, 10)\\)"
+        },
+        {
+          "id": "G",
+          "text": "\\((1, 2, 5 )\\)"
+        },
+        {
+          "id": "H",
+          "text": "\\((5, )\\)"
+        }
+      ],
+      "correctOptions": [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "G"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "numpy"
+      ],
+      "difficulty": "",
+      "source": "",
+      "createdAt": "2026-06-16T19:52:20.354Z",
+      "updatedAt": "2026-06-16T19:52:20.354Z"
+    },
+    {
+      "id": "e97cdc4c-8296-4e27-9389-133a7d362217",
+      "type": "single",
+      "question": "What will be printed?",
+      "code": "df = pd.DataFrame(\n    {\"A\": [10, 20, 30], \"B\": [1, 2, 3]},\n    index=[\"x\", \"y\", \"z\"]\n)\nprint(df.loc[\"x\":\"y\", \"A\"])",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "x    10\nName: A, dtype: int64"
+        },
+        {
+          "id": "B",
+          "text": "x    10\ny    20\nName: A, dtype: int64"
+        },
+        {
+          "id": "C",
+          "text": "y    20\nName: A, dtype: int64"
+        },
+        {
+          "id": "D",
+          "text": "raises an error because .loc cannot slice strings."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "pandas"
+      ],
+      "difficulty": "",
+      "source": "",
+      "createdAt": "2026-06-16T20:04:24.587Z",
+      "updatedAt": "2026-06-16T20:04:24.587Z"
+    },
+    {
+      "id": "795750c5-7ba4-4137-8eae-244d5ccb18c9",
+      "type": "single",
+      "question": "What is the type of 'result'?",
+      "code": "df = pd.DataFrame(\n    np.arange(6).reshape(3, 2),\n    columns=[\"A\", \"B\"]\n)\nresult = df.iloc[[0, 1], [0]]",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A Series with values \\((0, 2)\\)"
+        },
+        {
+          "id": "B",
+          "text": "A DataFrame with one column A and rows \\((0, 1)\\)"
+        },
+        {
+          "id": "C",
+          "text": "A scalar value \\(0\\)"
+        },
+        {
+          "id": "D",
+          "text": "An error, because .iloc cannot use lists"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "pandas"
+      ],
+      "difficulty": "hard",
+      "source": "",
+      "createdAt": "2026-06-16T20:08:38.085Z",
+      "updatedAt": "2026-06-16T20:08:38.085Z"
+    },
+    {
+      "id": "2c83b4a1-a4be-40c9-a162-bf98aac924cb",
+      "type": "single",
+      "question": "Which operation is valid?",
+      "code": "A = np.zeros((3, 4))\nB = np.ones((4,))\nC = np.ones((3,))",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "A + B"
+        },
+        {
+          "id": "B",
+          "text": "A + C"
+        },
+        {
+          "id": "C",
+          "text": "Both are valid"
+        },
+        {
+          "id": "D",
+          "text": "Neither are valid"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [
+        "numpy"
+      ],
+      "difficulty": "",
+      "source": "",
+      "createdAt": "2026-06-16T20:10:30.601Z",
+      "updatedAt": "2026-06-16T20:10:30.601Z"
+    }
+  ]
+}
