@@ -1,0 +1,501 @@
+{
+  "schemaVersion": 1,
+  "id": "4bb449aa-b4ee-46a2-a503-f4c6db0fb8f2",
+  "title": "unit6-reinforcement-learning",
+  "subject": "Hands On AI 2",
+  "description": "",
+  "createdAt": "2026-06-22T06:55:36.617Z",
+  "updatedAt": "2026-06-22T08:03:24.403Z",
+  "questions": [
+    {
+      "id": "bc34c1a7-12bf-4aad-a6f4-b7f6f0689fed",
+      "type": "single",
+      "question": "What distinguishes RL from supervised learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "RL learns from numeric rewards"
+        },
+        {
+          "id": "B",
+          "text": "RL always uses labeled targets"
+        },
+        {
+          "id": "C",
+          "text": "RL has no actions"
+        },
+        {
+          "id": "D",
+          "text": "RL cannot use neural networks"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T06:58:09.356Z",
+      "updatedAt": "2026-06-22T06:58:09.356Z"
+    },
+    {
+      "id": "86342371-475e-4749-a45c-7e63212ffafc",
+      "type": "single",
+      "question": "What is the main goal of a reinforcement learning agent?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximize cumulative reward"
+        },
+        {
+          "id": "B",
+          "text": "Minimize immediate rewards"
+        },
+        {
+          "id": "C",
+          "text": "Minimize q-values in the q-table"
+        },
+        {
+          "id": "D",
+          "text": "Explore the environment through random actions"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T06:59:21.205Z",
+      "updatedAt": "2026-06-22T06:59:21.205Z"
+    },
+    {
+      "id": "ba4aedcb-f8bd-4748-ac25-70f79658ec05",
+      "type": "single",
+      "question": "Which component maps states to actions?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Policy"
+        },
+        {
+          "id": "B",
+          "text": "Reward signal"
+        },
+        {
+          "id": "C",
+          "text": "Transition matrix"
+        },
+        {
+          "id": "D",
+          "text": "Loss function"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T06:59:59.754Z",
+      "updatedAt": "2026-06-22T06:59:59.754Z"
+    },
+    {
+      "id": "2bceefa3-a5f4-429b-8bea-0264ed3111db",
+      "type": "single",
+      "question": "What does a sparse reward signal mean?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Only few transitions give reward"
+        },
+        {
+          "id": "B",
+          "text": "Every action gives high reward"
+        },
+        {
+          "id": "C",
+          "text": "Rewards are always negative"
+        },
+        {
+          "id": "D",
+          "text": "Rewards are continuous states"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T07:13:36.522Z",
+      "updatedAt": "2026-06-22T07:13:36.522Z"
+    },
+    {
+      "id": "6c9d23bc-7185-4405-aa87-313a7b8bc58b",
+      "type": "single",
+      "question": "Which tuple best matches an MDP?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "States, actions, transitions, rewards"
+        },
+        {
+          "id": "B",
+          "text": "Inputs, labels, loss, epochs"
+        },
+        {
+          "id": "C",
+          "text": "Clusters, centroids, labels, loss"
+        },
+        {
+          "id": "D",
+          "text": "Tokens, embeddings, logits, softmax"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T07:15:04.692Z",
+      "updatedAt": "2026-06-22T07:15:04.692Z"
+    },
+    {
+      "id": "67d740bf-cc7c-4ac7-ba3a-0c5539de7351",
+      "type": "single",
+      "question": "What does \\(P_a(s,s)\\) describe in an MDP?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Transition probability under action \\(a\\)"
+        },
+        {
+          "id": "B",
+          "text": "The final reward after convergence"
+        },
+        {
+          "id": "C",
+          "text": "The policy chosen by the agent in state \\(s\\)"
+        },
+        {
+          "id": "D",
+          "text": "The size of the Q-table"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T07:16:59.213Z",
+      "updatedAt": "2026-06-22T07:16:59.213Z"
+    },
+    {
+      "id": "ac8b076b-921f-436e-8490-0f55340aa83b",
+      "type": "single",
+      "question": "Why are Go and Chess examples of sparse-reward tasks?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Reward may come only at game end"
+        },
+        {
+          "id": "B",
+          "text": "Each move gives a positive immediate reward"
+        },
+        {
+          "id": "C",
+          "text": "There is a continuous state-space"
+        },
+        {
+          "id": "D",
+          "text": "Actions are impossible to enumerate"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T07:18:50.007Z",
+      "updatedAt": "2026-06-22T07:18:50.007Z"
+    },
+    {
+      "id": "709dcb72-b8de-4814-8c89-a712104f8a01",
+      "type": "single",
+      "question": "What does \\(Q(s,a)\\) estimates?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Expected cumulative reward after action \\(a\\) in state \\(s\\)"
+        },
+        {
+          "id": "B",
+          "text": "The for the next step"
+        },
+        {
+          "id": "C",
+          "text": "Immediate reward only after action \\(a\\) in state \\(s\\)"
+        },
+        {
+          "id": "D",
+          "text": "Number of times action \\(a\\) was tired"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T07:22:08.003Z",
+      "updatedAt": "2026-06-22T07:22:08.003Z"
+    },
+    {
+      "id": "80f2a294-cc70-4306-a3ef-6cc173cdd95a",
+      "type": "single",
+      "question": "What is the role of \\(max_a Q(s,a)\\) in Q-learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Best estimated future value"
+        },
+        {
+          "id": "B",
+          "text": "The current reward only"
+        },
+        {
+          "id": "C",
+          "text": "The exploration probability"
+        },
+        {
+          "id": "D",
+          "text": "Best estimated immediate reward"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T07:23:24.353Z",
+      "updatedAt": "2026-06-22T07:23:24.353Z"
+    },
+    {
+      "id": "b0344849-4737-4658-befc-52674d58396f",
+      "type": "single",
+      "question": "What happens when is \\(0\\) in Q-learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "No Q-value update occurs"
+        },
+        {
+          "id": "B",
+          "text": "Only new information is used"
+        },
+        {
+          "id": "C",
+          "text": "Future rewards are ignored"
+        },
+        {
+          "id": "D",
+          "text": "Actions become random"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T07:24:25.237Z",
+      "updatedAt": "2026-06-22T07:24:25.237Z"
+    },
+    {
+      "id": "050bbdd8-245f-48ba-9020-df55b7596a32",
+      "type": "single",
+      "question": "What does control in Q-learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Importance of future rewards"
+        },
+        {
+          "id": "B",
+          "text": "Size of the action space"
+        },
+        {
+          "id": "C",
+          "text": "Initial state distribution"
+        },
+        {
+          "id": "D",
+          "text": "The importance of the previous q-value when computing an updated one"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T07:26:22.790Z",
+      "updatedAt": "2026-06-22T07:26:22.790Z"
+    },
+    {
+      "id": "746f5c91-9f29-4d28-9ad2-b07e6e8ed7d1",
+      "type": "single",
+      "question": "What does control in \\(\\epsilon\\)-greedy action selection?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Exploration versus exploitation"
+        },
+        {
+          "id": "B",
+          "text": "Learning rate"
+        },
+        {
+          "id": "C",
+          "text": "Immediate rewards versus long-term rewards"
+        },
+        {
+          "id": "D",
+          "text": "Discount factor"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T07:32:13.097Z",
+      "updatedAt": "2026-06-22T07:32:13.097Z"
+    },
+    {
+      "id": "2b94d8ca-3694-42a1-af36-7005c5d19f24",
+      "type": "single",
+      "question": "Why does a tabular Q-table scale poorly to Pac-Man-like tasks?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "There are too many possible states"
+        },
+        {
+          "id": "B",
+          "text": "The environment can change rapidly"
+        },
+        {
+          "id": "C",
+          "text": "There is now reward signal"
+        },
+        {
+          "id": "D",
+          "text": "There is a continuous action space"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T08:01:36.533Z",
+      "updatedAt": "2026-06-22T08:01:36.533Z"
+    },
+    {
+      "id": "0708921a-28dc-43be-9299-46f77ef2150b",
+      "type": "single",
+      "question": "What is the basic idea of Deep Q-learning?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "Approximate \\(Q(s,a)\\) with a model"
+        },
+        {
+          "id": "B",
+          "text": "Determine and in the Q-learning formula with a model"
+        },
+        {
+          "id": "C",
+          "text": "Replace the reward signal with backpropagation"
+        },
+        {
+          "id": "D",
+          "text": "Disregard short-term rewards and only use the cumulative long-term rewards"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Kahoot",
+      "createdAt": "2026-06-22T08:03:22.353Z",
+      "updatedAt": "2026-06-22T08:03:22.353Z"
+    }
+  ]
+}
