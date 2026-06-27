@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "id": "7abd89f4-8d69-4133-a037-dd5abc9fe679",
   "title": "true_false_questions_exam_2024",
-  "subject": "VL Statistics for AI",
+  "subject": "Statistics for AI",
   "description": "Only True/False questions",
   "createdAt": "2026-06-27T19:02:00.821Z",
-  "updatedAt": "2026-06-27T19:18:22.003Z",
+  "updatedAt": "2026-06-27T19:23:49.039Z",
   "questions": [
     {
       "id": "8e5293ef-e379-4d7f-ac5c-bd3e9d8556b6",
