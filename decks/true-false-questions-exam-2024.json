@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "id": "7abd89f4-8d69-4133-a037-dd5abc9fe679",
+  "title": "true_false_questions_exam_2024",
+  "subject": "VL Statistics for AI",
+  "description": "Only True/False questions",
+  "createdAt": "2026-06-27T19:02:00.821Z",
+  "updatedAt": "2026-06-27T19:18:22.003Z",
+  "questions": [
+    {
+      "id": "8e5293ef-e379-4d7f-ac5c-bd3e9d8556b6",
+      "type": "true_false",
+      "question": "The sum of all the probabilities of all possible outcomes of a random event is 1.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:03:44.098Z",
+      "updatedAt": "2026-06-27T19:03:44.098Z"
+    },
+    {
+      "id": "2eae0720-06fa-40a2-8faa-ada99ff45e2e",
+      "type": "true_false",
+      "question": "A \\(95\\%\\) confidence interval is an interval that covers \\(95\\%\\) of the data.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exams 2024",
+      "createdAt": "2026-06-27T19:04:06.397Z",
+      "updatedAt": "2026-06-27T19:04:37.664Z"
+    },
+    {
+      "id": "f3768699-dc39-475b-9c7e-a0e8163e9a76",
+      "type": "true_false",
+      "question": "If two events are independent in a statistical sense, the probability of both events occurring is always the sum of the individual probabilities.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:05:20.181Z",
+      "updatedAt": "2026-06-27T19:05:20.181Z"
+    },
+    {
+      "id": "c18577df-b111-4b59-a713-dc6de3c48ff0",
+      "type": "true_false",
+      "question": "The p-value of a statistical test represents the type II error, which is defined as the probability of a false test result.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:05:42.281Z",
+      "updatedAt": "2026-06-27T19:05:42.281Z"
+    },
+    {
+      "id": "edba979d-8aa3-4d14-95df-8fd9cd8b4aef",
+      "type": "true_false",
+      "question": "If the mean, the median, and the mode of a data set are identical, the data is always skewed.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:06:08.248Z",
+      "updatedAt": "2026-06-27T19:06:08.248Z"
+    },
+    {
+      "id": "e1dc933e-91e4-4c73-b5b6-3cede58d50fb",
+      "type": "true_false",
+      "question": "A Bravais-Pearson correlation coefficient of 0 indicates a perfect linear relationship, as there is 0 deviation between the two variables.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:06:34.781Z",
+      "updatedAt": "2026-06-27T19:06:34.781Z"
+    },
+    {
+      "id": "2d4c3732-c6b9-41ad-9109-f047dec0a453",
+      "type": "true_false",
+      "question": "The interquartile range (IQR) is defined as the sum of the first quartile and the third quartile.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:07:08.415Z",
+      "updatedAt": "2026-06-27T19:07:08.415Z"
+    },
+    {
+      "id": "45d425bb-1fd1-4fd4-a787-5fb5421fb872",
+      "type": "true_false",
+      "question": "Given, a continuous random variable \\(X\\) has the probability density function \\(f(x)\\). The probability that \\(X\\) takes on a value in the interval \\([a,b]\\) is given by \\(f(b)-f(a)\\).",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:08:17.066Z",
+      "updatedAt": "2026-06-27T19:08:17.066Z"
+    },
+    {
+      "id": "f8336521-bd11-4cc6-9340-0a707732289e",
+      "type": "true_false",
+      "question": "The a-priori probability in Bayes' theorem represents the conditional probability of an event given that another event has already occurred.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:08:37.332Z",
+      "updatedAt": "2026-06-27T19:08:37.332Z"
+    },
+    {
+      "id": "17cdf785-aad5-49a3-91fb-610b428f28eb",
+      "type": "true_false",
+      "question": "The central limit theorem states that the variance of a sample increases as the sample size also increases.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:09:19.792Z",
+      "updatedAt": "2026-06-27T19:09:19.792Z"
+    },
+    {
+      "id": "1d4dd553-20b2-4994-898e-0341ae0d6e71",
+      "type": "true_false",
+      "question": "A box plot is a graphic usually used to visualize the mode of a data set.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:09:40.150Z",
+      "updatedAt": "2026-06-27T19:09:40.150Z"
+    },
+    {
+      "id": "1b7ba367-17df-4f54-9567-67176174538d",
+      "type": "true_false",
+      "question": "If two events \\(A\\) and \\(B\\) are independent, then \\(P(A \\cap B)\\) is defined as \\(P(A) / P(B)\\). (Probably meaning \\(\\frac{P(A)}{P(B)}\\)).",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:11:10.100Z",
+      "updatedAt": "2026-06-27T19:11:10.100Z"
+    },
+    {
+      "id": "a55707d5-8e5e-4224-9442-e411ce8b72d6",
+      "type": "true_false",
+      "question": "A histogram is used to analyze the relationship between two variables.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:11:46.292Z",
+      "updatedAt": "2026-06-27T19:11:46.292Z"
+    },
+    {
+      "id": "e0394c07-7c3c-428b-bdbf-ef0da7d7635f",
+      "type": "true_false",
+      "question": "The mean, as a measure of central tendency, is not affected by extreme values in the data set.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:12:18.226Z",
+      "updatedAt": "2026-06-27T19:12:18.226Z"
+    },
+    {
+      "id": "bb60b128-f5ee-4af7-a6a0-0ac0db0f595d",
+      "type": "true_false",
+      "question": "In simple linear regression, the line of best fit (= regression line) is determined by minimizing the sum of the squared median deviation.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:12:56.268Z",
+      "updatedAt": "2026-06-27T19:12:56.268Z"
+    },
+    {
+      "id": "41578419-eeb1-48e6-a268-ab28c448d13b",
+      "type": "true_false",
+      "question": "If two events \\(A\\) and \\(B\\) are mutually exclusive, then \\(P(A\\cup B)\\) is defined as \\(P(A)*P(B)\\).",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:14:03.545Z",
+      "updatedAt": "2026-06-27T19:14:03.545Z"
+    },
+    {
+      "id": "e4adfd41-a1f1-4d83-8fe2-d9c2f395eb61",
+      "type": "true_false",
+      "question": "The sample standard deviation is always smaller than the population standard deviation.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:14:35.802Z",
+      "updatedAt": "2026-06-27T19:14:35.802Z"
+    },
+    {
+      "id": "beed54de-93dd-4f0c-926a-c32fcb5fd19d",
+      "type": "true_false",
+      "question": "The so-called \"critical value\" of a statistical test is just the value of the test statistic of this statistical test.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:14:56.992Z",
+      "updatedAt": "2026-06-27T19:14:56.992Z"
+    },
+    {
+      "id": "4a6cba14-72a8-40e3-893d-4ed1b1d09428",
+      "type": "true_false",
+      "question": "If \\(X\\) and \\(Y\\) are continuous random variables with the joint probability density function \\(f_{xy}(x,y)\\). The conditional probability density function \\(f_{x|y}(x|y)\\) is defined as \\(f_{xy}(x,y)/f_x(x)\\).",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:16:44.670Z",
+      "updatedAt": "2026-06-27T19:16:44.670Z"
+    },
+    {
+      "id": "85a149e4-4717-4f74-bff8-6efd6ad7c0a2",
+      "type": "true_false",
+      "question": "The statement \\(P(A\\cup B) = P(A) + P(B) - P(A\\cap B)\\) is true for non-disjoint events.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "VL Exam 2024",
+      "createdAt": "2026-06-27T19:17:14.653Z",
+      "updatedAt": "2026-06-27T19:17:14.653Z"
+    }
+  ]
+}
