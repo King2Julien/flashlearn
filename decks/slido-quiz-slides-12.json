@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "id": "9eb30de8-91fc-4b8b-b7d6-c1baf673ddd6",
+  "title": "Slido_Quiz_Slides_12",
+  "subject": "Statistics for AI",
+  "description": "",
+  "createdAt": "2026-06-27T09:24:05.127Z",
+  "updatedAt": "2026-06-27T09:40:25.612Z",
+  "questions": [
+    {
+      "id": "56b2d4b2-bfd9-4c4d-a067-6d82d87ca159",
+      "type": "single",
+      "question": "The expected value of a normal distribution is also the",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "median"
+        },
+        {
+          "id": "B",
+          "text": "kurtosis"
+        },
+        {
+          "id": "C",
+          "text": "skewness"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Slido",
+      "createdAt": "2026-06-27T09:28:44.376Z",
+      "updatedAt": "2026-06-27T09:28:44.376Z"
+    },
+    {
+      "id": "fd6cb795-b906-4fd9-8f1b-5ada4b2bd67a",
+      "type": "single",
+      "question": "The standard normal distribution has",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "a standard error of 1."
+        },
+        {
+          "id": "B",
+          "text": "an expected value of 0 and a variance of 1."
+        },
+        {
+          "id": "C",
+          "text": "a standardized sum which converges to 0."
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Slido",
+      "createdAt": "2026-06-27T09:30:28.645Z",
+      "updatedAt": "2026-06-27T09:30:28.645Z"
+    },
+    {
+      "id": "2316154a-1357-474f-a28f-c020a45dafeb",
+      "type": "single",
+      "question": "A 95% confidence interval is given. Now the confidence level is set to 90%. What happens with the confidence interval?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The confidence interval gets more precise."
+        },
+        {
+          "id": "B",
+          "text": "The confidence interval gets less precise."
+        },
+        {
+          "id": "C",
+          "text": "The confidence interval stays the same."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Slido",
+      "createdAt": "2026-06-27T09:32:39.931Z",
+      "updatedAt": "2026-06-27T09:32:39.931Z"
+    },
+    {
+      "id": "d633662c-f448-4580-9930-eef47f8eb0c4",
+      "type": "single",
+      "question": "A 95% confidence interval is given. Now a sample size is increased. What happens with the confidence interval?",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "The confidence interval gets more precise."
+        },
+        {
+          "id": "B",
+          "text": "The confidence interval gets less precise."
+        },
+        {
+          "id": "C",
+          "text": "The confidence interval stays the same."
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Slido",
+      "createdAt": "2026-06-27T09:34:18.718Z",
+      "updatedAt": "2026-06-27T09:34:18.718Z"
+    },
+    {
+      "id": "c1c89892-c672-45cd-b4e1-26cfad616683",
+      "type": "true_false",
+      "question": "Given a statistical significance test, the null hypothesis \\(H_0\\) usually states that there is \"no difference\".",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Slido",
+      "createdAt": "2026-06-27T09:35:20.252Z",
+      "updatedAt": "2026-06-27T09:40:19.495Z"
+    },
+    {
+      "id": "923cc319-3f38-459f-be5b-f789ce356534",
+      "type": "true_false",
+      "question": "If a statistical test is not rejecting \\(H_0\\). This is automatically a proof of \\(H_0\\).",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Slido",
+      "createdAt": "2026-06-27T09:36:22.221Z",
+      "updatedAt": "2026-06-27T09:36:22.221Z"
+    },
+    {
+      "id": "33ea1b87-cc84-4499-9f66-115506a5927d",
+      "type": "true_false",
+      "question": "If the statistic is larger than the critical value, \\(H_0\\) can be rejected with type I error alpha.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "A"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Slido",
+      "createdAt": "2026-06-27T09:38:04.958Z",
+      "updatedAt": "2026-06-27T09:38:04.959Z"
+    },
+    {
+      "id": "6fbd1012-9f4b-486e-8edf-29ecfc89de03",
+      "type": "true_false",
+      "question": "The p-value of a statistical test is the concrete type II error of this data situation.",
+      "code": "",
+      "image": null,
+      "options": [
+        {
+          "id": "A",
+          "text": "True"
+        },
+        {
+          "id": "B",
+          "text": "False"
+        }
+      ],
+      "correctOptions": [
+        "B"
+      ],
+      "correctTextAnswer": "",
+      "explanation": "",
+      "tags": [],
+      "difficulty": "",
+      "source": "Slido",
+      "createdAt": "2026-06-27T09:38:46.231Z",
+      "updatedAt": "2026-06-27T09:38:46.231Z"
+    }
+  ]
+}
