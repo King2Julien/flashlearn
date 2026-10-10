@@ -86,7 +86,10 @@ export function createDeckBuilder({ downloadJson, confirmAction }) {
     root = container;
     root.innerHTML = `<section class="deck-builder">
       <div class="builder-heading"><div><p class="eyebrow">Your own study material</p><h1>Create a deck</h1><p class="lead">Build questions, download your JSON file, then use Import deck to study.</p></div></div>
-      <p class="builder-privacy">Only in your browser. Drafts and imported decks are stored on this device and are never uploaded or visible to other visitors. Clearing browser data removes them; keep your downloaded JSON as a backup.</p>
+      <div class="builder-privacy">
+        <p>Only in your browser. Drafts and imported decks are stored on this device and are never uploaded or visible to other visitors. Clearing browser data removes them; keep your downloaded JSON as a backup.</p>
+        <p class="builder-math-help"><strong>Math with LaTeX:</strong> In questions, answer options, and explanations, use <code>\\(x^2\\)</code> for inline math or <code>\\[\\frac{a}{b}\\]</code> for a formula on its own line. For example, <code>\\(\\sqrt{x} + \\alpha\\)</code> gives a square root and a Greek letter. Type single backslashes here; the JSON download escapes them automatically.</p>
+      </div>
       <form id="deckBuilderForm">
         <section class="builder-metadata" aria-label="Deck details">
           ${field("Deck title", "title", draft.title, { required: true, placeholder: "e.g. Biology — Chapter 1" })}

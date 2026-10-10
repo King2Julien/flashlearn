@@ -14,6 +14,7 @@ const DAY = 24 * 60 * 60 * 1000;
 const state = {
   view: "library",
   decks: [],
+  builtinDeckIds: new Set(),
   progress: load(STORAGE.progress, {}),
   settings: load(STORAGE.settings, { theme: "light" }),
   search: "",
@@ -90,6 +91,7 @@ async function loadDecks() {
       const response = await fetch(path);
       if (!response.ok) throw new Error(`Could not load ${path}`);
       const deck = normalizeDeck(await response.json());
+      state.builtinDeckIds.add(deck.id);
       builtin.push(deck);
       storedById.delete(deck.id);
     } catch (error) {
@@ -225,14 +227,18 @@ function renderSubjectGroups(groups) {
 
 function renderDeckCard(deck, index) {
   const stats = deckStats(deck);
+  const isPrivate = !state.builtinDeckIds.has(deck.id);
   return `
     <article class="deck-card" style="--card-color:${CARD_COLORS[index % CARD_COLORS.length]}">
       <div class="card-top">
         <span class="deck-number">${String(index + 1).padStart(2, "0")}</span>
-        <button class="menu-button" data-action="export" data-deck="${deck.id}" title="Export deck">↓</button>
+        <div class="card-top-actions">
+          ${isPrivate ? `<button class="button button-ghost delete-deck-button" data-action="delete-deck" data-deck="${escapeHtml(deck.id)}" aria-label="Delete ${escapeHtml(humanizeTitle(deck.title))}">Delete deck</button>` : ""}
+          <button class="menu-button" data-action="export" data-deck="${escapeHtml(deck.id)}" title="Export deck">↓</button>
+        </div>
       </div>
       <h3>${escapeHtml(humanizeTitle(deck.title))}</h3>
-      <p class="subject">${escapeHtml(deck.subject)} · ${deck.questions.length} cards</p>
+      <p class="subject">${escapeHtml(deck.subject)} · ${deck.questions.length} cards${isPrivate ? " · Browser only" : ""}</p>
       <div class="card-footer">
         <div class="progress-line" aria-label="${stats.mastery}% mastered"><span style="width:${stats.mastery}%"></span></div>
         <span class="card-stats">${stats.due ? `${stats.due} due` : `${stats.mastery}% mastered`}</span>
@@ -488,6 +494,7 @@ function handleClick(event) {
   if (action === "export") exportDeck(deckId);
   if (action === "export-progress") exportProgress();
   if (action === "reset") resetDeck(deckId);
+  if (action === "delete-deck") deletePrivateDeck(deckId);
 }
 
 function handleInput(event) {
@@ -710,7 +717,7 @@ async function importDeckFiles(fileList) {
   }
 
   if (imported) {
-    save(STORAGE.decks, state.decks);
+    save(STORAGE.decks, state.decks.filter((deck) => !state.builtinDeckIds.has(deck.id)));
     state.search = "";
     goTo("library");
     showToast(`${imported} deck${imported === 1 ? "" : "s"} imported.`);
@@ -721,6 +728,31 @@ async function importDeckFiles(fileList) {
 function exportDeck(deckId) {
   const deck = getDeck(deckId);
   downloadJson(`${slugify(deck.title)}.json`, deck);
+}
+
+async function deletePrivateDeck(deckId) {
+  const deck = getDeck(deckId);
+  if (!deck || state.builtinDeckIds.has(deckId)) return;
+  const confirmed = await confirmAction(
+    "Delete this private deck?",
+    `This removes “${humanizeTitle(deck.title)}” and its study progress from this browser. Export the deck first if you want a backup. Your downloaded JSON and builder draft are kept.`,
+    "Delete deck",
+  );
+  if (!confirmed) return;
+  const remaining = state.decks.filter((item) => item.id !== deckId);
+  const progress = Object.fromEntries(Object.entries(state.progress).filter(([key]) => !key.startsWith(`${deckId}:`)));
+  try {
+    save(STORAGE.decks, remaining.filter((item) => !state.builtinDeckIds.has(item.id)));
+    save(STORAGE.progress, progress);
+  } catch {
+    showToast("Could not remove the deck from browser storage. Please try again.");
+    return;
+  }
+  state.decks = remaining;
+  state.progress = progress;
+  if (state.session?.deckId === deckId) state.session = null;
+  render();
+  showToast("Private deck deleted from this browser.");
 }
 
 function exportProgress() {
