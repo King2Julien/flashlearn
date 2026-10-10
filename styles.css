@@ -306,33 +306,69 @@ h2 {
 
 .subject-list {
   display: grid;
-  gap: 38px;
+  gap: 18px;
 }
 
 .subject-section {
-  display: grid;
-  gap: 15px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: var(--surface);
 }
 
 .subject-heading {
   display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  align-items: center;
   gap: 16px;
-  padding-bottom: 9px;
-  border-bottom: 1px solid var(--line);
+  padding: 22px;
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  list-style: none;
+}
+
+.subject-heading::-webkit-details-marker {
+  display: none;
+}
+
+.subject-heading:hover {
+  background: var(--surface-muted);
+}
+
+.subject-heading:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
 }
 
 .subject-heading h2 {
+  flex: 1;
+  min-width: 0;
   margin: 0;
   font-size: 1rem;
   letter-spacing: -0.01em;
 }
 
-.subject-heading span {
+.subject-count {
+  flex-shrink: 0;
   color: var(--muted);
   font-size: 0.78rem;
   font-weight: 700;
+}
+
+.subject-chevron {
+  flex-shrink: 0;
+  width: 9px;
+  height: 9px;
+  margin-right: 3px;
+  border-right: 2px solid var(--muted);
+  border-bottom: 2px solid var(--muted);
+  transform: rotate(45deg);
+}
+
+.subject-section[open] > .subject-heading .subject-chevron {
+  transform: rotate(225deg);
+}
+
+.subject-section > .deck-grid {
+  padding: 0 16px 16px;
 }
 
 .deck-grid {

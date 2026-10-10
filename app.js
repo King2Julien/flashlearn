@@ -15,6 +15,7 @@ const state = {
   progress: load(STORAGE.progress, {}),
   settings: load(STORAGE.settings, { theme: "light" }),
   search: "",
+  openSubjects: new Set(),
   session: null,
 };
 
@@ -39,6 +40,12 @@ function bindGlobalEvents() {
   document.addEventListener("input", handleInput);
   document.addEventListener("change", handleChange);
   document.addEventListener("keydown", handleKeyboard);
+  document.addEventListener("toggle", (event) => {
+    const section = event.target;
+    if (!section.matches("details[data-subject]") || !section.isConnected || state.search.trim()) return;
+    if (section.open) state.openSubjects.add(section.dataset.subject);
+    else state.openSubjects.delete(section.dataset.subject);
+  }, true);
   importInput.addEventListener("change", (event) => importDeckFiles(event.target.files));
 
   for (const eventName of ["dragenter", "dragover"]) {
@@ -185,7 +192,7 @@ function groupDecksBySubject(decks) {
   decks.forEach((deck) => {
     const subject = deck.subject.trim() || "General";
     const key = subject.toLowerCase().replace(/[^a-z0-9]+/g, "");
-    const group = groups.get(key) || { subject, decks: [] };
+    const group = groups.get(key) || { key, subject, decks: [] };
     group.decks.push(deck);
     groups.set(key, group);
   });
@@ -198,15 +205,16 @@ function renderSubjectGroups(groups) {
 
   return groups
     .map((group) => `
-      <section class="subject-section">
-        <div class="subject-heading">
+      <details class="subject-section" data-subject="${escapeHtml(group.key)}" ${state.search.trim() || state.openSubjects.has(group.key) ? "open" : ""}>
+        <summary class="subject-heading">
           <h2>${escapeHtml(group.subject)}</h2>
-          <span>${group.decks.length} ${group.decks.length === 1 ? "deck" : "decks"}</span>
-        </div>
+          <span class="subject-count">${group.decks.length} ${group.decks.length === 1 ? "deck" : "decks"}</span>
+          <span class="subject-chevron" aria-hidden="true"></span>
+        </summary>
         <div class="deck-grid">
           ${group.decks.map((deck) => renderDeckCard(deck, deckIndex++)).join("")}
         </div>
-      </section>
+      </details>
     `)
     .join("");
 }
