@@ -1,9 +1,10 @@
-const CACHE = "flashlearn-v11";
+const CACHE = "flashlearn-v12";
 const ASSETS = [
   "./",
   "./index.html",
   "./styles.css",
   "./app.js",
+  "./deck-builder.js",
   "./manifest.webmanifest",
   "./icon.svg",
   "./decks/index.json"

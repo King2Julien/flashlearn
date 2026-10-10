@@ -16,6 +16,7 @@ Then open `http://localhost:4173`.
 
 - Four bundled Hands-on AI decks
 - JSON deck import by file picker or drag and drop
+- Private deck builder with locally saved drafts and JSON download
 - Single choice, multiple choice, true/false, and text questions
 - Code snippets, images, explanations, tags, difficulty, and source metadata
 - Local study history and spaced-review scheduling
@@ -26,6 +27,17 @@ Then open `http://localhost:4173`.
 - Installable/offline PWA
 
 All progress is stored in browser `localStorage`; no account or server is required.
+
+Use **Create deck** to add single-choice, multiple-choice, true/false, or written-answer
+questions. Download the JSON file and import it into your library. Drafts and imported
+decks stay in the current browser and are not published to other visitors. Keep the
+downloaded JSON as a backup before clearing browser data.
+
+To check the builder's export schema and validation:
+
+```bash
+node scripts/test-deck-builder.mjs
+```
 
 ## Publish a new deck
 

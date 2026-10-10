@@ -1,3 +1,5 @@
+import { createDeckBuilder } from "./deck-builder.js";
+
 const STORAGE = {
   decks: "flashlearn.decks.v1",
   progress: "flashlearn.progress.v1",
@@ -23,6 +25,7 @@ const app = document.querySelector("#app");
 const importInput = document.querySelector("#deckImport");
 const toastRegion = document.querySelector("#toastRegion");
 const confirmDialog = document.querySelector("#confirmDialog");
+const deckBuilder = createDeckBuilder({ downloadJson, confirmAction });
 
 init();
 
@@ -142,6 +145,7 @@ function render() {
   if (state.view === "progress") renderProgress();
   if (state.view === "study") renderStudy();
   if (state.view === "summary") renderSummary();
+  if (state.view === "builder") deckBuilder.render(app);
 }
 
 function updateNavigation() {
@@ -501,6 +505,8 @@ function handleInput(event) {
   }
   if (event.target.id === "textAnswer" && state.session) {
     state.session.textAnswer = event.target.value;
+    const checkButton = app.querySelector('[data-action="check"]');
+    if (checkButton) checkButton.disabled = !canCheck(state.session.questions[state.session.index]);
   }
 }
 
